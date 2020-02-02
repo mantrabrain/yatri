@@ -53,9 +53,20 @@ if (!class_exists('Yatri_Yatra')) :
         {
             ?>
             <section class="wrapper block-grid site-content yatri_list_layout" id="main-content">
+            <?php
+            $main_wrap_class = 'yat-col-12 yat-col-md-8';
+        if (!is_single()) {
+            $class = 'yatra-page-wrapper ' . get_option('yatra_archive_template', 'template-default');
+            $main_wrap_class = 'yat-col-12 yat-col-md-12';
+            ?>
+            <div id="yatra-page-wrapper" class="<?php echo esc_attr($class); ?>">
+            <?php
+        }
+            ?>
+
             <div class="yat-container">
             <div class="yat-row">
-            <div class="yatri-main-wrap yat-col-12 yat-col-md-8" id="main-wrap">
+        <div class="yatri-main-wrap <?php echo esc_attr($main_wrap_class); ?>" id="main-wrap">
 
 
         <div <?php yatri_main_wrap_inner_class(); ?>>
@@ -70,9 +81,16 @@ if (!class_exists('Yatri_Yatra')) :
 
             echo '</div></div>';
 
-            get_sidebar();
+            if (is_single()) {
+                get_sidebar();
+            }
 
-            echo '</div></div></section>';
+            echo '</div></div>';
+            if (!is_single()) {
+                echo '</div>';
+            }
+
+            echo '</section>';
         }
 
 
