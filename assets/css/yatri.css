@@ -10493,6 +10493,13 @@ body .entry-title {
 .yatra-single-meta-options p {
   margin: 0; }
 
+.yatra-single-meta-content .byline {
+  color: #4285f4; }
+  .yatra-single-meta-content .byline:before {
+    content: "\f007"; }
+  .yatra-single-meta-content .byline:hover {
+    color: #0b51c5; }
+
 .yatra-content-area .entry-title {
   margin-bottom: 10px;
   font-weight: 500; }
@@ -10500,12 +10507,14 @@ body .entry-title {
 .yatra-content-area .cat-links.destination-links a {
   margin-right: 5px; }
   .yatra-content-area .cat-links.destination-links a:before {
-    content: '\f124'; }
+    content: "\f124";
+    font-weight: 600; }
 
 .yatra-content-area .cat-links.activity-links a {
   margin-right: 5px; }
   .yatra-content-area .cat-links.activity-links a:before {
-    content: '\f0ae'; }
+    content: '\f0ae';
+    font-weight: 600; }
 
 .home-contant-area .yatra-widget-header {
   max-width: 660px;
