@@ -10496,7 +10496,8 @@ body .entry-title {
 .yatra-single-meta-content .byline {
   color: #4285f4; }
   .yatra-single-meta-content .byline:before {
-    content: "\f007"; }
+    content: "\f007";
+    color: inherit; }
   .yatra-single-meta-content .byline:hover {
     color: #0b51c5; }
 

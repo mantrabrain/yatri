@@ -6,7 +6,7 @@ project.properties
 .project
 .settings*
 .idea
-yatri.zip
+#yatri.zip
 
 # Grunt
 /node_core/modules/
