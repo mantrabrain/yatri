@@ -1,0 +1,60 @@
+.yatra-single-meta-options {
+
+  h3 {
+    text-transform: uppercase;
+  }
+  th {
+    font-weight: 500;
+    padding-left: 0;
+  }
+  del {
+    color: #bbb;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.yatra-content-area {
+  .entry-title {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .cat-links {
+    &.destination-links {
+      a {
+        margin-right: 5px;
+        &:before {
+          content: '\f124';
+         }
+      }
+    }
+    &.activity-links {
+      a {
+        margin-right: 5px;
+        &:before {
+          content: '\f0ae';
+         }
+      }
+    }
+  }
+}
+
+.home-contant-area {
+  .yatra-widget-header {
+    max-width: 660px;
+    margin: 0 auto 60px;
+    text-align: center;
+    .widget-title {
+      font-size: 30px;
+      border-bottom: 1px solid #ddd;
+      &:after {
+        width: 200px;
+        height: 3px;
+        bottom: -2px;
+        left: 50%;
+        margin-left: -100px;
+      }
+    }
+  }
+}

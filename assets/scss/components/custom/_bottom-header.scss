@@ -1,0 +1,22 @@
+.main-header {
+  .yatri-section-site-branding {
+    &.logo-title-text {
+      a.custom-logo-link {
+        //float: left;
+      }
+    }
+  }
+  /* .primary-nav-container, .yatri-search-form-container {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }*/
+  .yatri-section-container {
+    &.yatri-grid-3 {
+      text-align: right;
+    }
+    &.yatri-grid-2 {
+      text-align: center;
+    }
+  }
+}

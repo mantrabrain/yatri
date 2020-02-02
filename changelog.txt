@@ -1,0 +1,8 @@
+= 1.0.3 | 2020/01/23 =
+- Improvement: Custom control added and other improvement
+= 1.0.2 | 2020/01/10 =
+- Improvement: Custom control added and other improvement
+= 1.0.1 | 2019/12/30 =
+- Improvement: Custom control added with sanitization issue fixed
+= 1.0.0 | 2019/09/25 =
+- Initial release
