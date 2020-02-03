@@ -5895,10 +5895,6 @@ p {
   margin: 0 0 20px;
   word-wrap: break-word; }
 
-dfn, cite, em, i {
-  font-style: italic;
-  color: #212121; }
-
 blockquote, .wp-block-quote,
 pre {
   background-color: #f1f1f1;

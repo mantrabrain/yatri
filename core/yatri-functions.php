@@ -303,9 +303,21 @@ if (!function_exists('yatri_single_post_content_order')) {
             'yatri_single_post_content_default_order',
             array(
 
+
                 'thumbnail' =>
                     array(
                         'title' => __('Thumbnail', 'yatri'),
+                        'disable' => false
+
+                    ),
+                'post_title' => array(
+                    'title' => __('Post Title', 'yatri'),
+                    'disable' => false
+
+                ),
+                'post_meta' =>
+                    array(
+                        'title' => __('Post Meta', 'yatri'),
                         'disable' => false
 
                     ),
@@ -315,15 +327,10 @@ if (!function_exists('yatri_single_post_content_order')) {
                         'disable' => false
 
                     ),
-                'post_meta' =>
-                    array(
-                        'title' => __('Post Meta', 'yatri'),
-                        'disable' => false
 
-                    ),
                 'tags' => array(
                     'title' => __('Tags', 'yatri'),
-                    'disable' => false
+                    'disable' => true
 
                 ),
                 'categories' => array(
@@ -331,11 +338,7 @@ if (!function_exists('yatri_single_post_content_order')) {
                     'disable' => false
 
                 ),
-                'post_title' => array(
-                    'title' => __('Post Title', 'yatri'),
-                    'disable' => false
 
-                ),
                 'author_bio' => array(
                     'title' => __('Author Bio', 'yatri'),
                     'disable' => false
