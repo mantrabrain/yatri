@@ -68,7 +68,6 @@ class Yatri_Customizer
     {
 
 
-
     }
 
     /**
@@ -101,9 +100,9 @@ class Yatri_Customizer
         // Move custom logo setting
         $wp_customize->get_control('custom_logo')->section = 'yatri_section_logo_options';
         $wp_customize->get_control('blogname')->section = 'yatri_section_logo_options';
-        $wp_customize->get_setting( 'blogname' )->transport        = 'postMessage';
+        $wp_customize->get_setting('blogname')->transport = 'postMessage';
         $wp_customize->get_control('blogdescription')->section = 'yatri_section_logo_options';
-        $wp_customize->get_setting( 'blogdescription' )->transport        = 'postMessage';
+        $wp_customize->get_setting('blogdescription')->transport = 'postMessage';
         $wp_customize->get_control('display_header_text')->section = 'yatri_section_logo_options';
         $wp_customize->get_control('site_icon')->section = 'yatri_section_logo_options';
 
@@ -129,6 +128,7 @@ class Yatri_Customizer
 
         // Top Header Options
 
+        require_once YATRI_THEME_DIR . '/core/customizer/sections/colors.php';
         require_once YATRI_THEME_DIR . '/core/customizer/sections/theme-base-options.php';
         require_once YATRI_THEME_DIR . '/core/customizer/sections/header-options.php';
         require_once YATRI_THEME_DIR . '/core/customizer/sections/blog-archive-page-options.php';

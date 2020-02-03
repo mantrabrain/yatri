@@ -704,6 +704,83 @@ if (!function_exists('yatri_get_other_dynamic_css')) {
 
 
 }
+if (!function_exists('yatri_get_color_css')) {
+
+    function yatri_get_color_css()
+    {
+        $css = '';
+
+        $primary_color = yatri_get_option('primary_color');
+
+        $secondary_color = yatri_get_option('secondary_color');
+
+
+        if ($primary_color != '#4285f4') {
+
+            $css .= '
+            .wrap-detail-page form input[type="submit"],
+            .wrap-detail-page .wpcf7 input[type="submit"],
+            .wrap-detail-page .yatri-contact-form-area .form-group input.form-control[type="submit"],
+            .widget.widget_calendar tbody a
+            {
+                background-color:' . $primary_color . ';
+            }
+            ';
+            $css .= '
+            .wrap-detail-page .wpcf7 input[type="submit"],
+            .wrap-detail-page .yatri-contact-form-area .form-group input.form-control[type="submit"]
+            {
+                border-color:' . $primary_color . ';
+            }
+            ';
+            $css .= '
+            .yatra-single-meta-content .byline,
+            .header-bottom-right .cart-icon a,
+            .footer-menu ul li a,
+            .widget li
+            {
+                color:' . $primary_color . ';
+            }
+            ';
+        }
+
+        if ($secondary_color != '#0b51c5') {
+            
+            $css .= '
+            .main-navigation nav > ul > li > a:hover, .main-navigation nav > ul > li > a:active, .main-navigation nav > ul > li > a:focus
+            {
+                color:' . $secondary_color . ';
+            }
+            ';
+        }
+
+        return $css;
+
+
+    }
+}
+if (!function_exists('yatri_dynamc_css_array_parser')) {
+
+    function yatri_dynamc_css_array_parser($array = array())
+    {
+        $css = '';
+
+        foreach ($array as $selector => $css_properties) {
+
+            $css .= $selector . ' { ';
+
+            foreach ($css_properties as $property_index => $property_value) {
+
+                $css .= $property_index . ':' . $property_value . ';';
+            }
+
+            $css .= ' } ';
+        }
+
+
+        return $css;
+    }
+}
 if (!function_exists('yatri_get_all_dynamic_css')) :
 
     function yatri_get_all_dynamic_css()
@@ -713,7 +790,10 @@ if (!function_exists('yatri_get_all_dynamic_css')) :
 
         $other_dynamic_css = yatri_get_other_dynamic_css();
 
-        $all_dynamic_css = yatri_minify_css($modal_css . $other_dynamic_css);
+        $color_css = yatri_get_color_css();
+
+
+        $all_dynamic_css = yatri_minify_css($color_css . $modal_css . $other_dynamic_css);
 
         return apply_filters('yatri_all_dynamic_css', $all_dynamic_css);
     }

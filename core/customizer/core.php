@@ -459,7 +459,6 @@ if (!function_exists('yatri_get_default_theme_options')) :
      */
     function yatri_get_default_theme_options()
     {
-
         $defaults = array();
 
         $header_defaults = yatri_get_header_theme_options();
@@ -467,7 +466,8 @@ if (!function_exists('yatri_get_default_theme_options')) :
         $defaults = array_merge($defaults, $header_defaults);
 
         //primary color
-        $defaults['primary_color'] = '#0188cc';
+        $defaults['primary_color'] = '#4285f4';
+        $defaults['secondary_color'] = '#0b51c5';
 
         // Header templates
         $defaults['header_templates'] = '';
