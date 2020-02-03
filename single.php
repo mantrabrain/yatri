@@ -12,7 +12,7 @@ get_header();
 do_action('yatri_before_main_content');
 
 ?>
-<section class="wrapper block-grid site-content" id="main-content">
+<section class="wrapper block-grid yatri-site-content-area site-content" id="main-content">
     <div class="yat-container">
         <div class="yat-row">
             <?php

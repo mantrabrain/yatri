@@ -17,7 +17,7 @@ class Yatri_Section_Wrapper_Config
                     'label' => __('Section Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
-                    'selector' => "{$parent_selector} section.wrapper.site-content",
+                    'selector' => "{$parent_selector} section.wrapper.site-content.yatri-site-content-area",
                     'css_property' => 'background-color:{{value}};'
                 ),
                 array(
@@ -26,7 +26,7 @@ class Yatri_Section_Wrapper_Config
                     'label' => __('Section Background Image', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
-                    'selector' => "{$parent_selector} section.wrapper.site-content",
+                    'selector' => "{$parent_selector} section.wrapper.site-content.yatri-site-content-area",
                     'css_property' => 'background-image:{{value}};'
                 ),
                 array(
@@ -35,7 +35,7 @@ class Yatri_Section_Wrapper_Config
                     'label' => __('Container Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
-                    'selector' => "{$parent_selector} section.wrapper.site-content .yat-container",
+                    'selector' => "{$parent_selector} section.wrapper.site-content.yatri-site-content-area .yat-container",
                     'css_property' => 'background-color:{{value}};'
                 ),
             ),
@@ -68,7 +68,7 @@ class Yatri_Section_Wrapper_Config
                             )
 
                         ),
-                        'selector' => "{$parent_selector} section.wrapper.site-content",
+                        'selector' => "{$parent_selector} section.wrapper.site-content.yatri-site-content-area",
 
 
                     ),
@@ -112,7 +112,7 @@ class Yatri_Section_Wrapper_Config
                             )
 
                         ),
-                        'selector' => "{$parent_selector} section.wrapper.site-content",
+                        'selector' => "{$parent_selector} section.wrapper.site-content.yatri-site-content-area",
 
 
                     ),
@@ -182,9 +182,9 @@ class Yatri_Section_Wrapper_Config
                             ),
 
                         ),
-                        'selector' => "body.yatri-global-layout-full_width {$parent_selector} section.wrapper.site-content  .yat-container, 
-                        body.yatri-global-layout-boxed {$parent_selector} section.wrapper.site-content .yat-container,
-                 {$parent_selector} section.wrapper.site-content .yat-container",
+                        'selector' => "body.yatri-global-layout-full_width {$parent_selector} section.wrapper.site-content.yatri-site-content-area  .yat-container, 
+                        body.yatri-global-layout-boxed {$parent_selector} section.wrapper.site-content.yatri-site-content-area .yat-container,
+                 {$parent_selector} section.wrapper.site-content.yatri-site-content-area .yat-container",
                     ),
 
                     array(
@@ -202,7 +202,7 @@ class Yatri_Section_Wrapper_Config
                             'top' => 0,
                             'bottom' => 0
                         ),
-                        'selector' => "{$parent_selector} section.wrapper.site-content",
+                        'selector' => "{$parent_selector} section.wrapper.site-content.yatri-site-content-area",
                     )
                 ),
 

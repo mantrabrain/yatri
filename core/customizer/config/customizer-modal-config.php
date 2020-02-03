@@ -1338,7 +1338,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
     $fields['yatri_breadcrumb_style_design'] = Yatri_Section_Breadcrumb_Config::get_design_style_config();
 
     // Top Header Configurations
-    $fields['top_header_design'] = Yatri_Section_Header_Config::get_design_style_config('top_header_design', '.top-header');
+    $fields['top_header_design'] = Yatri_Section_Header_Config::get_design_style_config('top_header_design', '.top-header.yatri-header-item');
 
     // Top Header Navigation Menu Settings
 
@@ -1363,7 +1363,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
 
     // Top Header Configurations
 
-    $fields['mid_header_design'] = Yatri_Section_Header_Config::get_design_style_config('mid_header_design', '.yatri-mid-header');
+    $fields['mid_header_design'] = Yatri_Section_Header_Config::get_design_style_config('mid_header_design', '.yatri-mid-header.yatri-header-item');
 
     // Top Header Navigation Menu Settings
 
@@ -1389,7 +1389,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
 
     // Bottom Header Configurations
 
-    $fields['bottom_header_design'] = Yatri_Section_Header_Config::get_design_style_config('bottom_header_design', '.bottom-header');
+    $fields['bottom_header_design'] = Yatri_Section_Header_Config::get_design_style_config('bottom_header_design', '.bottom-header.yatri-header-item');
 
     $fields['bottom_header_navigation_menu_design'] = Yatri_Section_Nav_Menu_Config::get_design_style_config('bottom_header_navigation_menu_design', '.bottom-header');
 
@@ -1447,12 +1447,12 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
 
     $fields['right_sidebar_design_style'] = Yatri_Section_Sidebar_Config::get_design_style_config('right_sidebar_design_style', 'body .yatri-sidebar.yatri-sidebar-right .sidebar');
 
-    $fields['footer_widgets_section_design_style'] = Yatri_Section_Header_Config::get_design_style_config('footer_widgets_section_design_style', '.top-footer');
+    $fields['footer_widgets_section_design_style'] = Yatri_Section_Header_Config::get_design_style_config('footer_widgets_section_design_style', '.site-footer .top-footer.yatri-top-footer-area');
 
     $fields['footer_widgets_area_design_style'] = Yatri_Section_Sidebar_Config::get_design_style_config('footer_widgets_area_design_style', '.top-footer .footer-widget-wrap .footer-widget-sidebar');
 
     // Footer Bottom
-    $fields['bottom_footer_section_design_style'] = Yatri_Section_Header_Config::get_design_style_config('bottom_footer_section_design_style', '.bottom-footer');
+    $fields['bottom_footer_section_design_style'] = Yatri_Section_Header_Config::get_design_style_config('bottom_footer_section_design_style', '.site-footer  .bottom-footer.yatri-bottom-footer-area');
 
     $fields['bottom_footer_navigation_menu_design'] = Yatri_Section_Footer_Nav_Menu_Config::get_design_style_config('bottom_footer_navigation_menu_design', '.bottom-footer');
 

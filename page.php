@@ -14,7 +14,7 @@ get_header();
 
 do_action('yatri_before_main_content');
 ?>
-    <section class="wrapper wrap-detail-page site-content">
+    <section class="wrapper wrap-detail-page yatri-site-content-area site-content">
         <div class="yat-container">
             <div class="yat-row">
 

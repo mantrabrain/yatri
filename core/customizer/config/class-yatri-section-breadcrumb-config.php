@@ -17,7 +17,7 @@ class Yatri_Section_Breadcrumb_Config
                     'label' => __('Section Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
-                    'selector' => '.section-breadcrumb-wrap',
+                    'selector' => '.section-breadcrumb-wrap.yatri-breadcrumb-wrap, body.yatri-global-layout-boxed .section-breadcrumb-wrap.yatri-breadcrumb-wrap, body.yatri-global-layout-full_width .section-breadcrumb-wrap.yatri-breadcrumb-wrap',
                     'css_property' => 'background-color:{{value}};'
                 ),
                 array(
@@ -25,7 +25,7 @@ class Yatri_Section_Breadcrumb_Config
                     'type' => 'image',
                     'label' => __('Section Background Image', 'yatri'),
                     'description' => '',
-                    'selector' => '.section-breadcrumb-wrap',
+                    'selector' => '.section-breadcrumb-wrap.yatri-breadcrumb-wrap',
                     'css_property' => 'background-image:{{value}};'
                 ),
                 array(
@@ -34,8 +34,8 @@ class Yatri_Section_Breadcrumb_Config
                     'label' => __('Section Overlay Background', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
-                    'additional_css' => '.section-breadcrumb-wrap .breadcrumb-wrap{position:relative;z-index:1;}',
-                    'selector' => '.section-breadcrumb-wrap',
+                    'additional_css' => '.section-breadcrumb-wrap.yatri-breadcrumb-wrap .breadcrumb-wrap{position:relative;z-index:1;}',
+                    'selector' => '.section-breadcrumb-wrap.yatri-breadcrumb-wrap',
                     'css_property' => 'background-color:{{value}};'
                 ),
                 array(
@@ -44,7 +44,7 @@ class Yatri_Section_Breadcrumb_Config
                     'label' => __('Container Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
-                    'selector' => '.section-breadcrumb-wrap .yat-container',
+                    'selector' => '.section-breadcrumb-wrap.yatri-breadcrumb-wrap .yat-container',
                     'css_property' => 'background-color:{{value}};'
                 ),
                 array(
@@ -109,7 +109,7 @@ class Yatri_Section_Breadcrumb_Config
                             'icon' => 'dashicons dashicons-editor-alignright',
                         )
                     ),
-                    'selector' => '.section-breadcrumb-wrap',
+                    'selector' => '.section-breadcrumb-wrap.yatri-breadcrumb-wrap',
 
                     'css_property' => 'text-align:{{value}};'
                 ),
@@ -179,7 +179,7 @@ class Yatri_Section_Breadcrumb_Config
                         ),
 
                     ),
-                    'selector' => '.section-breadcrumb-wrap',
+                    'selector' => '.section-breadcrumb-wrap.yatri-breadcrumb-wrap',
                 ),
                 array(
                     'name' => 'yatri_breadcrumb_style_design_container_padding',
@@ -247,9 +247,9 @@ class Yatri_Section_Breadcrumb_Config
                         ),
 
                     ),
-                    'selector' => 'body.yatri-global-layout-full_width .section-breadcrumb-wrap  .yat-container, 
-                    body.yatri-global-layout-boxed .section-breadcrumb-wrap  .yat-container,
-                 .section-breadcrumb-wrap .yat-container',
+                    'selector' => 'body.yatri-global-layout-full_width .section-breadcrumb-wrap.yatri-breadcrumb-wrap  .yat-container, 
+                    body.yatri-global-layout-boxed .section-breadcrumb-wrap.yatri-breadcrumb-wrap  .yat-container,
+                 .section-breadcrumb-wrap.yatri-breadcrumb-wrap .yat-container',
                 ),
                 array(
                     'name' => 'yatri_breadcrumb_style_design_border_heading',
@@ -266,7 +266,7 @@ class Yatri_Section_Breadcrumb_Config
                         'top' => 0,
                         'bottom' => 0
                     ),
-                    'selector' => '.section-breadcrumb-wrap',
+                    'selector' => '.section-breadcrumb-wrap.yatri-breadcrumb-wrap',
 
                 ),
 

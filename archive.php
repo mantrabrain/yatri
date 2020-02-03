@@ -20,7 +20,7 @@ do_action('yatri_before_main_content');
 
 ?>
     <section
-            class="wrapper block-grid site-content <?php echo esc_attr(yatri_get_option('blog_archive_page_content_layout')) ?>"
+            class="wrapper block-grid yatri-site-content-area site-content <?php echo esc_attr(yatri_get_option('blog_archive_page_content_layout')) ?>"
             id="main-content">
         <div class="yat-container">
             <div class="yat-row">

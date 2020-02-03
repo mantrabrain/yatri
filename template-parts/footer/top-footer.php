@@ -1,4 +1,4 @@
-<div class="top-footer">
+<div class="top-footer yatri-top-footer-area">
     <div class="yat-container">
         <?php
         $total_columns = (absint(yatri_get_option('footer_widgets_column')));

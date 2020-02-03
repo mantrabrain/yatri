@@ -479,6 +479,7 @@
                 switch (field_type) {
                     case "color":
                         var value = $(this).find('.yatri-change-by-js.yatri-color-picker').val();
+                        value = '' == value ? 'initial' : value;
                         devicewise_css_text = '' == value ? '' : css_property.replace("{{value}}", value);
                         break;
                     case "overlay":

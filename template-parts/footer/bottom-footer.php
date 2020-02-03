@@ -1,4 +1,4 @@
-<div class="bottom-footer">
+<div class="bottom-footer yatri-bottom-footer-area">
     <div class="yat-container">
         <div class="yat-row align-items-center">
 

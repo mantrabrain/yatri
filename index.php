@@ -18,7 +18,7 @@ get_header();
  */
 do_action('yatri_before_main_content');
 ?>
-    <section class="wrapper block-grid site-content <?php echo esc_attr(yatri_get_option('blog_archive_page_content_layout'));?>" id="main-content">
+    <section class="wrapper block-grid site-content yatri-site-content-area <?php echo esc_attr(yatri_get_option('blog_archive_page_content_layout'));?>" id="main-content">
         <div class="yat-container">
             <div class="yat-row">
                 <?php
