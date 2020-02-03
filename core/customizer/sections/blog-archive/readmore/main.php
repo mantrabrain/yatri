@@ -4,6 +4,8 @@ $wp_customize->add_setting(yatri_get_customizer_id('blog_archive_page_readmore_t
     array(
         'default' => $default['blog_archive_page_readmore_text'],
         'sanitize_callback' => 'sanitize_text_field',
+        'transport' => 'postMessage',
+
     )
 );
 $wp_customize->add_control(yatri_get_customizer_id('blog_archive_page_readmore_text'),
@@ -19,6 +21,8 @@ $wp_customize->add_setting(yatri_get_customizer_id('blog_archive_page_readmore_t
     array(
         'default' => $default['blog_archive_page_readmore_text_icon'],
         'sanitize_callback' => 'sanitize_text_field',
+        'transport' => 'postMessage',
+
     )
 );
 

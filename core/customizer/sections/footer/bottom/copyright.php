@@ -30,7 +30,9 @@ $wp_customize->add_control(
 $wp_customize->add_setting(yatri_get_customizer_id('bottom_footer_copyright_content'),
     array(
         'default' => $default['bottom_footer_copyright_content'],
-        'sanitize_callback' => 'wp_kses_post'
+        'sanitize_callback' => 'wp_kses_post',
+        'transport' => 'postMessage',
+
 
 
     )

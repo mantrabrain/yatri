@@ -28,6 +28,8 @@ $wp_customize->add_setting(yatri_get_customizer_id('blog_archive_page_meta_conte
     array(
         'default' => $default['blog_archive_page_meta_content_separator'],
         'sanitize_callback' => 'sanitize_text_field',
+        'transport' => 'postMessage',
+
     )
 );
 $wp_customize->add_control(yatri_get_customizer_id('blog_archive_page_meta_content_separator'),
@@ -45,6 +47,8 @@ $wp_customize->add_setting(yatri_get_customizer_id('blog_archive_page_meta_conte
     array(
         'default' => $default['blog_archive_page_meta_content_separator_width'],
         'sanitize_callback' => 'yatri_sanitize_slider',
+        'transport' => 'postMessage',
+
 
     )
 );

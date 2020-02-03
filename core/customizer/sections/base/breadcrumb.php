@@ -57,6 +57,7 @@ $wp_customize->add_setting(yatri_get_customizer_id('breadcrumb_home_text'),
     array(
         'default' => $default['breadcrumb_home_text'],
         'sanitize_callback' => 'sanitize_text_field',
+        'transport' 			=> 'postMessage',
     )
 );
 $wp_customize->add_control(yatri_get_customizer_id('breadcrumb_home_text'),

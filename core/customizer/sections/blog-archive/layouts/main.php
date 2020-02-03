@@ -26,6 +26,7 @@ $wp_customize->add_setting(yatri_get_customizer_id('blog_archive_sidebar_width')
     array(
         'default' => $default['blog_archive_sidebar_width'],
         'sanitize_callback' => 'yatri_sanitize_slider',
+        'transport' => 'postMessage',
     )
 );
 $wp_customize->add_control(

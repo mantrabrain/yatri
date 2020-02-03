@@ -28,6 +28,7 @@ $wp_customize->add_setting(yatri_get_customizer_id('bottom_header_button_icon'),
     array(
         'default' => $default['bottom_header_button_icon'],
         'sanitize_callback' => 'sanitize_text_field',
+        'transport' => 'postMessage',
     )
 );
 
@@ -50,6 +51,7 @@ $wp_customize->add_setting(yatri_get_customizer_id('bottom_header_button_link'),
     array(
         'default' => $default['bottom_header_button_link'],
         'sanitize_callback' => 'esc_url_raw',
+        'transport' => 'postMessage',
     )
 );
 $wp_customize->add_control(yatri_get_customizer_id('bottom_header_button_link'),
@@ -68,6 +70,7 @@ $wp_customize->add_setting(yatri_get_customizer_id('bottom_header_button_target'
     array(
         'default' => $default['bottom_header_button_target'],
         'sanitize_callback' => 'yatri_sanitize_select',
+        'transport' => 'postMessage',
     )
 );
 
@@ -94,6 +97,7 @@ $wp_customize->add_setting(yatri_get_customizer_id('bottom_header_button_label')
     array(
         'default' => $default['bottom_header_button_label'],
         'sanitize_callback' => 'sanitize_text_field',
+        'transport' => 'postMessage',
     )
 );
 $wp_customize->add_control(yatri_get_customizer_id('bottom_header_button_label'),

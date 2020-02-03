@@ -101,7 +101,9 @@ class Yatri_Customizer
         // Move custom logo setting
         $wp_customize->get_control('custom_logo')->section = 'yatri_section_logo_options';
         $wp_customize->get_control('blogname')->section = 'yatri_section_logo_options';
+        $wp_customize->get_setting( 'blogname' )->transport        = 'postMessage';
         $wp_customize->get_control('blogdescription')->section = 'yatri_section_logo_options';
+        $wp_customize->get_setting( 'blogdescription' )->transport        = 'postMessage';
         $wp_customize->get_control('display_header_text')->section = 'yatri_section_logo_options';
         $wp_customize->get_control('site_icon')->section = 'yatri_section_logo_options';
 

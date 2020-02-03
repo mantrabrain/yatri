@@ -30,7 +30,8 @@ $wp_customize->add_control(
 $wp_customize->add_setting(yatri_get_customizer_id('bottom_header_custom_html_content'),
     array(
         'default' => $default['bottom_header_custom_html_content'],
-        'sanitize_callback' => 'wp_kses_post'
+        'sanitize_callback' => 'wp_kses_post',
+        'transport' => 'postMessage',
 
 
     )
@@ -58,7 +59,7 @@ $wp_customize->add_setting(yatri_get_customizer_id('bottom_header_custom_html_de
     array(
         'default' => $default['bottom_header_custom_html_design'],
         'sanitize_callback' => array('Mantrabrain_Theme_Helper', 'sanitize_modal'),
-        'transport' 			=> 'postMessage',
+        'transport' => 'postMessage',
 
 
     )

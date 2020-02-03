@@ -28,6 +28,8 @@ $wp_customize->add_setting(yatri_get_customizer_id('top_header_button_icon'),
     array(
         'default' => $default['top_header_button_icon'],
         'sanitize_callback' => 'sanitize_text_field',
+        'transport' => 'postMessage',
+
     )
 );
 
@@ -50,6 +52,8 @@ $wp_customize->add_setting(yatri_get_customizer_id('top_header_button_link'),
     array(
         'default' => $default['top_header_button_link'],
         'sanitize_callback' => 'esc_url_raw',
+        'transport' => 'postMessage',
+
     )
 );
 $wp_customize->add_control(yatri_get_customizer_id('top_header_button_link'),
@@ -68,6 +72,8 @@ $wp_customize->add_setting(yatri_get_customizer_id('top_header_button_target'),
     array(
         'default' => $default['top_header_button_target'],
         'sanitize_callback' => 'yatri_sanitize_select',
+        'transport' => 'postMessage',
+
     )
 );
 
@@ -94,6 +100,8 @@ $wp_customize->add_setting(yatri_get_customizer_id('top_header_button_label'),
     array(
         'default' => $default['top_header_button_label'],
         'sanitize_callback' => 'sanitize_text_field',
+        'transport' => 'postMessage',
+
     )
 );
 $wp_customize->add_control(yatri_get_customizer_id('top_header_button_label'),
@@ -110,7 +118,7 @@ $wp_customize->add_setting(yatri_get_customizer_id('top_header_button_style_desi
     array(
         'default' => $default['top_header_button_style_design'],
         'sanitize_callback' => array('Mantrabrain_Theme_Helper', 'sanitize_modal'),
-        'transport' 			=> 'postMessage',
+        'transport' => 'postMessage',
 
 
     )

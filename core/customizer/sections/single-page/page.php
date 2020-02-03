@@ -5,7 +5,7 @@ $wp_customize->add_setting(yatri_get_customizer_id('page_design_style'),
     array(
         'default' => $default['page_design_style'],
         'sanitize_callback' => array('Mantrabrain_Theme_Helper', 'sanitize_modal'),
-        'transport' 			=> 'postMessage',
+        'transport' => 'postMessage',
 
 
     )
@@ -89,6 +89,8 @@ $wp_customize->add_setting(yatri_get_customizer_id('page_sidebar_width'),
     array(
         'default' => $default['page_sidebar_width'],
         'sanitize_callback' => 'yatri_sanitize_slider',
+        'transport' => 'postMessage',
+
     )
 );
 $wp_customize->add_control(
@@ -113,7 +115,7 @@ $wp_customize->add_setting(yatri_get_customizer_id('page_article_design_styling'
     array(
         'default' => $default['page_article_design_styling'],
         'sanitize_callback' => array('Mantrabrain_Theme_Helper', 'sanitize_modal'),
-        'transport' 			=> 'postMessage',
+        'transport' => 'postMessage',
 
 
     )

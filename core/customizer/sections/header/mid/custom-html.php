@@ -30,7 +30,8 @@ $wp_customize->add_control(
 $wp_customize->add_setting(yatri_get_customizer_id('mid_header_custom_html_content'),
     array(
         'default' => $default['mid_header_custom_html_content'],
-        'sanitize_callback' => 'wp_kses_post'
+        'sanitize_callback' => 'wp_kses_post',
+        'transport' => 'postMessage',
 
 
     )
