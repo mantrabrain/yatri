@@ -607,8 +607,8 @@ if (!function_exists('yatri_get_recommanded_plugins')) {
         $plugins = array(
 
             array(
-                'name' => esc_html__('Mantrabrain Starter Sites', 'yatri'),
-                'slug' => 'mantrabrain-starter-sites',
+                'name' => esc_html__('Yatri Tools', 'yatri'),
+                'slug' => 'yatri-tools',
                 'required' => false,
             ),
 
@@ -828,36 +828,50 @@ if (!function_exists('yatri_get_post_id')) {
         return apply_filters('yatri_get_post_id', $post_id);
     }
 }
-if ( ! function_exists( 'yatri_minify_css' ) ) {
+if (!function_exists('yatri_minify_css')) {
 
-    function yatri_minify_css( $css = '' ) {
+    function yatri_minify_css($css = '')
+    {
 
         // Return if no CSS
-        if ( ! $css ) return;
+        if (!$css) return;
 
         // Normalize whitespace
-        $css = preg_replace( '/\s+/', ' ', $css );
+        $css = preg_replace('/\s+/', ' ', $css);
 
         // Remove ; before }
-        $css = preg_replace( '/;(?=\s*})/', '', $css );
+        $css = preg_replace('/;(?=\s*})/', '', $css);
 
         // Remove space after , : ; { } */ >
-        $css = preg_replace( '/(,|:|;|\{|}|\*\/|>) /', '$1', $css );
+        $css = preg_replace('/(,|:|;|\{|}|\*\/|>) /', '$1', $css);
 
         // Remove space before , ; { }
-        $css = preg_replace( '/ (,|;|\{|})/', '$1', $css );
+        $css = preg_replace('/ (,|;|\{|})/', '$1', $css);
 
         // Strips leading 0 on decimal values (converts 0.5px into .5px)
-        $css = preg_replace( '/(:| )0\.([0-9]+)(%|em|ex|px|in|cm|mm|pt|pc)/i', '${1}.${2}${3}', $css );
+        $css = preg_replace('/(:| )0\.([0-9]+)(%|em|ex|px|in|cm|mm|pt|pc)/i', '${1}.${2}${3}', $css);
 
         // Strips units if value is 0 (converts 0px to 0)
-        $css = preg_replace( '/(:| )(\.?)0(%|em|ex|px|in|cm|mm|pt|pc)/i', '${1}0', $css );
+        $css = preg_replace('/(:| )(\.?)0(%|em|ex|px|in|cm|mm|pt|pc)/i', '${1}0', $css);
 
         // Trim
-        $css = trim( $css );
+        $css = trim($css);
 
         // Return minified CSS
         return $css;
 
     }
+}
+
+if (!function_exists('yatri_theme_branding')) {
+
+    function yatri_theme_branding()
+    {
+
+        $return = esc_html__('Yatri', 'oceanwp');
+
+        // Return and apply filters for child theming
+        return apply_filters('yatri_theme_branding', $return);
+    }
+
 }

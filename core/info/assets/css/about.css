@@ -240,8 +240,8 @@
     line-height: 50px;
     text-align: center;
     text-transform: uppercase;
-    background: #f52323;
-    border-color: #f52323;
+    background: #4285f4;
+    border-color: #4285f4;
     color: #fff;
     font-weight: bold;
     font-size: 20px;
@@ -249,9 +249,13 @@
 
 .yatri-notice-wrapper .yatri-install-all-plugins:hover {
     text-decoration: none;
-    background: #c71b1b;
-    border-color: #c71b1b;
+    background: #0b51c5;
+    border-color: #0b51c5;
     color: #fff;
+}
+
+.mb-about-modules.mb-about-box-content a {
+    cursor: pointer;
 }
 
 .mb-about-modules.mb-about-box-content {

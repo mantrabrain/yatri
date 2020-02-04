@@ -5,13 +5,10 @@ class Yatri_Widgets
 {
     public function __construct()
     {
-        $this->includes();
         add_action('widgets_init', array($this, 'register_sidebar'), 5);
-        add_action('widgets_init', array($this, 'init_widgets'));
 
 
     }
-
 
 
     public function register_sidebar()
@@ -63,22 +60,6 @@ class Yatri_Widgets
 
     }
 
-    function init_widgets()
-    {
-        register_widget('Yatri_Banner_Widget');
-        register_widget('Yatri_Search_Widget');
-
-
-    }
-
-
-    public function includes()
-    {
-        require get_template_directory() . '/core/widgets/class-yatri-banner-widget.php';
-        require get_template_directory() . '/core/widgets/class-yatri-search-widget.php';
-
-
-    }
 
 }
 

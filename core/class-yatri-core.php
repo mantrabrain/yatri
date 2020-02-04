@@ -106,13 +106,7 @@ if (!class_exists('Yatri_Core')) :
 
             // Post metabox
             require_once YATRI_THEME_DIR . 'core/metabox/class-yatri-post-metabox.php';
-
-            /**
-             * Load TGMPA Configs.
-             */
-            require_once YATRI_THEME_DIR . 'core/tgmpa/class-tgm-plugin-activation.php';
-            require_once YATRI_THEME_DIR . 'core/tgmpa/tgmpa-yatri.php';
-
+            
 
             // Elementor Compatibility requires PHP 5.4 for namespaces.
             if (version_compare(PHP_VERSION, '5.4', '>=')) {

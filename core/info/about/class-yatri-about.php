@@ -18,7 +18,7 @@ class Yatri_About
             self::$_instance = new self();
             self::$_instance->url = admin_url('themes.php');
             self::$_instance->url = add_query_arg(
-                array('page' => 'yatri'),
+                array('page' => 'yatri-options'),
                 self::$_instance->url
             );
 
@@ -34,7 +34,6 @@ class Yatri_About
             add_action('yatri_about_main', array(self::$_instance, 'box_links'), 15);
 
             add_action('yatri_about_sidebar', array(self::$_instance, 'box_plugins'), 10);
-            add_action('yatri_about_sidebar', array(self::$_instance, 'box_recommend_plugins'), 20);
             add_action('yatri_about_sidebar', array(self::$_instance, 'box_community'), 25);
 
             add_action('admin_notices', array(self::$_instance, 'admin_notice'));
@@ -60,7 +59,7 @@ class Yatri_About
         $installation_details = array(
             'total_plugins' => count($yatri_all_plugins),
             'plugin' => array(),
-            'redirect' => admin_url('/themes.php?page=starter-sites')
+            'redirect' => admin_url('/themes.php?page=yatri-tools-install-demos')
         );
 
         include_once ABSPATH . 'wp-admin/includes/class-wp-upgrader.php';
@@ -153,15 +152,19 @@ class Yatri_About
         }
 
         if (
-            !isset($installation_details['plugin']['mantrabrain-starter-sites'])
+            !isset($installation_details['plugin']['yatri-tools'])
             || (
-                isset($installation_details['plugin']['mantrabrain-starter-sites']) &&
-                'active' != $installation_details['plugin']['mantrabrain-starter-sites']
+                isset($installation_details['plugin']['yatri-tools']) &&
+                'active' != $installation_details['plugin']['yatri-tools']
             )
         ) {
 
-            $installation_details['redirect'] = admin_url('/themes.php?page=yatri');
+            $installation_details['redirect'] = admin_url('/themes.php?page=yatri-options');
 
+        }
+        $is_redirect = isset($_POST['redirect']) && $_POST['redirect'] == 'no' ? false : true;
+        if (!$is_redirect) {
+            unset ($installation_details['redirect']);
         }
         wp_send_json($installation_details);
     }
@@ -254,7 +257,7 @@ class Yatri_About
             $this->title,
             $this->title,
             'manage_options',
-            'yatri',
+            'yatri-options',
             array($this, 'page')
         );
     }
@@ -266,7 +269,7 @@ class Yatri_About
      */
     function scripts($id)
     {
-        if ('appearance_page_yatri' != $id && 'themes.php' != $id) {
+        if ('appearance_page_yatri-options' != $id && 'themes.php' != $id) {
             return;
         }
 
@@ -277,7 +280,7 @@ class Yatri_About
             'nonce' => wp_create_nonce('yatri_theme_starter_site_install_nonce'),
             'admin_url' => admin_url(),
             'starter_site_install_action' => 'yatri_getting_started',
-            'redirect' => admin_url('/themes.php?page=yatri')
+            'redirect' => admin_url('/themes.php?page=yatri-options')
         );
         wp_localize_script('yatri-admin-about-js', 'yatri_about_obj', $translation);
 
@@ -448,19 +451,19 @@ class Yatri_About
         <div class="mb-about-box box-plugins">
             <div class="mb-about-box-top">
                 <span class="dashicons dashicons-admin-customizer"></span>
-                <?php _e('Yatri Starter Sites', 'yatri'); ?></div>
+                <?php _e('Yatri Tools', 'yatri'); ?></div>
             <!-- <div class="mb-about-sites-thumb">
-                <img src="<?php /*echo esc_url(get_template_directory_uri()) . '/core/info/assets/images/yatri-starter-sites.jpg'; */
+                <img src="<?php /*echo esc_url(get_template_directory_uri()) . '/core/info/assets/images/yatri-yatri-tools-install-demos.jpg'; */
             ?>">
             </div>-->
             <div class="mb-about-box-content">
-                <p><?php _e('<strong>Mantra Brain Starter Sites</strong> is free WordPress plugin from which you can import ready made site within few clicks.', 'yatri'); ?></p>
+                <p><?php _e('<strong>Yatri Tools</strong> is free WordPress plugin from which you can import ready made site within few clicks and it extend Yatri theme to next level.', 'yatri'); ?></p>
                 <?php
 
-                $plugin_slug = 'mantrabrain-starter-sites';
+                $plugin_slug = 'yatri-tools';
                 $plugin_info = array(
-                    'name' => 'mantrabrain-starter-sites',
-                    'active_filename' => 'mantrabrain-starter-sites/mantrabrain-starter-sites.php',
+                    'name' => 'yatri-tools',
+                    'active_filename' => 'yatri-tools/yatri-tools.php',
                 );
 
                 $plugin_info = wp_parse_args(
@@ -480,7 +483,7 @@ class Yatri_About
 
                 $sites_url = add_query_arg(
                     array(
-                        'page' => 'starter-sites',
+                        'page' => 'yatri-tools-install-demos',
                     ),
                     admin_url('themes.php')
                 );
@@ -505,7 +508,7 @@ class Yatri_About
                         $install_url = add_query_arg(
                             array(
                                 'action' => 'active',
-                                'plugin' => rawurlencode($active_file_name),
+                                'plugin' => ($active_file_name),
                                 'plugin_status' => 'all',
                                 'paged' => '1',
                                 '_wpnonce' => wp_create_nonce('activate-plugin_' . $active_file_name),
@@ -528,35 +531,18 @@ class Yatri_About
                         network_admin_url('plugin-install.php')
                     );
 
-                    echo '<div class="rcp">';
+                    echo '<div class="rcp" data-sites-url="' . esc_url($sites_url) . '" data-view-site-text="' . esc_attr($view_site_txt) . '">';
                     echo '<p class="action-btn plugin-card-' . esc_attr($plugin_slug) . '"><a href="' . esc_url($install_url) . '" data-slug="' . esc_attr($plugin_slug) . '" class="' . esc_attr($button_class) . '">' . $button_txt . '</a></p>'; // WPCS: XSS OK.
                     echo '<a class="plugin-detail thickbox open-plugin-details-modal" href="' . esc_url($detail_link) . '">' . esc_html__('Details', 'yatri') . '</a>';
                     echo '</div>';
                 } else {
-                    echo '<div class="rcp">';
+                    echo '<div class="rcp" data-sites-url="' . esc_url($sites_url) . '" data-view-site-text="' . esc_attr($view_site_txt) . '">';
                     echo '<p ><a href="' . esc_url($sites_url) . '" data-slug="' . esc_attr($plugin_slug) . '" class="view-site-library">' . $view_site_txt . '</a></p>'; // // WPCS: XSS OK.
                     echo '</div>';
                 }
 
                 ?>
-                <script type="text/javascript">
-                    jQuery(document).ready(function ($) {
-                        var sites_url = <?php echo json_encode($sites_url); // phpcs:ignore ?>;
-                        var view_sites = <?php echo json_encode($view_site_txt); // phpcs:ignore ?>;
-                        $('#plugin-filter .box-plugins').on('click', '.activate-now', function (e) {
-                            e.preventDefault();
-                            var button = $(this);
-                            var url = button.attr('href');
-                            button.addClass('button installing updating-message');
-                            $.get(url, function () {
-                                $('.rcp .plugin-detail').hide();
-                                button.attr('href', sites_url);
-                                button.attr('class', 'view-site-library');
-                                button.text(view_sites);
-                            });
-                        });
-                    });
-                </script>
+
             </div>
         </div>
         <?php
@@ -592,78 +578,6 @@ class Yatri_About
         return $content;
     }
 
-    function box_recommend_plugins()
-    {
-
-        $plugins_info = yatri_get_recommanded_plugins();
-
-        $html = '';
-        foreach ($plugins_info as $plugin_info) {
-            $title = $plugin_info['name'] ? $plugin_info['name'] : '';
-            $plugin_slug = $plugin_info['slug'] ? $plugin_info['slug'] : '';
-            if (!empty($title) && !empty($plugin_slug)) {
-                $status = is_dir(WP_PLUGIN_DIR . '/' . $plugin_slug);
-                $plugin_file = $this->get_plugin_file($plugin_slug);
-                if (!is_plugin_active($plugin_file)) {
-                    $html .= '<div class="mb-about-list-item">';
-                    $html .= '<p class="mb-about-list-name">' . esc_html($title) . '</p>';
-                    if ($status) {
-                        $button_class = 'activate-now';
-                        $button_txt = esc_html__('Activate', 'yatri');
-                        $url = wp_nonce_url('plugins.php?action=activate&amp;plugin=' . urlencode($plugin_file), 'activate-plugin_' . $plugin_file); // phpcs:ignore
-                    } else {
-                        $button_class = 'install-now';
-                        $button_txt = esc_html__('Install Now', 'yatri');
-                        $url = wp_nonce_url(
-                            add_query_arg(
-                                array(
-                                    'action' => 'install-plugin',
-                                    'plugin' => $plugin_slug,
-                                ),
-                                network_admin_url('update.php')
-                            ),
-                            'install-plugin_' . $plugin_slug
-                        );
-                    }
-
-                    $detail_link = add_query_arg(
-                        array(
-                            'tab' => 'plugin-information',
-                            'plugin' => $plugin_slug,
-                            'TB_iframe' => 'true',
-                            'width' => '772',
-                            'height' => '349',
-                        ),
-                        network_admin_url('plugin-install.php')
-                    );
-
-                    $class = 'action-btn plugin-card-' . $plugin_slug;
-
-                    $html .= '<div class="rcp">';
-                    $html .= '<p class="' . esc_attr($class) . '"><a href="' . esc_url($url) . '" data-slug="' . esc_attr($plugin_slug) . '" class="' . esc_attr($button_class) . '">' . $button_txt . '</a></p>';
-                    $html .= '<a class="plugin-detail thickbox open-plugin-details-modal" href="' . esc_url($detail_link) . '">' . esc_html__('Details', 'yatri') . '</a>';
-                    $html .= '</div>';
-
-                    $html .= '</div>';
-                }
-            }
-        } // end foreach
-
-        if ($html) {
-            ?>
-            <div class="mb-about-box">
-                <div class="mb-about-box-top">
-                    <span class="dashicons dashicons-admin-plugins"></span>
-                    <?php _e('Recommend Plugins', 'yatri'); ?></div>
-                <div class="mb-about-box-content mb-about-list-border">
-                    <?php
-                    echo $html; // WPCS: XSS OK.
-                    ?>
-                </div>
-            </div>
-            <?php
-        }
-    }
 
     function premium_features()
     {
