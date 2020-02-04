@@ -339,7 +339,7 @@ if (!function_exists('yatri_get_other_dynamic_css')) {
 
         $dynamic_css = '';
 
-        $dynamic_css .= yatri_get_visibility_css('.top-header .yatri-section-container.button-container .yatri-section-inner', 'top_header_button_visibility');
+        /*$dynamic_css .= yatri_get_visibility_css('.top-header .yatri-section-container.button-container .yatri-section-inner', 'top_header_button_visibility');
 
         $dynamic_css .= yatri_get_visibility_css('.top-header .yatri-section-container.site_branding-container .yatri-section-inner', 'top_header_branding_visibility');
 
@@ -406,7 +406,7 @@ if (!function_exists('yatri_get_other_dynamic_css')) {
 
         $dynamic_css .= yatri_get_visibility_css(
             '.bottom-header .yatri-section-container.social_icons-container .yatri-section-inner,
-                .bottom-header .yatri-section-container.social_icons-container .yatri-responsive-toggle-menu', 'bottom_header_social_icons_visibility');
+                .bottom-header .yatri-section-container.social_icons-container .yatri-responsive-toggle-menu', 'bottom_header_social_icons_visibility');*/
 
         // end of bottom header
         $archive_meta_separator_width = absint(yatri_get_option('blog_archive_page_meta_content_separator_width'));
@@ -690,12 +690,12 @@ if (!function_exists('yatri_get_other_dynamic_css')) {
         }
 
         // Bottom Footer
-        $dynamic_css .= yatri_get_visibility_css('.bottom-footer .yatri-section-container.button-container .yatri-section-inner', 'bottom_footer_button_visibility');
-        $dynamic_css .= yatri_get_visibility_css('.bottom-footer .yatri-section-container.copyright-container .yatri-section-inner', 'bottom_footer_copyright_visibility');
-        $dynamic_css .= yatri_get_visibility_css('.bottom-footer .yatri-section-container.custom_html-container .yatri-section-inner', 'bottom_footer_custom_html_visibility');
-        $dynamic_css .= yatri_get_visibility_css('.bottom-footer .yatri-section-container.menu-container .yatri-section-inner', 'bottom_footer_navigation_menu_visibility');
-        $dynamic_css .= yatri_get_visibility_css('.bottom-footer .yatri-section-container.office_information-container .yatri-section-inner', 'bottom_footer_office_information_visibility');
-        $dynamic_css .= yatri_get_visibility_css('.bottom-footer .yatri-section-container.social_icons-container .yatri-section-inner', 'bottom_footer_social_icons_visibility');
+        /* $dynamic_css .= yatri_get_visibility_css('.bottom-footer .yatri-section-container.button-container .yatri-section-inner', 'bottom_footer_button_visibility');
+         $dynamic_css .= yatri_get_visibility_css('.bottom-footer .yatri-section-container.copyright-container .yatri-section-inner', 'bottom_footer_copyright_visibility');
+         $dynamic_css .= yatri_get_visibility_css('.bottom-footer .yatri-section-container.custom_html-container .yatri-section-inner', 'bottom_footer_custom_html_visibility');
+         $dynamic_css .= yatri_get_visibility_css('.bottom-footer .yatri-section-container.menu-container .yatri-section-inner', 'bottom_footer_navigation_menu_visibility');
+         $dynamic_css .= yatri_get_visibility_css('.bottom-footer .yatri-section-container.office_information-container .yatri-section-inner', 'bottom_footer_office_information_visibility');
+         $dynamic_css .= yatri_get_visibility_css('.bottom-footer .yatri-section-container.social_icons-container .yatri-section-inner', 'bottom_footer_social_icons_visibility');*/
 
         //END OF BREADCRUMB //
 

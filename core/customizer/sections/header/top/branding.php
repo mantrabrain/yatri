@@ -101,9 +101,9 @@ $wp_customize->add_control(
 );
 
 // Setting hide section.
-$wp_customize->add_setting(yatri_get_customizer_id('top_header_branding_visibility'),
+$wp_customize->add_setting(yatri_get_customizer_id('top_header_site_branding_visibility'),
     array(
-        'default' => $default['top_header_branding_visibility'],
+        'default' => $default['top_header_site_branding_visibility'],
         'sanitize_callback' => array('Mantrabrain_Theme_Helper', 'sanitize_switch_group'),
     )
 );
@@ -111,7 +111,7 @@ $wp_customize->add_setting(yatri_get_customizer_id('top_header_branding_visibili
 $wp_customize->add_control(
     new Mantrabrain_Theme_Customizer_Control_Switch_Group(
         $wp_customize,
-        yatri_get_customizer_id('top_header_branding_visibility'),
+        yatri_get_customizer_id('top_header_site_branding_visibility'),
         array(
             'label' => esc_html__('Branding Visibility', 'yatri'),
             'section' => 'yatri_section_top_header_options',

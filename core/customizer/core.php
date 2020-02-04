@@ -139,6 +139,11 @@ if (!function_exists('yatri_get_header_theme_options')) :
         $defaults = array();
 // Top Header Options
         $defaults['show_top_header'] = false;
+        $defaults['top_header_visibility'] = array(
+            'desktop' => true,
+            'tablet' => true,
+            'mobile' => true
+        );
         $defaults['top_header_design'] = '{}';
         $defaults['top_header_sections'] = yatri_get_top_header_sections();
         $defaults['top_header_social_icons'] = '';
@@ -169,17 +174,17 @@ if (!function_exists('yatri_get_header_theme_options')) :
             'tablet' => true,
             'mobile' => true
         );
-        $defaults['top_header_navigation_menu_visibility'] = array(
+        $defaults['top_header_menu_visibility'] = array(
             'desktop' => true,
             'tablet' => true,
             'mobile' => true
         );
-        $defaults['top_header_branding_visibility'] = array(
+        $defaults['top_header_site_branding_visibility'] = array(
             'desktop' => true,
             'tablet' => true,
             'mobile' => true
         );
-        $defaults['top_header_offcanvas_visibility'] = array(
+        $defaults['top_header_offcanvas_menu_visibility'] = array(
             'desktop' => true,
             'tablet' => true,
             'mobile' => true
@@ -242,6 +247,11 @@ if (!function_exists('yatri_get_header_theme_options')) :
 
         // Mid Header Options
         $defaults['show_mid_header'] = false;
+        $defaults['mid_header_visibility'] = array(
+            'desktop' => true,
+            'tablet' => true,
+            'mobile' => true
+        );
         $defaults['mid_header_design'] = '{}';
         $defaults['mid_header_sections'] = yatri_get_mid_header_sections();
         $defaults['mid_header_social_icons'] = array(
@@ -271,17 +281,17 @@ if (!function_exists('yatri_get_header_theme_options')) :
             'tablet' => true,
             'mobile' => true
         );
-        $defaults['mid_header_navigation_menu_visibility'] = array(
+        $defaults['mid_header_menu_visibility'] = array(
             'desktop' => true,
             'tablet' => true,
             'mobile' => true
         );
-        $defaults['mid_header_branding_visibility'] = array(
+        $defaults['mid_header_site_branding_visibility'] = array(
             'desktop' => true,
             'tablet' => true,
             'mobile' => true
         );
-        $defaults['mid_header_offcanvas_visibility'] = array(
+        $defaults['mid_header_offcanvas_menu_visibility'] = array(
             'desktop' => true,
             'tablet' => true,
             'mobile' => true
@@ -345,6 +355,11 @@ if (!function_exists('yatri_get_header_theme_options')) :
 
         // Bottom Header
         $defaults['show_bottom_header'] = true;
+        $defaults['bottom_header_visibility'] = array(
+            'desktop' => true,
+            'tablet' => true,
+            'mobile' => true
+        );
         $defaults['bottom_header_design'] = '{}';
         $defaults['bottom_header_sections'] = yatri_get_bottom_header_sections();
         $defaults['bottom_header_social_icons'] = array(
@@ -374,17 +389,17 @@ if (!function_exists('yatri_get_header_theme_options')) :
             'tablet' => true,
             'mobile' => true
         );
-        $defaults['bottom_header_navigation_menu_visibility'] = array(
+        $defaults['bottom_header_menu_visibility'] = array(
             'desktop' => true,
             'tablet' => true,
             'mobile' => true
         );
-        $defaults['bottom_header_branding_visibility'] = array(
+        $defaults['bottom_header_site_branding_visibility'] = array(
             'desktop' => true,
             'tablet' => true,
             'mobile' => true
         );
-        $defaults['bottom_header_offcanvas_visibility'] = array(
+        $defaults['bottom_header_offcanvas_menu_visibility'] = array(
             'desktop' => true,
             'tablet' => true,
             'mobile' => true
@@ -574,7 +589,13 @@ if (!function_exists('yatri_get_default_theme_options')) :
         $defaults['footer_widgets_column'] = 4;
         $defaults['footer_widgets_section_design_style'] = "{}";
         $defaults['footer_widgets_area_design_style'] = "{}";
+
         $defaults['show_bottom_footer'] = true;
+        $defaults['bottom_footer_visibility'] = array(
+            'desktop' => true,
+            'tablet' => true,
+            'mobile' => true
+        );
         $defaults['bottom_footer_section_design_style'] = "{}";
         $defaults['bottom_footer_sections'] = yatri_get_bottom_footer_sections();
         $defaults['bottom_footer_office_info'] = array(
@@ -597,7 +618,7 @@ if (!function_exists('yatri_get_default_theme_options')) :
         );
         $defaults['bottom_footer_main_menu'] = 'bottom_footer_menu';
         $defaults['bottom_footer_navigation_menu_design'] = "{}";
-        $defaults['bottom_footer_navigation_menu_visibility'] = array(
+        $defaults['bottom_footer_menu_visibility'] = array(
             'desktop' => true,
             'tablet' => true,
             'mobile' => true

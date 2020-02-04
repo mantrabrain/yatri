@@ -11,12 +11,15 @@
       border: 1px solid #fff;
     }
   }
+
   .yatri-section-container {
-    &.yatri-grid-3 {
-      text-align: right;
-    }
+   
     &.yatri-grid-2 {
       text-align: center;
+    }
+
+    &.yatri-grid-3 {
+      text-align: right;
     }
 
     &.menu-container {

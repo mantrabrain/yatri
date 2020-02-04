@@ -1,4 +1,25 @@
-<div class="main-header bottom-header yatri-header-item">
+<?php
+$class = 'main-header bottom-header yatri-header-item';
+
+$bottom_header_visibility = yatri_get_option('bottom_header_visibility');
+
+if (!isset($bottom_header_visibility['desktop']) || (isset($bottom_header_visibility['desktop']) && !$bottom_header_visibility['desktop'])) {
+
+    $class .= ' yatri-desktop-hidden';
+}
+
+if (!isset($bottom_header_visibility['tablet']) || (isset($bottom_header_visibility['tablet']) && !$bottom_header_visibility['tablet'])) {
+
+    $class .= ' yatri-tablet-hidden';
+}
+
+if (!isset($bottom_header_visibility['mobile']) || (isset($bottom_header_visibility['mobile']) && !$bottom_header_visibility['mobile'])) {
+
+    $class .= ' yatri-mobile-hidden';
+}
+
+?>
+<div class="<?php echo esc_attr($class); ?>">
     <div class="yat-container">
         <div class="yat-row align-items-center">
 
@@ -6,17 +27,20 @@
 
             $bottom_header_sections = yatri_get_header_option('bottom_header_sections');
 
+            $column_class = yatri_section_container_col_class($bottom_header_sections, 'bottom_header');
+
+
             foreach ($bottom_header_sections as $section_index => $section_info) {
 
                 $section_id = isset($section_info['section']) ? $section_info['section'] : '';
 
                 $width = isset($section_info['width']) ? $section_info['width'] : '';
 
-                if (!empty($section_id) && ('' === $width || ('' != $width && $width > 0))) {
+                $container_class = $column_class . yatri_section_container_class($section_info, 'bottom_header', $section_index);
+
+                if (!empty($section_id)) {
 
                     $options = array();
-
-                    $container_class = 'yat-col-12 yat-col-lg-4 yatri-grid-' . (absint($section_index + 1));
 
 
                     switch ($section_id) {
@@ -88,9 +112,7 @@
 
                 } else {
 
-                    if ('' === $width || ('' != $width && $width > 0)) {
-                        echo '<div class="yatri-section-container yat-col-12 yat-col-lg-4 yatri-grid-' . absint($section_index + 1) . '"></div>';
-                    }
+                    echo '<div class="yatri-section-container ' . esc_attr($container_class) . '"></div>';
 
                 }
             }

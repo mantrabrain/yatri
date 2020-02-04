@@ -1243,6 +1243,98 @@ body.single.yatri-layout-content_plain .site-content .single-post-wrap {
     body.single.yatri-layout-content_plain .site-content .single-post-wrap .post-content .post-content-inner {
       border: none; }
 
+.yat-head-col-lg-12,
+.yat-head-col-lg-6,
+.yat-head-col-lg-4,
+.yat-head-col-md-12,
+.yat-head-col-md-6,
+.yat-head-col-md-4,
+.yat-head-col-sm-12,
+.yat-head-col-sm-6,
+.yat-head-col-sm-4 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+@media screen and (min-width: 1025px) {
+  .yat-head-col-lg-12 {
+    -ms-flex: 0 0 100%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+       -moz-box-flex: 0;
+            flex: 0 0 100%;
+    max-width: 100%; }
+  .yat-head-col-lg-6 {
+    -ms-flex: 0 0 50%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+       -moz-box-flex: 0;
+            flex: 0 0 50%;
+    max-width: 50%; }
+  .yat-head-col-lg-4 {
+    -ms-flex: 0 0 33.33%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33.33%;
+       -moz-box-flex: 0;
+            flex: 0 0 33.33%;
+    max-width: 33.33%; } }
+
+@media screen and (min-width: 569px) and (max-width: 1024px) {
+  .yat-head-col-md-12 {
+    -ms-flex: 0 0 100%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+       -moz-box-flex: 0;
+            flex: 0 0 100%;
+    max-width: 100%; }
+  .yat-head-col-md-6 {
+    -ms-flex: 0 0 50%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+       -moz-box-flex: 0;
+            flex: 0 0 50%;
+    max-width: 50%; }
+  .yat-head-col-md-4 {
+    -ms-flex: 0 0 33.33%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33.33%;
+       -moz-box-flex: 0;
+            flex: 0 0 33.33%;
+    max-width: 33.33%; } }
+
+@media screen and (max-width: 568px) {
+  .yat-head-col-sm-12 {
+    -ms-flex: 0 0 100%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+       -moz-box-flex: 0;
+            flex: 0 0 100%;
+    max-width: 100%; }
+  .yat-head-col-sm-6 {
+    -ms-flex: 0 0 50%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+       -moz-box-flex: 0;
+            flex: 0 0 50%;
+    max-width: 50%; }
+  .yat-head-col-sm-4 {
+    -ms-flex: 0 0 33.33%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33.33%;
+       -moz-box-flex: 0;
+            flex: 0 0 33.33%;
+    max-width: 33.33%; }
+  .bottom-footer .yatri-section-container {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+       -moz-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%; } }
+
 /*!
  * Font Awesome Free 5.9.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -10774,10 +10866,12 @@ body .entry-title {
   .top-header .yatri-section-button .yatri-button {
     padding: 3px 15px;
     border: 1px solid #fff; }
-  .top-header .yatri-section-container.yatri-grid-3 {
-    text-align: right; }
+  .top-header .yatri-section-container.yatri-grid-1 {
+    text-align: left; }
   .top-header .yatri-section-container.yatri-grid-2 {
     text-align: center; }
+  .top-header .yatri-section-container.yatri-grid-3 {
+    text-align: right; }
   .top-header .yatri-section-container.menu-container li a {
     color: #fff;
     padding: 5px 15px;
@@ -11281,11 +11375,11 @@ footer.site-footer .site-branding .site-title a {
     display: inline-block; }
   .top-header .yatri-section-container, .yatri-mid-header .yatri-section-container, .bottom-header .yatri-section-container {
     /*padding: 0;*/
-    -ms-flex: 0 0 33.33%;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 33.33%;
-    -moz-box-flex: 0;
-    flex: 0 0 33.33%;
+    /*  -ms-flex: 0 0 33.33%;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 33.33%;
+      -moz-box-flex: 0;
+      flex: 0 0 33.33%;*/
     position: unset; }
     .top-header .yatri-section-container .yatri-section-inner.yatri-section-menu, .top-header .yatri-section-container .yatri-section-inner.yatri-section-social-icons, .top-header .yatri-section-container .yatri-section-inner.yatri-section-office-information, .yatri-mid-header .yatri-section-container .yatri-section-inner.yatri-section-menu, .yatri-mid-header .yatri-section-container .yatri-section-inner.yatri-section-social-icons, .yatri-mid-header .yatri-section-container .yatri-section-inner.yatri-section-office-information, .bottom-header .yatri-section-container .yatri-section-inner.yatri-section-menu, .bottom-header .yatri-section-container .yatri-section-inner.yatri-section-social-icons, .bottom-header .yatri-section-container .yatri-section-inner.yatri-section-office-information {
       display: none;
@@ -11406,6 +11500,21 @@ footer.site-footer .site-branding .site-title a {
     padding: 3px 10px; }
   .bottom-footer {
     padding: 15px 0; } }
+
+.yatri-all-device-hidden {
+  display: none; }
+
+@media screen and (min-width: 1025px) {
+  .yatri-desktop-hidden {
+    display: none; } }
+
+@media screen and (min-width: 569px) and (max-width: 1024px) {
+  .yatri-tablet-hidden {
+    display: none; } }
+
+@media screen and (max-width: 568px) {
+  .yatri-mobile-hidden {
+    display: none; } }
 
 body.elementor-page.yatri_full_width_100_layout .site-content {
   margin: 0 !important;

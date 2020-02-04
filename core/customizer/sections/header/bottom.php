@@ -16,6 +16,39 @@ $wp_customize->add_setting(yatri_get_customizer_id('show_bottom_header'),
     )
 );
 
+
+// Setting visibility of header
+$wp_customize->add_setting(yatri_get_customizer_id('bottom_header_visibility'),
+    array(
+        'default' => $default['bottom_header_visibility'],
+        'sanitize_callback' => array('Mantrabrain_Theme_Helper', 'sanitize_switch_group'),
+    )
+);
+
+$wp_customize->add_control(
+    new Mantrabrain_Theme_Customizer_Control_Switch_Group(
+        $wp_customize,
+        yatri_get_customizer_id('bottom_header_visibility'),
+        array(
+            'label' => esc_html__('Main header visibility', 'yatri'),
+            'section' => 'yatri_section_bottom_header_options',
+            'priority' => 21,
+            'active_callback' => 'yatri_is_bottom_header_enabled',
+            'switch_choices' => array(
+                'desktop' => esc_html__('Hide on Desktop', 'yatri'),
+                'tablet' => esc_html__('Hide on Tablet', 'yatri'),
+                'mobile' => esc_html__('Hide on Mobile', 'yatri'),
+            ),
+            'attributes' => array(
+                'on' => esc_html__('Show', 'yatri'),
+                'off' => esc_html__('Hide', 'yatri'),
+            )
+
+
+        )
+    )
+);
+
 $wp_customize->add_control(
     new Mantrabrain_Theme_Customizer_Control_Switch(
         $wp_customize,
@@ -37,7 +70,7 @@ $wp_customize->add_setting(yatri_get_customizer_id('bottom_header_design'),
     array(
         'default' => $default['bottom_header_design'],
         'sanitize_callback' => array('Mantrabrain_Theme_Helper', 'sanitize_modal'),
-        'transport' 			=> 'postMessage',
+        'transport' => 'postMessage',
 
 
     )

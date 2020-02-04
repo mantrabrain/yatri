@@ -1593,6 +1593,10 @@ if (!class_exists('Mantrabrain_Theme_Helper')) {
             } catch (Exception $e) {
 
             }
+            $is_empty_field_count = 0;
+
+            $not_empty_count = 0;
+
             foreach ($all_field_value as $field_array) {
 
                 $section = isset($field_array['section']) ? sanitize_text_field($field_array['section']) : '';
@@ -1600,6 +1604,13 @@ if (!class_exists('Mantrabrain_Theme_Helper')) {
                 $section = in_array($section, $field_keys) ? $section : '';
 
                 $width = isset($field_array['width']) ? sanitize_text_field($field_array['width']) : '';
+
+                if ($width == '') {
+
+                    $is_empty_field_count++;
+                } else {
+                    $not_empty_count++;
+                }
 
                 $all_valid_fields[] = array(
                     'section' => $section,
@@ -1609,7 +1620,7 @@ if (!class_exists('Mantrabrain_Theme_Helper')) {
 
             }
 
-            if (count($all_field_value) == 3) {
+            if (count($all_field_value) == 3 && ($is_empty_field_count == 3 || $not_empty_count == 3)) {
 
                 return $all_valid_fields;
             }

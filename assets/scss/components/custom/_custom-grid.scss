@@ -1,5 +1,5 @@
 body {
- 
+
 }
 
 body.yatri-both-sidebar {
@@ -57,7 +57,7 @@ body.single.yatri-layout-content_boxed .yatri-main-wrap,
 body.single.yatri-global-layout-boxed .yatri-main-wrap,
 body.page.yatri-global-layout-boxed .yatri-main-wrap,
 body.page.yatri-layout-content_boxed .yatri-main-wrap {
-    padding: 20px;
+  padding: 20px;
 }
 
 body.yatri-archive-page.yatri-layout-content_plain,
@@ -75,3 +75,24 @@ body.single.yatri-layout-content_plain {
     }
   }
 }
+
+.yat-head-col-lg-12,
+.yat-head-col-lg-6,
+.yat-head-col-lg-4,
+.yat-head-col-md-12,
+.yat-head-col-md-6,
+.yat-head-col-md-4,
+.yat-head-col-sm-12,
+.yat-head-col-sm-6,
+.yat-head-col-sm-4 {
+
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@import "../device/desktop";
+@import "../device/tablet";
+@import "../device/mobile";

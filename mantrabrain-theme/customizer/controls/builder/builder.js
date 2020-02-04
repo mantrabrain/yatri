@@ -28,11 +28,17 @@
 
             var is_empty = true;
 
+            var total_column = builder_area.find('.grid input.column-width').length;
+
+            var count_filled_column = 0;
+
             $.each(builder_area.find('.grid input.column-width'), function () {
 
                 if ($(this).val() !== '') {
 
                     total_sum = total_sum + parseFloat($(this).val());
+
+                    count_filled_column++;
 
                     is_empty = false;
                 }
@@ -48,7 +54,7 @@
             }
             if (!is_empty) {
 
-                if (total_sum === parseFloat(total).toFixed(2)) {
+                if (total_sum === parseFloat(total).toFixed(2) && count_filled_column === total_column) {
 
                     return true;
                 }

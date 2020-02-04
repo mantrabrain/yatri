@@ -30,13 +30,45 @@ $wp_customize->add_control(
         )
     )
 );
+
+// Setting visibility of footer bottom
+$wp_customize->add_setting(yatri_get_customizer_id('bottom_footer_visibility'),
+    array(
+        'default' => $default['bottom_footer_visibility'],
+        'sanitize_callback' => array('Mantrabrain_Theme_Helper', 'sanitize_switch_group'),
+    )
+);
+
+$wp_customize->add_control(
+    new Mantrabrain_Theme_Customizer_Control_Switch_Group(
+        $wp_customize,
+        yatri_get_customizer_id('bottom_footer_visibility'),
+        array(
+            'label' => esc_html__('Footer bottom visibility', 'yatri'),
+            'section' => 'yatri_section_bottom_footer_options',
+            'priority' => 21,
+            'active_callback' => 'yatri_is_bottom_footer_enabled',
+            'switch_choices' => array(
+                'desktop' => esc_html__('Hide on Desktop', 'yatri'),
+                'tablet' => esc_html__('Hide on Tablet', 'yatri'),
+                'mobile' => esc_html__('Hide on Mobile', 'yatri'),
+            ),
+            'attributes' => array(
+                'on' => esc_html__('Show', 'yatri'),
+                'off' => esc_html__('Hide', 'yatri'),
+            )
+
+
+        )
+    )
+);
 // Footer Bottom Section Design & Styling
 
 $wp_customize->add_setting(yatri_get_customizer_id('bottom_footer_section_design_style'),
     array(
         'default' => $default['bottom_footer_section_design_style'],
         'sanitize_callback' => array('Mantrabrain_Theme_Helper', 'sanitize_modal'),
-        'transport' 			=> 'postMessage',
+        'transport' => 'postMessage',
 
 
     )

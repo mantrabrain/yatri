@@ -155,9 +155,9 @@ $wp_customize->add_control(
     )
 );
 // Setting hide section.
-$wp_customize->add_setting(yatri_get_customizer_id('bottom_header_offcanvas_visibility'),
+$wp_customize->add_setting(yatri_get_customizer_id('bottom_header_offcanvas_menu_visibility'),
     array(
-        'default' => $default['bottom_header_offcanvas_visibility'],
+        'default' => $default['bottom_header_offcanvas_menu_visibility'],
         'sanitize_callback' => array('Mantrabrain_Theme_Helper', 'sanitize_switch_group'),
     )
 );
@@ -165,7 +165,7 @@ $wp_customize->add_setting(yatri_get_customizer_id('bottom_header_offcanvas_visi
 $wp_customize->add_control(
     new Mantrabrain_Theme_Customizer_Control_Switch_Group(
         $wp_customize,
-        yatri_get_customizer_id('bottom_header_offcanvas_visibility'),
+        yatri_get_customizer_id('bottom_header_offcanvas_menu_visibility'),
         array(
             'label' => esc_html__('Offcanvas Visibility', 'yatri'),
             'section' => 'yatri_section_bottom_header_options',

@@ -70,7 +70,7 @@ $wp_customize->add_setting(yatri_get_customizer_id('top_header_office_info_desig
     array(
         'default' => $default['top_header_office_info_design'],
         'sanitize_callback' => array('Mantrabrain_Theme_Helper', 'sanitize_modal'),
-        'transport' 			=> 'postMessage',
+        'transport' => 'postMessage',
 
 
     )

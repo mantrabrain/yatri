@@ -69,9 +69,9 @@ $wp_customize->add_control(
 );
 
 // Setting show_top_header.
-$wp_customize->add_setting(yatri_get_customizer_id('top_header_navigation_menu_visibility'),
+$wp_customize->add_setting(yatri_get_customizer_id('top_header_menu_visibility'),
     array(
-        'default' => $default['top_header_navigation_menu_visibility'],
+        'default' => $default['top_header_menu_visibility'],
         'sanitize_callback' => array('Mantrabrain_Theme_Helper', 'sanitize_switch_group'),
     )
 );
@@ -79,7 +79,7 @@ $wp_customize->add_setting(yatri_get_customizer_id('top_header_navigation_menu_v
 $wp_customize->add_control(
     new Mantrabrain_Theme_Customizer_Control_Switch_Group(
         $wp_customize,
-        yatri_get_customizer_id('top_header_navigation_menu_visibility'),
+        yatri_get_customizer_id('top_header_menu_visibility'),
         array(
             'label' => esc_html__('Navigation Menu Visibility', 'yatri'),
             'section' => 'yatri_section_top_header_options',

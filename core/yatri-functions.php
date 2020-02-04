@@ -875,3 +875,179 @@ if (!function_exists('yatri_theme_branding')) {
     }
 
 }
+if (!function_exists('yatri_section_container_class')) {
+
+    function yatri_section_container_class($section, $option_id, $section_index)
+    {
+
+        $class = 'yatri-grid-' . (absint($section_index + 1)) . ' ';
+
+        $section_id = isset($section['section']) ? $section['section'] : '';
+
+
+        $width = isset($section['width']) ? $section['width'] : '';
+
+        if (empty($section_id) || $section_id == '') {
+
+            if ($width == '' || $width == "0") {
+
+                $class .= 'yatri-all-device-hidden';
+            } else {
+
+                $class .= 'yatri-mobile-hidden';
+
+            }
+
+            return $class;
+        }
+
+        $visibility_id = $option_id . '_' . $section_id . '_visibility';
+
+        $visibility_status = yatri_get_option($visibility_id);
+
+        $count = 0;
+
+        if (!isset($visibility_status['desktop']) || (isset($visibility_status['desktop']) && !$visibility_status['desktop'])) {
+
+            $class .= ' yatri-desktop-hidden';
+
+            $count++;
+        }
+        if (!isset($visibility_status['tablet']) || (isset($visibility_status['tablet']) && !$visibility_status['tablet'])) {
+
+            $class .= ' yatri-tablet-hidden';
+
+            $count++;
+        }
+
+        if (!isset($visibility_status['mobile']) || (isset($visibility_status['mobile']) && !$visibility_status['mobile'])) {
+
+            $class .= ' yatri-mobile-hidden';
+
+            $count++;
+        }
+        if ($width == "0" && $width != '') {
+
+            if (strpos($class, 'yatri-desktop-hidden') == false) {
+
+                $class .= ' yatri-desktop-hidden';
+
+                $count++;
+            }
+            if (strpos($class, 'yatri-tablet-hidden') == false) {
+
+                $class .= ' yatri-tablet-hidden';
+
+                $count++;
+            }
+        }
+
+        if ($count == 3) {
+
+            $class = ' yatri-all-device-hidden';
+        }
+
+         if (strpos($class, 'yatri-desktop-hidden') == false && strpos($class, 'yatri-all-device-hidden') == false) {
+
+             $class .= ' yatri-desktop-visible';
+
+         }
+
+         if (strpos($class, 'yatri-tablet-hidden') == false && strpos($class, 'yatri-all-device-hidden') == false) {
+
+             $class .= ' yatri-tablet-visible';
+
+         }
+         if (strpos($class, 'yatri-mobile-hidden') == false && strpos($class, 'yatri-all-device-hidden') == false) {
+
+             $class .= ' yatri-mobile-visible';
+
+         }
+
+
+        return $class;
+    }
+
+}
+
+
+if (!function_exists('yatri_section_container_col_class')) {
+
+    function yatri_section_container_col_class($sections, $option_id)
+    {
+        $mobile_class = 'yat-head-col-sm-4';
+
+        $tablet_class = 'yat-head-col-md-4';
+
+        $desktop_class = 'yat-head-col-lg-4';
+
+        $desktop_hidden_count = 0;
+
+        $mobile_hidden_count = 0;
+
+        $tablet_hidden_count = 0;
+
+        foreach ($sections as $section_index => $section) {
+
+            $width = isset($section['width']) ? $section['width'] : '';
+
+            $class = yatri_section_container_class($section, $option_id, $section_index);
+
+            if ($width == '') {
+
+                if (strpos($class, 'yatri-desktop-hidden') !== false || strpos($class, 'yatri-all-device-hidden') !== false) {
+
+                    $desktop_hidden_count++;
+                }
+                if (strpos($class, 'yatri-tablet-hidden') !== false || strpos($class, 'yatri-all-device-hidden') !== false) {
+
+                    $tablet_hidden_count++;
+                }
+
+
+            }
+
+            if (strpos($class, 'yatri-mobile-hidden') !== false || strpos($class, 'yatri-all-device-hidden') !== false) {
+
+                $mobile_hidden_count++;
+            }
+
+
+        }
+
+        switch ($desktop_hidden_count) {
+            case "1":
+                $desktop_class = 'yat-head-col-lg-6';
+                break;
+            case "2":
+                $desktop_class = 'yat-head-col-lg-12';
+                break;
+
+        }
+
+        switch ($tablet_hidden_count) {
+            case "1":
+                $tablet_class = 'yat-head-col-md-6';
+                break;
+            case "2":
+                $tablet_class = 'yat-head-col-md-6';
+                break;
+
+        }
+
+        switch ($mobile_hidden_count) {
+            case "1":
+                $mobile_class = 'yat-head-col-sm-6';
+                break;
+            case "2":
+                $mobile_class = 'yat-head-col-sm-12';
+                break;
+
+        }
+        $all_class = $mobile_class . ' ' . $tablet_class . ' ' . $desktop_class . ' ';
+
+        return $all_class;
+
+    }
+
+}

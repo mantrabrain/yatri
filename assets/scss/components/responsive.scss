@@ -5,11 +5,11 @@
     }
     .yatri-section-container {
       /*padding: 0;*/
-      -ms-flex: 0 0 33.33%;
+    /*  -ms-flex: 0 0 33.33%;
       -webkit-box-flex: 0;
       -webkit-flex: 0 0 33.33%;
       -moz-box-flex: 0;
-      flex: 0 0 33.33%;
+      flex: 0 0 33.33%;*/
       position: unset;
       .yatri-section-inner {
         &.yatri-section-menu, &.yatri-section-social-icons, &.yatri-section-office-information {
@@ -202,5 +202,27 @@
   }
   .bottom-footer {
     padding: 15px 0;
+  }
+}
+
+.yatri-all-device-hidden {
+  display: none;
+}
+
+@media screen and (min-width: 1025px) {
+  .yatri-desktop-hidden {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 569px) and (max-width: 1024px) {
+  .yatri-tablet-hidden {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .yatri-mobile-hidden {
+    display: none;
   }
 }
