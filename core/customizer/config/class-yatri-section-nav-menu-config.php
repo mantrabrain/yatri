@@ -20,6 +20,10 @@ class Yatri_Section_Nav_Menu_Config
                         'device_settings' => true,
                         'devices' => array('desktop'),
                         'options' => array(
+                            '' => array(
+                                'title' => '',
+                                'icon' => '',
+                            ),
                             'left' => array(
                                 'title' => __('Left', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-alignleft',
