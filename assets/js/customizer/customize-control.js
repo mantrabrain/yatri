@@ -12,6 +12,7 @@
          */
         isHeaderTextDisplayed = function () {
 
+
             return setting.get();
         };
 

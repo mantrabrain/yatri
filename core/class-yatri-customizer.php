@@ -67,10 +67,8 @@ class Yatri_Customizer
 
     public function control_scripts()
     {
-        $script_uri = YATRI_THEME_URI . 'assets/js/customizer/customize-control.js';
-
-        //wp_enqueue_script('jquery-ui-resizable');
-        wp_enqueue_script('yatri-customize-controls-check-js', $script_uri, array('jquery', 'customize-controls'), YATRI_THEME_VERSION);
+        //$script_uri = YATRI_THEME_URI . 'assets/js/customizer/customize-control.js';
+        //wp_enqueue_script('yatri-customize-controls-check-js', $script_uri, array('jquery', 'customize-controls'), YATRI_THEME_VERSION);
 
 
     }
