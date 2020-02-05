@@ -10,7 +10,7 @@
 			<div class="yat-row">
 				<div class="yat-col-12 yat-col-md-8 offset-md-2">
 					<div class="content">
-						<h1 class="section-title">
+						<h1 class="page-title page-title-404">
 							<?php
 								if( is_404() ){
 

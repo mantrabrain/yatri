@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: mantrabrain@gmail.com\n"
-"POT-Creation-Date: 2020-02-05 12:54:02+00:00\n"
+"POT-Creation-Date: 2020-02-05 14:16:50+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -182,21 +182,21 @@ msgstr ""
 msgid "Add widgets here."
 msgstr ""
 
-#: core/compatibility/class-yatri-woocommerce.php:59
+#: core/compatibility/class-yatri-woocommerce.php:61
 msgid "WooCommerce Sidebar"
 msgstr ""
 
-#: core/compatibility/class-yatri-woocommerce.php:61
+#: core/compatibility/class-yatri-woocommerce.php:63
 msgid ""
 "This sidebar will be used on Product archive, Cart, Checkout and My Account "
 "pages."
 msgstr ""
 
-#: core/compatibility/class-yatri-woocommerce.php:73
+#: core/compatibility/class-yatri-woocommerce.php:75
 msgid "Product Sidebar"
 msgstr ""
 
-#: core/compatibility/class-yatri-woocommerce.php:75
+#: core/compatibility/class-yatri-woocommerce.php:77
 msgid "This sidebar will be used on Single Product page."
 msgstr ""
 
@@ -852,6 +852,11 @@ msgstr ""
 #: core/customizer/core.php:167 core/customizer/core.php:274
 #: core/customizer/core.php:382 core/customizer/core.php:643
 msgid "Google Icon Goes Here"
+msgstr ""
+
+#: core/customizer/core.php:232 core/customizer/core.php:339
+#: core/customizer/core.php:447 core/customizer/core.php:655
+msgid "Contact"
 msgstr ""
 
 #: core/customizer/core.php:235 core/customizer/core.php:342
@@ -2726,10 +2731,6 @@ msgstr ""
 #: template-parts/page/content.php:24
 #: template-parts/single/post-navigation.php:5
 msgid "Pages:"
-msgstr ""
-
-#: template-parts/page/home-heading.php:23
-msgid "View More"
 msgstr ""
 
 #: template-parts/parts/time-link.php:15

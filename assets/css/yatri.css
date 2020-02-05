@@ -8497,9 +8497,7 @@ body .widget li.recentcomments a {
 .widget.widget_calendar td, .widget.widget_calendar th {
   line-height: 1.6;
   text-align: center;
-  padding: 6px;
-  padding-left: 0;
-  padding-right: 0; }
+  padding: 6px 0; }
 
 .widget.widget_calendar td#prev {
   text-align: left; }
@@ -10443,43 +10441,6 @@ input[type="submit"]:focus,
 @media screen and (max-width: 767px) {
   .section-title-group {
     margin-bottom: 45px; } }
-
-.section-title {
-  font-size: 34px;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  display: inline-block;
-  margin: 0;
-  line-height: 1.2;
-  position: relative;
-  padding-bottom: 20px; }
-
-.section-title:before, .section-title:after {
-  bottom: 0;
-  content: "";
-  height: 2px;
-  display: inline-block;
-  left: 0;
-  margin: auto;
-  right: 0;
-  position: absolute; }
-
-.section-title:before {
-  background: #D2B48C;
-  border: 5px solid #ffffff;
-  bottom: -7px;
-  height: 16px;
-  border-radius: 100%;
-  width: 16px;
-  z-index: 1; }
-
-.section-title:after {
-  background: #D2B48C;
-  width: 90px; }
-
-@media screen and (max-width: 767px) {
-  .section-title {
-    font-size: 24px; } }
 
 .sub-title {
   color: #6e6e6e;
