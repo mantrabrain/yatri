@@ -668,18 +668,14 @@ if (!function_exists('yatri_get_color_css')) {
             {
                 background-color:' . $primary_color . ';
             }
-          ::-webkit-selection,
-        ::-moz-selection,
-        ::-ms-selection,
-        ::-o-selection,
+       
         ::selection,
         .single-post-wrap .post-format-outer,
-        #go-top span:hover, #go-top span:focus, #go-top span:active,
-        .yatri-carousel .owl-nav .owl-prev, .yatri-carousel .owl-nav .owl-next,
         .yatri-button{
                         background:' . $primary_color . ';
                     }
             ';
+
             $css .= '
             .blockquote, .wp-block-quote,
             pre,
@@ -795,9 +791,9 @@ if (!function_exists('yatri_get_color_css')) {
             .posted-on > a:hover:before,
             .posted-on > a:focus:before,
             .posted-on > a:active:before ,
-            body.logged-in article.hentry .edit-link .post-edit-link:hover, body.logged-in article.hentry .edit-link .post-edit-link:focus, body.logged-in article.hentry .edit-link .post-edit-link:active, body.logged-in article.hentry
-            .edit-link .comment-edit-link:hover, body.logged-in article.hentry
-            .edit-link .comment-edit-link:focus, body.logged-in article.hentry
+            body.logged-in article.hentry .edit-link .post-edit-link:hover, body.logged-in article.hentry .edit-link .post-edit-link:focus, body.logged-in article.hentry .edit-link .post-edit-link:active, body.logged-in article.hentry,
+            .edit-link .comment-edit-link:hover, body.logged-in article.hentry,
+            .edit-link .comment-edit-link:focus, body.logged-in article.hentry,
             .edit-link .comment-edit-link:active,
             .edit-link .post-edit-link:hover, .edit-link .post-edit-link:focus, .edit-link .post-edit-link:active,
             .edit-link .comment-edit-link:hover,
@@ -913,7 +909,7 @@ if (!function_exists('yatri_get_color_css')) {
         .site-header.site-header-two .socialgroup a:hover, .site-header.site-header-two .socialgroup a:focus, .site-header.site-header-two .socialgroup a:active,
         .site-header.site-header-two .header-bottom-right .header-search-wrap .search-icon:hover, .site-header.site-header-two .header-bottom-right .header-search-wrap .search-icon:focus, .site-header.site-header-two .header-bottom-right .header-search-wrap .search-icon:active,
         .site-footer .socialgroup ul li a:hover, .site-footer .socialgroup ul li a:focus, .site-footer .socialgroup ul li a:active,
-        .socialgroup a:hover, .socialgroup a:focus, .socialgroup a:active.
+        .socialgroup a:hover, .socialgroup a:focus, .socialgroup a:active,
         .wrap-detail-page form input[type="submit"]:hover, .wrap-detail-page form input[type="submit"]:focus, .wrap-detail-page form input[type="submit"]:active,
         .wrap-detail-page .wpcf7-form input.wpcf7-form-control[type="submit"]:hover, .wrap-detail-page .wpcf7-form input.wpcf7-form-control[type="submit"]:focus, .wrap-detail-page .wpcf7-form input.wpcf7-form-control[type="submit"]:active,
         .wrap-detail-page .yatri-contact-form-area .form-group input.form-control[type="submit"]:hover, .wrap-detail-page .yatri-contact-form-area .form-group input.form-control[type="submit"]:focus, .wrap-detail-page .yatri-contact-form-area .form-group input.form-control[type="submit"]:active,
@@ -982,7 +978,7 @@ if (!function_exists('yatri_get_all_dynamic_css')) :
 
         $other_dynamic_css = yatri_get_other_dynamic_css();
 
-        $all_dynamic_css = yatri_minify_css($color_css . $modal_css . $other_dynamic_css);
+        $all_dynamic_css = ($color_css . $modal_css . $other_dynamic_css);
 
         return apply_filters('yatri_all_dynamic_css', $all_dynamic_css);
     }

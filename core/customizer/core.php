@@ -229,7 +229,7 @@ if (!function_exists('yatri_get_header_theme_options')) :
         $defaults['top_header_button_icon'] = '';
         $defaults['top_header_button_link'] = '';
         $defaults['top_header_button_target'] = '_blank';
-        $defaults['top_header_button_label'] = 'Button';
+        $defaults['top_header_button_label'] = esc_html__('Contact', 'yatri');
         $defaults['top_header_office_info'] = array(
             array(
                 'title' => esc_html__('Office address', 'yatri'),
@@ -336,7 +336,7 @@ if (!function_exists('yatri_get_header_theme_options')) :
         $defaults['mid_header_button_icon'] = '';
         $defaults['mid_header_button_link'] = '';
         $defaults['mid_header_button_target'] = '_blank';
-        $defaults['mid_header_button_label'] = 'Button';
+        $defaults['mid_header_button_label'] = esc_html__('Contact', 'yatri');
         $defaults['mid_header_office_info'] = array(
             array(
                 'title' => esc_html__('Office address', 'yatri'),
@@ -444,7 +444,7 @@ if (!function_exists('yatri_get_header_theme_options')) :
         $defaults['bottom_header_button_icon'] = '';
         $defaults['bottom_header_button_link'] = '';
         $defaults['bottom_header_button_target'] = '_blank';
-        $defaults['bottom_header_button_label'] = 'Button';
+        $defaults['bottom_header_button_label'] = esc_html__('Contact', 'yatri');
         $defaults['bottom_header_office_info'] = array(
             array(
                 'title' => esc_html__('Office address', 'yatri'),
@@ -652,7 +652,7 @@ if (!function_exists('yatri_get_default_theme_options')) :
         $defaults['bottom_footer_button_icon'] = '';
         $defaults['bottom_footer_button_link'] = '';
         $defaults['bottom_footer_button_target'] = '_blank';
-        $defaults['bottom_footer_button_label'] = 'Button';
+        $defaults['bottom_footer_button_label'] = esc_html__('Contact', 'yatri');
         $defaults['bottom_footer_button_style_design'] = '{}';
         $defaults['bottom_footer_button_visibility'] = array(
             'desktop' => true,
