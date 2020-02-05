@@ -1,0 +1,127 @@
+blockquote, .wp-block-quote,
+pre {
+  border-color: #4285f4;
+}
+
+blockquote:before,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus,
+.wpcf7-form-control:focus,
+.form-control:focus,
+.mc4wp-form input:focus,
+a,
+.cat-links > a:before,
+.tag-links > a:before,
+.comment-link > a:before,
+.posted-on > a:before,
+.widget li,
+.widget li a,
+.widget.widget_calendar tfoot a,
+.widget.widget_rss li a,
+.widget.widget_tag_cloud .tagcloud a,
+.header-bottom-right .cart-icon a,
+.header-bottom-right .header-search-wrap .search-icon,
+.footer-menu ul li a,
+.socialgroup a,
+.yatra-single-meta-content .byline,
+a.button-text,
+.button-text,
+.learn-more-btn span ,
+.yatri-category-list,
+.yatri-tag-list 
+ {
+  color: #4285f4;
+ }
+
+ figcaption,
+ .widget.widget_calendar tbody a,
+.wrap-detail-page form input[type="submit"] ,
+.wrap-detail-page .wpcf7 input[type="submit"] ,
+.header-bottom-right .cart-icon a .count,
+ .comments-area .comment-list .reply a,
+ .wrap-detail-page .yatri-contact-form-area .form-group input.form-control[type="submit"],
+ .searchform .search-button,
+ article.hentry.sticky .post-thumb:before,
+ article.hentry.sticky .post-format-outer > span a,
+ .widget.widget_mc4wp_form_widget input[type="submit"] ,
+ .mc4wp-form input[type="submit"]:hover, .mc4wp-form input[type="submit"]:focus, .mc4wp-form input[type="submit"]:active,
+ input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.default-button,
+.button-primary,
+.page-numbers.current,
+.page-numbers:hover.current, .page-numbers:focus.current, .page-numbers:active.current
+ {
+  background-color: #4285f4;
+}
+
+::-webkit-selection,
+::-moz-selection,
+::-ms-selection,
+::-o-selection,
+::selection,
+.single-post-wrap .post-format-outer,
+#go-top span:hover, #go-top span:focus, #go-top span:active,
+.yatri-carousel .owl-nav .owl-prev, .yatri-carousel .owl-nav .owl-next,
+.yatri-button
+
+{
+	background: #4285f4;
+}
+
+.wrap-detail-page .wpcf7 input[type="submit"] ,
+.wrap-detail-page .yatri-contact-form-area .form-group input.form-control[type="submit"],
+#go-top span:hover, #go-top span:focus, #go-top span:active,
+.mc4wp-form input[type="submit"]:hover, .mc4wp-form input[type="submit"]:focus, .mc4wp-form input[type="submit"]:active,
+ .yatri-section-search-form .search-form-main input,
+ .button-primary,
+ .button-outline,
+ .page-numbers.current,
+ .page-numbers:hover.current, .page-numbers:focus.current, .page-numbers:active.current
+  {
+  border: 1px solid #4285f4;
+}
+.yatri-section-search-form.form-type-default .search-form-main {
+    
+    border-top: 2px solid #4285f4;
+}
+.yatri-section-search-form.form-type-default .search-form-main:before {
+   
+      border-bottom: 10px solid #4285f4;
+  }
+
+
+a:focus,
+button:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+.slick-slider .slick-slide:focus,
+.search-box .product-search-wrapper form select:focus {
+  outline: auto !important;
+  outline-style: dotted !important;
+  outline-width: thin !important;
+  outline-color: #4285f4 !important;
+  -webkit-focus-ring-color: #4285f4 !important;
+  -moz-outline-radius: inherit !important; }

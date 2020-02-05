@@ -11,7 +11,7 @@ if (!function_exists('yatri_init_customizer_options')) :
 
         $theme_options = get_theme_mod(YATRI_THEME_SETTINGS, $yatri_default);
 
-        $yatri_global_options->customizer = array_merge($yatri_default, $theme_options);
+        return $yatri_global_options->customizer = array_merge($yatri_default, $theme_options);
 
 
     }
@@ -947,22 +947,22 @@ if (!function_exists('yatri_section_container_class')) {
             $class = ' yatri-all-device-hidden';
         }
 
-         if (strpos($class, 'yatri-desktop-hidden') == false && strpos($class, 'yatri-all-device-hidden') == false) {
+        if (strpos($class, 'yatri-desktop-hidden') == false && strpos($class, 'yatri-all-device-hidden') == false) {
 
-             $class .= ' yatri-desktop-visible';
+            $class .= ' yatri-desktop-visible';
 
-         }
+        }
 
-         if (strpos($class, 'yatri-tablet-hidden') == false && strpos($class, 'yatri-all-device-hidden') == false) {
+        if (strpos($class, 'yatri-tablet-hidden') == false && strpos($class, 'yatri-all-device-hidden') == false) {
 
-             $class .= ' yatri-tablet-visible';
+            $class .= ' yatri-tablet-visible';
 
-         }
-         if (strpos($class, 'yatri-mobile-hidden') == false && strpos($class, 'yatri-all-device-hidden') == false) {
+        }
+        if (strpos($class, 'yatri-mobile-hidden') == false && strpos($class, 'yatri-all-device-hidden') == false) {
 
-             $class .= ' yatri-mobile-visible';
+            $class .= ' yatri-mobile-visible';
 
-         }
+        }
 
 
         return $class;

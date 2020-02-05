@@ -269,7 +269,7 @@ li.customize-control.yatri-open .yatri-actions .action--edit span.dashicons:befo
     margin-bottom: 5px;
 }
 
-.customize-control-yatri-typography .ft--checkboxes[data-field-name="languages"] {
+.customize-control-yatri-typography .ft--checkboxes.font-languages {
     margin-bottom: 0px;
 }
 

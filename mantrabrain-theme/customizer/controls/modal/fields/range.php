@@ -43,7 +43,7 @@
             <?php } ?>
             <a href="#" class="reset" title="Reset"></a>
         </div>
-        <div data-min="<?php echo esc_attr($attrs['min']) ?>" data-default='<?php echo json_encode($defaults); ?>'
+        <div data-min="<?php echo esc_attr($attrs['min']) ?>" data-default='<?php echo esc_attr($attrs['min']) ?>'
              data-step="<?php echo esc_attr($attrs['step']) ?>"
              data-max="<?php echo esc_attr($attrs['max']) ?>"
              class="yatri-input-slider">

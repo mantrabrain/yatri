@@ -208,9 +208,9 @@ if (!class_exists('Yatri_Assets')) :
 
                     if ($type == 'font') {
 
-                        $font_family = yatri_get_modal_option($field_id, 'font');
-                        $font_weight = yatri_get_modal_option($field_id, 'font_weight');
-                        $font_subset = yatri_get_modal_option($field_id, 'font_languages');
+                        $font_family = yatri_get_modal_option($field_id, "{$field_id}_font_family");
+                        $font_weight = yatri_get_modal_option($field_id, "{$field_id}_font_weight");
+                        $font_subset = yatri_get_modal_option($field_id, "{$field_id}_font_languages");
                         if (!empty($font_family) && !empty($font_weight)) {
                             Mantrabrain_Theme_Helper_Typo::add_font($font_family, $font_weight);
                         }

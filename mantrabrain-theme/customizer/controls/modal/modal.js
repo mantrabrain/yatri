@@ -267,27 +267,10 @@
                             input.val(ui.value).trigger("data-change").trigger('change');
                         }
                     });
-
                     input.on("change", function () {
-
-                        var input_field_value = parseInt($(this).val());
-                        var max_length = parseInt($(this).attr('maxlength'));
-                        var max_val = parseInt($(this).attr('max'));
-                        var min_val = parseInt($(this).attr('min'));
-
-                        if (input_field_value.length > max_length || input_field_value > max_val) {
-                            input_field_value = max_val;
-                        }
-
-                        if (input_field_value < min_val) {
-                            input_field_value = min_val;
-                        }
-                        $(this).val(input_field_value);
-                        slider.slider("value", input_field_value).trigger('change');
-
-
+                        slider.slider("value", $(this).val()).trigger('change');
                     });
-
+                 
                     // Reset
                     var wrapper = slider.closest(
                         ".yatri-input-slider-wrapper"
@@ -583,6 +566,40 @@
 
 
                         break;
+                    case "font":
+                        var font_name = $(this).find('.yatri-typo-input').val();
+                        var font_weight = _that.getFontWeight($(this));
+                        var subset = _that.getFontSubset($(this));
+                        var font_field_id = _that.getTypoFieldID($(this));
+                        _that.fontLoader(font_name, field_id, font_weight, subset);
+                        font_name = '' == font_name ? 'initial' : font_name;
+                        devicewise_css_text = '' == font_name ? '' : css_property.replace("{{value}}", font_name);
+
+                        break;
+
+
+                    case "font_weight":
+                        var value = $(this).find('select.yatri-change-by-js').val();
+                        var font_family = _that.getFontFamily($(this));
+                        var subset = _that.getFontSubset($(this));
+                        _that.fontLoader(font_family, field_id, value, subset);
+                        value = '' == value ? 'initial' : value;
+                        devicewise_css_text = '' == value ? '' : css_property.replace("{{value}}", value);
+                        break;
+                    case "checkbox":
+                        // font Font Languages
+                        if ($(this).find('.list-subsets').length) {
+                            var font_family = _that.getFontFamily($(this));
+                            var font_weight = _that.getFontWeight($(this));
+                            var subset = _that.getFontSubset($(this));
+                            _that.fontLoader(font_family, field_id, font_weight, subset);
+                        }
+                        break;
+                    case "select":
+                        var value = $(this).find('.yatri-change-by-js').val();
+                        value = '' == value ? 'initial' : value;
+                        devicewise_css_text = '' == value ? '' : css_property.replace("{{value}}", value);
+                        break;
 
                 }
                 all_css_code_for_js += _that.getResponsive(devicewise_css_text, device, css_selector);
@@ -603,6 +620,75 @@
             window.localStorage.setItem("yatriCustomizerChanges", JSON.stringify(object));
 
         },
+        getTypoFieldID: function ($instance) {
+            var node = $instance.closest('.yatri-modal-settings--fields').find('.yatri--group-field.ft--font[data-field-name="font"]');
+            var family = node.find(".yatri-field-wrap").find('select.yatri-typo-input').val();
+            return family;
+        },
+        getFontFamily: function ($instance) {
+            var node = $instance.closest('.yatri-modal-settings--fields').find('.yatri--group-field.ft--font');
+            var family = node.find(".yatri-field-wrap").find('select.yatri-typo-input').val();
+            return family;
+        },
+        getFontWeight: function ($instance) {
+            var node = $instance.closest('.yatri-modal-settings--fields').find('.yatri--group-field.ft--font_weight');
+            var weight = node.find(".yatri-field-wrap").find('select.yatri-modal-input').val();
+            return weight;
+        },
+        getFontSubset: function ($instance) {
+            var subset_string = '';
+            var node = $instance.closest('.yatri-modal-settings--fields').find('.yatri--group-field.ft--checkbox.font-languages');
+            var subsets = node.find(".yatri-field-wrap").find('.list-subsets');
+            subsets.find('input[type="checkbox"]').each(function () {
+                if ($(this).prop('checked')) {
+                    if (subset_string == '') {
+                        subset_string += $(this).val();
+                    } else {
+                        subset_string += ',' + $(this).val();
+                    }
+
+                }
+
+            });
+
+            return subset_string;
+        },
+        fontLoader: function (font_name, field_id, font_weight, subset) {
+            /* if (typeof window.yatriLoadedFontFromJs == "undefined" || typeof window.yatriLoadedFontFromJs == undefined) {
+                 window.yatriLoadedFontFromJs = new Array();
+             }
+             if (!window.yatriLoadedFontFromJs.includes(font_name)) {
+                 window.yatriLoadedFontFromJs.push(font_name);
+             }*/
+            field_id = field_id.replace("_font_family", "");
+            field_id = field_id.replace("_font_weight", "");
+            field_id = field_id.replace("_font_languages", "");
+            if (font_name) {
+                /** @type {string} */
+                var idfirst = (font_name.trim().toLowerCase().replace(" ", "-"), field_id);
+                var google_font_url = font_name.replace(" ", "%20");
+                google_font_url = google_font_url.replace(",", "%2C");
+                /** @type {string} */
+                if (font_weight == '' || font_weight === '' || font_weight == null || font_weight == "undefined" || font_weight == undefined) {
+
+                    font_weight = ':regular';
+
+                } else {
+                    font_weight = ':' + font_weight;
+                }
+                google_font_url = "https://fonts.googleapis.com/css?family=" + font_name + font_weight;
+                if ('' !== subset) {
+                    google_font_url += "&subset=" + subset;
+                }
+                var body = $("body").find('iframe').contents();
+                if (body.find("#" + idfirst).length) {
+                    body.find("#" + idfirst).attr("href", google_font_url);
+                } else {
+                    body.find("head").append('<link id="' + idfirst + '" rel="stylesheet" type="text/css" href="' + google_font_url + '">');
+                }
+            }
+        },
+
         getResponsive: function (css, device, selector) {
             if (css == '' || typeof css != 'string' || typeof device == "undefined" || '' == device || typeof device == undefined) {
                 return '';
@@ -695,7 +781,6 @@
             } else {
                 language_node.addClass('yatri-hide');
             }
-            debugger;
 
         },
         initEvents: function () {

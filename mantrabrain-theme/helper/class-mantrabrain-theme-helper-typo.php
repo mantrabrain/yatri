@@ -106,8 +106,7 @@ class Mantrabrain_Theme_Helper_Typo
         }
 
         $google_font_url = self::google_fonts_url($google_fonts, $font_subset);
-
-
+        
         if (!empty($google_fonts)) {
             wp_enqueue_style('yatri-google-fonts', $google_font_url, array(), YATRI_THEME_VERSION, 'all');
         }
