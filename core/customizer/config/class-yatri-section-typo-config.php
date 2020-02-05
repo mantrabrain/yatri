@@ -4,8 +4,6 @@ class Yatri_Section_Typo_Config
 {
     public static function get_typography($id, $selector)
     {
-        $field_font = yatri_get_modal_option($id, "{$id}_font_family");
-
         return
             array(
                 array(
@@ -26,19 +24,19 @@ class Yatri_Section_Typo_Config
                     'name' => "{$id}_font_weight",
                     'type' => 'font_weight',
                     'label' => __('Font Weight', 'yatri'),
-                    'options' => Mantrabrain_Theme_Helper::all_font_varients($field_font),
+                    'options' => array(),
                     'class' => 'yatri-half font-weight',
-                    'mapping_font_field' => "{$id}_font_family",
+                    'mapping_font_field' => "{$id}",
                     'selector' => "{$selector}",
                     'css_property' => 'font-weight:{{value}};'
                 ),
                 array(
                     'name' => "{$id}_font_languages",
-                    'type' => 'checkbox',
+                    'type' => 'font_languages',
                     'label' => __('Font Languages', 'yatri'),
                     'default' => array(),
-                    'choices' => Mantrabrain_Theme_Helper::all_font_subsets($field_font),
-                    'mapping_font_field' => 'font',
+                    'choices' => array(),
+                    'mapping_font_field' => "{$id}",
                     'class' => 'font-languages',
                 ),
                 array(

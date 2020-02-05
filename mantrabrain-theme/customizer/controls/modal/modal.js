@@ -270,7 +270,7 @@
                     input.on("change", function () {
                         slider.slider("value", $(this).val()).trigger('change');
                     });
-                 
+
                     // Reset
                     var wrapper = slider.closest(
                         ".yatri-input-slider-wrapper"
@@ -392,6 +392,7 @@
 
                                     break;
                                 case "checkbox":
+                                case "font_languages":
                                     single_value = new Array();
                                     single_value = $(this).closest(".list-subsets").find("input:checkbox:checked").map(function () {
                                         return $(this).val();
@@ -587,6 +588,7 @@
                         devicewise_css_text = '' == value ? '' : css_property.replace("{{value}}", value);
                         break;
                     case "checkbox":
+                    case "font_languages":
                         // font Font Languages
                         if ($(this).find('.list-subsets').length) {
                             var font_family = _that.getFontFamily($(this));
@@ -637,7 +639,7 @@
         },
         getFontSubset: function ($instance) {
             var subset_string = '';
-            var node = $instance.closest('.yatri-modal-settings--fields').find('.yatri--group-field.ft--checkbox.font-languages');
+            var node = $instance.closest('.yatri-modal-settings--fields').find('.yatri--group-field.ft--font_languages');
             var subsets = node.find(".yatri-field-wrap").find('.list-subsets');
             subsets.find('input[type="checkbox"]').each(function () {
                 if ($(this).prop('checked')) {
@@ -774,7 +776,7 @@
             }
             var weight_node = __obj.closest('.yatri-modal-settings--fields').find('.yatri--group-field[data-field-name="' + weight_field + '"]');
             weight_node.find('select.yatri-modal-input.yatri-change-by-js').html(varient_html.html())
-            var language_node = __obj.closest('.yatri-modal-settings--fields').find('.yatri--group-field.ft--checkbox[data-field-name="' + language_field + '"]');
+            var language_node = __obj.closest('.yatri-modal-settings--fields').find('.yatri--group-field.ft--font_languages[data-field-name="' + language_field + '"]');
             if (subset.length > 0) {
                 language_node.find('div.list-subsets').html(subset_html.html());
                 language_node.removeClass('yatri-hide');
@@ -839,6 +841,10 @@
                             break;
                         case "image":
                             $(this).find('.button.yatri--remove').trigger('click');
+                            break;
+                        case "checkbox":
+                        case "font_languages":
+                            $(this).find('input[type="checkbox"]').prop('checked', false);
                             break;
                         case "alignment":
                             $(this).find('li[data-default="yes"]').trigger('click');

@@ -376,13 +376,15 @@ li.customize-control.yatri-open .yatri-actions .action--edit span.dashicons:befo
     display: block;
 }
 
-.customize-control .yatri--group-field.ft--checkbox .list-subsets p {
+.customize-control .yatri--group-field.ft--checkbox .list-subsets p,
+.customize-control .yatri--group-field.ft--font_languages .list-subsets p {
     margin-top: 0px;
     width: 50%;
     float: left;
 }
 
-.yatri--group-field.ft--checkbox .list-subsets:after {
+.yatri--group-field.ft--checkbox .list-subsets:after,
+.yatri--group-field.ft--font_languages .list-subsets:after {
     content: '';
     display: block;
     clear: both;

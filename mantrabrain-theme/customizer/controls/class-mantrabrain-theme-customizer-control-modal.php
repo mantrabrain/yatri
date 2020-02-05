@@ -251,8 +251,38 @@ class Mantrabrain_Theme_Customizer_Control_Modal extends Mantrabrain_Theme_Custo
 
             $type = isset($field['type']) ? $field['type'] : '';
 
-            if ($type == 'checkbox' && $field_name == 'font_languages' && empty($field['choices'])) {
-                $additional_class .= ' yatri-hide ';
+            if ($type == 'font_languages') {
+
+                $mapping_font_family_id = isset($field['mapping_font_field']) ? $field['mapping_font_field'] : '';
+
+                if ('' != $mapping_font_family_id) {
+
+                    $font_family = yatri_get_modal_option($mapping_font_family_id, "{$mapping_font_family_id}_font_family");
+
+                    $subsets = Mantrabrain_Theme_Helper::all_font_subsets($font_family);
+
+                    $field['choices'] = is_array($subsets) ? $subsets : array();
+
+                }
+                if (empty($field['choices'])) {
+
+                    $additional_class .= ' yatri-hide ';
+                }
+            }
+
+            if ($type == 'font_weight') {
+
+                $mapping_font_family_id = isset($field['mapping_font_field']) ? $field['mapping_font_field'] : '';
+
+                if ('' != $mapping_font_family_id) {
+
+                    $font_family = yatri_get_modal_option($mapping_font_family_id, "{$mapping_font_family_id}_font_family");
+
+                    $varients = Mantrabrain_Theme_Helper::all_font_varients($font_family);
+
+                    $field['options'] = is_array($varients) ? $varients : array();
+
+                }
             }
             $additional_css = isset($field['additional_css']) ? ($field['additional_css']) : '';
             $additional_css_mobile = '';
@@ -351,6 +381,7 @@ class Mantrabrain_Theme_Customizer_Control_Modal extends Mantrabrain_Theme_Custo
             case "font_weight":
             case "checkbox":
             case "alignment":
+            case "font_languages":
                 $default_value = empty($default_value) ? array() : $default_value;
                 $current_value = empty($current_value) ? array() : $current_value;
                 $field_value = wp_parse_args($current_value, $default_value);
@@ -410,6 +441,9 @@ class Mantrabrain_Theme_Customizer_Control_Modal extends Mantrabrain_Theme_Custo
                 break;
             case "checkbox":
                 include "modal/fields/checkbox.php";
+                break;
+            case "font_languages":
+                include "modal/fields/font-languages.php";
                 break;
             case "margin":
                 include "modal/fields/margin.php";

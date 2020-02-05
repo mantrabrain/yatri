@@ -58,7 +58,7 @@ if (!function_exists('yatri_get_option')) :
         }
         global $yatri_global_options;
 
-        $theme_options = isset($yatri_global_options->customizer) ? $yatri_global_options->customizer : yatri_init_customizer_options();
+        $theme_options = isset($yatri_global_options->customizer) ? $yatri_global_options->customizer : array();
 
         $value = '';
 

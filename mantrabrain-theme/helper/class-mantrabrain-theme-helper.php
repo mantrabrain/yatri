@@ -1529,6 +1529,7 @@ if (!class_exists('Mantrabrain_Theme_Helper')) {
                         $single_value['value'] = $valid_value;
                         break;
                     case "checkbox":
+                    case "font_languages":
                         $valid_value = isset($field_value['value']) ? ($field_value['value']) : array();
 
                         if (is_array($valid_value)) {

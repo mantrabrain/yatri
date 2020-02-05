@@ -13,7 +13,6 @@ $wp_customize->add_setting(yatri_get_customizer_id('show_top_header'),
     array(
         'default' => $default['show_top_header'],
         'sanitize_callback' => 'yatri_sanitize_checkbox',
-        'transport' => 'postMessage',
 
     )
 );
@@ -72,7 +71,7 @@ $wp_customize->add_setting(yatri_get_customizer_id('top_header_design'),
     array(
         'default' => $default['top_header_design'],
         'sanitize_callback' => array('Mantrabrain_Theme_Helper', 'sanitize_modal'),
-        //'transport' => 'postMessage',
+        'transport' => 'postMessage',
 
 
     )
