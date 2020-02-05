@@ -43,6 +43,7 @@ if (!class_exists('Yatri_Woocommerce')) :
 
             require_once "woocommerce/class-yatri-woocommerce-hooks.php";
             require_once "woocommerce/class-yatri-woocommerce-customizer.php";
+            require_once "woocommerce/class-yatri-woocommerce-dynamic-style.php";
 
             add_filter('woocommerce_enqueue_styles', array($this, 'woo_filter_style'));
             add_action('widgets_init', array($this, 'woo_widgets_init'));
@@ -50,6 +51,7 @@ if (!class_exists('Yatri_Woocommerce')) :
 
 
         }
+
         function woo_widgets_init()
         {
             register_sidebar(

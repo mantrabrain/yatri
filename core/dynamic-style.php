@@ -744,7 +744,7 @@ if (!function_exists('yatri_get_color_css')) {
             .button-text,
             .learn-more-btn span ,
             .yatri-category-list,
-            .yatri-tag-list 
+            .yatri-tag-list
             {
                 color:' . $primary_color . ';
             }
@@ -766,6 +766,17 @@ if (!function_exists('yatri_get_color_css')) {
             outline-color: ' . $primary_color . '!important;
               -webkit-focus-ring-color: ' . $primary_color . '!important;
                          }
+            ';
+
+            // Media Query
+            $css .= '
+            @media (max-width: 768px){
+            .top-header .yatri-section-container.menu-container .yatri-section-inner.yatri-section-menu, .yatri-mid-header .yatri-section-container.menu-container .yatri-section-inner.yatri-section-menu, .bottom-header .yatri-section-container.menu-container .yatri-section-inner.yatri-section-menu,
+            .top-header .yatri-section-container.social_icons-container .yatri-section-social-icons, .yatri-mid-header .yatri-section-container.social_icons-container .yatri-section-social-icons, .bottom-header .yatri-section-container.social_icons-container .yatri-section-social-icons,
+            .top-header .yatri-section-container.office_information-container .yatri-section-inner, .yatri-mid-header .yatri-section-container.office_information-container .yatri-section-inner, .bottom-header .yatri-section-container.office_information-container .yatri-section-inner{
+                background:' . $primary_color . ';
+            }
+            }
             ';
         }
 
@@ -980,7 +991,11 @@ if (!function_exists('yatri_get_all_dynamic_css')) :
 
         $all_dynamic_css = ($color_css . $modal_css . $other_dynamic_css);
 
-        return apply_filters('yatri_all_dynamic_css', $all_dynamic_css);
+        $all_dynamic_css = apply_filters('yatri_all_dynamic_css', $all_dynamic_css);
+
+        $all_dynamic_css_min = yatri_minify_css($all_dynamic_css);
+
+        return $all_dynamic_css_min;
     }
 
 
