@@ -13,6 +13,8 @@ $wp_customize->add_setting(yatri_get_customizer_id('show_top_header'),
     array(
         'default' => $default['show_top_header'],
         'sanitize_callback' => 'yatri_sanitize_checkbox',
+        'transport' => 'postMessage',
+
     )
 );
 

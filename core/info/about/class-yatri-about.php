@@ -435,7 +435,7 @@ class Yatri_About
             <div class="mb-about-box-content">
                 <p><?php _e('Join our facebook community group so that you can post question and help each other.', 'yatri'); ?></p>
                 <a target="_blank"
-                   href="https://www.facebook.com/groups/mantrabraincommunity"><?php _e('Join our facebook community group »', 'yatri'); ?></a>
+                   href="https://www.facebook.com/groups/wpyatri/"><?php _e('Join our facebook community group »', 'yatri'); ?></a>
             </div>
         </div>
         <?php
