@@ -6022,7 +6022,8 @@ blockquote:before {
   float: left;
   margin-right: 20px;
   line-height: 1;
-  font-style: normal; }
+  font-style: normal;
+  font-weight: 600; }
 
 blockquote cite {
   color: #545454;
@@ -6206,8 +6207,7 @@ select {
   max-width: 100%;
   padding: 0 15px;
   cursor: pointer;
-  height: 41px;
-  -webkit-appearance: none; }
+  height: 41px; }
 
 select:focus {
   outline: none; }
@@ -8382,36 +8382,6 @@ body.yatri-customizer-preview .search-section {
 /*--------------------------------------------------------------
 4.0 Widgets
 --------------------------------------------------------------*/
-.widget.widget_categories select, .widget.widget_archive select {
-  background-color: #ffffff;
-  border: 1px solid #e6e6e6;
-  margin-bottom: 30px;
-  padding: 15px 30px;
-  background-color: #ffffff;
-  background-image: -webkit-linear-gradient(45deg, transparent 50%, gray 50%), -webkit-linear-gradient(315deg, gray 50%, transparent 50%), -webkit-linear-gradient(left, #ccc, #ccc);
-  background-image: -moz- oldlinear-gradient(45deg, transparent 50%, gray 50%), -moz- oldlinear-gradient(315deg, gray 50%, transparent 50%), -moz- oldlinear-gradient(left, #ccc, #ccc);
-  background-image: -o-linear-gradient(45deg, transparent 50%, gray 50%), -o-linear-gradient(315deg, gray 50%, transparent 50%), -o-linear-gradient(left, #ccc, #ccc);
-  background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
-  background-position: -moz-calc(100% - 18px) -moz-calc(1em + 9px), -moz-calc(100% - 13px) -moz-calc(1em + 9px), -moz-calc(100% - 2.5em) 1.1em;
-  background-position: calc(100% - 18px) calc(1em + 9px), calc(100% - 13px) calc(1em + 9px), calc(100% - 2.5em) 1.1em;
-  background-size: 5px 5px, 5px 8px, 1px 1.5em;
-  background-repeat: no-repeat;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-  display: inline-block;
-  font: inherit;
-  line-height: 1.5em;
-  margin: 0;
-  width: 100%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none; }
-
 article.post-content {
   position: relative;
   z-index: 1; }

@@ -88,7 +88,7 @@ class Yatri_Section_Typo_Config
                     'css_units' => Mantrabrain_Theme_Helper::css_units(),
                     'class' => 'letter-spacing',
                     'selector' => "{$selector}",
-                    'css_property' => 'letter-spacing:{{value}}{{unit}};'
+                    'css_property' => 'letter-spacing:{{value}}{{unit}};',
                 ),
                 array(
                     'name' => "{$id}_font_style",

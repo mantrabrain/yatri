@@ -800,7 +800,7 @@
             });
 
             $document.on("click", ".yatri--settings-fields .action--reset", function (e) {
-                var confirm_box = confirm("Are you sure want to reset this settings ?");
+                var confirm_box = confirm("Are you sure want to reset this settings ? Reset changes will apply only after page refresh.");
                 if (confirm_box !== true) {
                     return;
                 }

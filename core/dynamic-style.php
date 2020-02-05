@@ -691,7 +691,7 @@ if (!function_exists('yatri_get_color_css')) {
  .button-primary,
  .button-outline,
  .page-numbers.current,
- .page-numbers:hover.current, .page-numbers:focus.current, .page-numbers:active.current,
+ .page-numbers:hover.current, .page-numbers:focus.current, .page-numbers:active.current 
  
             {
                 border-color:' . $primary_color . ';
@@ -767,8 +767,8 @@ if (!function_exists('yatri_get_color_css')) {
             .slick-slider .slick-slide:focus,
             .search-box .product-search-wrapper form select:focus  {
             
-            outline-color: ' . $primary_color . ';
-              -webkit-focus-ring-color: ' . $primary_color . ';
+            outline-color: ' . $primary_color . '!important;
+              -webkit-focus-ring-color: ' . $primary_color . '!important;
                          }
             ';
         }
@@ -902,7 +902,7 @@ if (!function_exists('yatri_get_color_css')) {
         input[type="submit"]:active, .button:active, .default-button:active, .button-primary:active, .button-light:active, .button-outline:active, .comments-area .comment-list .reply a:active,
         .button-primary:hover, .button-primary:focus, .button-primary:active,
         .button-light:hover, .button-light:focus, .button-light:active,
-        .page-numbers:hover, .page-numbers:focus, .page-numbers:active ,
+        .page-numbers:hover, .page-numbers:focus, .page-numbers:active
         
          {
                 background-color:' . $secondary_color . ';
@@ -936,6 +936,8 @@ if (!function_exists('yatri_get_color_css')) {
            
            .widget .widget-title:after,
             .widget .widgettitle:after,
+            .yatri-button
+            
           {
           
           background: ' . $secondary_color . ';
@@ -974,13 +976,11 @@ if (!function_exists('yatri_get_all_dynamic_css')) :
 
     function yatri_get_all_dynamic_css()
     {
+        $color_css = yatri_get_color_css();
 
         $modal_css = yatri_get_modal_dynamic_css();
 
         $other_dynamic_css = yatri_get_other_dynamic_css();
-
-        $color_css = yatri_get_color_css();
-
 
         $all_dynamic_css = yatri_minify_css($color_css . $modal_css . $other_dynamic_css);
 

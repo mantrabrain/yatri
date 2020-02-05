@@ -1447,18 +1447,20 @@ if (!class_exists('Mantrabrain_Theme_Helper')) {
 
                 if ($field_type !== 'heading') {
 
-                    $input_array[$field_name] = self::get_modal_value($field_type, $field_name, $field_value, $devices);
+                    $input_array[$field_name] = self::get_modal_value($field_type, $field_name, $field_value, $devices, $field);
 
 
                 }
 
             }
 
+
+
             return json_encode($input_array);
 
         }
 
-        static function get_modal_value($field_type, $field_name, $field_value, $devices)
+        static function get_modal_value($field_type, $field_name, $field_value, $devices, $field = array())
         {
 
             $single_value = array();
@@ -1546,7 +1548,26 @@ if (!class_exists('Mantrabrain_Theme_Helper')) {
                         $single_value['value'] = $valid_value;
                         break;
                     case "range":
-                        $valid_value['value'] = isset($field_value['value']['value']) && ("" !== $field_value['value']['value']) ? absint($field_value['value']['value']) : '';
+                        $valid_number = isset($field_value['value']['value']) && ("" !== $field_value['value']['value']) ? ($field_value['value']['value']) : '';
+
+                        if ('' != $valid_number) {
+
+                            $valid_number = intval($valid_number);
+
+                            $max = isset($field['max']) ? $field['max'] : '';
+
+                            $min = isset($field['min']) ? $field['min'] : '';
+
+                            if ($max < $valid_number && '' != $max) {
+
+                                $valid_number = $max;
+                            }
+                            if ($min > $valid_number && '' != $max) {
+
+                                $valid_number = $min;
+                            }
+                        }
+                        $valid_value['value'] = $valid_number;
                         $valid_value['unit'] = isset($field_value['value']['unit']) ? sanitize_text_field($field_value['value']['unit']) : 'px';
                         $single_value['value'] = $valid_value;
                         break;

@@ -233,10 +233,12 @@ b strong,
 strong strong {
   font-weight: 700;
 }
+
 p {
   margin: 0 0 20px;
   word-wrap: break-word;
 }
+
 blockquote, .wp-block-quote,
 pre {
   background-color: #f1f1f1;
@@ -267,7 +269,6 @@ pre em,
 pre i {
   color: #474747;
 }
-
 blockquote:before {
   color: $primary_color;
   content: "\f10d";
@@ -277,6 +278,7 @@ blockquote:before {
   margin-right: 20px;
   line-height: 1;
   font-style: normal;
+  font-weight: 600;
 }
 
 blockquote cite {
