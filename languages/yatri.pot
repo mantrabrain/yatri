@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: mantrabrain@gmail.com\n"
-"POT-Creation-Date: 2020-02-04 19:55:40+00:00\n"
+"POT-Creation-Date: 2020-02-05 11:12:28+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -245,10 +245,10 @@ msgstr ""
 #: core/customizer/config/class-yatri-section-sidebar-config.php:9
 #: core/customizer/config/class-yatri-section-social-icons-config.php:9
 #: core/customizer/config/class-yatri-section-wrapper-config.php:9
-#: core/customizer/config/customizer-modal-config.php:28
-#: core/customizer/config/customizer-modal-config.php:184
-#: core/customizer/config/customizer-modal-config.php:1148
-#: core/customizer/config/customizer-modal-config.php:1246
+#: core/customizer/config/customizer-modal-config.php:29
+#: core/customizer/config/customizer-modal-config.php:185
+#: core/customizer/config/customizer-modal-config.php:283
+#: core/customizer/config/customizer-modal-config.php:381
 msgid "Colors"
 msgstr ""
 
@@ -268,10 +268,10 @@ msgstr ""
 #: core/customizer/config/class-yatri-section-sidebar-config.php:10
 #: core/customizer/config/class-yatri-section-social-icons-config.php:10
 #: core/customizer/config/class-yatri-section-wrapper-config.php:10
-#: core/customizer/config/customizer-modal-config.php:29
-#: core/customizer/config/customizer-modal-config.php:185
-#: core/customizer/config/customizer-modal-config.php:1149
-#: core/customizer/config/customizer-modal-config.php:1247
+#: core/customizer/config/customizer-modal-config.php:30
+#: core/customizer/config/customizer-modal-config.php:186
+#: core/customizer/config/customizer-modal-config.php:284
+#: core/customizer/config/customizer-modal-config.php:382
 msgid "Spacing"
 msgstr ""
 
@@ -413,8 +413,8 @@ msgstr ""
 #: core/customizer/config/class-yatri-section-pagination-config.php:16
 #: core/customizer/config/class-yatri-section-readmore-config.php:16
 #: core/customizer/config/class-yatri-section-sidebar-config.php:75
-#: core/customizer/config/customizer-modal-config.php:1155
-#: core/customizer/config/customizer-modal-config.php:1272
+#: core/customizer/config/customizer-modal-config.php:290
+#: core/customizer/config/customizer-modal-config.php:407
 msgid "Text Color"
 msgstr ""
 
@@ -449,8 +449,8 @@ msgstr ""
 #: core/customizer/config/class-yatri-section-breadcrumb-config.php:189
 #: core/customizer/config/class-yatri-section-header-config.php:200
 #: core/customizer/config/class-yatri-section-wrapper-config.php:124
-#: core/customizer/config/customizer-modal-config.php:94
-#: core/customizer/config/customizer-modal-config.php:235
+#: core/customizer/config/customizer-modal-config.php:95
+#: core/customizer/config/customizer-modal-config.php:236
 msgid "Container Padding"
 msgstr ""
 
@@ -463,7 +463,7 @@ msgstr ""
 #: core/customizer/config/class-yatri-section-button-config.php:25
 #: core/customizer/config/class-yatri-section-pagination-config.php:30
 #: core/customizer/config/class-yatri-section-readmore-config.php:25
-#: core/customizer/config/customizer-modal-config.php:1164
+#: core/customizer/config/customizer-modal-config.php:299
 msgid "Hover Text Color"
 msgstr ""
 
@@ -477,9 +477,9 @@ msgstr ""
 #: core/customizer/config/class-yatri-section-readmore-config.php:34
 #: core/customizer/config/class-yatri-section-sidebar-config.php:44
 #: core/customizer/config/class-yatri-section-social-icons-config.php:35
-#: core/customizer/config/customizer-modal-config.php:191
-#: core/customizer/config/customizer-modal-config.php:1173
-#: core/customizer/config/customizer-modal-config.php:1262
+#: core/customizer/config/customizer-modal-config.php:192
+#: core/customizer/config/customizer-modal-config.php:308
+#: core/customizer/config/customizer-modal-config.php:397
 msgid "Background Color"
 msgstr ""
 
@@ -487,7 +487,7 @@ msgstr ""
 #: core/customizer/config/class-yatri-section-pagination-config.php:57
 #: core/customizer/config/class-yatri-section-readmore-config.php:43
 #: core/customizer/config/class-yatri-section-social-icons-config.php:44
-#: core/customizer/config/customizer-modal-config.php:1182
+#: core/customizer/config/customizer-modal-config.php:317
 msgid "Hover Background Color"
 msgstr ""
 
@@ -504,8 +504,8 @@ msgstr ""
 #: core/customizer/config/class-yatri-section-readmore-config.php:85
 #: core/customizer/config/class-yatri-section-sidebar-config.php:118
 #: core/customizer/config/class-yatri-section-social-icons-config.php:87
-#: core/customizer/config/customizer-modal-config.php:1196
-#: core/customizer/config/customizer-modal-config.php:1287
+#: core/customizer/config/customizer-modal-config.php:331
+#: core/customizer/config/customizer-modal-config.php:422
 msgid "Padding"
 msgstr ""
 
@@ -519,14 +519,14 @@ msgstr ""
 #: core/customizer/config/class-yatri-section-post-config.php:105
 #: core/customizer/config/class-yatri-section-readmore-config.php:115
 #: core/customizer/config/class-yatri-section-social-icons-config.php:146
-#: core/customizer/config/customizer-modal-config.php:1225
-#: core/customizer/config/customizer-modal-config.php:1317
+#: core/customizer/config/customizer-modal-config.php:360
+#: core/customizer/config/customizer-modal-config.php:452
 msgid "Border"
 msgstr ""
 
 #: core/customizer/config/class-yatri-section-content-config.php:26
 #: core/customizer/config/class-yatri-section-post-config.php:26
-#: core/customizer/config/customizer-modal-config.php:211
+#: core/customizer/config/customizer-modal-config.php:212
 msgid "Background Image"
 msgstr ""
 
@@ -775,130 +775,67 @@ msgstr ""
 msgid "Font Color"
 msgstr ""
 
-#: core/customizer/config/customizer-modal-config.php:35
-msgid "Inside Background Color"
-msgstr ""
-
-#: core/customizer/config/customizer-modal-config.php:54
-msgid "Inside Background Image"
-msgstr ""
-
-#: core/customizer/config/customizer-modal-config.php:72
-msgid "Outside Background Color"
-msgstr ""
-
-#: core/customizer/config/customizer-modal-config.php:81
-msgid "Outside Background Image"
-msgstr ""
-
-#: core/customizer/config/customizer-modal-config.php:127
-msgid "Layout Margin"
-msgstr ""
-
-#: core/customizer/config/customizer-modal-config.php:160
-msgid "Layout Border"
-msgstr ""
-
-#: core/customizer/config/customizer-modal-config.php:273
-#: core/customizer/config/customizer-modal-config.php:391
-#: core/customizer/config/customizer-modal-config.php:499
-#: core/customizer/config/customizer-modal-config.php:607
-#: core/customizer/config/customizer-modal-config.php:715
-#: core/customizer/config/customizer-modal-config.php:823
-#: core/customizer/config/customizer-modal-config.php:931
-#: core/customizer/config/customizer-modal-config.php:1039
+#: core/customizer/config/class-yatri-section-typo-config.php:12
 msgid "Font Family"
 msgstr ""
 
-#: core/customizer/config/customizer-modal-config.php:287
-#: core/customizer/config/customizer-modal-config.php:405
-#: core/customizer/config/customizer-modal-config.php:513
-#: core/customizer/config/customizer-modal-config.php:621
-#: core/customizer/config/customizer-modal-config.php:729
-#: core/customizer/config/customizer-modal-config.php:837
-#: core/customizer/config/customizer-modal-config.php:945
-#: core/customizer/config/customizer-modal-config.php:1053
+#: core/customizer/config/class-yatri-section-typo-config.php:26
 msgid "Font Weight"
 msgstr ""
 
-#: core/customizer/config/customizer-modal-config.php:297
-#: core/customizer/config/customizer-modal-config.php:415
-#: core/customizer/config/customizer-modal-config.php:523
-#: core/customizer/config/customizer-modal-config.php:631
-#: core/customizer/config/customizer-modal-config.php:739
-#: core/customizer/config/customizer-modal-config.php:847
-#: core/customizer/config/customizer-modal-config.php:955
-#: core/customizer/config/customizer-modal-config.php:1063
+#: core/customizer/config/class-yatri-section-typo-config.php:36
 msgid "Font Languages"
 msgstr ""
 
-#: core/customizer/config/customizer-modal-config.php:305
-#: core/customizer/config/customizer-modal-config.php:423
-#: core/customizer/config/customizer-modal-config.php:531
-#: core/customizer/config/customizer-modal-config.php:639
-#: core/customizer/config/customizer-modal-config.php:747
-#: core/customizer/config/customizer-modal-config.php:855
-#: core/customizer/config/customizer-modal-config.php:963
-#: core/customizer/config/customizer-modal-config.php:1071
+#: core/customizer/config/class-yatri-section-typo-config.php:45
 msgid "Font Size"
 msgstr ""
 
-#: core/customizer/config/customizer-modal-config.php:321
-#: core/customizer/config/customizer-modal-config.php:439
-#: core/customizer/config/customizer-modal-config.php:547
-#: core/customizer/config/customizer-modal-config.php:655
-#: core/customizer/config/customizer-modal-config.php:763
-#: core/customizer/config/customizer-modal-config.php:871
-#: core/customizer/config/customizer-modal-config.php:979
-#: core/customizer/config/customizer-modal-config.php:1087
+#: core/customizer/config/class-yatri-section-typo-config.php:62
 msgid "Line Height"
 msgstr ""
 
-#: core/customizer/config/customizer-modal-config.php:337
-#: core/customizer/config/customizer-modal-config.php:455
-#: core/customizer/config/customizer-modal-config.php:563
-#: core/customizer/config/customizer-modal-config.php:671
-#: core/customizer/config/customizer-modal-config.php:779
-#: core/customizer/config/customizer-modal-config.php:887
-#: core/customizer/config/customizer-modal-config.php:995
-#: core/customizer/config/customizer-modal-config.php:1103
+#: core/customizer/config/class-yatri-section-typo-config.php:79
 msgid "Letter Spacing"
 msgstr ""
 
-#: core/customizer/config/customizer-modal-config.php:353
-#: core/customizer/config/customizer-modal-config.php:471
-#: core/customizer/config/customizer-modal-config.php:579
-#: core/customizer/config/customizer-modal-config.php:687
-#: core/customizer/config/customizer-modal-config.php:795
-#: core/customizer/config/customizer-modal-config.php:903
-#: core/customizer/config/customizer-modal-config.php:1011
-#: core/customizer/config/customizer-modal-config.php:1119
+#: core/customizer/config/class-yatri-section-typo-config.php:96
 msgid "Font Style"
 msgstr ""
 
-#: core/customizer/config/customizer-modal-config.php:365
-#: core/customizer/config/customizer-modal-config.php:480
-#: core/customizer/config/customizer-modal-config.php:588
-#: core/customizer/config/customizer-modal-config.php:696
-#: core/customizer/config/customizer-modal-config.php:804
-#: core/customizer/config/customizer-modal-config.php:912
-#: core/customizer/config/customizer-modal-config.php:1020
-#: core/customizer/config/customizer-modal-config.php:1128
+#: core/customizer/config/class-yatri-section-typo-config.php:108
 msgid "Text Decoration"
 msgstr ""
 
-#: core/customizer/config/customizer-modal-config.php:376
-#: core/customizer/config/customizer-modal-config.php:488
-#: core/customizer/config/customizer-modal-config.php:596
-#: core/customizer/config/customizer-modal-config.php:704
-#: core/customizer/config/customizer-modal-config.php:812
-#: core/customizer/config/customizer-modal-config.php:920
-#: core/customizer/config/customizer-modal-config.php:1028
-#: core/customizer/config/customizer-modal-config.php:1136
+#: core/customizer/config/class-yatri-section-typo-config.php:120
 msgid "Text Trasform"
 msgstr ""
 
-#: core/customizer/config/customizer-modal-config.php:1253
+#: core/customizer/config/customizer-modal-config.php:36
+msgid "Inside Background Color"
+msgstr ""
+
+#: core/customizer/config/customizer-modal-config.php:55
+msgid "Inside Background Image"
+msgstr ""
+
+#: core/customizer/config/customizer-modal-config.php:73
+msgid "Outside Background Color"
+msgstr ""
+
+#: core/customizer/config/customizer-modal-config.php:82
+msgid "Outside Background Image"
+msgstr ""
+
+#: core/customizer/config/customizer-modal-config.php:128
+msgid "Layout Margin"
+msgstr ""
+
+#: core/customizer/config/customizer-modal-config.php:161
+msgid "Layout Border"
+msgstr ""
+
+#: core/customizer/config/customizer-modal-config.php:388
 msgid "Label Color"
 msgstr ""
 
@@ -1005,7 +942,7 @@ msgstr ""
 #: core/customizer/sections/header/top/office-information.php:84
 #: core/customizer/sections/header/top/search-form.php:108
 #: core/customizer/sections/header/top/social-icons.php:87
-#: core/customizer/sections/header/top.php:84
+#: core/customizer/sections/header/top.php:85
 msgid "Design & Styling"
 msgstr ""
 
@@ -1066,10 +1003,6 @@ msgstr ""
 
 #: core/customizer/sections/base/typography.php:173
 msgid "H6 Typography"
-msgstr ""
-
-#: core/customizer/sections/base/typography.php:197
-msgid "Widget Title Typography"
 msgstr ""
 
 #: core/customizer/sections/blog-archive/content/main.php:17
@@ -1299,7 +1232,7 @@ msgstr ""
 #: core/customizer/sections/header/top/office-information.php:112
 #: core/customizer/sections/header/top/search-form.php:137
 #: core/customizer/sections/header/top/social-icons.php:115
-#: core/customizer/sections/header/top.php:52
+#: core/customizer/sections/header/top.php:53
 msgid "Hide on Desktop"
 msgstr ""
 
@@ -1336,7 +1269,7 @@ msgstr ""
 #: core/customizer/sections/header/top/office-information.php:113
 #: core/customizer/sections/header/top/search-form.php:138
 #: core/customizer/sections/header/top/social-icons.php:116
-#: core/customizer/sections/header/top.php:53
+#: core/customizer/sections/header/top.php:54
 msgid "Hide on Tablet"
 msgstr ""
 
@@ -1373,7 +1306,7 @@ msgstr ""
 #: core/customizer/sections/header/top/office-information.php:114
 #: core/customizer/sections/header/top/search-form.php:139
 #: core/customizer/sections/header/top/social-icons.php:117
-#: core/customizer/sections/header/top.php:54
+#: core/customizer/sections/header/top.php:55
 msgid "Hide on Mobile"
 msgstr ""
 
@@ -1410,7 +1343,7 @@ msgstr ""
 #: core/customizer/sections/header/top/office-information.php:117
 #: core/customizer/sections/header/top/search-form.php:142
 #: core/customizer/sections/header/top/social-icons.php:120
-#: core/customizer/sections/header/top.php:57
+#: core/customizer/sections/header/top.php:58
 #: mantrabrain-theme/customizer/controls/class-mantrabrain-theme-customizer-control-sortable.php:65
 msgid "Show"
 msgstr ""
@@ -1448,7 +1381,7 @@ msgstr ""
 #: core/customizer/sections/header/top/office-information.php:118
 #: core/customizer/sections/header/top/search-form.php:143
 #: core/customizer/sections/header/top/social-icons.php:121
-#: core/customizer/sections/header/top.php:58
+#: core/customizer/sections/header/top.php:59
 msgid "Hide"
 msgstr ""
 
@@ -1859,19 +1792,19 @@ msgstr ""
 msgid "Top Header"
 msgstr ""
 
-#: core/customizer/sections/header/top.php:24
+#: core/customizer/sections/header/top.php:25
 msgid "Show Top Header"
 msgstr ""
 
-#: core/customizer/sections/header/top.php:47
+#: core/customizer/sections/header/top.php:48
 msgid "Top header visibility"
 msgstr ""
 
-#: core/customizer/sections/header/top.php:107
+#: core/customizer/sections/header/top.php:108
 msgid "Top Header Sections"
 msgstr ""
 
-#: core/customizer/sections/header/top.php:129
+#: core/customizer/sections/header/top.php:130
 msgid ""
 "Please click %1$s here %2$s and choose %3$s TOP %4$s header for logo to "
 "show site branding on this section."
