@@ -19,11 +19,12 @@
     do_action('yatri_bottom_footer');
 
 
-
     ?>
 
 </footer>
 <?php
+
+do_action('yatri_after_footer');
 
 wp_footer();
 

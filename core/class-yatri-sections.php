@@ -48,6 +48,16 @@ class Yatri_Sections
         return self::$instance;
     }
 
+    public static function init()
+    {
+        add_action('yatri_after_footer', array(__CLASS__, 'append_footer_sections'));
+    }
+
+    public static function append_footer_sections()
+    {
+
+    }
+
     public static function get_all_registered_sections($on_part = '')
     {
 
@@ -352,6 +362,11 @@ class Yatri_Sections
             }
             ?>
         </div><!-- .site-branding --><?php
+
+    }
+
+    private static function offcanvas_menu_content()
+    {
 
     }
 

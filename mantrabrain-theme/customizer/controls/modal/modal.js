@@ -487,7 +487,7 @@
                         var unit = $(this).find('.yatri--css-unit').find('input[name="' + field_type + '_unit"]').val();
                         if ('' !== value) {
                             var single_css = css_property.replace(/{{value}}/g, value);
-                            devicewise_css_text += single_css.replace(/{{value}}/g, unit);
+                            devicewise_css_text += single_css.replace(/{{unit}}/g, unit);
                         }
                         break;
                     case "padding":

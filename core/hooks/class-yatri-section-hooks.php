@@ -24,6 +24,8 @@ class Yatri_Section_Hooks
     function register_sections()
     {
 
+        Yatri_Sections::init();
+
         Yatri_Sections::register('office_information', array(
             'title' => __('Office Info', 'yatri')
         ));
