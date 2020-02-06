@@ -1,4 +1,4 @@
-@media screen and (max-width: 568px) {
+@media (max-width: 639px) {
   .yat-head-col-sm-12 {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -21,5 +21,8 @@
       max-width: 100%;
       width: 100%;
     }
+  }
+  .yatri-mobile-hidden {
+    display: none;
   }
 }

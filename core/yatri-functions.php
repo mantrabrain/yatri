@@ -947,23 +947,6 @@ if (!function_exists('yatri_section_container_class')) {
             $class = ' yatri-all-device-hidden';
         }
 
-        if (strpos($class, 'yatri-desktop-hidden') == false && strpos($class, 'yatri-all-device-hidden') == false) {
-
-            $class .= ' yatri-desktop-visible';
-
-        }
-
-        if (strpos($class, 'yatri-tablet-hidden') == false && strpos($class, 'yatri-all-device-hidden') == false) {
-
-            $class .= ' yatri-tablet-visible';
-
-        }
-        if (strpos($class, 'yatri-mobile-hidden') == false && strpos($class, 'yatri-all-device-hidden') == false) {
-
-            $class .= ' yatri-mobile-visible';
-
-        }
-
 
         return $class;
     }
@@ -999,12 +982,12 @@ if (!function_exists('yatri_section_container_col_class')) {
 
                     $desktop_hidden_count++;
                 }
-                if (strpos($class, 'yatri-tablet-hidden') !== false || strpos($class, 'yatri-all-device-hidden') !== false) {
-
-                    $tablet_hidden_count++;
-                }
 
 
+            }
+            if (strpos($class, 'yatri-tablet-hidden') !== false || strpos($class, 'yatri-all-device-hidden') !== false) {
+
+                $tablet_hidden_count++;
             }
 
             if (strpos($class, 'yatri-mobile-hidden') !== false || strpos($class, 'yatri-all-device-hidden') !== false) {

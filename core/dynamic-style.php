@@ -407,14 +407,14 @@ if (!function_exists('yatri_get_other_dynamic_css')) {
 
         if ($top_header_grid_total_width == 100) {
 
-            $dynamic_css .= '@media (min-width: 768px) {' . $top_header_grid_css . '}';
+            $dynamic_css .= '@media (min-width: 1025px) {' . $top_header_grid_css . '}';
         }
         // Top header offcanvas width
         $top_header_offcanvas_menu_width = absint(yatri_get_option('top_header_offcanvas_menu_width'));
 
         if ($top_header_offcanvas_menu_width > 0 && $top_header_offcanvas_menu_width != 325) {
 
-            $dynamic_css .= '@media (min-width: 768px) {.top-header .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content{width:' . $top_header_offcanvas_menu_width . 'px;}}';
+            $dynamic_css .= '.top-header .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content{width:' . $top_header_offcanvas_menu_width . 'px;}';
         }
 
         // Mid Header Grid Css
@@ -448,7 +448,14 @@ if (!function_exists('yatri_get_other_dynamic_css')) {
 
         if ($mid_header_grid_total_width == 100) {
 
-            $dynamic_css .= '@media (min-width: 768px) {' . $mid_header_grid_css . '}';
+            $dynamic_css .= '@media (min-width: 1025px) {' . $mid_header_grid_css . '}';
+        }
+        // Mid header offcanvas width
+        $mid_header_offcanvas_menu_width = absint(yatri_get_option('mid_header_offcanvas_menu_width'));
+
+        if ($mid_header_offcanvas_menu_width > 0 && $mid_header_offcanvas_menu_width != 325) {
+
+            $dynamic_css .= '.yatri-mid-header .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content{width:' . $mid_header_offcanvas_menu_width . 'px;}';
         }
         // Bottom Header
 
@@ -483,9 +490,16 @@ if (!function_exists('yatri_get_other_dynamic_css')) {
 
         if ($bottom_header_grid_total_width == 100) {
 
-            $dynamic_css .= '@media (min-width: 768px) {' . $bottom_header_grid_css . '}';
+            $dynamic_css .= '@media (min-width: 1025px) {' . $bottom_header_grid_css . '}';
         }
 
+        // Bottom header offcanvas width
+        $bottom_header_offcanvas_menu_width = absint(yatri_get_option('bottom_header_offcanvas_menu_width'));
+
+        if ($bottom_header_offcanvas_menu_width > 0 && $bottom_header_offcanvas_menu_width != 325) {
+
+            $dynamic_css .= '.bottom-header .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content{width:' . $bottom_header_offcanvas_menu_width . 'px;}';
+        }
 
         // Bottom footer grid css
         $bottom_footer_grid_css = '';
@@ -519,7 +533,7 @@ if (!function_exists('yatri_get_other_dynamic_css')) {
 
         if ($bottom_footer_grid_total_width == 100) {
 
-            $dynamic_css .= '@media (min-width: 768px) {' . $bottom_footer_grid_css . '}';
+            $dynamic_css .= '@media (min-width: 1025px) {' . $bottom_footer_grid_css . '}';
         }
         // end of bottom footer grid css
         // BREADCRUMB //
@@ -770,7 +784,7 @@ if (!function_exists('yatri_get_color_css')) {
 
             // Media Query
             $css .= '
-            @media (max-width: 768px){
+            @media (max-width: 1024px){
             .top-header .yatri-section-container.menu-container .yatri-section-inner.yatri-section-menu, .yatri-mid-header .yatri-section-container.menu-container .yatri-section-inner.yatri-section-menu, .bottom-header .yatri-section-container.menu-container .yatri-section-inner.yatri-section-menu,
             .top-header .yatri-section-container.social_icons-container .yatri-section-social-icons, .yatri-mid-header .yatri-section-container.social_icons-container .yatri-section-social-icons, .bottom-header .yatri-section-container.social_icons-container .yatri-section-social-icons,
             .top-header .yatri-section-container.office_information-container .yatri-section-inner, .yatri-mid-header .yatri-section-container.office_information-container .yatri-section-inner, .bottom-header .yatri-section-container.office_information-container .yatri-section-inner{

@@ -16,7 +16,9 @@ class Yatri_Section_Footer_Office_Info_Config
                     'label' => __('Text Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
-                    'selector' => "{$parent_selector} .yatri-section-container.office_information-container .yatri-section-office-information ul li .text, .yatri-section-office-information ul li span.icon",
+                    'selector' => "
+                    {$parent_selector} .yatri-section-container.office_information-container .yatri-section-office-information ul li .text,
+                    {$parent_selector} .yatri-section-container.office_information-container .yatri-section-office-information ul li span.icon",
                     'css_property' => 'color:{{value}};'
                 ),
 
@@ -73,9 +75,13 @@ class Yatri_Section_Footer_Office_Info_Config
                         'type' => 'alignment',
                         'label' => __('Alignment', 'yatri'),
                         'description' => '',
-                        'default' => array('desktop' => ''),
+                        'default' => array(
+                            'desktop' => '',
+                            'tablet' => '',
+                            'mobile' => ''
+                        ),
                         'device_settings' => true,
-                        'devices' => array('desktop'),
+                        'devices' => array('desktop', 'tablet', 'mobile'),
                         'options' => array(
                             '' => array(
                                 'title' => '',
@@ -94,7 +100,7 @@ class Yatri_Section_Footer_Office_Info_Config
                                 'icon' => 'dashicons dashicons-editor-alignright',
                             )
                         ),
-                        'selector' => "{$parent_selector} .yatri-section-container.office_information-container",
+                        'selector' => "{$parent_selector} .yatri-section-container.office_information-container .yatri-section-inner",
                         'css_property' => 'text-align:{{value}};'
                     ),
                     array(
@@ -206,7 +212,7 @@ class Yatri_Section_Footer_Office_Info_Config
                             'top' => 0,
                             'bottom' => 0
                         ),
-                        'additional_css' => "@media (max-width: 768px){{$parent_selector} .yatri-section-container.office_information-container .yatri-section-office-information.yatri-section-inner ul li:last-child{border-bottom:auto;}} ",
+                        'additional_css' => "@media (max-width: 1024px){{$parent_selector} .yatri-section-container.office_information-container .yatri-section-office-information.yatri-section-inner ul li:last-child{border-bottom:auto;}} ",
                         'selector' => "{$parent_selector} .yatri-section-container.office_information-container .yatri-section-office-information ul li",
                     )
                 ),

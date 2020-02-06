@@ -79,17 +79,48 @@ class Yatri_Section_Office_Info_Config
                     'selector' => "{$parent_selector} .yatri-section-container.office_information-container .yatri-responsive-toggle-menu",
                     'css_property' => 'color:{{value}}; border-color:{{value}};'
                 ),
+                array(
+                    'name' => $id . '_hamburger_alignment',
+                    'type' => 'alignment',
+                    'label' => __('Hamburger Alignment', 'yatri'),
+                    'description' => '',
+                    'default' => 'center',
+                    'options' => array(
+                        '' => array(
+                            'title' => '',
+                            'icon' => '',
+                        ),
+                        'left' => array(
+                            'title' => __('Left', 'yatri'),
+                            'icon' => 'dashicons dashicons-editor-alignleft',
+                        ),
+                        'center' => array(
+                            'title' => __('Center', 'yatri'),
+                            'icon' => 'dashicons dashicons-editor-aligncenter',
+                        ),
+                        'right' => array(
+                            'title' => __('Right', 'yatri'),
+                            'icon' => 'dashicons dashicons-editor-alignright',
+                        )
+                    ),
+                    'selector' => "{$parent_selector} .yatri-section-container.office_information-container .yatri-responsive-toggle-menu-wrap",
+                    'css_property' => 'text-align:{{value}};'
+                ),
             ),
             $id . '_spacing_fields' =>
                 array(
                     array(
                         'name' => $id . '_alignment',
                         'type' => 'alignment',
-                        'label' => __('Alignment', 'yatri'),
+                        'label' => __('Content Alignment', 'yatri'),
                         'description' => '',
-                        'default' => array('desktop' => ''),
+                        'default' => array(
+                            'desktop' => '',
+                            'tablet' => '',
+                            'mobile' => '',
+                        ),
                         'device_settings' => true,
-                        'devices' => array('desktop'),
+                        'devices' => array('desktop', 'tablet', 'mobile'),
                         'options' => array(
                             '' => array(
                                 'title' => '',
@@ -108,7 +139,7 @@ class Yatri_Section_Office_Info_Config
                                 'icon' => 'dashicons dashicons-editor-alignright',
                             )
                         ),
-                        'selector' => "{$parent_selector} .yatri-section-container.office_information-container",
+                        'selector' => "{$parent_selector} .yatri-section-container.office_information-container .yatri-section-inner",
                         'css_property' => 'text-align:{{value}};'
                     ),
                     array(

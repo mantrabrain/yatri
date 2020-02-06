@@ -16,7 +16,9 @@ class Yatri_Section_Nav_Menu_Config
                         'type' => 'alignment',
                         'label' => __('Menu Alignment', 'yatri'),
                         'description' => '',
-                        'default' => array('desktop' => 'center'),
+                        'default' => array(
+                            'desktop' => 'center',
+                        ),
                         'device_settings' => true,
                         'devices' => array('desktop'),
                         'options' => array(
@@ -115,6 +117,33 @@ class Yatri_Section_Nav_Menu_Config
                         'default' => '#c1c1c1',
                         'selector' => "{$parent_selector} .yatri-section-container.menu-container .yatri-responsive-toggle-menu",
                         'css_property' => 'color:{{value}}; border-color:{{value}};'
+                    ),
+                    array(
+                        'name' => $id . '_nav_hamburger_alignment',
+                        'type' => 'alignment',
+                        'label' => __('Hamburger Alignment', 'yatri'),
+                        'description' => '',
+                        'default' => 'center',
+                        'options' => array(
+                            '' => array(
+                                'title' => '',
+                                'icon' => '',
+                            ),
+                            'left' => array(
+                                'title' => __('Left', 'yatri'),
+                                'icon' => 'dashicons dashicons-editor-alignleft',
+                            ),
+                            'center' => array(
+                                'title' => __('Center', 'yatri'),
+                                'icon' => 'dashicons dashicons-editor-aligncenter',
+                            ),
+                            'right' => array(
+                                'title' => __('Right', 'yatri'),
+                                'icon' => 'dashicons dashicons-editor-alignright',
+                            )
+                        ),
+                        'selector' => "{$parent_selector} .yatri-section-container.menu-container .yatri-responsive-toggle-menu-wrap",
+                        'css_property' => 'text-align:{{value}};'
                     ),
                     array(
                         'name' => $id . '_nav_padding_margin_heading',

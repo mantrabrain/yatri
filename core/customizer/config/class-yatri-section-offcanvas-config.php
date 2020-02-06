@@ -21,8 +21,9 @@ class Yatri_Section_Offcanvas_Config
                     'label' => __('Icon Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
-                    'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-toggle-wrap span.toggle-icon",
-                    'css_property' => 'color:{{value}};'
+                    'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-toggle-wrap span.toggle-icon,
+                    {$parent_selector} .yatri-section-offcanvas-menu .yatri-toggle-wrap",
+                    'css_property' => 'color:{{value}};border-color:{{value}}'
                 ),
 
                 array(
@@ -31,8 +32,8 @@ class Yatri_Section_Offcanvas_Config
                     'label' => __('Icon Hover Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
-                    'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-toggle-wrap span.toggle-icon:hover",
-                    'css_property' => 'color:{{value}};'
+                    'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-toggle-wrap:hover span.toggle-icon",
+                    'css_property' => 'color:{{value}};border-color:{{value}}'
                 ),
                 array(
                     'name' => $id . '_close_icon_color',
@@ -162,11 +163,15 @@ class Yatri_Section_Offcanvas_Config
                     array(
                         'name' => $id . '_alignment',
                         'type' => 'alignment',
-                        'label' => __('Alignment', 'yatri'),
+                        'label' => __('Icon Alignment', 'yatri'),
                         'description' => '',
-                        'default' => array('desktop' => ''),
+                        'default' => array(
+                            'desktop' => '',
+                            'tablet' => '',
+                            'mobile' => '',
+                        ),
                         'device_settings' => true,
-                        'devices' => array('desktop'),
+                        'devices' => array('desktop', 'tablet', 'mobile'),
                         'options' => array(
                             '' => array(
                                 'title' => '',

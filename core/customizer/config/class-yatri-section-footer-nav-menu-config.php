@@ -77,9 +77,13 @@ class Yatri_Section_Footer_Nav_Menu_Config
                     'type' => 'alignment',
                     'label' => __('Menu Alignment', 'yatri'),
                     'description' => '',
-                    'default' => array('desktop' => 'center'),
+                    'default' => array(
+                        'desktop' => 'center',
+                        'tablet' => 'center',
+                        'mobile' => 'center',
+                    ),
                     'device_settings' => true,
-                    'devices' => array('desktop'),
+                    'devices' => array('desktop', 'tablet', 'mobile'),
                     'options' => array(
                         '' => array(
                             'title' => '',

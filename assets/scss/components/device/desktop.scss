@@ -1,4 +1,4 @@
-@media screen and (min-width: 1025px) {
+@media (min-width: 1025px) {
   .yat-head-col-lg-12 {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -13,5 +13,9 @@
     -ms-flex: 0 0 33.33%;
     flex: 0 0 33.33%;
     max-width: 33.33%;
+  }
+
+  .yatri-desktop-hidden {
+    display: none;
   }
 }

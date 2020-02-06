@@ -1258,7 +1258,7 @@ body.single.yatri-layout-content_plain .site-content .single-post-wrap {
   padding-right: 15px;
   padding-left: 15px; }
 
-@media screen and (min-width: 1025px) {
+@media (min-width: 1025px) {
   .yat-head-col-lg-12 {
     -ms-flex: 0 0 100%;
     -webkit-box-flex: 0;
@@ -1279,9 +1279,11 @@ body.single.yatri-layout-content_plain .site-content .single-post-wrap {
     -webkit-flex: 0 0 33.33%;
        -moz-box-flex: 0;
             flex: 0 0 33.33%;
-    max-width: 33.33%; } }
+    max-width: 33.33%; }
+  .yatri-desktop-hidden {
+    display: none; } }
 
-@media screen and (min-width: 569px) and (max-width: 1024px) {
+@media (min-width: 640px) and (max-width: 1024px) {
   .yat-head-col-md-12 {
     -ms-flex: 0 0 100%;
     -webkit-box-flex: 0;
@@ -1302,9 +1304,11 @@ body.single.yatri-layout-content_plain .site-content .single-post-wrap {
     -webkit-flex: 0 0 33.33%;
        -moz-box-flex: 0;
             flex: 0 0 33.33%;
-    max-width: 33.33%; } }
+    max-width: 33.33%; }
+  .yatri-tablet-hidden {
+    display: none; } }
 
-@media screen and (max-width: 568px) {
+@media (max-width: 639px) {
   .yat-head-col-sm-12 {
     -ms-flex: 0 0 100%;
     -webkit-box-flex: 0;
@@ -1333,7 +1337,9 @@ body.single.yatri-layout-content_plain .site-content .single-post-wrap {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
     max-width: 100%;
-    width: 100%; } }
+    width: 100%; }
+  .yatri-mobile-hidden {
+    display: none; } }
 
 /*!
  * Font Awesome Free 5.9.0 by @fontawesome - https://fontawesome.com
@@ -10552,9 +10558,12 @@ body .entry-title {
       left: 50%;
       margin-left: -100px; }
 
+.yatri-responsive-toggle-menu-wrap {
+  display: none; }
+
 .yatri-responsive-toggle-menu {
-  display: none;
-  padding: 5px 10px;
+  display: inline-block;
+  padding: 3px 10px;
   border: 1px solid #ddd;
   cursor: pointer; }
   .yatri-responsive-toggle-menu.close span:before {
@@ -10610,6 +10619,7 @@ body .entry-title {
 
 .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content {
   width: 325px;
+  max-width: 100%;
   min-height: 100vh;
   max-height: 100vh;
   overflow-y: auto;
@@ -11301,16 +11311,16 @@ footer.site-footer .site-branding .site-title a {
   .bottom-footer .copyright {
     color: #ccc; }
 
-@media (max-width: 768px) {
-  .top-header .yatri-responsive-toggle-menu, .yatri-mid-header .yatri-responsive-toggle-menu, .bottom-header .yatri-responsive-toggle-menu {
-    display: inline-block; }
+@media (max-width: 1024px) {
+  .top-header .yatri-responsive-toggle-menu-wrap, .yatri-mid-header .yatri-responsive-toggle-menu-wrap, .bottom-header .yatri-responsive-toggle-menu-wrap {
+    display: block; }
   .top-header .yatri-section-container, .yatri-mid-header .yatri-section-container, .bottom-header .yatri-section-container {
     /*padding: 0;*/
     /*  -ms-flex: 0 0 33.33%;
-      -webkit-box-flex: 0;
-      -webkit-flex: 0 0 33.33%;
-      -moz-box-flex: 0;
-      flex: 0 0 33.33%;*/
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 33.33%;
+        -moz-box-flex: 0;
+        flex: 0 0 33.33%;*/
     position: unset; }
     .top-header .yatri-section-container .yatri-section-inner.yatri-section-menu, .top-header .yatri-section-container .yatri-section-inner.yatri-section-social-icons, .top-header .yatri-section-container .yatri-section-inner.yatri-section-office-information, .yatri-mid-header .yatri-section-container .yatri-section-inner.yatri-section-menu, .yatri-mid-header .yatri-section-container .yatri-section-inner.yatri-section-social-icons, .yatri-mid-header .yatri-section-container .yatri-section-inner.yatri-section-office-information, .bottom-header .yatri-section-container .yatri-section-inner.yatri-section-menu, .bottom-header .yatri-section-container .yatri-section-inner.yatri-section-social-icons, .bottom-header .yatri-section-container .yatri-section-inner.yatri-section-office-information {
       display: none;
@@ -11420,13 +11430,16 @@ footer.site-footer .site-branding .site-title a {
             content: "";
             margin-left: -10px;
             position: absolute;
-            font-family: Font Awesome 5 Free; }
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900; }
         .top-header .yatri-section-container.menu-container ul.sub-menu li ul.sub-menu li a, .yatri-mid-header .yatri-section-container.menu-container ul.sub-menu li ul.sub-menu li a, .bottom-header .yatri-section-container.menu-container ul.sub-menu li ul.sub-menu li a {
           padding-left: 70px; }
         .top-header .yatri-section-container.menu-container ul.sub-menu li ul.sub-menu li ul.sub-menu li a, .yatri-mid-header .yatri-section-container.menu-container ul.sub-menu li ul.sub-menu li ul.sub-menu li a, .bottom-header .yatri-section-container.menu-container ul.sub-menu li ul.sub-menu li ul.sub-menu li a {
           padding-left: 95px; }
         .top-header .yatri-section-container.menu-container ul.sub-menu li ul.sub-menu li ul.sub-menu li ul.sub-menu li a, .yatri-mid-header .yatri-section-container.menu-container ul.sub-menu li ul.sub-menu li ul.sub-menu li ul.sub-menu li a, .bottom-header .yatri-section-container.menu-container ul.sub-menu li ul.sub-menu li ul.sub-menu li ul.sub-menu li a {
           padding-left: 120px; }
+  .yatri-section-offcanvas-menu .yatri-toggle-wrap {
+    border: 1px solid #ddd; }
   .top-header .yatri-responsive-toggle-menu {
     padding: 3px 10px; }
   .bottom-footer {
@@ -11434,18 +11447,6 @@ footer.site-footer .site-branding .site-title a {
 
 .yatri-all-device-hidden {
   display: none; }
-
-@media screen and (min-width: 1025px) {
-  .yatri-desktop-hidden {
-    display: none; } }
-
-@media screen and (min-width: 569px) and (max-width: 1024px) {
-  .yatri-tablet-hidden {
-    display: none; } }
-
-@media screen and (max-width: 568px) {
-  .yatri-mobile-hidden {
-    display: none; } }
 
 body.elementor-page.yatri_full_width_100_layout .site-content {
   margin: 0 !important;

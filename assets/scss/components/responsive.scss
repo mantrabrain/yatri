@@ -1,15 +1,15 @@
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .top-header, .yatri-mid-header, .bottom-header {
-    .yatri-responsive-toggle-menu {
-      display: inline-block;
+    .yatri-responsive-toggle-menu-wrap {
+      display: block;
     }
     .yatri-section-container {
       /*padding: 0;*/
-    /*  -ms-flex: 0 0 33.33%;
-      -webkit-box-flex: 0;
-      -webkit-flex: 0 0 33.33%;
-      -moz-box-flex: 0;
-      flex: 0 0 33.33%;*/
+      /*  -ms-flex: 0 0 33.33%;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 33.33%;
+        -moz-box-flex: 0;
+        flex: 0 0 33.33%;*/
       position: unset;
       .yatri-section-inner {
         &.yatri-section-menu, &.yatri-section-social-icons, &.yatri-section-office-information {
@@ -165,7 +165,8 @@
                 content: "";
                 margin-left: -10px;
                 position: absolute;
-                font-family: Font Awesome 5 Free;
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
 
               }
             }
@@ -193,6 +194,13 @@
           }
         }
       }
+
+    }
+  }
+  .yatri-section-offcanvas-menu {
+    .yatri-toggle-wrap {
+      
+      border: 1px solid #ddd;
     }
   }
   .top-header {
@@ -207,22 +215,4 @@
 
 .yatri-all-device-hidden {
   display: none;
-}
-
-@media screen and (min-width: 1025px) {
-  .yatri-desktop-hidden {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 569px) and (max-width: 1024px) {
-  .yatri-tablet-hidden {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 568px) {
-  .yatri-mobile-hidden {
-    display: none;
-  }
 }

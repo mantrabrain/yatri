@@ -58,9 +58,13 @@ class Yatri_Section_Copyright_Config
                         'type' => 'alignment',
                         'label' => __('Alignment', 'yatri'),
                         'description' => '',
-                        'default' => array('desktop' => ''),
+                        'default' => array(
+                            'desktop' => '',
+                            'tablet' => '',
+                            'mobile' => ''
+                        ),
                         'device_settings' => true,
-                        'devices' => array('desktop'),
+                        'devices' => array('desktop', 'tablet','mobile'),
                         'options' => array(
                             '' => array(
                                 'title' => '',

@@ -1389,9 +1389,9 @@ if (!class_exists('Mantrabrain_Theme_Helper')) {
         {
             return array(
                 'all' => '{{query}}',
-                'desktop' => '@media screen and (min-width: 1025px) { {{query}} }',
-                'tablet' => '@media screen and (min-width: 569px) and (max-width: 1024px) { {{query}} }',
-                'mobile' => '@media screen and (max-width: 568px) { {{query}} }',
+                'desktop' => '@media (min-width: 1025px) { {{query}} }',
+                'tablet' => '@media (min-width: 640px) and (max-width: 1024px) { {{query}} }',
+                'mobile' => '@media (max-width: 639px) { {{query}} }',
             );
         }
 
@@ -1453,7 +1453,6 @@ if (!class_exists('Mantrabrain_Theme_Helper')) {
                 }
 
             }
-
 
 
             return json_encode($input_array);
