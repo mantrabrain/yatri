@@ -39,7 +39,8 @@ class Yatri_Section_Nav_Menu_Config
                                 'icon' => 'dashicons dashicons-editor-alignright',
                             )
                         ),
-                        'selector' => "{$parent_selector} .yatri-section-container.menu-container nav > ul",
+                        'selector' => "{$parent_selector} .yatri-section-container.menu-container nav > ul,
+                        {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu nav>ul",
                         'css_property' => 'text-align:{{value}};'
                     ),
                     array(
@@ -54,7 +55,8 @@ class Yatri_Section_Nav_Menu_Config
                         'description' => '',
                         'default' => '#fff',
                         'css_property' => 'color:{{value}};',
-                        'selector' => "{$parent_selector} .yatri-section-container.menu-container ul:not(.sub-menu)>li>a",
+                        'selector' => "{$parent_selector} .yatri-section-container.menu-container ul:not(.sub-menu)>li>a
+                        {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu ul:not(.sb-menu)>li>a",
                     ),
                     array(
                         'name' => $id . '_nav_hover_color',
@@ -64,7 +66,11 @@ class Yatri_Section_Nav_Menu_Config
                         'default' => '#fff',
                         'css_property' => 'color:{{value}};',
                         'selector' => "{$parent_selector} .yatri-section-container.menu-container ul:not(.sub-menu)>li:hover>a,
-                    {$parent_selector} .yatri-section-container.menu-container ul:not(.sub-menu)>li.current-menu-item:hover>a",
+                    {$parent_selector} .yatri-section-container.menu-container ul:not(.sub-menu)>li.current-menu-item:hover>a,
+                    {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu ul:not(.sub-menu)>li:hover>a,
+                    {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu ul:not(.sub-menu)>li.current-menu-item:hover>a
+                    
+                    ",
                     ),
                     array(
                         'name' => $id . '_nav_background_color',
@@ -73,7 +79,8 @@ class Yatri_Section_Nav_Menu_Config
                         'description' => '',
                         'default' => '#fff',
                         'css_property' => 'background-color:{{value}};',
-                        'selector' => "{$parent_selector} .yatri-section-container.menu-container ul:not(.sub-menu)>li>a",
+                        'selector' => "{$parent_selector} .yatri-section-container.menu-container ul:not(.sub-menu)>li>a,
+                        {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu ul:not(.sub-menu)>li>a",
                     ),
                     array(
                         'name' => $id . '_nav_hover_background_color',
@@ -83,7 +90,9 @@ class Yatri_Section_Nav_Menu_Config
                         'default' => '#fff',
                         'css_property' => 'background-color:{{value}};',
                         'selector' => "{$parent_selector} .yatri-section-container.menu-container ul:not(.sub-menu)>li:hover>a,
-                    {$parent_selector} .yatri-section-container.menu-container ul:not(.sub-menu)>li.current-menu-item:hover>a",
+                    {$parent_selector} .yatri-section-container.menu-container ul:not(.sub-menu)>li.current-menu-item:hover>a,
+                    {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu  ul:not(.sub-menu)>li:hover>a,
+                    {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu ul:not(.sub-menu)>li.current-menu-item:hover>a",
                     ),
                     array(
                         'name' => $id . '_nav_active_font_color',
@@ -92,7 +101,8 @@ class Yatri_Section_Nav_Menu_Config
                         'description' => '',
                         'default' => '#fff',
                         'css_property' => 'color:{{value}};',
-                        'selector' => "{$parent_selector} .yatri-section-container.menu-container ul:not(.sub-menu)>li.current-menu-item>a",
+                        'selector' => "{$parent_selector} .yatri-section-container.menu-container ul:not(.sub-menu)>li.current-menu-item>a,
+                        {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu  ul:not(.sub-menu)>li.current-menu-item>a",
                     ),
                     array(
                         'name' => $id . '_nav_active_background_color',
@@ -101,7 +111,8 @@ class Yatri_Section_Nav_Menu_Config
                         'description' => '',
                         'default' => '#fff',
                         'css_property' => 'background-color:{{value}};',
-                        'selector' => "{$parent_selector} .yatri-section-container.menu-container ul:not(.sub-menu)>li.current-menu-item>a",
+                        'selector' => "{$parent_selector} .yatri-section-container.menu-container ul:not(.sub-menu)>li.current-menu-item>a,
+                        {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu ul:not(.sub-menu)>li.current-menu-item>a",
                     ),
 
                     array(
@@ -216,7 +227,10 @@ class Yatri_Section_Nav_Menu_Config
                             ),
 
                         ),
-                        'selector' => "{$parent_selector} .yatri-section-container.menu-container ul:not(.sub-menu)>li>a",
+                        'selector' => "
+                        {$parent_selector} .yatri-section-container.menu-container ul:not(.sub-menu)>li>a,
+                        {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu ul:not(.sub-menu)>li>a
+                        ",
                     ),
                     array(
                         'name' => $id . '_nav_margin',
@@ -284,7 +298,10 @@ class Yatri_Section_Nav_Menu_Config
                             ),
 
                         ),
-                        'selector' => "{$parent_selector} .yatri-section-container.menu-container ul:not(.sub-menu)>li>a",
+                        'selector' => "
+                        {$parent_selector} .yatri-section-container.menu-container ul:not(.sub-menu)>li>a,
+                        {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu ul:not(.sub-menu)>li>a
+                        ",
                     ),
                     array(
                         'name' => $id . '_nav_border_heading',
@@ -303,7 +320,10 @@ class Yatri_Section_Nav_Menu_Config
                             'top' => 0,
                             'bottom' => 0
                         ),
-                        'selector' => "{$parent_selector} .yatri-section-container.menu-container ul:not(.sub-menu)>li>a",
+                        'selector' => "
+                        {$parent_selector} .yatri-section-container.menu-container ul:not(.sub-menu)>li>a,
+                        {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu ul:not(.sub-menu)>li>a
+                        ",
 
                     ),
 
@@ -322,7 +342,10 @@ class Yatri_Section_Nav_Menu_Config
                     'description' => '',
                     'default' => '#fff',
                     'css_property' => 'color:{{value}};',
-                    'selector' => "{$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu li a",
+                    'selector' => "
+                    {$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu li a,
+                    {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu li.menu-item-has-children ul.sub-menu li a
+                    ",
                 ),
                 array(
                     'name' => $id . '_dropdown_nav_hover_color',
@@ -331,8 +354,12 @@ class Yatri_Section_Nav_Menu_Config
                     'description' => '',
                     'default' => '#fff',
                     'css_property' => 'color:{{value}};',
-                    'selector' => "{$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu li:hover>a,
-                {$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu li.current-menu-item:hover>a",
+                    'selector' => "
+                    {$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu li:hover>a,
+                    {$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu li.current-menu-item:hover>a,
+                    {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu li.menu-item-has-children ul.sub-menu li:hover>a,
+                    {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu li.menu-item-has-children ul.sub-menu li.current-menu-item:hover>a
+                ",
                 ),
                 array(
                     'name' => $id . '_dropdown_nav_background_color',
@@ -341,7 +368,10 @@ class Yatri_Section_Nav_Menu_Config
                     'description' => '',
                     'default' => '#fff',
                     'css_property' => 'background-color:{{value}};',
-                    'selector' => "{$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu li a",
+                    'selector' => "
+                    {$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu li a,
+                    {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu li.menu-item-has-children ul.sub-menu li a
+                    ",
                 ), array(
                     'name' => $id . '_dropdown_nav_hover_background_color',
                     'type' => 'color',
@@ -349,8 +379,13 @@ class Yatri_Section_Nav_Menu_Config
                     'description' => '',
                     'default' => '#fff',
                     'css_property' => 'background-color:{{value}};',
-                    'selector' => "{$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu li:hover>a,
-                {$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu li.current-menu-item:hover>a",
+                    'selector' => "
+                    {$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu li:hover>a,
+                    {$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu li.current-menu-item:hover>a,
+                    {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu li.menu-item-has-children ul.sub-menu li:hover>a,
+                    {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu li.menu-item-has-children ul.sub-menu li.current-menu-item:hover>a
+                    
+                    ",
                 ), array(
                     'name' => $id . '_dropdown_nav_active_font_color',
                     'type' => 'color',
@@ -358,7 +393,10 @@ class Yatri_Section_Nav_Menu_Config
                     'description' => '',
                     'default' => '#fff',
                     'css_property' => 'color:{{value}};',
-                    'selector' => "{$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu li.current-menu-item>a",
+                    'selector' => "
+                    {$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu li.current-menu-item>a,
+                    {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu li.menu-item-has-children ul.sub-menu li.current-menu-item>a
+                    ",
                 ), array(
                     'name' => $id . '_dropdown_nav_active_background_color',
                     'type' => 'color',
@@ -366,7 +404,10 @@ class Yatri_Section_Nav_Menu_Config
                     'description' => '',
                     'default' => '#fff',
                     'css_property' => 'background-color:{{value}};',
-                    'selector' => "{$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu li.current-menu-item>a",
+                    'selector' => "
+                    {$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu li.current-menu-item>a,
+                    {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu li.menu-item-has-children ul.sub-menu li.current-menu-item>a
+                    ",
                 ),
                 array(
                     'name' => $id . '_dropdown_nav_padding_margin_heading',
@@ -439,7 +480,10 @@ class Yatri_Section_Nav_Menu_Config
                         ),
 
                     ),
-                    'selector' => "{$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu li a",
+                    'selector' => "
+                    {$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu li a,
+                    {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu li.menu-item-has-children ul.sub-menu li a
+                    ",
                 ),
                 array(
                     'name' => $id . '_dropdown_nav_margin',
@@ -509,15 +553,21 @@ class Yatri_Section_Nav_Menu_Config
                     ),
                     'additional_css' =>
                         array('desktop' => "{$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu li a{display:inline-block;width:100%;} "),
-                    'selector' => "{$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu li a",
+                    'selector' => "
+                    {$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu li a,
+                    {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu li.menu-item-has-children ul.sub-menu li a
+                    ",
                 ),
                 array(
                     'name' => $id . '_dropdown_nav_wrapper_margin',
                     'type' => 'margin',
                     'label' => __('Wrapper Margin', 'yatri'),
                     'description' => '',
-                    'selector' => "{$parent_selector} .yatri-section-container.menu-container nav > ul > li:hover > ul,
-                        {$parent_selector} .yatri-section-container.menu-container nav > ul > li.focus > ul
+                    'selector' => "
+                        {$parent_selector} .yatri-section-container.menu-container nav > ul > li:hover > ul,
+                        {$parent_selector} .yatri-section-container.menu-container nav > ul > li.focus > ul,
+                        {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu nav > ul > li:hover > ul,
+                        {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu nav > ul > li.focus > ul
                         ",
                 ),
                 array(
@@ -543,7 +593,10 @@ class Yatri_Section_Nav_Menu_Config
                         'top' => 0,
                         'bottom' => 0
                     ),
-                    'selector' => "{$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu li a",
+                    'selector' => "
+                    {$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu li a,
+                    {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu li.menu-item-has-children ul.sub-menu li a
+                    ",
 
                 ),
 
