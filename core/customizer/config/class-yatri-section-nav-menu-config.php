@@ -103,6 +103,20 @@ class Yatri_Section_Nav_Menu_Config
                     ),
 
                     array(
+                        'name' => $id . '_hamburger',
+                        'type' => 'heading',
+                        'label' => __('Mobile/Tablet Menu', 'yatri'),
+                    ),
+                    array(
+                        'name' => $id . '_hamburger_color',
+                        'type' => 'color',
+                        'label' => __('Hamburger Color', 'yatri'),
+                        'description' => '',
+                        'default' => '#c1c1c1',
+                        'selector' => "{$parent_selector} .yatri-section-container.menu-container .yatri-responsive-toggle-menu",
+                        'css_property' => 'color:{{value}}; border-color:{{value}};'
+                    ),
+                    array(
                         'name' => $id . '_nav_padding_margin_heading',
                         'type' => 'heading',
                         'label' => __('Padding & Margin', 'yatri'),

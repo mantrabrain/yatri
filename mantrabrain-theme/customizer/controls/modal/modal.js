@@ -464,11 +464,11 @@
                     case "color":
                         var value = $(this).find('.yatri-change-by-js.yatri-color-picker').val();
                         value = '' == value ? 'initial' : value;
-                        devicewise_css_text = '' == value ? '' : css_property.replace("{{value}}", value);
+                        devicewise_css_text = '' == value ? '' : css_property.replace(/{{value}}/g, value);
                         break;
                     case "overlay":
                         var value = $(this).find('.yatri-change-by-js.yatri-color-picker').val();
-                        devicewise_css_text = '' == value ? '' : css_property.replace("{{value}}", value);
+                        devicewise_css_text = '' == value ? '' : css_property.replace("/{{value}}/g", value);
                         var selector_array = css_selector.split(",");
                         css_selector = selector_array.join(':before, ') + ':before';
                         if ('' == value) {
@@ -480,14 +480,14 @@
 
                     case "alignment":
                         var value = $(this).find('.yatri-input-alignment input.yatri-change-by-js').val();
-                        devicewise_css_text = '' == value ? '' : css_property.replace("{{value}}", value);
+                        devicewise_css_text = '' == value ? '' : css_property.replace(/{{value}}/g, value);
                         break;
                     case "range":
                         var value = $(this).find('.yatri--slider-input.yatri-change-by-js').val();
                         var unit = $(this).find('.yatri--css-unit').find('input[name="' + field_type + '_unit"]').val();
                         if ('' !== value) {
-                            var single_css = css_property.replace("{{value}}", value);
-                            devicewise_css_text += single_css.replace("{{unit}}", unit);
+                            var single_css = css_property.replace(/{{value}}/g, value);
+                            devicewise_css_text += single_css.replace(/{{value}}/g, unit);
                         }
                         break;
                     case "padding":
@@ -574,7 +574,7 @@
                         var font_field_id = _that.getTypoFieldID($(this));
                         _that.fontLoader(font_name, field_id, font_weight, subset);
                         font_name = '' == font_name ? 'initial' : font_name;
-                        devicewise_css_text = '' == font_name ? '' : css_property.replace("{{value}}", font_name);
+                        devicewise_css_text = '' == font_name ? '' : css_property.replace(/{{value}}/g, font_name);
 
                         break;
 
@@ -585,7 +585,7 @@
                         var subset = _that.getFontSubset($(this));
                         _that.fontLoader(font_family, field_id, value, subset);
                         value = '' == value ? 'initial' : value;
-                        devicewise_css_text = '' == value ? '' : css_property.replace("{{value}}", value);
+                        devicewise_css_text = '' == value ? '' : css_property.replace(/{{value}}/g, value);
                         break;
                     case "checkbox":
                     case "font_languages":
@@ -600,7 +600,7 @@
                     case "select":
                         var value = $(this).find('.yatri-change-by-js').val();
                         value = '' == value ? 'initial' : value;
-                        devicewise_css_text = '' == value ? '' : css_property.replace("{{value}}", value);
+                        devicewise_css_text = '' == value ? '' : css_property.replace(/{{value}}/g, value);
                         break;
 
                 }

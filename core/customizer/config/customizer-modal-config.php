@@ -18,6 +18,8 @@ require_once YATRI_THEME_DIR . '/core/customizer/config/class-yatri-section-pagi
 require_once YATRI_THEME_DIR . '/core/customizer/config/class-yatri-section-sidebar-config.php';
 require_once YATRI_THEME_DIR . '/core/customizer/config/class-yatri-section-footer-nav-menu-config.php';
 require_once YATRI_THEME_DIR . '/core/customizer/config/class-yatri-section-copyright-config.php';
+require_once YATRI_THEME_DIR . '/core/customizer/config/class-yatri-section-footer-social-icons-config.php';
+require_once YATRI_THEME_DIR . '/core/customizer/config/class-yatri-section-footer-office-info-config.php';
 
 function yatri_customizer_modal_config($field_id = '', $return_all = false)
 {
@@ -593,9 +595,9 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
 
     $fields['bottom_footer_button_style_design'] = Yatri_Section_Button_Config::get_design_style_config('bottom_footer_button_style_design', '.bottom-footer');
 
-    $fields['bottom_footer_office_info_design'] = Yatri_Section_Office_Info_Config::get_design_style_config('bottom_footer_office_info_design', '.bottom-footer');
+    $fields['bottom_footer_office_info_design'] = Yatri_Section_Footer_Office_Info_Config::get_design_style_config('bottom_footer_office_info_design', '.bottom-footer');
 
-    $fields['bottom_footer_social_icons_design'] = Yatri_Section_Social_Icons_Config::get_design_style_config('bottom_footer_social_icons_design', '.bottom-footer');
+    $fields['bottom_footer_social_icons_design'] = Yatri_Section_Footer_Social_Icons_Config::get_design_style_config('bottom_footer_social_icons_design', '.bottom-footer');
 
     $fields['bottom_footer_custom_html_design'] = Yatri_Section_Custom_HTML_Config::get_design_style_config('bottom_footer_custom_html_design', '.bottom-footer');
 

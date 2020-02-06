@@ -1,6 +1,6 @@
 <?php
 
-class Yatri_Section_Office_Info_Config
+class Yatri_Section_Footer_Office_Info_Config
 {
     public static function get_design_style_config($id, $parent_selector)
     {
@@ -64,20 +64,6 @@ class Yatri_Section_Office_Info_Config
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .yatri-section-container.office_information-container .yatri-section-office-information ul li:hover",
                     'css_property' => 'background-color:{{value}};'
-                ),
-                array(
-                    'name' => $id . '_hamburger',
-                    'type' => 'heading',
-                    'label' => __('Mobile/Tablet Menu', 'yatri'),
-                ),
-                array(
-                    'name' => $id . '_hamburger_color',
-                    'type' => 'color',
-                    'label' => __('Hamburger Color', 'yatri'),
-                    'description' => '',
-                    'default' => '#c1c1c1',
-                    'selector' => "{$parent_selector} .yatri-section-container.office_information-container .yatri-responsive-toggle-menu",
-                    'css_property' => 'color:{{value}}; border-color:{{value}};'
                 ),
             ),
             $id . '_spacing_fields' =>
