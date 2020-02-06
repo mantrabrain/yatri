@@ -50,8 +50,10 @@ if (!isset($mid_header_visibility['mobile']) || (isset($mid_header_visibility['m
                                 'type' => yatri_get_header_option('mid_header_offcanvas_menu_type'),
                                 'sidebar' => yatri_get_header_option('mid_header_offcanvas_menu_sidebar'),
                                 'menu' => yatri_get_header_option('mid_header_offcanvas_menu_nav_menu'),
-
+                                'section_part_id' => 'yatri-mid-header'
                             );
+                            Yatri_Sections::set_global($section_id, $options, 'yatri-mid-header');
+
                             break;
                         case "social_icons":
 

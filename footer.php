@@ -22,7 +22,9 @@
     ?>
 
 </footer>
+
 <?php
+echo '</div>';
 
 do_action('yatri_after_footer');
 

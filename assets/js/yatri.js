@@ -143,89 +143,36 @@
         bindEvents: function () {
             var $this = this;
             $(window).on('resize', function () {
-                var offcanvas_section = $('.yatri-section-offcanvas-menu');
-                $.each(offcanvas_section, function () {
-                    $this.initCanvasMenuOffset($(this));
-                });
+
             });
             $(document).ready(function () {
-                var offcanvas_section = $('.yatri-section-offcanvas-menu');
-                $.each(offcanvas_section, function () {
-                    $this.initCanvasMenuOffset($(this));
-                });
+
             });
             $('.yatri-canvas-close').on('click', function () {
-                $(this).closest('.yatri-section-offcanvas-menu').find('.yatri-toggle-wrap').trigger('click');
+                var id = $(this).closest('.yatri-offcanvas-menu-content').attr('id');
+                $('body').find('.yatri-section-offcanvas-menu[data-id="' + id + '"]').find('.yatri-toggle-wrap').trigger('click');
             });
 
 
-        },
-        initCanvasMenuOffset: function (offcanvas_section, is_toggle) {
-            is_toggle = typeof is_toggle == "undefined" ? false : is_toggle;
-            
-            var container = offcanvas_section.closest('.yat-container');
-            var offcanvas_menu_content = offcanvas_section.find('.yatri-offcanvas-menu-content');
-            var offcanvas_menu_width = offcanvas_menu_content.width();
-            var left = (offcanvas_menu_width + 100);
-            var right = (offcanvas_menu_width + 100);
-            var top = offcanvas_menu_content.offset().top;
-            if (container.length > 0) {
-                var container_left = container.offset().left;
-                var container_right = ($(window).width() - (container.offset().left + container.outerWidth()));
-                left = left + container_left;
-                right = right + container_right;
-            }
-            top = 0 - top;
-            if (offcanvas_section.closest('body').find('#wpadminbar').length > 0) {
-                var admin_bar_height = offcanvas_section.closest('body').find('#wpadminbar').height();
-                top = top + admin_bar_height;
-            }
-            var css = {};
-            if (!is_toggle) {
-                css.top = top + 'px';
-            }
-            if (offcanvas_section.find('.yatri-offcanvas-menu-content.left').length > 0) {
-                css.left = -left + 'px'
-            } else {
-                css.right = -right + 'px'
-            }
-            offcanvas_section.find('.yatri-offcanvas-menu-content').css(css);
         },
         initOffCanvasMenu: function () {
             var _that = this;
             var offcanvas_section = $('.yatri-section-offcanvas-menu');
             offcanvas_section.find('.yatri-toggle-wrap').click(function () {
-                var container = $(this).closest('.yat-container');
-                var offcanvas_menu_content = $(this).closest('.yatri-section-offcanvas-menu').find('.yatri-offcanvas-menu-content');
-                var offcanvas_menu_width = offcanvas_menu_content.width();
-                var left = 0;
-                var right = 0;
-                if (container.length > 0) {
-                    var container_left = container.offset().left;
-                    var container_right = ($(window).width() - (container.offset().left + container.outerWidth()));
-                    left = left - container_left;
-                    right = right - container_right;
-                }
-
-
-                var css = {};
+                var offcanvas_id = $(this).closest('.yatri-section-offcanvas-menu').attr('data-id');
                 if ($(this).closest('.yatri-section-offcanvas-menu').hasClass('show-nav')) {
-                    _that.initCanvasMenuOffset($(this).closest('.yatri-section-offcanvas-menu'), true);
                     $(this).closest('.yatri-section-offcanvas-menu').removeClass('show-nav');
                     $(this).closest('.yatri-section-offcanvas-menu').find('.toggle-icon').addClass('fa-bars').removeClass('fa-times');
+                    $('#' + offcanvas_id).removeClass('yatri-offcanvas-open');
 
 
                 } else {
                     $(this).closest('.yatri-section-offcanvas-menu').addClass('show-nav');
                     $(this).closest('.yatri-section-offcanvas-menu').find('.toggle-icon').addClass('fa-times').removeClass('fa-bars');
+                    $('#' + offcanvas_id).addClass('yatri-offcanvas-open');
 
-                    if ($(this).closest('.yatri-section-offcanvas-menu').find('.yatri-offcanvas-menu-content.left').length > 0) {
-                        css.left = left + 'px'
-                    } else {
-                        css.right = right + 'px'
-                    }
+
                 }
-                offcanvas_menu_content.css(css);
 
             });
         },

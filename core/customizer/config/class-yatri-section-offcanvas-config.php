@@ -42,7 +42,7 @@ class Yatri_Section_Offcanvas_Config
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-toggle-wrap span.toggle-icon,
-                    {$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .yatri-canvas-close
+                    {$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .yatri-canvas-close
                     ",
                     'css_property' => 'color:{{value}};'
                 ),
@@ -53,7 +53,7 @@ class Yatri_Section_Offcanvas_Config
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-toggle-wrap span.toggle-icon:hover,
-                    {$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .yatri-canvas-close:hover",
+                    {$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .yatri-canvas-close:hover",
                     'css_property' => 'color:{{value}};'
                 ),
                 array(
@@ -62,7 +62,7 @@ class Yatri_Section_Offcanvas_Config
                     'label' => __('Close Icon Inside Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
-                    'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .yatri-canvas-close",
+                    'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .yatri-canvas-close",
                     'css_property' => 'background-color:{{value}};'
                 ),
                 array(
@@ -76,7 +76,7 @@ class Yatri_Section_Offcanvas_Config
                     'label' => __('Sidebar Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
-                    'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content",
+                    'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content",
                     'css_property' => 'background-color:{{value}};'
                 ),
                 array(
@@ -85,7 +85,7 @@ class Yatri_Section_Offcanvas_Config
                     'label' => __('Sidebar Background Image', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
-                    'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content",
+                    'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content",
                     'css_property' => 'background-image:{{value}};'
                 ),
                 array(
@@ -99,7 +99,7 @@ class Yatri_Section_Offcanvas_Config
                     'label' => __('Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
-                    'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .widget",
+                    'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .widget",
                     'css_property' => 'background-color:{{value}};'
                 ),
                 array(
@@ -108,8 +108,8 @@ class Yatri_Section_Offcanvas_Config
                     'label' => __('Title Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
-                    'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .widget-title,
-                    {$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .widgettitle
+                    'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .widget-title,
+                    {$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .widgettitle
                     ",
                     'css_property' => 'color:{{value}};'
                 ),
@@ -119,8 +119,8 @@ class Yatri_Section_Offcanvas_Config
                     'label' => __('Title Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
-                    'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .widget-title,
-                    {$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .widgettitle
+                    'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .widget-title,
+                    {$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .widgettitle
                     ",
                     'css_property' => 'background-color:{{value}};'
                 ),
@@ -130,12 +130,12 @@ class Yatri_Section_Offcanvas_Config
                     'label' => __('Text Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
-                    'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content,
-                    {$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content p,
-                    {$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content span,
-                    {$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content strong,
-                    {$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content em,
-                    {$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content li
+                    'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content,
+                    {$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content p,
+                    {$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content span,
+                    {$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content strong,
+                    {$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content em,
+                    {$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content li
                     ",
                     'css_property' => 'color:{{value}};'
                 ),
@@ -145,7 +145,7 @@ class Yatri_Section_Offcanvas_Config
                     'label' => __('Link Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
-                    'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content a",
+                    'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content a",
                     'css_property' => 'color:{{value}};'
                 ),
                 array(
@@ -154,7 +154,7 @@ class Yatri_Section_Offcanvas_Config
                     'label' => __('Link Hover Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
-                    'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content a:hover",
+                    'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content a:hover",
                     'css_property' => 'color:{{value}};'
                 ),
             ),
@@ -224,7 +224,7 @@ class Yatri_Section_Offcanvas_Config
                             )
 
                         ),
-                        'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content",
+                        'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content",
 
                     ),
                     array(
@@ -251,7 +251,7 @@ class Yatri_Section_Offcanvas_Config
                                 'icon' => 'dashicons dashicons-editor-alignright',
                             )
                         ),
-                        'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .widget",
+                        'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .widget",
                         'css_property' => 'text-align:{{value}};'
                     ),
                     array(
@@ -285,7 +285,7 @@ class Yatri_Section_Offcanvas_Config
                             )
 
                         ),
-                        'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .widget",
+                        'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .widget",
 
                     ),
                     array(
@@ -314,7 +314,7 @@ class Yatri_Section_Offcanvas_Config
                             )
 
                         ),
-                        'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .widget",
+                        'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .widget",
 
 
                     ),
@@ -345,8 +345,8 @@ class Yatri_Section_Offcanvas_Config
                             )
 
                         ),
-                        'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .widget-title,
-                    {$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .widgettitle
+                        'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .widget-title,
+                    {$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .widgettitle
                     ",
 
                     ),
@@ -376,8 +376,8 @@ class Yatri_Section_Offcanvas_Config
                             )
 
                         ),
-                        'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .widget-title,
-                    {$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .widgettitle
+                        'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .widget-title,
+                    {$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .widgettitle
                     ",
 
                     ),
@@ -400,7 +400,7 @@ class Yatri_Section_Offcanvas_Config
                             'top' => 0,
                             'bottom' => 0
                         ),
-                        'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content",
+                        'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content",
                     ),
                     array(
                         'name' => $id . '_spacing_widgets_border',
@@ -419,7 +419,7 @@ class Yatri_Section_Offcanvas_Config
                             'top' => 0,
                             'bottom' => 0
                         ),
-                        'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .widget",
+                        'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .widget",
                     ),
                     array(
                         'name' => $id . '_spacing_widget_title_border',
@@ -440,20 +440,20 @@ class Yatri_Section_Offcanvas_Config
                         ),
                         'additional_css' => array(
                             'desktop' => "
-                            {$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .widget-title:after{content:none},
-                            {$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .widget-title{content:none}
+                            {$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .widget-title:after{content:none},
+                            {$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .widget-title{content:none}
                             ",
                             'tablet' => "
-                            {$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .widget-title:after{content:none},
-                            {$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .widget-title{content:none}
+                            {$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .widget-title:after{content:none},
+                            {$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .widget-title{content:none}
                             ",
                             'mobile' => "
-                            {$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .widget-title:after{content:none},
-                            {$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .widget-title{content:none}
+                            {$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .widget-title:after{content:none},
+                            {$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .widget-title{content:none}
                             ",
                         ),
-                        'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .widget-title,
-                    {$parent_selector} .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .widgettitle
+                        'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .widget-title,
+                    {$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .widgettitle
                     ",
                     )
                 ),

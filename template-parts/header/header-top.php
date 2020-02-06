@@ -1,4 +1,5 @@
 <?php
+
 $class = 'top-header d-none d-lg-block yatri-header-item';
 
 $top_header_visibility = yatri_get_option('top_header_visibility');
@@ -50,8 +51,12 @@ if (!isset($top_header_visibility['mobile']) || (isset($top_header_visibility['m
                                 'type' => yatri_get_header_option('top_header_offcanvas_menu_type'),
                                 'sidebar' => yatri_get_header_option('top_header_offcanvas_menu_sidebar'),
                                 'menu' => yatri_get_header_option('top_header_offcanvas_menu_nav_menu'),
+                                'section_part_id' => 'top-header'
+
 
                             );
+                            Yatri_Sections::set_global($section_id, $options, 'top-header');
+
                             break;
                         case "social_icons":
 

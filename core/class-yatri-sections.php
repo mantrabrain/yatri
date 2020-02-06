@@ -55,6 +55,25 @@ class Yatri_Sections
 
     public static function append_footer_sections()
     {
+        global $yatri_settings;
+
+        $sections = isset($yatri_settings['sections']) ? $yatri_settings['sections'] : array();
+
+        foreach ($sections as $section_id => $footer_sections) {
+
+            foreach ($footer_sections as $footer_section_key => $section_options) {
+
+
+                switch ($footer_section_key) {
+                    case "offcanvas_menu":
+                        self::offcanvas_menu_content($section_options, $section_id);
+                        break;
+
+                    case "mobile_menu":
+                        break;
+                }
+            }
+        }
 
     }
 
@@ -365,24 +384,16 @@ class Yatri_Sections
 
     }
 
-    private static function offcanvas_menu_content()
+    private static function offcanvas_menu_content($options, $section_id)
     {
 
-    }
-
-    private function offcanvas_menu($options = array())
-    {
         $start_from = isset($options['start_from']) ? $options['start_from'] : 'left';
         $type = isset($options['type']) ? $options['type'] : 'sidebar';
         $menu = isset($options['menu']) ? sanitize_text_field($options['menu']) : 'offcanvas_menu';
         $sidebar = isset($options['sidebar']) ? sanitize_text_field($options['sidebar']) : 'yatri-offcanvas-menu-sidebar';
 
-
-        echo '<div class="yatri-section-offcanvas-menu yatri-section-inner">';
-        echo '<button class="yatri-toggle-wrap">';
-        echo '<span class="toggle-icon fas fa-bars"></span>';
-        echo '</button>';
-        echo '<div class="yatri-offcanvas-menu-content ' . esc_attr($start_from) . '">';
+        echo '<div class="yatri-offcanvas-menu-content ' . esc_attr($section_id) . '_offcanvas_menu ' . esc_attr($start_from) . ' " id="' . esc_attr($section_id) . '_offcanvas_menu">';
+        echo '<div class="yatri-offcanvas-menu-content-inner">';
         echo '<div class="yatri-canvas-close">';
         echo '<span class="close-icon fas fa-times"></span>';
         echo '</div>';
@@ -400,7 +411,17 @@ class Yatri_Sections
         }
 
         echo '</div>';
+        echo '</div>';
+    }
 
+    private function offcanvas_menu($options = array())
+    {
+        $section_part_id = isset($options['section_part_id']) ? $options['section_part_id'] : '';
+
+        echo '<div class="yatri-section-offcanvas-menu yatri-section-inner" data-id="' . esc_attr($section_part_id) . '_offcanvas_menu">';
+        echo '<button class="yatri-toggle-wrap">';
+        echo '<span class="toggle-icon fas fa-bars"></span>';
+        echo '</button>';
         echo '</div>';
     }
 
@@ -458,6 +479,14 @@ class Yatri_Sections
         }
         echo '</ul>';
         echo '</div>';
+
+    }
+
+    public static function set_global($section_id, $options = array(), $section_part_id)
+    {
+        global $yatri_settings;
+
+        $yatri_settings['sections'][$section_part_id][$section_id] = $options;
 
     }
 }

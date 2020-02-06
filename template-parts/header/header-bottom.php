@@ -51,8 +51,10 @@ if (!isset($bottom_header_visibility['mobile']) || (isset($bottom_header_visibil
                                 'type' => yatri_get_header_option('bottom_header_offcanvas_menu_type'),
                                 'sidebar' => yatri_get_header_option('bottom_header_offcanvas_menu_sidebar'),
                                 'menu' => yatri_get_header_option('bottom_header_offcanvas_menu_nav_menu'),
+                                'section_part_id' => 'bottom-header'
 
                             );
+                            Yatri_Sections::set_global($section_id, $options, 'bottom-header');
                             break;
                         case "social_icons":
 

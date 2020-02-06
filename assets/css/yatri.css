@@ -10606,6 +10606,77 @@ body .entry-title {
 .offcanvas_menu-container {
   position: unset; }
 
+.yatri-offcanvas-menu-content {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  background: #fff;
+  width: 325px;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+   -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+       transform: translateX(-100%);
+  -webkit-transition: 0.35s -webkit-transform ease;
+  transition: 0.35s -webkit-transform ease;
+  -o-transition: 0.35s -o-transform ease;
+  -moz-transition: 0.35s transform ease, 0.35s -moz-transform ease;
+  transition: 0.35s transform ease;
+  transition: 0.35s transform ease, 0.35s -webkit-transform ease, 0.35s -moz-transform ease, 0.35s -o-transform ease;
+  transition: 0.35s transform ease, 0.35s -webkit-transform ease;
+  padding: 40px 20px 20px;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+  .yatri-offcanvas-menu-content .yatri-canvas-close {
+    cursor: pointer;
+    background: #aaa;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    left: unset;
+    right: 5px;
+    top: 5px;
+    text-align: center;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15);
+            box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15); }
+    .yatri-offcanvas-menu-content .yatri-canvas-close:hover {
+      background: #949494; }
+
+.yatri-offcanvas-menu-content.right {
+  right: 0;
+  left: unset;
+  direction: rtl;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+   -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+       transform: translateX(100%); }
+  .yatri-offcanvas-menu-content.right .yatri-offcanvas-menu-content-inner {
+    direction: ltr; }
+  .yatri-offcanvas-menu-content.right .yatri-canvas-close {
+    right: unset;
+    left: 5px; }
+
+body.admin-bar .yatri-offcanvas-menu-content {
+  top: 32px; }
+
+.yatri-offcanvas-menu-content.yatri-offcanvas-open, .yatri-offcanvas-menu-content.yatri-offcanvas-open.right {
+  display: block;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+   -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+       transform: translateX(0);
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); }
+
 .yatri-section-offcanvas-menu .yatri-toggle-wrap {
   display: inline-block;
   background: none;
@@ -10616,47 +10687,6 @@ body .entry-title {
     cursor: pointer; }
   .yatri-section-offcanvas-menu .yatri-toggle-wrap:hover span.fa {
     color: #0b51c5; }
-
-.yatri-section-offcanvas-menu .yatri-offcanvas-menu-content {
-  width: 325px;
-  max-width: 100%;
-  min-height: 100vh;
-  max-height: 100vh;
-  overflow-y: auto;
-  position: absolute;
-  top: 0;
-  background: #fff;
-  padding: 15px;
-  right: -500px;
-  z-index: 99999;
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-  visibility: hidden;
-  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
-          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
-  border: 1px solid #ddd;
-  border-radius: 0;
-  padding-top: 25px; }
-  .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .yatri-canvas-close {
-    cursor: pointer;
-    background: #aaa;
-    height: 25px;
-    width: 25px;
-    position: absolute;
-    left: 5px;
-    right: unset;
-    top: 5px;
-    text-align: center;
-    border-radius: 100%;
-    color: #fff;
-    font-size: 15px;
-    line-height: 1.6;
-    -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15);
-            box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15); }
-    .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content .yatri-canvas-close:hover {
-      background: #949494; }
 
 .yatri-section-offcanvas-menu .yatri-offcanvas-menu-content.left {
   left: -50000px; }
