@@ -85,6 +85,7 @@
   z-index: 9999;
   background: #fff;
   width: 325px;
+  max-width: 100%;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
   -webkit-transition: 0.35s -webkit-transform ease;
