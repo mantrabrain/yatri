@@ -69,9 +69,11 @@ if (!isset($top_header_visibility['mobile']) || (isset($top_header_visibility['m
                             $container_class .= ' main-navigation';
                             $options = array(
                                 'location' => yatri_get_header_option('top_header_main_menu'),
-                                'class' => 'nav'
+                                'class' => 'nav',
+                                'section_part_id' => 'top-header'
 
                             );
+                            Yatri_Sections::set_global('mobile_menu', $options, 'top-header');
                             break;
                         case "site_branding":
                             $options = array(

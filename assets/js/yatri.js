@@ -11,7 +11,7 @@
             this.navigationMenu();
         },
         navigationMenu: function () {
-            var $el = $('.yatri-section-menu');
+            var $el = $('.yatri-mobile-menu');
             $el.each(function () {
                 var subMenu = $(this).find("ul.sub-menu");
                 subMenu.append();
@@ -35,6 +35,21 @@
 
             $('body').on('click', '.yatri-responsive-toggle-menu', function () {
                 var _that = $(this);
+                var id = $(this).closest('.yatri-responsive-toggle-menu-wrap').attr('data-id');
+
+                if (typeof id !== "undefined" && typeof id !== undefined && id !== "") {
+
+                    if ($('#' + id).hasClass('yatri-navigation-menu-open')) {
+                        $(this).removeClass('close');
+                        $(this).addClass('open');
+                        $('#' + id).removeClass('yatri-navigation-menu-open');
+                    } else {
+                        $(this).removeClass('open');
+                        $(this).addClass('close');
+                        $('#' + id).addClass('yatri-navigation-menu-open');
+                    }
+                    return;
+                }
                 if (!$(this).closest('.yatri-section-container').hasClass('yatri-toggle-section-open')) {
                     _that.closest('.yatri-section-container').addClass('yatri-toggle-section-open');
                     $(this).closest('.yatri-section-container').find('.yatri-section-inner').slideDown('slow', function () {
@@ -151,6 +166,10 @@
             $('.yatri-canvas-close').on('click', function () {
                 var id = $(this).closest('.yatri-offcanvas-menu-content').attr('id');
                 $('body').find('.yatri-section-offcanvas-menu[data-id="' + id + '"]').find('.yatri-toggle-wrap').trigger('click');
+            });
+            $('.yatri-mobile-navigation-close').on('click', function () {
+                var id = $(this).closest('.yatri-section-inner').attr('id');
+                $('body').find('.yatri-responsive-toggle-menu-wrap[data-id="' + id + '"]').find('.yatri-responsive-toggle-menu').trigger('click');
             });
 
 

@@ -43,30 +43,6 @@
     .yatri-submenu-toggle {
       display: none;
     }
-    li.yatri-menu-open {
-
-      > ul.sub-menu {
-        display: block;
-
-      }
-      > .yatri-submenu-toggle {
-        &:before {
-          content: "";
-        }
-      }
-    }
-    li.yatri-menu-close {
-
-      > ul.sub-menu {
-        display: none;
-
-      }
-      > .yatri-submenu-toggle {
-        &:before {
-          content: "";
-        }
-      }
-    }
 
   }
 
@@ -136,6 +112,10 @@ body.admin-bar .yatri-offcanvas-menu-content {
   top: 32px;
 }
 
+body.admin-bar .yatri-mobile-menu.yatri-section-menu {
+  top: 45px;
+}
+
 .yatri-offcanvas-menu-content.yatri-offcanvas-open, .yatri-offcanvas-menu-content.yatri-offcanvas-open.right {
 
   display: block;
@@ -177,6 +157,195 @@ body.admin-bar .yatri-offcanvas-menu-content {
   .yatri-canvas-close {
     cursor: pointer;
   }
+}
+
+.yatri-mobile-menu {
+  .yatri-mobile-navigation-close {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    padding: 10px;
+  }
+
+  &.yatri-section-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    background: $primary_color;
+    width: 400px;
+    max-width: 100%;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: 0.35s -webkit-transform ease;
+    transition: 0.35s -webkit-transform ease;
+    transition: 0.35s transform ease;
+    transition: 0.35s transform ease, 0.35s -webkit-transform ease;
+    padding: 40px 20px 20px;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      border: none;
+      display: block;
+      &.menu-item-has-children {
+        a {
+          &:after {
+            content: "";
+
+          }
+        }
+        .yatri-submenu-toggle {
+          height: 25px;
+          width: 25px;
+          background: #fff;
+          text-align: center;
+          line-height: 25px;
+          color: #000;
+          display: block;
+          position: absolute;
+          top: 6px;
+          right: 10px;
+          cursor: pointer;
+          font-size: 15px;
+        }
+      }
+      &:last-child {
+        border-bottom: 0;
+      }
+      &:after {
+        content: "";
+      }
+      &.yatri-menu-open {
+
+        > ul.sub-menu {
+          display: block;
+
+        }
+        > .yatri-submenu-toggle {
+          &:before {
+            content: "";
+          }
+        }
+      }
+      &.yatri-menu-close {
+
+        > ul.sub-menu {
+          display: none;
+
+        }
+        > .yatri-submenu-toggle {
+          &:before {
+            content: "";
+          }
+        }
+      }
+      a {
+        color: #fff;
+        display: block;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin: 0;
+        line-height: inherit;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        font-weight: inherit;
+      }
+    }
+    nav {
+      border-top: 1px solid #e9ecef;
+      & > ul {
+        & > li {
+          &:first-child {
+            a:first-child {
+              border-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  ul.sub-menu {
+    display: none;
+    opacity: 1;
+    position: unset;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    background: initial;
+    visibility: visible;
+
+    li {
+      display: block;
+      a {
+        padding-left: 35px;
+        &:before {
+          content: "";
+          margin-left: -15px;
+          position: absolute;
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+
+        }
+      }
+      ul.sub-menu {
+        li {
+          a {
+            padding-left: 50px;
+          }
+          ul.sub-menu {
+            li {
+              a {
+                padding-left: 65px;
+              }
+              ul.sub-menu {
+                li {
+                  a {
+                    padding-left: 80px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.yatri-mobile-menu.right {
+  &.yatri-section-menu {
+    right: 0;
+    left: unset;
+    direction: rtl;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    nav {
+      direction: ltr;
+    }
+    .yatri-canvas-close {
+      right: unset;
+      left: 5px;
+    }
+  }
+}
+
+.yatri-mobile-menu.yatri-section-menu.yatri-navigation-menu-open, .yatri-mobile-menu.yatri-section-menu.yatri-navigation-menu-open.right {
+
+  display: block;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
 }
 
 .yatri-section-search-form {

@@ -10591,18 +10591,6 @@ body .entry-title {
 .yatri-section-container.menu-container .yatri-submenu-toggle {
   display: none; }
 
-.yatri-section-container.menu-container li.yatri-menu-open > ul.sub-menu {
-  display: block; }
-
-.yatri-section-container.menu-container li.yatri-menu-open > .yatri-submenu-toggle:before {
-  content: ""; }
-
-.yatri-section-container.menu-container li.yatri-menu-close > ul.sub-menu {
-  display: none; }
-
-.yatri-section-container.menu-container li.yatri-menu-close > .yatri-submenu-toggle:before {
-  content: ""; }
-
 .offcanvas_menu-container {
   position: unset; }
 
@@ -10668,6 +10656,9 @@ body .entry-title {
 body.admin-bar .yatri-offcanvas-menu-content {
   top: 32px; }
 
+body.admin-bar .yatri-mobile-menu.yatri-section-menu {
+  top: 45px; }
+
 .yatri-offcanvas-menu-content.yatri-offcanvas-open, .yatri-offcanvas-menu-content.yatri-offcanvas-open.right {
   display: block;
   -webkit-transform: translateX(0);
@@ -10700,6 +10691,139 @@ body.admin-bar .yatri-offcanvas-menu-content {
 
 .yatri-section-offcanvas-menu .yatri-canvas-close {
   cursor: pointer; }
+
+.yatri-mobile-menu .yatri-mobile-navigation-close {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  padding: 10px; }
+
+.yatri-mobile-menu.yatri-section-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  background: #4285f4;
+  width: 400px;
+  max-width: 100%;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+   -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+       transform: translateX(-100%);
+  -webkit-transition: 0.35s -webkit-transform ease;
+  transition: 0.35s -webkit-transform ease;
+  -o-transition: 0.35s -o-transform ease;
+  -moz-transition: 0.35s transform ease, 0.35s -moz-transform ease;
+  transition: 0.35s transform ease;
+  transition: 0.35s transform ease, 0.35s -webkit-transform ease, 0.35s -moz-transform ease, 0.35s -o-transform ease;
+  transition: 0.35s transform ease, 0.35s -webkit-transform ease;
+  padding: 40px 20px 20px;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+  .yatri-mobile-menu.yatri-section-menu ul {
+    margin: 0;
+    padding: 0; }
+  .yatri-mobile-menu.yatri-section-menu li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: block; }
+    .yatri-mobile-menu.yatri-section-menu li.menu-item-has-children a:after {
+      content: ""; }
+    .yatri-mobile-menu.yatri-section-menu li.menu-item-has-children .yatri-submenu-toggle {
+      height: 25px;
+      width: 25px;
+      background: #fff;
+      text-align: center;
+      line-height: 25px;
+      color: #000;
+      display: block;
+      position: absolute;
+      top: 6px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 15px; }
+    .yatri-mobile-menu.yatri-section-menu li:last-child {
+      border-bottom: 0; }
+    .yatri-mobile-menu.yatri-section-menu li:after {
+      content: ""; }
+    .yatri-mobile-menu.yatri-section-menu li.yatri-menu-open > ul.sub-menu {
+      display: block; }
+    .yatri-mobile-menu.yatri-section-menu li.yatri-menu-open > .yatri-submenu-toggle:before {
+      content: ""; }
+    .yatri-mobile-menu.yatri-section-menu li.yatri-menu-close > ul.sub-menu {
+      display: none; }
+    .yatri-mobile-menu.yatri-section-menu li.yatri-menu-close > .yatri-submenu-toggle:before {
+      content: ""; }
+    .yatri-mobile-menu.yatri-section-menu li a {
+      color: #fff;
+      display: block;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin: 0;
+      line-height: inherit;
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
+      font-weight: inherit; }
+  .yatri-mobile-menu.yatri-section-menu nav {
+    border-top: 1px solid #e9ecef; }
+    .yatri-mobile-menu.yatri-section-menu nav > ul > li:first-child a:first-child {
+      border-top: 0; }
+
+.yatri-mobile-menu ul.sub-menu {
+  display: none;
+  opacity: 1;
+  position: unset;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  background: initial;
+  visibility: visible; }
+  .yatri-mobile-menu ul.sub-menu li {
+    display: block; }
+    .yatri-mobile-menu ul.sub-menu li a {
+      padding-left: 35px; }
+      .yatri-mobile-menu ul.sub-menu li a:before {
+        content: "";
+        margin-left: -15px;
+        position: absolute;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900; }
+    .yatri-mobile-menu ul.sub-menu li ul.sub-menu li a {
+      padding-left: 50px; }
+    .yatri-mobile-menu ul.sub-menu li ul.sub-menu li ul.sub-menu li a {
+      padding-left: 65px; }
+    .yatri-mobile-menu ul.sub-menu li ul.sub-menu li ul.sub-menu li ul.sub-menu li a {
+      padding-left: 80px; }
+
+.yatri-mobile-menu.right.yatri-section-menu {
+  right: 0;
+  left: unset;
+  direction: rtl;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+   -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+       transform: translateX(100%); }
+  .yatri-mobile-menu.right.yatri-section-menu nav {
+    direction: ltr; }
+  .yatri-mobile-menu.right.yatri-section-menu .yatri-canvas-close {
+    right: unset;
+    left: 5px; }
+
+.yatri-mobile-menu.yatri-section-menu.yatri-navigation-menu-open, .yatri-mobile-menu.yatri-section-menu.yatri-navigation-menu-open.right {
+  display: block;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+   -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+       transform: translateX(0);
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); }
 
 .yatri-section-search-form {
   position: relative;
@@ -11343,6 +11467,10 @@ footer.site-footer .site-branding .site-title a {
     color: #ccc; }
 
 @media (max-width: 1024px) {
+  .yatri-section-container .yatri-section-menu {
+    display: none; }
+  .yatri-mobile-menu {
+    display: block; }
   .top-header .yatri-responsive-toggle-menu-wrap, .yatri-mid-header .yatri-responsive-toggle-menu-wrap, .bottom-header .yatri-responsive-toggle-menu-wrap {
     display: block; }
   .top-header .yatri-section-container, .yatri-mid-header .yatri-section-container, .bottom-header .yatri-section-container {
@@ -11393,82 +11521,6 @@ footer.site-footer .site-branding .site-title a {
             color: #fff; }
     .top-header .yatri-section-container.office_information-container ul li:last-child, .yatri-mid-header .yatri-section-container.office_information-container ul li:last-child, .bottom-header .yatri-section-container.office_information-container ul li:last-child {
       border-bottom: 0; }
-    .top-header .yatri-section-container.menu-container .yatri-section-inner.yatri-section-menu, .yatri-mid-header .yatri-section-container.menu-container .yatri-section-inner.yatri-section-menu, .bottom-header .yatri-section-container.menu-container .yatri-section-inner.yatri-section-menu {
-      position: absolute;
-      z-index: 999;
-      right: 0;
-      background: #4285f4;
-      max-height: 400px;
-      overflow-y: auto;
-      width: 100vw;
-      -webkit-transform: translateX(-50%);
-         -moz-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-           -o-transform: translateX(-50%);
-              transform: translateX(-50%);
-      left: 50%; }
-      .top-header .yatri-section-container.menu-container .yatri-section-inner.yatri-section-menu ul, .yatri-mid-header .yatri-section-container.menu-container .yatri-section-inner.yatri-section-menu ul, .bottom-header .yatri-section-container.menu-container .yatri-section-inner.yatri-section-menu ul {
-        margin: 0;
-        padding: 0; }
-      .top-header .yatri-section-container.menu-container .yatri-section-inner.yatri-section-menu li.menu-item-has-children a:after, .yatri-mid-header .yatri-section-container.menu-container .yatri-section-inner.yatri-section-menu li.menu-item-has-children a:after, .bottom-header .yatri-section-container.menu-container .yatri-section-inner.yatri-section-menu li.menu-item-has-children a:after {
-        content: ""; }
-      .top-header .yatri-section-container.menu-container .yatri-section-inner.yatri-section-menu li.menu-item-has-children .yatri-submenu-toggle, .yatri-mid-header .yatri-section-container.menu-container .yatri-section-inner.yatri-section-menu li.menu-item-has-children .yatri-submenu-toggle, .bottom-header .yatri-section-container.menu-container .yatri-section-inner.yatri-section-menu li.menu-item-has-children .yatri-submenu-toggle {
-        height: 25px;
-        width: 25px;
-        background: #fff;
-        text-align: center;
-        line-height: 25px;
-        color: #000;
-        display: block;
-        position: absolute;
-        top: 6px;
-        right: 10px;
-        cursor: pointer;
-        font-size: 15px; }
-      .top-header .yatri-section-container.menu-container .yatri-section-inner.yatri-section-menu li:last-child, .yatri-mid-header .yatri-section-container.menu-container .yatri-section-inner.yatri-section-menu li:last-child, .bottom-header .yatri-section-container.menu-container .yatri-section-inner.yatri-section-menu li:last-child {
-        border-bottom: 0; }
-      .top-header .yatri-section-container.menu-container .yatri-section-inner.yatri-section-menu li:after, .yatri-mid-header .yatri-section-container.menu-container .yatri-section-inner.yatri-section-menu li:after, .bottom-header .yatri-section-container.menu-container .yatri-section-inner.yatri-section-menu li:after {
-        content: ""; }
-    .top-header .yatri-section-container.menu-container li, .yatri-mid-header .yatri-section-container.menu-container li, .bottom-header .yatri-section-container.menu-container li {
-      margin: 0;
-      padding: 0;
-      border: none;
-      display: block; }
-      .top-header .yatri-section-container.menu-container li a, .yatri-mid-header .yatri-section-container.menu-container li a, .bottom-header .yatri-section-container.menu-container li a {
-        color: #fff;
-        display: block;
-        border: 1px solid #ddd;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        margin: 0;
-        line-height: inherit;
-        border-top: 0;
-        font-weight: inherit; }
-    .top-header .yatri-section-container.menu-container ul.sub-menu, .yatri-mid-header .yatri-section-container.menu-container ul.sub-menu, .bottom-header .yatri-section-container.menu-container ul.sub-menu {
-      display: none;
-      opacity: 1;
-      position: unset;
-      width: 100%;
-      margin: 0;
-      border: 0;
-      background: initial;
-      visibility: visible; }
-      .top-header .yatri-section-container.menu-container ul.sub-menu li, .yatri-mid-header .yatri-section-container.menu-container ul.sub-menu li, .bottom-header .yatri-section-container.menu-container ul.sub-menu li {
-        display: block; }
-        .top-header .yatri-section-container.menu-container ul.sub-menu li a, .yatri-mid-header .yatri-section-container.menu-container ul.sub-menu li a, .bottom-header .yatri-section-container.menu-container ul.sub-menu li a {
-          padding-left: 45px; }
-          .top-header .yatri-section-container.menu-container ul.sub-menu li a:before, .yatri-mid-header .yatri-section-container.menu-container ul.sub-menu li a:before, .bottom-header .yatri-section-container.menu-container ul.sub-menu li a:before {
-            content: "";
-            margin-left: -10px;
-            position: absolute;
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900; }
-        .top-header .yatri-section-container.menu-container ul.sub-menu li ul.sub-menu li a, .yatri-mid-header .yatri-section-container.menu-container ul.sub-menu li ul.sub-menu li a, .bottom-header .yatri-section-container.menu-container ul.sub-menu li ul.sub-menu li a {
-          padding-left: 70px; }
-        .top-header .yatri-section-container.menu-container ul.sub-menu li ul.sub-menu li ul.sub-menu li a, .yatri-mid-header .yatri-section-container.menu-container ul.sub-menu li ul.sub-menu li ul.sub-menu li a, .bottom-header .yatri-section-container.menu-container ul.sub-menu li ul.sub-menu li ul.sub-menu li a {
-          padding-left: 95px; }
-        .top-header .yatri-section-container.menu-container ul.sub-menu li ul.sub-menu li ul.sub-menu li ul.sub-menu li a, .yatri-mid-header .yatri-section-container.menu-container ul.sub-menu li ul.sub-menu li ul.sub-menu li ul.sub-menu li a, .bottom-header .yatri-section-container.menu-container ul.sub-menu li ul.sub-menu li ul.sub-menu li ul.sub-menu li a {
-          padding-left: 120px; }
   .yatri-section-offcanvas-menu .yatri-toggle-wrap {
     border: 1px solid #ddd; }
   .top-header .yatri-responsive-toggle-menu {

@@ -70,6 +70,7 @@ class Yatri_Sections
                         break;
 
                     case "mobile_menu":
+                        self::mobile_menu_content($section_options, $section_id);
                         break;
                 }
             }
@@ -143,7 +144,6 @@ class Yatri_Sections
                 echo '</div>';
                 break;
             case "menu":
-                self::get_toggle_button($section_id, $options);
                 self::get_instance()->get_menu($options);
                 break;
             case "offcanvas_menu":
@@ -386,7 +386,6 @@ class Yatri_Sections
 
     private static function offcanvas_menu_content($options, $section_id)
     {
-
         $start_from = isset($options['start_from']) ? $options['start_from'] : 'left';
         $type = isset($options['type']) ? $options['type'] : 'sidebar';
         $menu = isset($options['menu']) ? sanitize_text_field($options['menu']) : 'offcanvas_menu';
@@ -414,6 +413,26 @@ class Yatri_Sections
         echo '</div>';
     }
 
+    private static function mobile_menu_content($options, $section_id)
+    {
+        $location = isset($options['location']) ? sanitize_text_field($options['location']) : 'top_header_menu';
+
+        $depth = isset($options['depth']) ? absint($options['depth']) : 0;
+
+        $class = isset($options['class']) ? sanitize_text_field($options['class']) : '';
+
+        echo '<div class="yatri-section-menu yatri-mobile-menu ' . esc_attr($section_id) . '_navigation_menu ' . esc_attr($class) . ' yatri-section-inner" id="' . esc_attr($section_id) . '_navigation_menu">';
+        echo '<span class="yatri-mobile-navigation-close fas fa-times"></span>';
+        echo '<nav class="' . esc_attr($class) . '">';
+        yatri_get_navigation_menu(array(
+            'theme_location' => $location,
+            'depth' => $depth
+        ));
+
+        echo '</div>';
+        echo '</nav>';
+    }
+
     private function offcanvas_menu($options = array())
     {
         $section_part_id = isset($options['section_part_id']) ? $options['section_part_id'] : '';
@@ -427,12 +446,23 @@ class Yatri_Sections
 
     private function get_menu($options = array())
     {
-
         $location = isset($options['location']) ? sanitize_text_field($options['location']) : 'top_header_menu';
 
         $depth = isset($options['depth']) ? absint($options['depth']) : 0;
 
         $class = isset($options['class']) ? sanitize_text_field($options['class']) : '';
+
+        $section_part_id = isset($options['section_part_id']) ? $options['section_part_id'] : '';
+
+        $toggle_icon = isset($options['toggle_icon']) ? $options['toggle_icon'] : 'fas fa-bars';
+        ?>
+        <div class="yatri-responsive-toggle-menu-wrap"
+             data-id="<?php echo esc_attr($section_part_id); ?>_navigation_menu">
+            <div class="yatri-responsive-toggle-menu">
+                <span class="<?php echo esc_attr($toggle_icon); ?>"></span>
+            </div>
+        </div>
+        <?php
 
         echo '<nav class="yatri-section-menu ' . esc_attr($class) . ' yatri-section-inner">';
 

@@ -1,5 +1,15 @@
 @media (max-width: 1024px) {
+  .yatri-section-container {
+    .yatri-section-menu {
+      display: none;
+    }
+  }
+  .yatri-mobile-menu {
+    display: block;
+  }
+
   .top-header, .yatri-mid-header, .bottom-header {
+
     .yatri-responsive-toggle-menu-wrap {
       display: block;
     }
@@ -83,123 +93,11 @@
 
       }
 
-      &.menu-container {
-        .yatri-section-inner.yatri-section-menu {
-          position: absolute;
-          z-index: 999;
-          right: 0;
-          background: $primary_color;
-          max-height: 400px;
-          overflow-y: auto;
-          width: 100vw;
-          transform: translateX(-50%);
-          left: 50%;
-          ul {
-            margin: 0;
-            padding: 0;
-          }
-          li {
-            &.menu-item-has-children {
-              a {
-                &:after {
-                  content: "";
-
-                }
-              }
-              .yatri-submenu-toggle {
-                height: 25px;
-                width: 25px;
-                background: #fff;
-                text-align: center;
-                line-height: 25px;
-                color: #000;
-                display: block;
-                position: absolute;
-                top: 6px;
-                right: 10px;
-                cursor: pointer;
-                font-size: 15px;
-              }
-            }
-            &:last-child {
-              border-bottom: 0;
-            }
-            &:after {
-              content: "";
-            }
-          }
-
-        }
-        li {
-          margin: 0;
-          padding: 0;
-          border: none;
-          display: block;
-          a {
-            color: #fff;
-            display: block;
-            border: 1px solid #ddd;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            margin: 0;
-            line-height: inherit;
-            border-top: 0;
-            font-weight: inherit;
-          }
-        }
-        ul.sub-menu {
-          display: none;
-          opacity: 1;
-          position: unset;
-          width: 100%;
-          margin: 0;
-          border: 0;
-          background: initial;
-          visibility: visible;
-
-          li {
-            display: block;
-            a {
-              padding-left: 45px;
-              &:before {
-                content: "";
-                margin-left: -10px;
-                position: absolute;
-                font-family: "Font Awesome 5 Free";
-                font-weight: 900;
-
-              }
-            }
-            ul.sub-menu {
-              li {
-                a {
-                  padding-left: 70px;
-                }
-                ul.sub-menu {
-                  li {
-                    a {
-                      padding-left: 95px;
-                    }
-                    ul.sub-menu {
-                      li {
-                        a {
-                          padding-left: 120px;
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-
     }
   }
   .yatri-section-offcanvas-menu {
     .yatri-toggle-wrap {
-      
+
       border: 1px solid #ddd;
     }
   }
