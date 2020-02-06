@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: mantrabrain@gmail.com\n"
-"POT-Creation-Date: 2020-02-05 14:16:50+00:00\n"
+"POT-Creation-Date: 2020-02-06 09:34:10+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -145,13 +145,13 @@ msgstr ""
 msgid "XL"
 msgstr ""
 
-#: core/class-yatri-sections.php:239 core/class-yatri-sections.php:250
+#: core/class-yatri-sections.php:241 core/class-yatri-sections.php:252
 #: core/customizer/core.php:226 core/customizer/core.php:333
 #: core/customizer/core.php:441
 msgid "Search"
 msgstr ""
 
-#: core/class-yatri-sections.php:247
+#: core/class-yatri-sections.php:249
 msgid "Search for:"
 msgstr ""
 
@@ -237,6 +237,8 @@ msgstr ""
 #: core/customizer/config/class-yatri-section-copyright-config.php:9
 #: core/customizer/config/class-yatri-section-custom-html-config.php:9
 #: core/customizer/config/class-yatri-section-footer-nav-menu-config.php:9
+#: core/customizer/config/class-yatri-section-footer-office-info-config.php:9
+#: core/customizer/config/class-yatri-section-footer-social-icons-config.php:9
 #: core/customizer/config/class-yatri-section-offcanvas-config.php:9
 #: core/customizer/config/class-yatri-section-office-info-config.php:9
 #: core/customizer/config/class-yatri-section-pagination-config.php:9
@@ -245,10 +247,10 @@ msgstr ""
 #: core/customizer/config/class-yatri-section-sidebar-config.php:9
 #: core/customizer/config/class-yatri-section-social-icons-config.php:9
 #: core/customizer/config/class-yatri-section-wrapper-config.php:9
-#: core/customizer/config/customizer-modal-config.php:29
-#: core/customizer/config/customizer-modal-config.php:185
-#: core/customizer/config/customizer-modal-config.php:283
-#: core/customizer/config/customizer-modal-config.php:381
+#: core/customizer/config/customizer-modal-config.php:31
+#: core/customizer/config/customizer-modal-config.php:187
+#: core/customizer/config/customizer-modal-config.php:285
+#: core/customizer/config/customizer-modal-config.php:383
 msgid "Colors"
 msgstr ""
 
@@ -259,6 +261,8 @@ msgstr ""
 #: core/customizer/config/class-yatri-section-copyright-config.php:10
 #: core/customizer/config/class-yatri-section-custom-html-config.php:10
 #: core/customizer/config/class-yatri-section-footer-nav-menu-config.php:10
+#: core/customizer/config/class-yatri-section-footer-office-info-config.php:10
+#: core/customizer/config/class-yatri-section-footer-social-icons-config.php:10
 #: core/customizer/config/class-yatri-section-header-config.php:9
 #: core/customizer/config/class-yatri-section-offcanvas-config.php:10
 #: core/customizer/config/class-yatri-section-office-info-config.php:10
@@ -268,10 +272,10 @@ msgstr ""
 #: core/customizer/config/class-yatri-section-sidebar-config.php:10
 #: core/customizer/config/class-yatri-section-social-icons-config.php:10
 #: core/customizer/config/class-yatri-section-wrapper-config.php:10
-#: core/customizer/config/customizer-modal-config.php:30
-#: core/customizer/config/customizer-modal-config.php:186
-#: core/customizer/config/customizer-modal-config.php:284
-#: core/customizer/config/customizer-modal-config.php:382
+#: core/customizer/config/customizer-modal-config.php:32
+#: core/customizer/config/customizer-modal-config.php:188
+#: core/customizer/config/customizer-modal-config.php:286
+#: core/customizer/config/customizer-modal-config.php:384
 msgid "Spacing"
 msgstr ""
 
@@ -292,28 +296,32 @@ msgstr ""
 #: core/customizer/config/class-yatri-section-button-config.php:55
 #: core/customizer/config/class-yatri-section-copyright-config.php:59
 #: core/customizer/config/class-yatri-section-custom-html-config.php:59
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:165
-#: core/customizer/config/class-yatri-section-office-info-config.php:74
+#: core/customizer/config/class-yatri-section-footer-office-info-config.php:76
+#: core/customizer/config/class-yatri-section-footer-social-icons-config.php:56
 #: core/customizer/config/class-yatri-section-readmore-config.php:55
 #: core/customizer/config/class-yatri-section-search-form-config.php:11
-#: core/customizer/config/class-yatri-section-social-icons-config.php:56
+#: core/customizer/config/class-yatri-section-social-icons-config.php:70
 msgid "Alignment"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-branding-config.php:57
+#: core/customizer/config/class-yatri-section-branding-config.php:61
 #: core/customizer/config/class-yatri-section-breadcrumb-config.php:100
-#: core/customizer/config/class-yatri-section-button-config.php:66
-#: core/customizer/config/class-yatri-section-copyright-config.php:70
-#: core/customizer/config/class-yatri-section-custom-html-config.php:70
-#: core/customizer/config/class-yatri-section-footer-nav-menu-config.php:89
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:28
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:176
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:237
-#: core/customizer/config/class-yatri-section-office-info-config.php:85
+#: core/customizer/config/class-yatri-section-button-config.php:70
+#: core/customizer/config/class-yatri-section-copyright-config.php:74
+#: core/customizer/config/class-yatri-section-custom-html-config.php:74
+#: core/customizer/config/class-yatri-section-footer-nav-menu-config.php:93
+#: core/customizer/config/class-yatri-section-footer-office-info-config.php:91
+#: core/customizer/config/class-yatri-section-footer-social-icons-config.php:71
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:30
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:133
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:181
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:242
+#: core/customizer/config/class-yatri-section-office-info-config.php:94
+#: core/customizer/config/class-yatri-section-office-info-config.php:130
 #: core/customizer/config/class-yatri-section-readmore-config.php:64
-#: core/customizer/config/class-yatri-section-search-form-config.php:22
+#: core/customizer/config/class-yatri-section-search-form-config.php:26
 #: core/customizer/config/class-yatri-section-sidebar-config.php:154
-#: core/customizer/config/class-yatri-section-social-icons-config.php:67
+#: core/customizer/config/class-yatri-section-social-icons-config.php:85
 #: core/customizer/sections/header/bottom/offcanvas.php:41
 #: core/customizer/sections/header/mid/offcanvas.php:41
 #: core/customizer/sections/header/top/offcanvas.php:41
@@ -324,38 +332,46 @@ msgstr ""
 msgid "Left"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-branding-config.php:61
-#: core/customizer/config/class-yatri-section-breadcrumb-config.php:104
-#: core/customizer/config/class-yatri-section-button-config.php:70
-#: core/customizer/config/class-yatri-section-copyright-config.php:74
-#: core/customizer/config/class-yatri-section-custom-html-config.php:74
-#: core/customizer/config/class-yatri-section-footer-nav-menu-config.php:93
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:32
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:180
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:241
-#: core/customizer/config/class-yatri-section-office-info-config.php:89
-#: core/customizer/config/class-yatri-section-readmore-config.php:68
-#: core/customizer/config/class-yatri-section-search-form-config.php:26
-#: core/customizer/config/class-yatri-section-sidebar-config.php:158
-#: core/customizer/config/class-yatri-section-social-icons-config.php:71
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1267
-msgid "Center"
-msgstr ""
-
 #: core/customizer/config/class-yatri-section-branding-config.php:65
-#: core/customizer/config/class-yatri-section-breadcrumb-config.php:108
+#: core/customizer/config/class-yatri-section-breadcrumb-config.php:104
 #: core/customizer/config/class-yatri-section-button-config.php:74
 #: core/customizer/config/class-yatri-section-copyright-config.php:78
 #: core/customizer/config/class-yatri-section-custom-html-config.php:78
 #: core/customizer/config/class-yatri-section-footer-nav-menu-config.php:97
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:36
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:184
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:245
-#: core/customizer/config/class-yatri-section-office-info-config.php:93
-#: core/customizer/config/class-yatri-section-readmore-config.php:72
+#: core/customizer/config/class-yatri-section-footer-office-info-config.php:95
+#: core/customizer/config/class-yatri-section-footer-social-icons-config.php:75
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:34
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:137
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:185
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:246
+#: core/customizer/config/class-yatri-section-office-info-config.php:98
+#: core/customizer/config/class-yatri-section-office-info-config.php:134
+#: core/customizer/config/class-yatri-section-readmore-config.php:68
 #: core/customizer/config/class-yatri-section-search-form-config.php:30
+#: core/customizer/config/class-yatri-section-sidebar-config.php:158
+#: core/customizer/config/class-yatri-section-social-icons-config.php:89
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1267
+msgid "Center"
+msgstr ""
+
+#: core/customizer/config/class-yatri-section-branding-config.php:69
+#: core/customizer/config/class-yatri-section-breadcrumb-config.php:108
+#: core/customizer/config/class-yatri-section-button-config.php:78
+#: core/customizer/config/class-yatri-section-copyright-config.php:82
+#: core/customizer/config/class-yatri-section-custom-html-config.php:82
+#: core/customizer/config/class-yatri-section-footer-nav-menu-config.php:101
+#: core/customizer/config/class-yatri-section-footer-office-info-config.php:99
+#: core/customizer/config/class-yatri-section-footer-social-icons-config.php:79
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:38
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:141
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:189
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:250
+#: core/customizer/config/class-yatri-section-office-info-config.php:102
+#: core/customizer/config/class-yatri-section-office-info-config.php:138
+#: core/customizer/config/class-yatri-section-readmore-config.php:72
+#: core/customizer/config/class-yatri-section-search-form-config.php:34
 #: core/customizer/config/class-yatri-section-sidebar-config.php:162
-#: core/customizer/config/class-yatri-section-social-icons-config.php:75
+#: core/customizer/config/class-yatri-section-social-icons-config.php:93
 #: core/customizer/sections/header/bottom/offcanvas.php:42
 #: core/customizer/sections/header/mid/offcanvas.php:42
 #: core/customizer/sections/header/top/offcanvas.php:42
@@ -366,19 +382,19 @@ msgstr ""
 msgid "Right"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-branding-config.php:75
+#: core/customizer/config/class-yatri-section-branding-config.php:79
 msgid "Logo Width"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-branding-config.php:89
+#: core/customizer/config/class-yatri-section-branding-config.php:93
 msgid "Logo Margin"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-branding-config.php:98
+#: core/customizer/config/class-yatri-section-branding-config.php:102
 msgid "Title Margin"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-branding-config.php:107
+#: core/customizer/config/class-yatri-section-branding-config.php:111
 msgid "Tagline Margin"
 msgstr ""
 
@@ -408,20 +424,22 @@ msgstr ""
 #: core/customizer/config/class-yatri-section-button-config.php:16
 #: core/customizer/config/class-yatri-section-copyright-config.php:25
 #: core/customizer/config/class-yatri-section-custom-html-config.php:25
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:129
+#: core/customizer/config/class-yatri-section-footer-office-info-config.php:16
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:130
 #: core/customizer/config/class-yatri-section-office-info-config.php:16
 #: core/customizer/config/class-yatri-section-pagination-config.php:16
 #: core/customizer/config/class-yatri-section-readmore-config.php:16
 #: core/customizer/config/class-yatri-section-sidebar-config.php:75
-#: core/customizer/config/customizer-modal-config.php:290
-#: core/customizer/config/customizer-modal-config.php:407
+#: core/customizer/config/customizer-modal-config.php:292
+#: core/customizer/config/customizer-modal-config.php:409
 msgid "Text Color"
 msgstr ""
 
 #: core/customizer/config/class-yatri-section-breadcrumb-config.php:62
 #: core/customizer/config/class-yatri-section-copyright-config.php:37
 #: core/customizer/config/class-yatri-section-custom-html-config.php:37
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:144
+#: core/customizer/config/class-yatri-section-footer-office-info-config.php:28
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:145
 #: core/customizer/config/class-yatri-section-office-info-config.php:26
 #: core/customizer/config/class-yatri-section-sidebar-config.php:90
 msgid "Link Color"
@@ -430,7 +448,8 @@ msgstr ""
 #: core/customizer/config/class-yatri-section-breadcrumb-config.php:71
 #: core/customizer/config/class-yatri-section-copyright-config.php:47
 #: core/customizer/config/class-yatri-section-custom-html-config.php:47
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:153
+#: core/customizer/config/class-yatri-section-footer-office-info-config.php:37
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:154
 #: core/customizer/config/class-yatri-section-office-info-config.php:35
 #: core/customizer/config/class-yatri-section-sidebar-config.php:99
 msgid "Link Hover Color"
@@ -449,8 +468,8 @@ msgstr ""
 #: core/customizer/config/class-yatri-section-breadcrumb-config.php:189
 #: core/customizer/config/class-yatri-section-header-config.php:200
 #: core/customizer/config/class-yatri-section-wrapper-config.php:124
-#: core/customizer/config/customizer-modal-config.php:95
-#: core/customizer/config/customizer-modal-config.php:236
+#: core/customizer/config/customizer-modal-config.php:97
+#: core/customizer/config/customizer-modal-config.php:238
 msgid "Container Padding"
 msgstr ""
 
@@ -463,7 +482,7 @@ msgstr ""
 #: core/customizer/config/class-yatri-section-button-config.php:25
 #: core/customizer/config/class-yatri-section-pagination-config.php:30
 #: core/customizer/config/class-yatri-section-readmore-config.php:25
-#: core/customizer/config/customizer-modal-config.php:299
+#: core/customizer/config/customizer-modal-config.php:301
 msgid "Hover Text Color"
 msgstr ""
 
@@ -471,92 +490,97 @@ msgstr ""
 #: core/customizer/config/class-yatri-section-content-config.php:17
 #: core/customizer/config/class-yatri-section-copyright-config.php:16
 #: core/customizer/config/class-yatri-section-custom-html-config.php:16
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:98
+#: core/customizer/config/class-yatri-section-footer-social-icons-config.php:35
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:99
 #: core/customizer/config/class-yatri-section-pagination-config.php:45
 #: core/customizer/config/class-yatri-section-post-config.php:17
 #: core/customizer/config/class-yatri-section-readmore-config.php:34
 #: core/customizer/config/class-yatri-section-sidebar-config.php:44
 #: core/customizer/config/class-yatri-section-social-icons-config.php:35
-#: core/customizer/config/customizer-modal-config.php:192
-#: core/customizer/config/customizer-modal-config.php:308
-#: core/customizer/config/customizer-modal-config.php:397
+#: core/customizer/config/customizer-modal-config.php:194
+#: core/customizer/config/customizer-modal-config.php:310
+#: core/customizer/config/customizer-modal-config.php:399
 msgid "Background Color"
 msgstr ""
 
 #: core/customizer/config/class-yatri-section-button-config.php:43
+#: core/customizer/config/class-yatri-section-footer-social-icons-config.php:44
 #: core/customizer/config/class-yatri-section-pagination-config.php:57
 #: core/customizer/config/class-yatri-section-readmore-config.php:43
 #: core/customizer/config/class-yatri-section-social-icons-config.php:44
-#: core/customizer/config/customizer-modal-config.php:317
+#: core/customizer/config/customizer-modal-config.php:319
 msgid "Hover Background Color"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-button-config.php:86
+#: core/customizer/config/class-yatri-section-button-config.php:90
 #: core/customizer/config/class-yatri-section-content-config.php:40
-#: core/customizer/config/class-yatri-section-copyright-config.php:90
-#: core/customizer/config/class-yatri-section-custom-html-config.php:90
-#: core/customizer/config/class-yatri-section-footer-nav-menu-config.php:114
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:115
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:338
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:201
+#: core/customizer/config/class-yatri-section-copyright-config.php:94
+#: core/customizer/config/class-yatri-section-custom-html-config.php:94
+#: core/customizer/config/class-yatri-section-footer-nav-menu-config.php:118
+#: core/customizer/config/class-yatri-section-footer-social-icons-config.php:91
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:158
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:381
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:206
 #: core/customizer/config/class-yatri-section-pagination-config.php:76
 #: core/customizer/config/class-yatri-section-post-config.php:40
 #: core/customizer/config/class-yatri-section-readmore-config.php:85
 #: core/customizer/config/class-yatri-section-sidebar-config.php:118
-#: core/customizer/config/class-yatri-section-social-icons-config.php:87
-#: core/customizer/config/customizer-modal-config.php:331
-#: core/customizer/config/customizer-modal-config.php:422
+#: core/customizer/config/class-yatri-section-social-icons-config.php:105
+#: core/customizer/config/customizer-modal-config.php:333
+#: core/customizer/config/customizer-modal-config.php:424
 msgid "Padding"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-button-config.php:116
+#: core/customizer/config/class-yatri-section-button-config.php:120
 #: core/customizer/config/class-yatri-section-content-config.php:71
-#: core/customizer/config/class-yatri-section-copyright-config.php:120
-#: core/customizer/config/class-yatri-section-custom-html-config.php:120
-#: core/customizer/config/class-yatri-section-footer-nav-menu-config.php:248
-#: core/customizer/config/class-yatri-section-office-info-config.php:197
+#: core/customizer/config/class-yatri-section-copyright-config.php:124
+#: core/customizer/config/class-yatri-section-custom-html-config.php:124
+#: core/customizer/config/class-yatri-section-footer-nav-menu-config.php:252
+#: core/customizer/config/class-yatri-section-footer-office-info-config.php:203
+#: core/customizer/config/class-yatri-section-footer-social-icons-config.php:150
+#: core/customizer/config/class-yatri-section-office-info-config.php:242
 #: core/customizer/config/class-yatri-section-pagination-config.php:110
 #: core/customizer/config/class-yatri-section-post-config.php:105
 #: core/customizer/config/class-yatri-section-readmore-config.php:115
-#: core/customizer/config/class-yatri-section-social-icons-config.php:146
-#: core/customizer/config/customizer-modal-config.php:360
-#: core/customizer/config/customizer-modal-config.php:452
+#: core/customizer/config/class-yatri-section-social-icons-config.php:164
+#: core/customizer/config/customizer-modal-config.php:362
+#: core/customizer/config/customizer-modal-config.php:454
 msgid "Border"
 msgstr ""
 
 #: core/customizer/config/class-yatri-section-content-config.php:26
 #: core/customizer/config/class-yatri-section-post-config.php:26
-#: core/customizer/config/customizer-modal-config.php:212
+#: core/customizer/config/customizer-modal-config.php:214
 msgid "Background Image"
 msgstr ""
 
 #: core/customizer/config/class-yatri-section-footer-nav-menu-config.php:18
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:51
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:53
 msgid "Font color"
 msgstr ""
 
 #: core/customizer/config/class-yatri-section-footer-nav-menu-config.php:27
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:60
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:62
 msgid "Hover font color"
 msgstr ""
 
 #: core/customizer/config/class-yatri-section-footer-nav-menu-config.php:37
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:70
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:72
 msgid "Background color"
 msgstr ""
 
 #: core/customizer/config/class-yatri-section-footer-nav-menu-config.php:46
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:79
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:81
 msgid "Hover background color"
 msgstr ""
 
 #: core/customizer/config/class-yatri-section-footer-nav-menu-config.php:56
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:89
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:91
 msgid "Active font color"
 msgstr ""
 
 #: core/customizer/config/class-yatri-section-footer-nav-menu-config.php:65
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:98
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:100
 msgid "Active background color"
 msgstr ""
 
@@ -565,18 +589,59 @@ msgstr ""
 msgid "Menu Alignment"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-footer-nav-menu-config.php:107
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:108
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:331
+#: core/customizer/config/class-yatri-section-footer-nav-menu-config.php:111
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:151
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:374
 msgid "Padding & Margin"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-footer-nav-menu-config.php:182
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:183
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:406
+#: core/customizer/config/class-yatri-section-footer-nav-menu-config.php:186
+#: core/customizer/config/class-yatri-section-footer-social-icons-config.php:120
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:226
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:449
 #: core/customizer/config/class-yatri-section-post-config.php:71
-#: core/customizer/config/class-yatri-section-social-icons-config.php:116
+#: core/customizer/config/class-yatri-section-social-icons-config.php:134
 msgid "Margin"
+msgstr ""
+
+#: core/customizer/config/class-yatri-section-footer-office-info-config.php:46
+#: core/customizer/config/class-yatri-section-footer-social-icons-config.php:16
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:21
+#: core/customizer/config/class-yatri-section-office-info-config.php:44
+#: core/customizer/config/class-yatri-section-search-form-config.php:56
+#: core/customizer/config/class-yatri-section-social-icons-config.php:16
+msgid "Icon Color"
+msgstr ""
+
+#: core/customizer/config/class-yatri-section-footer-office-info-config.php:55
+#: core/customizer/config/class-yatri-section-office-info-config.php:53
+msgid "List Background Color"
+msgstr ""
+
+#: core/customizer/config/class-yatri-section-footer-office-info-config.php:64
+#: core/customizer/config/class-yatri-section-office-info-config.php:62
+msgid "List Hover Background Color"
+msgstr ""
+
+#: core/customizer/config/class-yatri-section-footer-office-info-config.php:111
+#: core/customizer/config/class-yatri-section-office-info-config.php:150
+msgid "Icon Margin"
+msgstr ""
+
+#: core/customizer/config/class-yatri-section-footer-office-info-config.php:146
+#: core/customizer/config/class-yatri-section-office-info-config.php:185
+msgid "List Margin"
+msgstr ""
+
+#: core/customizer/config/class-yatri-section-footer-office-info-config.php:176
+#: core/customizer/config/class-yatri-section-office-info-config.php:215
+msgid "List Padding"
+msgstr ""
+
+#: core/customizer/config/class-yatri-section-footer-social-icons-config.php:26
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:32
+#: core/customizer/config/class-yatri-section-social-icons-config.php:26
+msgid "Icon Hover Color"
 msgstr ""
 
 #: core/customizer/config/class-yatri-section-header-config.php:8
@@ -604,47 +669,64 @@ msgstr ""
 msgid "Dropdown"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:46
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:48
 msgid "Menu Colors"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:249
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:110
+#: core/customizer/config/class-yatri-section-office-info-config.php:71
+#: core/customizer/config/class-yatri-section-social-icons-config.php:53
+msgid "Mobile/Tablet Menu"
+msgstr ""
+
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:115
+#: core/customizer/config/class-yatri-section-office-info-config.php:76
+#: core/customizer/config/class-yatri-section-social-icons-config.php:58
+msgid "Hamburger Color"
+msgstr ""
+
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:124
+#: core/customizer/config/class-yatri-section-office-info-config.php:85
+msgid "Hamburger Alignment"
+msgstr ""
+
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:292
 msgid "Main Menu Border"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:273
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:316
 msgid "Dropdown Menu Colors"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:278
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:321
 msgid "Dropdown font color"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:287
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:330
 msgid "Dropdown hover font color"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:297
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:340
 msgid "Dropdown background color"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:305
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:348
 msgid "Dropdown hover background color"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:314
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:357
 msgid "Dropdown active font color"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:322
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:365
 msgid "Dropdown active background color"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:474
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:517
 msgid "Wrapper Margin"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:483
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:526
 msgid "Dropdown Menu Border"
 msgstr ""
 
@@ -652,126 +734,99 @@ msgstr ""
 msgid "Icons"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:21
-#: core/customizer/config/class-yatri-section-office-info-config.php:44
-#: core/customizer/config/class-yatri-section-search-form-config.php:52
-#: core/customizer/config/class-yatri-section-social-icons-config.php:16
-msgid "Icon Color"
-msgstr ""
-
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:31
-#: core/customizer/config/class-yatri-section-social-icons-config.php:26
-msgid "Icon Hover Color"
-msgstr ""
-
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:40
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:41
 msgid "Close Icon Color"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:51
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:52
 msgid "Close Icon Hover Color"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:61
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:62
 msgid "Close Icon Inside Background Color"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:70
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:194
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:71
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:199
 #: core/customizer/config/class-yatri-section-sidebar-config.php:16
 #: core/customizer/config/class-yatri-section-sidebar-config.php:111
 #: core/customizer/sections/sidebars-options.php:8 core/yatri-functions.php:630
 msgid "Sidebar"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:75
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:76
 #: core/customizer/config/class-yatri-section-sidebar-config.php:21
 msgid "Sidebar Background Color"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:84
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:85
 #: core/customizer/config/class-yatri-section-sidebar-config.php:30
 msgid "Sidebar Background Image"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:93
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:255
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:94
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:260
 #: core/customizer/config/class-yatri-section-sidebar-config.php:39
 #: core/customizer/config/class-yatri-section-sidebar-config.php:172
 msgid "Widgets"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:107
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:108
 #: core/customizer/config/class-yatri-section-sidebar-config.php:53
 msgid "Title Color"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:118
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:119
 #: core/customizer/config/class-yatri-section-sidebar-config.php:64
 msgid "Title Background Color"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:228
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:166
+msgid "Icon Alignment"
+msgstr ""
+
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:233
+#: core/customizer/config/class-yatri-section-office-info-config.php:115
 #: core/customizer/config/class-yatri-section-sidebar-config.php:145
 msgid "Content Alignment"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:262
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:267
 #: core/customizer/config/class-yatri-section-sidebar-config.php:179
 msgid "Widgets Padding"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:291
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:296
 #: core/customizer/config/class-yatri-section-sidebar-config.php:208
 msgid "Widgets Margin"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:322
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:327
 #: core/customizer/config/class-yatri-section-sidebar-config.php:239
 msgid "Widget Title Padding"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:353
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:358
 #: core/customizer/config/class-yatri-section-sidebar-config.php:270
 msgid "Widget Title Margin"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:384
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:389
 #: core/customizer/config/class-yatri-section-sidebar-config.php:301
 msgid "Sidebar Border"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:403
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:408
 #: core/customizer/config/class-yatri-section-sidebar-config.php:321
 msgid "Widgets Border"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-offcanvas-config.php:422
+#: core/customizer/config/class-yatri-section-offcanvas-config.php:427
 #: core/customizer/config/class-yatri-section-sidebar-config.php:340
 msgid "Widget Title Border"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-office-info-config.php:53
-msgid "List Background Color"
-msgstr ""
-
-#: core/customizer/config/class-yatri-section-office-info-config.php:62
-msgid "List Hover Background Color"
-msgstr ""
-
-#: core/customizer/config/class-yatri-section-office-info-config.php:105
-msgid "Icon Margin"
-msgstr ""
-
-#: core/customizer/config/class-yatri-section-office-info-config.php:140
-msgid "List Margin"
-msgstr ""
-
-#: core/customizer/config/class-yatri-section-office-info-config.php:170
-msgid "List Padding"
-msgstr ""
-
-#: core/customizer/config/class-yatri-section-search-form-config.php:40
+#: core/customizer/config/class-yatri-section-search-form-config.php:44
 msgid "Font Color"
 msgstr ""
 
@@ -811,31 +866,31 @@ msgstr ""
 msgid "Text Trasform"
 msgstr ""
 
-#: core/customizer/config/customizer-modal-config.php:36
+#: core/customizer/config/customizer-modal-config.php:38
 msgid "Inside Background Color"
 msgstr ""
 
-#: core/customizer/config/customizer-modal-config.php:55
+#: core/customizer/config/customizer-modal-config.php:57
 msgid "Inside Background Image"
 msgstr ""
 
-#: core/customizer/config/customizer-modal-config.php:73
+#: core/customizer/config/customizer-modal-config.php:75
 msgid "Outside Background Color"
 msgstr ""
 
-#: core/customizer/config/customizer-modal-config.php:82
+#: core/customizer/config/customizer-modal-config.php:84
 msgid "Outside Background Image"
 msgstr ""
 
-#: core/customizer/config/customizer-modal-config.php:128
+#: core/customizer/config/customizer-modal-config.php:130
 msgid "Layout Margin"
 msgstr ""
 
-#: core/customizer/config/customizer-modal-config.php:161
+#: core/customizer/config/customizer-modal-config.php:163
 msgid "Layout Border"
 msgstr ""
 
-#: core/customizer/config/customizer-modal-config.php:388
+#: core/customizer/config/customizer-modal-config.php:390
 msgid "Label Color"
 msgstr ""
 
