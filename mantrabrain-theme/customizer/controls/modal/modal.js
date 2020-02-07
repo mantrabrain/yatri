@@ -468,14 +468,17 @@
                         break;
                     case "overlay":
                         var value = $(this).find('.yatri-change-by-js.yatri-color-picker').val();
-                        devicewise_css_text = '' == value ? '' : css_property.replace("/{{value}}/g", value);
                         var selector_array = css_selector.split(",");
-                        css_selector = selector_array.join(':before, ') + ':before';
+                        var new_css_selector = selector_array.join(':before, ') + ':before';
+                        var body = $("body").find('iframe').contents();
+
                         if ('' == value) {
-                            $('body').find(css_selector).removeClass('yatri-overlay');
+                            body.find(css_selector).removeClass('yatri-overlay');
                         } else {
-                            $('body').find(css_selector).addClass('yatri-overlay');
+                            body.find(css_selector).addClass('yatri-overlay');
                         }
+                        css_selector = new_css_selector;
+                        devicewise_css_text = '' == value ? '' : css_property.replace(/{{value}}/g, value);
                         break;
 
                     case "alignment":

@@ -1195,10 +1195,6 @@
       -ms-flex-align: center;
           align-items: center; }
 
-body.yatri-layout-full_width_stretched .site-content > .yat-container {
-  max-width: 100%;
-  padding: 20px; }
-
 body .site {
   margin: 0 auto; }
 
@@ -1213,24 +1209,12 @@ body.yatri-layout-content_plain .site-content .single-post-wrap {
     body.yatri-layout-content_plain .site-content .single-post-wrap .post-content .post-content-inner {
       border: none; }
 
-body.yatri-archive-page.yatri-layout-full_width_stretched .site-content > .yat-container,
-body.single.yatri-layout-full_width_stretched .site-content > .yat-container,
-body.page.yatri-layout-full_width_stretched .wrap-detail-page > .yat-container {
-  max-width: 100%;
-  padding: 20px; }
-
 body.yatri-archive-page.yatri-layout-content_boxed .yatri-sidebar .widget,
 body.single.yatri-layout-content_boxed .yatri-sidebar .widget,
 body.page.yatri-layout-content_boxed .yatri-sidebar .widget {
   -webkit-box-shadow: none;
   box-shadow: none;
   background: none; }
-
-body.single.yatri-layout-content_boxed .yatri-main-wrap,
-body.single.yatri-global-layout-boxed .yatri-main-wrap,
-body.page.yatri-global-layout-boxed .yatri-main-wrap,
-body.page.yatri-layout-content_boxed .yatri-main-wrap {
-  padding: 20px; }
 
 body.yatri-archive-page.yatri-layout-content_plain .site-content .single-post-wrap,
 body.single.yatri-layout-content_plain .site-content .single-post-wrap {

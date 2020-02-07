@@ -712,6 +712,11 @@ if (!function_exists('yatri_get_color_css')) {
                 border-bottom-color:' . $primary_color . ';
 
             }
+             .yatri-section-search-form.form-type-default .search-form-main {
+
+                border-top-color:' . $primary_color . ';
+
+            }
              
              .yatri-section-search-form.form-type-default .search-form-main:before{
                 border-bottom-color:' . $primary_color . ';
