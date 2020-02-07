@@ -1,3 +1,5 @@
+= 1.0.4 | 2020/02/27 =
+- Improvement: design issue fixed and theme reviewer feedback fixed
 = 1.0.3 | 2020/01/23 =
 - Improvement: Custom control added and other improvement
 = 1.0.2 | 2020/01/10 =
