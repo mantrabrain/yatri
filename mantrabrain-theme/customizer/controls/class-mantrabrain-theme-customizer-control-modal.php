@@ -71,7 +71,7 @@ class Mantrabrain_Theme_Customizer_Control_Modal extends Mantrabrain_Theme_Custo
             $this->value_json = $value;
 
         } catch (Exception $e) {
-
+            // Ignore
         }
         $this->render_default_values();
 
@@ -88,7 +88,7 @@ class Mantrabrain_Theme_Customizer_Control_Modal extends Mantrabrain_Theme_Custo
             $this->default_value_json = $value_string;
 
         } catch (Exception $e) {
-
+            // Ignore
         }
     }
 

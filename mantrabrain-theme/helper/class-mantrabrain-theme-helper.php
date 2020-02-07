@@ -1432,7 +1432,7 @@ if (!class_exists('Mantrabrain_Theme_Helper')) {
                 $all_field_value = json_decode($input, true);
 
             } catch (Exception $e) {
-
+                // Ignore
             }
 
             foreach ($all_field_from_modal as $field) {
@@ -1612,7 +1612,7 @@ if (!class_exists('Mantrabrain_Theme_Helper')) {
                 $all_field_value = json_decode($input, true);
 
             } catch (Exception $e) {
-
+                // Ignore
             }
             $is_empty_field_count = 0;
 
@@ -1660,7 +1660,7 @@ if (!class_exists('Mantrabrain_Theme_Helper')) {
                 $all_field_value = json_decode($input, true);
 
             } catch (Exception $e) {
-
+                // Ignore
             }
             $switch_choices = ($setting->manager->get_control($setting->id)->switch_choices);
 
