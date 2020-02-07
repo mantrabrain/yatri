@@ -2,7 +2,7 @@
 
 global $post;
 
-$post_id = $post->ID;
+$yatri_single_post_id = $post->ID;
 
 $related_section_title = yatri_get_option('single_post_related_posts_heading_text');
 
@@ -17,13 +17,13 @@ $related_args = array(
     'update_post_meta_cache' => false,
     'update_post_term_cache' => false,
     'ignore_sticky_posts' => 1,
-    'post__not_in' => array($post_id),
+    'post__not_in' => array($yatri_single_post_id),
     'posts_per_page' => $number_of_related_posts
 );
 
 if ($related_post_type == 'tag') {
 
-    $tags = wp_get_post_tags($post_id);
+    $tags = wp_get_post_tags($yatri_single_post_id);
     if ($tags) {
         $tag_ids = array();
         foreach ($tags as $tag_ed) {
@@ -32,7 +32,7 @@ if ($related_post_type == 'tag') {
         $related_args['tag__in'] = $tag_ids;
     }
 } else {
-    $categories = get_the_category($post_id);
+    $categories = get_the_category($yatri_single_post_id);
     if ($categories) {
         $category_ids = array();
         foreach ($categories as $category_ed) {

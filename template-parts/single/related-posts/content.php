@@ -45,13 +45,13 @@ switch ($number_of_related_posts_columns) {
 
                 $page_content_orders = yatri_blog_archive_page_content_order();
 
-                foreach ($page_content_orders as $order => $order_content) {
+                foreach ($page_content_orders as $order_index => $order_content) {
 
                     $is_disable = isset($order_content['disable']) ? (boolean)$order_content['disable'] : false;
 
                     if (!$is_disable) {
 
-                        switch ($order) {
+                        switch ($order_index ) {
 
                             case "thumbnail":
                                 get_template_part('template-parts/single/related-posts/thumbnail');

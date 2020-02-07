@@ -38,13 +38,13 @@ $class = 'yatri-article-wrap ';
                     $args['size'] = !empty($size) ? $size : $args['size'];
 
                 }
-                foreach ($page_content_orders as $order => $order_content) {
+                foreach ($page_content_orders as $order_key => $order_content) {
 
                     $is_disable = isset($order_content['disable']) ? (boolean)$order_content['disable'] : false;
 
                     if (!$is_disable) {
 
-                        switch ($order) {
+                        switch ($order_key) {
 
                             case "thumbnail":
                                 yatri_get_post_thumbnail($args, true);
