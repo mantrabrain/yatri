@@ -174,7 +174,7 @@ body.admin-bar .yatri-mobile-menu.yatri-section-menu {
     bottom: 0;
     left: 0;
     z-index: 9999;
-    background: $primary_color;
+    background: #fff;
     width: 400px;
     max-width: 100%;
     -webkit-transform: translateX(-100%);
@@ -211,13 +211,15 @@ body.admin-bar .yatri-mobile-menu.yatri-section-menu {
           background: #fff;
           text-align: center;
           line-height: 25px;
-          color: #000;
+          color: $menu_and_heading_color;
           display: block;
           position: absolute;
-          top: 6px;
+          top: 50%;
           right: 2px;
           cursor: pointer;
           font-size: 15px;
+          transform: translateY(-50%);
+          
         }
       }
       &:last-child {
@@ -251,7 +253,8 @@ body.admin-bar .yatri-mobile-menu.yatri-section-menu {
         }
       }
       a {
-        color: #fff;
+        color: $menu_and_heading_color;
+        position: relative;
         display: block;
         padding-top: 5px;
         padding-bottom: 5px;
@@ -263,15 +266,7 @@ body.admin-bar .yatri-mobile-menu.yatri-section-menu {
     }
     nav {
       border-top: 1px solid #e9ecef;
-      & > ul {
-        & > li {
-          &:first-child {
-            a:first-child {
-              border-top: 0;
-            }
-          }
-        }
-      }
+
     }
   }
   ul.sub-menu {
