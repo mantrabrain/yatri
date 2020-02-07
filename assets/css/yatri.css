@@ -10745,7 +10745,7 @@ body.admin-bar .yatri-mobile-menu.yatri-section-menu {
       display: block;
       position: absolute;
       top: 6px;
-      right: 10px;
+      right: 2px;
       cursor: pointer;
       font-size: 15px; }
     .yatri-mobile-menu.yatri-section-menu li:last-child {
@@ -10754,11 +10754,11 @@ body.admin-bar .yatri-mobile-menu.yatri-section-menu {
       content: ""; }
     .yatri-mobile-menu.yatri-section-menu li.yatri-menu-open > ul.sub-menu {
       display: block; }
-    .yatri-mobile-menu.yatri-section-menu li.yatri-menu-open > .yatri-submenu-toggle:before {
+    .yatri-mobile-menu.yatri-section-menu li.yatri-menu-open > a .yatri-submenu-toggle:before {
       content: ""; }
     .yatri-mobile-menu.yatri-section-menu li.yatri-menu-close > ul.sub-menu {
       display: none; }
-    .yatri-mobile-menu.yatri-section-menu li.yatri-menu-close > .yatri-submenu-toggle:before {
+    .yatri-mobile-menu.yatri-section-menu li.yatri-menu-close > a .yatri-submenu-toggle:before {
       content: ""; }
     .yatri-mobile-menu.yatri-section-menu li a {
       color: #fff;

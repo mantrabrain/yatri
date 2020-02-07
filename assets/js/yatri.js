@@ -14,15 +14,18 @@
             var $el = $('.yatri-mobile-menu');
             $el.each(function () {
                 var subMenu = $(this).find("ul.sub-menu");
-                subMenu.append();
-                $('<i class="yatri-submenu-toggle fa fa-angle-down"/>').insertBefore(subMenu);
+                //subMenu.append();
+
+                var icon = $('<i class="yatri-submenu-toggle fa fa-angle-down"/>');
+                subMenu.prev('a').append(icon);
                 /* var header = $(this).closest('.yatri-header-item');
                  if (header.length > 0) {
                      var height = header.height();
                  }*/
 
             });
-            $('body').on('click', '.yatri-submenu-toggle', function () {
+            $('body').on('click', '.yatri-submenu-toggle', function (e) {
+                e.preventDefault();
                 if (!$(this).closest('li.menu-item').hasClass('yatri-menu-open')) {
                     $(this).closest('li.menu-item').addClass('yatri-menu-open');
                     $(this).closest('li.menu-item').removeClass('yatri-menu-close');
