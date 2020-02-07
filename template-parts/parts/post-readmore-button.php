@@ -1,7 +1,7 @@
 <?php
 
 $learn_more_text = esc_html__('Learn More', 'yatri');
-$learn_more_icon = 'fab fa-long-arrow-right';
+$learn_more_icon = 'fas fa-long-arrow-alt-right';
 
 if (yatri_is_archive_page()) {
 
