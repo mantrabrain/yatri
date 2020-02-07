@@ -55,7 +55,7 @@ class Yatri_Section_Nav_Menu_Config
                         'description' => '',
                         'default' => '#fff',
                         'css_property' => 'color:{{value}};',
-                        'selector' => "{$parent_selector} .yatri-section-container.menu-container ul:not(.sub-menu)>li>a
+                        'selector' => "{$parent_selector} .yatri-section-container.menu-container ul:not(.sub-menu)>li>a,
                         {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu ul:not(.sb-menu)>li>a",
                     ),
                     array(
@@ -583,7 +583,7 @@ class Yatri_Section_Nav_Menu_Config
                     'label' => '',
                     'additional_css' =>
                         array(
-                            'desktop' => "{$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu,
+                            'desktop' => "
                         {$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu li{border:none;}
                         {$parent_selector} .yatri-section-container.menu-container li.menu-item-has-children ul.sub-menu ul{top:0px;} "
                         ),

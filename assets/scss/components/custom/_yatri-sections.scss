@@ -112,6 +112,15 @@ body.admin-bar .yatri-offcanvas-menu-content {
   top: 32px;
 }
 
+.yatri-offcanvas-menu-content.yatri-offcanvas-open, .yatri-offcanvas-menu-content.yatri-offcanvas-open.right {
+
+  display: block;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
 body.admin-bar .yatri-mobile-menu.yatri-section-menu {
   top: 45px;
 }
@@ -330,14 +339,7 @@ body.admin-bar .yatri-mobile-menu.yatri-section-menu {
   }
 }
 
-.yatri-mobile-menu.yatri-section-menu.yatri-navigation-menu-open, .yatri-mobile-menu.yatri-section-menu.yatri-navigation-menu-open.right {
 
-  display: block;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-}
 
 .yatri-section-search-form {
   position: relative;
