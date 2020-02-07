@@ -689,7 +689,8 @@
                 if (body.find("#" + idfirst).length) {
                     body.find("#" + idfirst).attr("href", google_font_url);
                 } else {
-                    body.find("head").append('<link id="' + idfirst + '" rel="stylesheet" type="text/css" href="' + google_font_url + '">');
+                    var link_js = '<link id="' + idfirst + '" rel="stylesheet" type="text/css" href="' + google_font_url + '">';
+                    body.find("head").append(link_js);
                 }
             }
         },
