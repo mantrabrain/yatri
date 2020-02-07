@@ -71,7 +71,7 @@
   padding: 40px 20px 20px;
   -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   .yatri-canvas-close {
     cursor: pointer;
     background: #aaa;
@@ -114,15 +114,6 @@ body.admin-bar .yatri-offcanvas-menu-content {
 
 body.admin-bar .yatri-mobile-menu.yatri-section-menu {
   top: 45px;
-}
-
-.yatri-offcanvas-menu-content.yatri-offcanvas-open, .yatri-offcanvas-menu-content.yatri-offcanvas-open.right {
-
-  display: block;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
 }
 
 .yatri-section-offcanvas-menu {
@@ -186,7 +177,7 @@ body.admin-bar .yatri-mobile-menu.yatri-section-menu {
     padding: 40px 20px 20px;
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
 
     ul {
       margin: 0;

@@ -10618,7 +10618,7 @@ body .entry-title {
   padding: 40px 20px 20px;
   -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
-  overflow-y: scroll; }
+  overflow-y: auto; }
   .yatri-offcanvas-menu-content .yatri-canvas-close {
     cursor: pointer;
     background: #aaa;
@@ -10658,16 +10658,6 @@ body.admin-bar .yatri-offcanvas-menu-content {
 
 body.admin-bar .yatri-mobile-menu.yatri-section-menu {
   top: 45px; }
-
-.yatri-offcanvas-menu-content.yatri-offcanvas-open, .yatri-offcanvas-menu-content.yatri-offcanvas-open.right {
-  display: block;
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-   -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-       transform: translateX(0);
-  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); }
 
 .yatri-section-offcanvas-menu .yatri-toggle-wrap {
   display: inline-block;
@@ -10723,7 +10713,7 @@ body.admin-bar .yatri-mobile-menu.yatri-section-menu {
   padding: 40px 20px 20px;
   -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
-  overflow-y: scroll; }
+  overflow-y: auto; }
   .yatri-mobile-menu.yatri-section-menu ul {
     margin: 0;
     padding: 0; }
@@ -11467,6 +11457,15 @@ footer.site-footer .site-branding .site-title a {
     color: #ccc; }
 
 @media (max-width: 1024px) {
+  .yatri-offcanvas-menu-content.yatri-offcanvas-open, .yatri-offcanvas-menu-content.yatri-offcanvas-open.right {
+    display: block;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+     -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+         transform: translateX(0);
+    -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); }
   .yatri-section-container .yatri-section-menu {
     display: none; }
   .yatri-mobile-menu {

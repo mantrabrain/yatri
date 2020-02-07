@@ -1,4 +1,12 @@
 @media (max-width: 1024px) {
+  .yatri-offcanvas-menu-content.yatri-offcanvas-open, .yatri-offcanvas-menu-content.yatri-offcanvas-open.right {
+
+    display: block;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  }
   .yatri-section-container {
     .yatri-section-menu {
       display: none;
