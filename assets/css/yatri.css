@@ -5736,8 +5736,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: normal;
   font-display: auto;
-  src: url("../webfonts/fa-brands-400.eot");
-  src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
+  src: url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-brands-400.eot");
+  src: url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-brands-400.woff2") format("woff2"), url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-brands-400.woff") format("woff"), url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-brands-400.ttf") format("truetype"), url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
 
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
@@ -5751,8 +5751,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: auto;
-  src: url("../webfonts/fa-regular-400.eot");
-  src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
+  src: url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-regular-400.eot");
+  src: url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-regular-400.woff2") format("woff2"), url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-regular-400.woff") format("woff"), url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-regular-400.ttf") format("truetype"), url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
 
 .far {
   font-family: 'Font Awesome 5 Free';
@@ -5767,8 +5767,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: auto;
-  src: url("../webfonts/fa-solid-900.eot");
-  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+  src: url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-solid-900.eot");
+  src: url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-solid-900.woff2") format("woff2"), url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-solid-900.woff") format("woff"), url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-solid-900.ttf") format("truetype"), url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
 
 .fa,
 .fas {
@@ -8722,91 +8722,6 @@ sidebar.sidebar .widget:last-child {
 
 .widget.widget_media_gallery .gallery-caption {
   display: none; }
-
-.yatri-carousel {
-  text-align: center;
-  /* fix blank or flashing items on carousel */ }
-  .yatri-carousel.caption-left {
-    text-align: left; }
-  .yatri-carousel.caption-right {
-    text-align: right; }
-  .yatri-carousel .item {
-    background-size: cover;
-    background-repeat: no-repeat; }
-    .yatri-carousel .item .carousel-content {
-      padding: 200px 100px;
-      max-width: 1170px;
-      z-index: 1;
-      margin: 0 auto;
-      position: relative; }
-      .yatri-carousel .item .carousel-content h2 {
-        margin: 0 0 15px 0;
-        line-height: 1.5;
-        font-weight: 700;
-        color: #fff;
-        font-size: 60px; }
-      .yatri-carousel .item .carousel-content p {
-        color: #f6f6f6;
-        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-        margin: 1em 0;
-        font-size: 20px; }
-    .yatri-carousel .item:after {
-      background: rgba(0, 0, 0, 0.5);
-      content: "";
-      display: block;
-      height: 100%;
-      position: absolute;
-      width: 100%;
-      top: 0; }
-  .yatri-carousel .owl-nav .owl-prev, .yatri-carousel .owl-nav .owl-next {
-    position: absolute;
-    top: 50%;
-    margin-top: -20px;
-    -webkit-transform: translate(-50%);
-       -moz-transform: translate(-50%);
-        -ms-transform: translate(-50%);
-         -o-transform: translate(-50%);
-            transform: translate(-50%);
-    height: 40px;
-    width: 40px;
-    background: #4285f4;
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    transition: 0.5s all;
-    text-align: center; }
-    .yatri-carousel .owl-nav .owl-prev .fa, .yatri-carousel .owl-nav .owl-next .fa {
-      color: #fff;
-      font-size: 40px; }
-    .yatri-carousel .owl-nav .owl-prev:hover, .yatri-carousel .owl-nav .owl-next:hover {
-      background: #0b51c5; }
-  .yatri-carousel .owl-nav .owl-prev {
-    left: 0; }
-  .yatri-carousel .owl-nav .owl-next {
-    right: -40px; }
-  .yatri-carousel:not(.owl-loaded) {
-    display: block; }
-    .yatri-carousel:not(.owl-loaded) .item {
-      display: none; }
-      .yatri-carousel:not(.owl-loaded) .item:first-child {
-        display: block; }
-
-.mb-full-width {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-     -moz-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-       -o-transform: translateX(-50%);
-          transform: translateX(-50%); }
-
-.yatri_banner_widget {
-  margin-bottom: 0; }
-  .yatri_banner_widget .banner-widget.mb-full-width .yatri-carousel .owl-nav .owl-prev {
-    left: 40px; }
-  .yatri_banner_widget .banner-widget.mb-full-width .yatri-carousel .owl-nav .owl-next {
-    right: 0; }
 
 .yatri-search-row {
   display: -webkit-box;

@@ -50,7 +50,7 @@
     text-align: center;
     border-radius: 100%;
     cursor: pointer;
-    z-index: 99999;
+    z-index: 1;
     color: #fff;
 }
 

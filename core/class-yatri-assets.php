@@ -136,23 +136,6 @@ if (!class_exists('Yatri_Assets')) :
                 ),
 
                 array(
-                    'handler' => 'owlcarousel',
-                    'style' => 'OwlCarousel2-2.2.1/assets/owl.carousel.min.css',
-                    'script' => 'OwlCarousel2-2.2.1/owl.carousel.min.js',
-                    'version' => '2.2.1'
-                ),
-                array(
-                    'handler' => 'owlcarousel-theme',
-                    'style' => 'OwlCarousel2-2.2.1/assets/owl.theme.default.min.css',
-                    'version' => '2.2.1'
-                ),
-
-                array(
-                    'handler' => 'yatri-blocks',
-                    'style' => get_theme_file_uri('/assets/css/blocks.css'),
-                    'absolute' => true,
-                ),
-                array(
                     'handler' => 'yatri-style',
                     'style' => get_stylesheet_uri(),
                     'absolute' => true,
@@ -166,7 +149,7 @@ if (!class_exists('Yatri_Assets')) :
                     'script' => get_theme_file_uri('/assets/js/yatri.js'),
                     'absolute' => true,
                     'prefix' => '',
-                    'dependency' => array('jquery', 'masonry')
+                    'dependency' => array('jquery')
                 )
             );
 
@@ -190,8 +173,6 @@ if (!class_exists('Yatri_Assets')) :
 
         public function block_editor_styles()
         {
-            // Block styles.
-            wp_enqueue_style('yatri-block-editor-style', get_theme_file_uri('/assets/css/editor-blocks.css'));
             // Google Font
             wp_enqueue_style('yatri-google-font', 'https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700,700i|Rubik:300,400,400i,500,700,700i', false);
         }
@@ -223,7 +204,6 @@ if (!class_exists('Yatri_Assets')) :
                     }
                 }
             }
-
 
 
         }

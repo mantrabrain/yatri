@@ -556,45 +556,6 @@ if (!function_exists('yatri_get_post_thumbnail')):
     }
 endif;
 
-if (!function_exists('yatri_get_placeholder_image')) :
-    /**
-     * Generates placeholder image url
-     *
-     * @since 1.0.0
-     * @param  string $size The image size for which to retrieve data.
-     * @return string Url of the dummy image.
-     */
-    function yatri_get_placeholder_image($args)
-    {
-
-        $defaults = array(
-            'size' => 'thumbnail',
-        );
-
-        $args = wp_parse_args($args, $defaults);
-
-        if ('thumbnail' == $args['size']) {
-
-            $width = $height = '150';
-        } else if ('medium' == $args['size']) {
-
-            $width = $height = '300';
-        } else if ('large' == $args['size'] || 'full' == $args['size']) {
-
-            $width = $height = '1024';
-
-        } else {
-
-            $width = yatri_get_image_width($args['size']);
-
-            $height = yatri_get_image_height($args['size']);
-        }
-
-        $url = get_theme_file_uri('assets/images/placeholder/yatri-' . $width . '-' . $height . '.png');
-
-        return apply_filters('yatri_dummy_image_url', $url, $args);
-    }
-endif;
 if (!function_exists('yatri_fallback_navigation')) {
 
     function yatri_fallback_navigation()
