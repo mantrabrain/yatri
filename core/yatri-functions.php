@@ -868,7 +868,7 @@ if (!function_exists('yatri_theme_branding')) {
     function yatri_theme_branding()
     {
 
-        $return = esc_html__('Yatri', 'oceanwp');
+        $return = esc_html__('Yatri', 'yatri');
 
         // Return and apply filters for child theming
         return apply_filters('yatri_theme_branding', $return);
