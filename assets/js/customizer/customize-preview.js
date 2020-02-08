@@ -71,349 +71,285 @@
 
 
     };
+    var yatri_customizer_modal_keys = typeof yatriCustomizerPreviewObject.post_message_modal_keys !== "undefined" && typeof yatriCustomizerPreviewObject.post_message_modal_keys !== undefined ? yatriCustomizerPreviewObject.post_message_modal_keys : {};
 
-    var design_styling = [
-        "body_and_paragraph_typography",
-        "h1_typography",
-        "h2_typography",
-        "h3_typography",
-        "h4_typography",
-        "h5_typography",
-        "h6_typography",
-        "widget_title_typography",
+    for (var yt_property in yatri_customizer_modal_keys) {
 
-        "main_layout_boxed_styling",
-        "main_layout_full_width_styling",
-        "yatri_button_style_design",
-        "yatri_form_style_design",
-        "yatri_breadcrumb_style_design",
-        "top_header_design",
-        "top_header_navigation_menu_design",
-        "top_header_button_style_design",
-        "top_header_search_form_design",
-        "top_header_office_info_design",
-        "top_header_social_icons_design",
-        "top_header_offcanvas_menu_design",
-        "top_header_branding_style_design",
-        "top_header_custom_html_design",
+        if (yatri_customizer_modal_keys.hasOwnProperty(yt_property)) {
 
-        "mid_header_design",
-        "mid_header_navigation_menu_design",
-        "mid_header_button_style_design",
-        "mid_header_search_form_design",
-        "mid_header_office_info_design",
-        "mid_header_social_icons_design",
-        "mid_header_offcanvas_menu_design",
-        "mid_header_branding_style_design",
-        "mid_header_custom_html_design",
+            var id = yatri_customizer_modal_keys[yt_property];
 
-        "bottom_header_design",
-        "bottom_header_navigation_menu_design",
-        "bottom_header_button_style_design",
-        "bottom_header_search_form_design",
-        "bottom_header_office_info_design",
-        "bottom_header_social_icons_design",
-        "bottom_header_offcanvas_menu_design",
-        "bottom_header_branding_style_design",
-        "bottom_header_custom_html_design",
+            if (id !== '' && id !== undefined && id !== "undefined") {
 
-        "blog_archive_design_style",
-        "blog_archive_page_content_wrapper_design_styling",
-        "blog_archive_page_article_design_styling",
-        "blog_archive_page_readmore_design_styling",
-        "blog_archive_pagination_design_style",
+                var control_id = 'yatri_theme_options[' + id + ']';
+                api(control_id, function (value) {
+                    value.bind(function (to) {
+                        yatriCustomizerPreview.loadStyle();
 
-        "single_post_design_style",
-        "single_post_article_design_styling",
-
-        "page_design_style",
-        "page_article_design_styling",
-
-        "left_sidebar_design_style",
-        "right_sidebar_design_style",
-
-        "footer_widgets_section_design_style",
-        "footer_widgets_area_design_style",
-
-        "bottom_footer_section_design_style",
-        "bottom_footer_navigation_menu_design",
-        "bottom_footer_button_style_design",
-        "bottom_footer_office_info_design",
-        "bottom_footer_social_icons_design",
-        "bottom_footer_custom_html_design",
-        "bottom_footer_copyright_design",
-
-    ];
-
-    design_styling.forEach(function (id, index, array) {
-        var control_id = 'yatri_theme_options[' + id + ']';
-        api(control_id, function (value) {
-            value.bind(function (to) {
-                yatriCustomizerPreview.loadStyle();
-
-            });
-        });
-
-        api('yatri_theme_options[container_width]', function (value) {
-            value.bind(function (to) {
-                var boxed_layout = 'yatri-global-layout-boxed';
-                var width = parseInt(to);
-                var css = '';
-                if ($('body').hasClass(boxed_layout) || (!$('body').hasClass(boxed_layout) && width !== 1140)) {
-                    var css = '@media (min-width: 768px) {\n' +
-                        '                    body.yatri-global-layout-boxed .site{width:' + width + 'px; max-width:100%}\n' +
-                        '                    body.yatri-global-layout-boxed .site .yat-container{width:' + width + 'px; max-width:100%}\n' +
-                        '                    body.yatri-global-layout-full_width .yat-container{width:' + width + 'px; max-width:100%}\n' +
-                        '                }';
-                }
-                yatriCustomizerPreview.add_dynamic_css('yatri_theme_options_global_container_width', css);
-            });
-        });
-
-        api('yatri_theme_options[breadcrumb_home_text]', function (value) {
-            value.bind(function (to) {
-                $('body').find(".breadcrumb-trail").find('li').eq(0).find('a span').text(to);
-            });
-        });
-        api('blogname', function (value) {
-            value.bind(function (to) {
-                $('body').find(".site-header").find(".site-title a").text(to);
-            });
-        });
-        api('blogdescription', function (value) {
-            value.bind(function (to) {
-                $('body').find(".site-header").find(".site-description").text(to);
-            });
-        });
-        //Top Header Part
-
-        api('yatri_theme_options[top_header_button_icon]', function (value) {
-            value.bind(function (to) {
-                $('body').find(".top-header").find(".yatri-section-button .yatri-button").find('.yatri-button-icon').remove();
-                $('body').find(".top-header").find(".yatri-section-button .yatri-button").prepend('<i class="yatri-button-icon ' + to + '"></i>');
-            });
-        });
-        //Button Link
-        api('yatri_theme_options[top_header_button_link]', function (value) {
-            value.bind(function (to) {
-                $('body').find(".top-header").find(".yatri-section-button .yatri-button").attr('href', to);
-            });
-        });
-
-        api('yatri_theme_options[top_header_button_label]', function (value) {
-            value.bind(function (to) {
-                $('body').find(".top-header").find(".yatri-section-button .yatri-button").find('span').remove();
-                $('body').find(".top-header").find(".yatri-section-button .yatri-button").append('<span>' + to + '</span>');
-            });
-        });
-        // Custom HTML
-        api('yatri_theme_options[top_header_custom_html_content]', function (value) {
-            value.bind(function (to) {
-                $('body').find(".top-header").find(".yatri-section-custom-html").html(to);
-
-            });
-        });
-
-
-        //Mid Heder
-        api('yatri_theme_options[mid_header_button_icon]', function (value) {
-            value.bind(function (to) {
-                $('body').find(".yatri-mid-header").find(".yatri-section-button .yatri-button").find('.yatri-button-icon').remove();
-                $('body').find(".yatri-mid-header").find(".yatri-section-button .yatri-button").prepend('<i class="yatri-button-icon ' + to + '"></i>');
-            });
-        });
-        //Button Link
-        api('yatri_theme_options[mid_header_button_link]', function (value) {
-            value.bind(function (to) {
-                $('body').find(".yatri-mid-header").find(".yatri-section-button .yatri-button").attr('href', to);
-            });
-        });
-
-        api('yatri_theme_options[mid_header_button_label]', function (value) {
-            value.bind(function (to) {
-                $('body').find(".yatri-mid-header").find(".yatri-section-button .yatri-button").find('span').remove();
-                $('body').find(".yatri-mid-header").find(".yatri-section-button .yatri-button").append('<span>' + to + '</span>');
-            });
-        });
-        // Custom HTML
-        api('yatri_theme_options[mid_header_custom_html_content]', function (value) {
-            value.bind(function (to) {
-                $('body').find(".yatri-mid-header").find(".yatri-section-custom-html").html(to);
-
-            });
-        });
-
-        //Mid Heder
-        api('yatri_theme_options[bottom_header_button_icon]', function (value) {
-            value.bind(function (to) {
-                $('body').find(".bottom-header").find(".yatri-section-button .yatri-button").find('.yatri-button-icon').remove();
-                $('body').find(".bottom-header").find(".yatri-section-button .yatri-button").prepend('<i class="yatri-button-icon ' + to + '"></i>');
-            });
-        });
-        //Button Link
-        api('yatri_theme_options[bottom_header_button_link]', function (value) {
-            value.bind(function (to) {
-                $('body').find(".bottom-header").find(".yatri-section-button .yatri-button").attr('href', to);
-            });
-        });
-
-        api('yatri_theme_options[bottom_header_button_label]', function (value) {
-            value.bind(function (to) {
-                $('body').find(".bottom-header").find(".yatri-section-button .yatri-button").find('span').remove();
-                $('body').find(".bottom-header").find(".yatri-section-button .yatri-button").append('<span>' + to + '</span>');
-            });
-        });
-        // Custom HTML
-        api('yatri_theme_options[bottom_header_custom_html_content]', function (value) {
-            value.bind(function (to) {
-                $('body').find(".bottom-header").find(".yatri-section-custom-html").html(to);
-
-            });
-        });
-
-        //Blog Archive Page
-        api('yatri_theme_options[blog_archive_sidebar_width]', function (value) {
-            value.bind(function (to) {
-
-                yatriCustomizerPreview.update_sidebar_width(to, 'yatri-blog-archive-page', 'yatri_both_sidebar_layout', 'yatri_theme_options_blog_archive_sidebar_width');
-
-            });
-
-        });
-
-        api('yatri_theme_options[blog_archive_page_meta_content_separator]', function (value) {
-            value.bind(function (to) {
-
-
-                var selector = 'yatri-blog-archive-page';
-
-                if (!$('body').hasClass(selector)) {
-                    return;
-                }
-                $('body').find('.site-content').find('.meta.yatri-content-item').find(".sep").text(to);
-
-
-            });
-
-        });
-
-        api('yatri_theme_options[blog_archive_page_meta_content_separator_width]', function (value) {
-            value.bind(function (to) {
-
-
-                var selector = 'yatri-blog-archive-page';
-
-                if (!$('body').hasClass(selector)) {
-                    return;
-                }
-                var margin = to / 2;
-                $('body').find('.site-content').find('.meta.yatri-content-item').find(".sep").css({
-                    'margin-right': margin + 'px',
-                    'margin-left': margin + 'px'
+                    });
                 });
+            }
+        }
+    }
+
+    api('yatri_theme_options[container_width]', function (value) {
+        value.bind(function (to) {
+            var boxed_layout = 'yatri-global-layout-boxed';
+            var width = parseInt(to);
+            var css = '';
+            if ($('body').hasClass(boxed_layout) || (!$('body').hasClass(boxed_layout) && width !== 1140)) {
+                var css = '@media (min-width: 768px) {\n' +
+                    '                    body.yatri-global-layout-boxed .site{width:' + width + 'px; max-width:100%}\n' +
+                    '                    body.yatri-global-layout-boxed .site .yat-container{width:' + width + 'px; max-width:100%}\n' +
+                    '                    body.yatri-global-layout-full_width .yat-container{width:' + width + 'px; max-width:100%}\n' +
+                    '                }';
+            }
+            yatriCustomizerPreview.add_dynamic_css('yatri_theme_options_global_container_width', css);
+        });
+    });
+
+    api('yatri_theme_options[breadcrumb_home_text]', function (value) {
+        value.bind(function (to) {
+            $('body').find(".breadcrumb-trail").find('li').eq(0).find('a span').text(to);
+        });
+    });
+    api('blogname', function (value) {
+        value.bind(function (to) {
+            $('body').find(".site-header").find(".site-title a").text(to);
+        });
+    });
+    api('blogdescription', function (value) {
+        value.bind(function (to) {
+            $('body').find(".site-header").find(".site-description").text(to);
+        });
+    });
+    //Top Header Part
+
+    api('yatri_theme_options[top_header_button_icon]', function (value) {
+        value.bind(function (to) {
+            $('body').find(".top-header").find(".yatri-section-button .yatri-button").find('.yatri-button-icon').remove();
+            $('body').find(".top-header").find(".yatri-section-button .yatri-button").prepend('<i class="yatri-button-icon ' + to + '"></i>');
+        });
+    });
+    //Button Link
+    api('yatri_theme_options[top_header_button_link]', function (value) {
+        value.bind(function (to) {
+            $('body').find(".top-header").find(".yatri-section-button .yatri-button").attr('href', to);
+        });
+    });
+
+    api('yatri_theme_options[top_header_button_label]', function (value) {
+        value.bind(function (to) {
+            $('body').find(".top-header").find(".yatri-section-button .yatri-button").find('span').remove();
+            $('body').find(".top-header").find(".yatri-section-button .yatri-button").append('<span>' + to + '</span>');
+        });
+    });
+    // Custom HTML
+    api('yatri_theme_options[top_header_custom_html_content]', function (value) {
+        value.bind(function (to) {
+            $('body').find(".top-header").find(".yatri-section-custom-html").html(to);
+
+        });
+    });
 
 
-            });
+    //Mid Heder
+    api('yatri_theme_options[mid_header_button_icon]', function (value) {
+        value.bind(function (to) {
+            $('body').find(".yatri-mid-header").find(".yatri-section-button .yatri-button").find('.yatri-button-icon').remove();
+            $('body').find(".yatri-mid-header").find(".yatri-section-button .yatri-button").prepend('<i class="yatri-button-icon ' + to + '"></i>');
+        });
+    });
+    //Button Link
+    api('yatri_theme_options[mid_header_button_link]', function (value) {
+        value.bind(function (to) {
+            $('body').find(".yatri-mid-header").find(".yatri-section-button .yatri-button").attr('href', to);
+        });
+    });
+
+    api('yatri_theme_options[mid_header_button_label]', function (value) {
+        value.bind(function (to) {
+            $('body').find(".yatri-mid-header").find(".yatri-section-button .yatri-button").find('span').remove();
+            $('body').find(".yatri-mid-header").find(".yatri-section-button .yatri-button").append('<span>' + to + '</span>');
+        });
+    });
+    // Custom HTML
+    api('yatri_theme_options[mid_header_custom_html_content]', function (value) {
+        value.bind(function (to) {
+            $('body').find(".yatri-mid-header").find(".yatri-section-custom-html").html(to);
+
+        });
+    });
+
+    //Mid Heder
+    api('yatri_theme_options[bottom_header_button_icon]', function (value) {
+        value.bind(function (to) {
+            $('body').find(".bottom-header").find(".yatri-section-button .yatri-button").find('.yatri-button-icon').remove();
+            $('body').find(".bottom-header").find(".yatri-section-button .yatri-button").prepend('<i class="yatri-button-icon ' + to + '"></i>');
+        });
+    });
+    //Button Link
+    api('yatri_theme_options[bottom_header_button_link]', function (value) {
+        value.bind(function (to) {
+            $('body').find(".bottom-header").find(".yatri-section-button .yatri-button").attr('href', to);
+        });
+    });
+
+    api('yatri_theme_options[bottom_header_button_label]', function (value) {
+        value.bind(function (to) {
+            $('body').find(".bottom-header").find(".yatri-section-button .yatri-button").find('span').remove();
+            $('body').find(".bottom-header").find(".yatri-section-button .yatri-button").append('<span>' + to + '</span>');
+        });
+    });
+    // Custom HTML
+    api('yatri_theme_options[bottom_header_custom_html_content]', function (value) {
+        value.bind(function (to) {
+            $('body').find(".bottom-header").find(".yatri-section-custom-html").html(to);
+
+        });
+    });
+
+    //Blog Archive Page
+    api('yatri_theme_options[blog_archive_sidebar_width]', function (value) {
+        value.bind(function (to) {
+
+            yatriCustomizerPreview.update_sidebar_width(to, 'yatri-blog-archive-page', 'yatri_both_sidebar_layout', 'yatri_theme_options_blog_archive_sidebar_width');
 
         });
 
-        api('yatri_theme_options[blog_archive_page_readmore_text]', function (value) {
-            value.bind(function (to) {
+    });
+
+    api('yatri_theme_options[blog_archive_page_meta_content_separator]', function (value) {
+        value.bind(function (to) {
 
 
-                var selector = 'yatri-blog-archive-page';
+            var selector = 'yatri-blog-archive-page';
 
-                if (!$('body').hasClass(selector)) {
-                    return;
-                }
+            if (!$('body').hasClass(selector)) {
+                return;
+            }
+            $('body').find('.site-content').find('.meta.yatri-content-item').find(".sep").text(to);
 
-                var span = $('body').find('.site-content').find('.learn-more-btn a.button-text').find('span');
-                var div = $('<div/>');
-                div.append(to);
-                div.append(span);
-                $('body').find('.site-content').find('.learn-more-btn a.button-text').html(div.html());
-
-
-            });
 
         });
 
-        api('yatri_theme_options[blog_archive_page_readmore_text_icon]', function (value) {
-            value.bind(function (to) {
+    });
+
+    api('yatri_theme_options[blog_archive_page_meta_content_separator_width]', function (value) {
+        value.bind(function (to) {
 
 
-                var selector = 'yatri-blog-archive-page';
+            var selector = 'yatri-blog-archive-page';
 
-                if (!$('body').hasClass(selector)) {
-                    return;
-                }
-
-                $('body').find('.site-content').find('.learn-more-btn a.button-text').find('span').remove();
-
-                $('body').find('.site-content').find('.learn-more-btn a.button-text').append('<span class="' + to + '"></span>');
-
-
+            if (!$('body').hasClass(selector)) {
+                return;
+            }
+            var margin = to / 2;
+            $('body').find('.site-content').find('.meta.yatri-content-item').find(".sep").css({
+                'margin-right': margin + 'px',
+                'margin-left': margin + 'px'
             });
+
 
         });
 
-        // Single Post
-        api('yatri_theme_options[single_post_sidebar_width]', function (value) {
-            value.bind(function (to) {
+    });
 
-                yatriCustomizerPreview.update_sidebar_width(to, 'yatri-single-post', 'yatri_both_sidebar_layout', 'yatri_theme_options_single_post_sidebar_width');
+    api('yatri_theme_options[blog_archive_page_readmore_text]', function (value) {
+        value.bind(function (to) {
 
-            });
+
+            var selector = 'yatri-blog-archive-page';
+
+            if (!$('body').hasClass(selector)) {
+                return;
+            }
+
+            var span = $('body').find('.site-content').find('.learn-more-btn a.button-text').find('span');
+            var div = $('<div/>');
+            div.append(to);
+            div.append(span);
+            $('body').find('.site-content').find('.learn-more-btn a.button-text').html(div.html());
+
 
         });
 
-        // Single Page
-        api('yatri_theme_options[page_sidebar_width]', function (value) {
-            value.bind(function (to) {
+    });
 
-                yatriCustomizerPreview.update_sidebar_width(to, 'yatri-single-page', 'yatri_both_sidebar_layout', 'yatri_theme_options_page_sidebar_width');
+    api('yatri_theme_options[blog_archive_page_readmore_text_icon]', function (value) {
+        value.bind(function (to) {
 
-            });
+
+            var selector = 'yatri-blog-archive-page';
+
+            if (!$('body').hasClass(selector)) {
+                return;
+            }
+
+            $('body').find('.site-content').find('.learn-more-btn a.button-text').find('span').remove();
+
+            $('body').find('.site-content').find('.learn-more-btn a.button-text').append('<span class="' + to + '"></span>');
+
 
         });
 
-        // Bottom Footer
+    });
 
-        api('yatri_theme_options[bottom_footer_button_icon]', function (value) {
-            value.bind(function (to) {
-                $('body').find(".bottom-footer").find(".yatri-section-button .yatri-button").find('.yatri-button-icon').remove();
-                $('body').find(".bottom-footer").find(".yatri-section-button .yatri-button").prepend('<i class="yatri-button-icon ' + to + '"></i>');
-            });
-        });
-        //Button Link
-        api('yatri_theme_options[bottom_footer_button_link]', function (value) {
-            value.bind(function (to) {
-                $('body').find(".bottom-footer").find(".yatri-section-button .yatri-button").attr('href', to);
-            });
+    // Single Post
+    api('yatri_theme_options[single_post_sidebar_width]', function (value) {
+        value.bind(function (to) {
+
+            yatriCustomizerPreview.update_sidebar_width(to, 'yatri-single-post', 'yatri_both_sidebar_layout', 'yatri_theme_options_single_post_sidebar_width');
+
         });
 
-        api('yatri_theme_options[bottom_footer_button_label]', function (value) {
-            value.bind(function (to) {
-                $('body').find(".bottom-footer").find(".yatri-section-button .yatri-button").find('span').remove();
-                $('body').find(".bottom-footer").find(".yatri-section-button .yatri-button").append('<span>' + to + '</span>');
-            });
-        });
-        // Custom HTML
-        api('yatri_theme_options[bottom_footer_custom_html_content]', function (value) {
-            value.bind(function (to) {
-                $('body').find(".bottom-footer").find(".yatri-section-custom-html").html(to);
+    });
 
-            });
+    // Single Page
+    api('yatri_theme_options[page_sidebar_width]', function (value) {
+        value.bind(function (to) {
+
+            yatriCustomizerPreview.update_sidebar_width(to, 'yatri-single-page', 'yatri_both_sidebar_layout', 'yatri_theme_options_page_sidebar_width');
+
         });
 
-        //Copyright
-        api('yatri_theme_options[bottom_footer_copyright_content]', function (value) {
-            value.bind(function (to) {
-                $('body').find(".bottom-footer").find(".yatri-section-copyright").html(to);
+    });
 
-            });
+    // Bottom Footer
+
+    api('yatri_theme_options[bottom_footer_button_icon]', function (value) {
+        value.bind(function (to) {
+            $('body').find(".bottom-footer").find(".yatri-section-button .yatri-button").find('.yatri-button-icon').remove();
+            $('body').find(".bottom-footer").find(".yatri-section-button .yatri-button").prepend('<i class="yatri-button-icon ' + to + '"></i>');
         });
+    });
+    //Button Link
+    api('yatri_theme_options[bottom_footer_button_link]', function (value) {
+        value.bind(function (to) {
+            $('body').find(".bottom-footer").find(".yatri-section-button .yatri-button").attr('href', to);
+        });
+    });
 
+    api('yatri_theme_options[bottom_footer_button_label]', function (value) {
+        value.bind(function (to) {
+            $('body').find(".bottom-footer").find(".yatri-section-button .yatri-button").find('span').remove();
+            $('body').find(".bottom-footer").find(".yatri-section-button .yatri-button").append('<span>' + to + '</span>');
+        });
+    });
+    // Custom HTML
+    api('yatri_theme_options[bottom_footer_custom_html_content]', function (value) {
+        value.bind(function (to) {
+            $('body').find(".bottom-footer").find(".yatri-section-custom-html").html(to);
+
+        });
+    });
+
+    //Copyright
+    api('yatri_theme_options[bottom_footer_copyright_content]', function (value) {
+        value.bind(function (to) {
+            $('body').find(".bottom-footer").find(".yatri-section-copyright").html(to);
+
+        });
     });
 
 

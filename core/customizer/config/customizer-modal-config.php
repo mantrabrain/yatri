@@ -23,8 +23,6 @@ require_once YATRI_THEME_DIR . '/core/customizer/config/class-yatri-section-foot
 
 function yatri_customizer_modal_config($field_id = '', $return_all = false)
 {
-    $body_and_paragraph_typography = yatri_get_modal_option('body_and_paragraph_typography', 'font');
-
     // Top Header Configurations
     $fields['main_layout_boxed_styling'] = array(
         'tabs' => array(
@@ -603,6 +601,8 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
 
     $fields['bottom_footer_copyright_design'] = Yatri_Section_Copyright_Config::get_design_style_config('bottom_footer_copyright_design', '.bottom-footer');
 
+
+    $fields = apply_filters('yatri_customizer_modal_config_fields', $fields);
 
     if (!empty($field_id) && isset($fields[$field_id])) {
 
