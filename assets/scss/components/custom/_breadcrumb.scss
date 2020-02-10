@@ -12,6 +12,11 @@
     color: #fff;
 
   }
+  .breadcrumb-trail {
+    font-size: 15px;
+    line-height: 1.5;
+    text-decoration: none;
+  }
 }
 
 .home .section-breadcrumb-wrap, .home.page-template-home .section-breadcrumb-wrap {
@@ -20,30 +25,31 @@
 
 .breadcrumb-wrap .breadcrumbs {
   color: #999999;
-  font-size: 15px;
   padding: 0;
 }
 
 .breadcrumb-wrap .breadcrumbs .trail-items {
   margin: 0;
   padding-left: 0;
+
 }
 
 .breadcrumb-wrap .breadcrumbs .trail-items li {
   display: inline-block;
-  line-height: 1.5;
   list-style: none;
+  text-decoration: inherit;
 }
 
 .breadcrumb-wrap .breadcrumbs .trail-items li:last-child span {
   margin-right: 0;
   color: #868686;
   opacity: 1;
+  text-decoration: inherit;
 }
 
 .breadcrumb-wrap .breadcrumbs .trail-items {
   span {
-    font-size: 14px;
+
     color: #fff;
     opacity: 0.8;
   }
@@ -56,8 +62,8 @@
 
 .breadcrumb-wrap .breadcrumbs .trail-items a {
   color: #999999;
-  font-size: 13px;
   position: relative;
+  text-decoration: inherit;
 }
 
 .breadcrumb-wrap .breadcrumbs .trail-items a:after {
@@ -69,14 +75,13 @@
   -moz-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
   transition: background-color 0.3s;
-  font-size: 13px;
   width: 30px;
   display: inline-block;
 }
 
 .breadcrumb-wrap .breadcrumbs .trail-items a[rel="home"] span:after,
 body.home .breadcrumb-wrap .breadcrumbs .trail-items li:last-child > span:after {
-  font-size: 16px;
+
   content: "\f015";
   font-family: "Font Awesome 5 Free";
   margin-left: 5px;

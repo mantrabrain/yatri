@@ -58,7 +58,7 @@ $wp_customize->add_setting(yatri_get_customizer_id('blog_archive_page_title_posi
 
 $wp_customize->add_control(yatri_get_customizer_id('blog_archive_page_title_position'),
     array(
-        'label' => esc_html__('Page title position', 'yatri'),
+        'label' => esc_html__('Archive title position', 'yatri'),
         'section' => 'yatri_section_blog_archive_page_content_options',
         'type' => 'select',
         'priority' => 60,
