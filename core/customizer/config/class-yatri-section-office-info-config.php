@@ -16,7 +16,7 @@ class Yatri_Section_Office_Info_Config
                     'label' => __('Text Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
-                    'selector' => "{$parent_selector} .yatri-section-container.office_information-container .yatri-section-office-information ul li .text, .yatri-section-office-information ul li span.icon",
+                    'selector' => "{$parent_selector} .yatri-section-container.office_information-container .yatri-section-office-information ul li .text, {$parent_selector} .yatri-section-container.office_information-container .yatri-section-office-information ul li span.icon",
                     'css_property' => 'color:{{value}};'
                 ),
 

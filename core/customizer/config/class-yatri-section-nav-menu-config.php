@@ -56,7 +56,7 @@ class Yatri_Section_Nav_Menu_Config
                         'default' => '#fff',
                         'css_property' => 'color:{{value}};',
                         'selector' => "{$parent_selector} .yatri-section-container.menu-container ul:not(.sub-menu)>li>a,
-                        {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu ul:not(.sb-menu)>li>a",
+                        {$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu ul:not(.sub-menu)>li>a",
                     ),
                     array(
                         'name' => $id . '_nav_hover_color',

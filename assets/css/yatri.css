@@ -5740,7 +5740,7 @@ readers do not read off random characters that represent icons */
   src: url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-brands-400.woff2") format("woff2"), url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-brands-400.woff") format("woff"), url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-brands-400.ttf") format("truetype"), url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
 
 .fab {
-  font-family: 'Font Awesome 5 Brands'; }
+  font-family: 'Font Awesome 5 Brands' !important; }
 
 /*!
  * Font Awesome Free 5.9.0 by @fontawesome - https://fontawesome.com
@@ -5755,7 +5755,7 @@ readers do not read off random characters that represent icons */
   src: url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-regular-400.woff2") format("woff2"), url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-regular-400.woff") format("woff"), url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-regular-400.ttf") format("truetype"), url("../../mantrabrain-theme/assets/lib/font-awesome/webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
 
 .far {
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free" !important;
   font-weight: 400; }
 
 /*!
@@ -5772,8 +5772,8 @@ readers do not read off random characters that represent icons */
 
 .fa,
 .fas {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900; }
+  font-family: 'Font Awesome 5 Free' !important;
+  font-weight: 900 !important; }
 
 html {
   font-family: sans-serif;
@@ -7874,8 +7874,6 @@ object {
   float: right;
   font-family: "Rubik", sans-serif;
   width: 50px !important;
-  height: 43px;
-  line-height: 20px;
   padding-left: 0;
   padding-right: 0;
   text-transform: uppercase;
@@ -7883,7 +7881,8 @@ object {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 999; }
+  z-index: 999;
+  bottom: 0; }
 
 .searchform .search-button span {
   color: #ffffff;
@@ -10844,7 +10843,7 @@ body.admin-bar .yatri-mobile-menu.yatri-section-menu {
     list-style: none;
     margin-right: 5px; }
     .yatri-section-office-information ul li .icon {
-      width: 20px;
+      min-width: 20px;
       margin: 0 8px 0 15px; }
     .yatri-section-office-information ul li:last-child {
       margin-right: 0; }
