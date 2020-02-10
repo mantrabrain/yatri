@@ -9,21 +9,8 @@ $wp_customize->add_section(new Mantrabrain_Theme_Customizer_Section(
 
 include_once 'content/main.php';
 
+include_once 'section/thumbnail.php';
 
-$blog_archive_page_content_priority = 300;
+include_once 'section/post_meta.php';
 
-$yatri_blog_archive_page_content_order = yatri_blog_archive_page_content_order('blog_archive_page_content_order');
-
-foreach ($yatri_blog_archive_page_content_order as $archive_page_content_key => $archive_page_contents) {
-
-    $include_path = 'blog-archive/section/' . $archive_page_content_key;
-
-    $include_path = 'blog-archive/section/' . $archive_page_content_key . '.php';
-
-    if (file_exists(YATRI_THEME_DIR . '/core/customizer/sections/' . $include_path)) {
-
-        include_once YATRI_THEME_DIR . '/core/customizer/sections/' . $include_path;
-    }
-
-}
 

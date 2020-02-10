@@ -6,4 +6,5 @@ $wp_customize->add_section(new Mantrabrain_Theme_Customizer_Section(
     'section' => 'yatri_section_blog_archive_page_options',
     'priority' => 80,
 )));
+include_once 'section/excerpt.php';
 

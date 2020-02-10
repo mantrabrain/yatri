@@ -17,7 +17,7 @@ $wp_customize->add_control(
         array(
             'label' => esc_html__('Thumbnail Settings', 'yatri'),
             'section' => 'yatri_section_blog_archive_page_content_options',
-            'priority' => ++$blog_archive_page_content_priority,
+            'priority' => 400,
             'active_callback' => 'yatri_blog_archive_page_has_thumbnail'
 
 
@@ -38,7 +38,7 @@ $wp_customize->add_control(yatri_get_customizer_id('blog_archive_page_thumbnail_
         'label' => esc_html__('Thumbnail Size', 'yatri'),
         'section' => 'yatri_section_blog_archive_page_content_options',
         'type' => 'select',
-        'priority' => ++$blog_archive_page_content_priority,
+        'priority' => 500,
         'choices' => yatri_get_all_image_sizes(),
         'active_callback' => 'yatri_blog_archive_page_has_thumbnail'
     )

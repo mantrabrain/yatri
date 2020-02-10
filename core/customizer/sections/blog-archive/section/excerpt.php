@@ -11,7 +11,7 @@ $wp_customize->add_control(yatri_get_customizer_id('blog_archive_page_excerpt_ty
         'label' => esc_html__('Excerpt type', 'yatri'),
         'section' => 'yatri_section_blog_archive_page_excerpt_options',
         'type' => 'select',
-        'priority' => ++$blog_archive_page_content_priority,
+        'priority' => 20,
         'choices' => yatri_get_excerpt_type(),
     )
 );
@@ -27,7 +27,7 @@ $wp_customize->add_control(yatri_get_customizer_id('blog_archive_page_excerpt_le
         'label' => esc_html__('Excerpt length', 'yatri'),
         'section' => 'yatri_section_blog_archive_page_excerpt_options',
         'type' => 'number',
-        'priority' => ++$blog_archive_page_content_priority,
+        'priority' => 40,
         'active_callback' => 'yatri_blog_archive_page_has_custom_excerpt'
     )
 );
@@ -43,6 +43,6 @@ $wp_customize->add_control(yatri_get_customizer_id('blog_archive_page_excerpt_mo
         'label' => esc_html__('Excerpt more', 'yatri'),
         'section' => 'yatri_section_blog_archive_page_excerpt_options',
         'type' => 'text',
-        'priority' => ++$blog_archive_page_content_priority,
+        'priority' => 60,
     )
 );

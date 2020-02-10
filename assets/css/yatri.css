@@ -6864,8 +6864,6 @@ body.single .post-content-inner .post-footer .divider {
 .tag-links > a:before,
 .comment-link > a:before,
 .posted-on > a:before {
-  font-size: 12px;
-  font-weight: normal;
   font-family: "Font Awesome 5 Free";
   margin-right: 5px;
   text-transform: initial;
@@ -7050,7 +7048,7 @@ body.logged-in article.hentry .edit-link .post-edit-link:hover, body.logged-in a
 .nav-links .nav-previous a:before, .nav-links .nav-previous a:after, .nav-links .nav-next a:before, .nav-links .nav-next a:after {
   font-family: "Rubik", sans-serif;
   display: block;
-  font-size: 14px;
+  font-size: inherit;
   vertical-align: middle; }
 
 @media screen and (max-width: 767px) {
@@ -7904,7 +7902,7 @@ body.single .single-post-content .meta .meta-cat {
 article.post .post-content .meta .sep,
 body.single .single-post-content .meta .sep {
   color: #ddd;
-  font-size: 12px; }
+  font-size: inherit; }
 
 body.single .meta {
   padding: 0;
@@ -11188,7 +11186,7 @@ body.home .breadcrumb-wrap .breadcrumbs .trail-items li:last-child > span:after 
 
 span.yatri-taxonomy-sep {
   width: 15px;
-  font-size: 12px;
+  font-size: inherit;
   display: inline-block;
   text-align: center;
   color: #ddd; }

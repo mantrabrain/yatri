@@ -17,7 +17,7 @@ $wp_customize->add_control(
         array(
             'label' => esc_html__('Meta Options', 'yatri'),
             'section' => 'yatri_section_blog_archive_page_content_options',
-            'priority' => ++$blog_archive_page_content_priority,
+            'priority' => 600,
             'active_callback' => 'yatri_blog_archive_page_has_meta'
 
         )
@@ -37,7 +37,7 @@ $wp_customize->add_control(yatri_get_customizer_id('blog_archive_page_meta_conte
         'label' => esc_html__('Meta Separator Text', 'yatri'),
         'section' => 'yatri_section_blog_archive_page_content_options',
         'type' => 'text',
-        'priority' => ++$blog_archive_page_content_priority,
+        'priority' => 700,
         'active_callback' => 'yatri_blog_archive_page_has_meta'
     )
 );
@@ -59,7 +59,7 @@ $wp_customize->add_control(
         array(
             'label' => esc_html__('Meta Separator Width ( in px ) ', 'yatri'),
             'section' => 'yatri_section_blog_archive_page_content_options',
-            'priority' => ++$blog_archive_page_content_priority,
+            'priority' => 800,
             'input_attrs' => array(
                 'min' => 0,
                 'max' => 15,
@@ -82,7 +82,7 @@ $wp_customize->add_control(yatri_get_customizer_id('blog_archive_page_meta_style
         'label' => esc_html__('Meta Style', 'yatri'),
         'section' => 'yatri_section_blog_archive_page_content_options',
         'type' => 'select',
-        'priority' => ++$blog_archive_page_content_priority,
+        'priority' => 900,
         'choices' => yatri_meta_style_list(),
         'active_callback' => 'yatri_blog_archive_page_has_meta'
     )
@@ -104,7 +104,7 @@ $wp_customize->add_control(
         array(
             'label' => esc_html__('Meta  Ordering', 'yatri'),
             'section' => 'yatri_section_blog_archive_page_content_options',
-            'priority' => ++$blog_archive_page_content_priority,
+            'priority' => 1000,
             'active_callback' => 'yatri_blog_archive_page_has_meta'
 
         )

@@ -625,8 +625,7 @@ body.single .post-content-inner .post-footer .divider {
 .tag-links > a:before,
 .comment-link > a:before,
 .posted-on > a:before {
-  font-size: 12px;
-  font-weight: normal;
+
   font-family: "Font Awesome 5 Free";
   margin-right: 5px;
   text-transform: initial;
@@ -823,7 +822,7 @@ body.logged-in article.hentry .edit-link .post-edit-link:hover, body.logged-in a
 .nav-links .nav-previous a:before, .nav-links .nav-previous a:after, .nav-links .nav-next a:before, .nav-links .nav-next a:after {
   font-family: "Rubik", sans-serif;
   display: block;
-  font-size: 14px;
+  font-size: inherit;
   vertical-align: middle;
 }
 
@@ -1832,7 +1831,7 @@ body.single .single-post-content .meta {
   }
   .sep {
     color: #ddd;
-    font-size: 12px;
+    font-size: inherit;
   }
 }
 
