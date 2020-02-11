@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: mantrabrain@gmail.com\n"
-"POT-Creation-Date: 2020-02-11 05:58:55+00:00\n"
+"POT-Creation-Date: 2020-02-11 19:16:16+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -750,7 +750,8 @@ msgstr ""
 #: core/customizer/config/class-yatri-section-offcanvas-config.php:199
 #: core/customizer/config/class-yatri-section-sidebar-config.php:16
 #: core/customizer/config/class-yatri-section-sidebar-config.php:111
-#: core/customizer/sections/sidebars-options.php:8 core/yatri-functions.php:630
+#: core/customizer/sections/sidebars-options.php:8
+#: core/info/about/class-yatri-about.php:446 core/yatri-functions.php:630
 msgid "Sidebar"
 msgstr ""
 
@@ -1191,6 +1192,7 @@ msgid "Thumbnail Size"
 msgstr ""
 
 #: core/customizer/sections/blog-archive-page-options.php:8
+#: core/info/about/class-yatri-about.php:431
 msgid "Blog/Archive"
 msgstr ""
 
@@ -1623,6 +1625,7 @@ msgid "Design & Styling ( Widget Area )"
 msgstr ""
 
 #: core/customizer/sections/footer-options.php:6
+#: core/info/about/class-yatri-about.php:451
 msgid "Footer"
 msgstr ""
 
@@ -1762,6 +1765,7 @@ msgid "Search Form Visibility"
 msgstr ""
 
 #: core/customizer/sections/header/bottom.php:5
+#: core/info/about/class-yatri-about.php:426
 msgid "Main Header"
 msgstr ""
 
@@ -1818,6 +1822,7 @@ msgid "Navigation menu for mid header"
 msgstr ""
 
 #: core/customizer/sections/header/mid.php:5
+#: core/info/about/class-yatri-about.php:421
 msgid "Mid Header"
 msgstr ""
 
@@ -1852,6 +1857,7 @@ msgid "Navigation menu for top header"
 msgstr ""
 
 #: core/customizer/sections/header/top.php:5
+#: core/info/about/class-yatri-about.php:416
 msgid "Top Header"
 msgstr ""
 
@@ -1906,6 +1912,7 @@ msgid "Design & Styling ( Content )"
 msgstr ""
 
 #: core/customizer/sections/single-page-options.php:8
+#: core/info/about/class-yatri-about.php:441
 msgid "Single Page"
 msgstr ""
 
@@ -1950,6 +1957,7 @@ msgid "Excerpt more text for related posts"
 msgstr ""
 
 #: core/customizer/sections/single-post-options.php:8
+#: core/info/about/class-yatri-about.php:436
 msgid "Single Post"
 msgstr ""
 
@@ -2029,7 +2037,7 @@ msgid "General"
 msgstr ""
 
 #: core/info/about/class-yatri-about.php:232
-#: core/info/about/class-yatri-about.php:361
+#: core/info/about/class-yatri-about.php:363
 msgid "Changelog"
 msgstr ""
 
@@ -2037,80 +2045,92 @@ msgstr ""
 msgid "Processing..."
 msgstr ""
 
-#: core/info/about/class-yatri-about.php:394
+#: core/info/about/class-yatri-about.php:396
 msgid "Logo & Site Identity"
 msgstr ""
 
-#: core/info/about/class-yatri-about.php:405
+#: core/info/about/class-yatri-about.php:401
+msgid "Global Layouts"
+msgstr ""
+
+#: core/info/about/class-yatri-about.php:406
+msgid "Global Typography"
+msgstr ""
+
+#: core/info/about/class-yatri-about.php:411
+msgid "Global Colors"
+msgstr ""
+
+#: core/info/about/class-yatri-about.php:462
 msgid "Links to Customizer Settings"
 msgstr ""
 
-#: core/info/about/class-yatri-about.php:434
+#: core/info/about/class-yatri-about.php:491
 msgid "Join Mantra Brain Community!"
 msgstr ""
 
-#: core/info/about/class-yatri-about.php:436
+#: core/info/about/class-yatri-about.php:493
 msgid ""
 "Join our facebook community group so that you can post question and help "
 "each other."
 msgstr ""
 
-#: core/info/about/class-yatri-about.php:438
+#: core/info/about/class-yatri-about.php:495
 msgid "Join our facebook community group »"
 msgstr ""
 
-#: core/info/about/class-yatri-about.php:454 core/yatri-functions.php:610
-msgid "Yatri Tools"
+#: core/info/about/class-yatri-about.php:511
+msgid "Demo Import ( Yatri Tools )"
 msgstr ""
 
-#: core/info/about/class-yatri-about.php:460
+#: core/info/about/class-yatri-about.php:517
 msgid ""
 "<strong>Yatri Tools</strong> is free WordPress plugin from which you can "
 "import ready made site within few clicks and it extend Yatri theme to next "
 "level."
 msgstr ""
 
-#: core/info/about/class-yatri-about.php:491
+#: core/info/about/class-yatri-about.php:548
 msgid "View Site Library"
 msgstr ""
 
-#: core/info/about/class-yatri-about.php:494
+#: core/info/about/class-yatri-about.php:551
 msgid "Install Importer Plugin"
 msgstr ""
 
-#: core/info/about/class-yatri-about.php:519
+#: core/info/about/class-yatri-about.php:576
 msgid "Active Now"
 msgstr ""
 
-#: core/info/about/class-yatri-about.php:536
+#: core/info/about/class-yatri-about.php:593
 msgid "Details"
 msgstr ""
 
-#: core/info/about/class-yatri-about.php:588
+#: core/info/about/class-yatri-about.php:645
 msgid "WooCommerce Booster"
 msgstr ""
 
-#: core/info/about/class-yatri-about.php:589
+#: core/info/about/class-yatri-about.php:646
 msgid "Gives you creative control of style and layout options for your shop."
 msgstr ""
 
-#: core/info/about/class-yatri-about.php:594
+#: core/info/about/class-yatri-about.php:651
 msgid "Single Product Layouts"
 msgstr ""
 
-#: core/info/about/class-yatri-about.php:595
+#: core/info/about/class-yatri-about.php:652
 msgid "More beautiful layouts for your single product."
 msgstr ""
 
-#: core/info/about/class-yatri-about.php:601
+#: core/info/about/class-yatri-about.php:658
 msgid "Infinity Scroll."
 msgstr ""
 
-#: core/info/about/class-yatri-about.php:610
+#: core/info/about/class-yatri-about.php:667
 msgid "Yatri Pro - Features"
 msgstr ""
 
-#: core/info/about/class-yatri-about.php:612
+#: core/info/about/class-yatri-about.php:669
 msgid "Upgrade Now &rarr;"
 msgstr ""
 
@@ -2335,6 +2355,10 @@ msgstr ""
 
 #: core/yatri-functions.php:598
 msgid "Tag"
+msgstr ""
+
+#: core/yatri-functions.php:610
+msgid "Yatri Tools"
 msgstr ""
 
 #: core/yatri-functions.php:871
