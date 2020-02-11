@@ -60,10 +60,11 @@
 }
 
 .mb-about-version {
+    margin-left: 10px;
     background-color: #e5e5e5;
     padding: 2px 7px;
     border-radius: 3px;
-    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .mb-about-top-link {
@@ -71,7 +72,7 @@
 }
 
 .mb-about-row {
-    max-width: 930px;
+    max-width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -91,8 +92,9 @@
 }
 
 .mb-about-header {
+    margin-left: -20px;
     background: #ffffff;
-    padding: 18px 15px;
+    padding: 5px 15px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -153,12 +155,12 @@
 }
 
 .mb-about-box .mb-about-box-top {
-    border-bottom: 1px solid #0072bc;
+
     font-size: 14px;
     padding: 12px 15px;
     font-weight: 600;
     color: #fff;
-    background: #0072bc;
+    background: #4285f4;
 }
 
 .mb-about-box.pro .mb-about-box-top {
@@ -225,26 +227,27 @@
 }
 
 .yatri-notice-wrapper .yatri-notice-img img {
-    border: 1px solid #aaa;
     border-radius: 0;
 }
 
 .yatri-notice-wrapper .yatri-install-all-plugins.updating-message:before {
-    line-height: 47px
+    line-height: 37px;
+    margin-left: -8px;
+    margin-right: -1px;
 }
 
 .yatri-notice-wrapper .yatri-install-all-plugins {
     text-decoration: none;
-    height: 50px;
-    width: 300px;
-    line-height: 50px;
+    height: 40px;
+    width: 225px;
+    line-height: 40px;
     text-align: center;
     text-transform: uppercase;
     background: #4285f4;
     border-color: #4285f4;
     color: #fff;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .yatri-notice-wrapper .yatri-install-all-plugins:hover {
@@ -574,10 +577,9 @@
 
 /*Admin notice*/
 .yatri-notice-wrapper.notice {
-    padding: 10px !important;
     background: #fff;
-    border: 1px solid #a0a09c;
-    box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+    box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.08);
 }
 
 .yatri-notice-wrapper.notice .notice-dismiss {
@@ -592,7 +594,7 @@
     -webkit-box-align: center;
     -webkit-align-items: center;
     align-items: center;
-    padding: 20px;
+    padding: 0
 }
 
 .yatri-notice a {
@@ -612,6 +614,8 @@
 .yatri-notice .yatri-notice-content {
     -webkit-flex-basis: 100%;
     flex-basis: 100%;
+    border-left: 1px solid #ddd;
+    padding: 15px;
 }
 
 .yatri-notice .yatri-notice-heading {

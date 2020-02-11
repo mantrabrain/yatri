@@ -187,7 +187,7 @@ class Yatri_About
             <div class="yatri-notice-wrapper notice is-dismissible">
                 <div class="yatri-notice">
                     <div class="yatri-notice-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri() . '/screenshot.png'); ?>"
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/core/info/assets/images/yatri-logo.png'); ?>"
                              alt="<?php esc_attr_e('logo', 'yatri'); ?>">
                     </div>
                     <div class="yatri-notice-content">
@@ -331,11 +331,12 @@ class Yatri_About
 
     public function page_header()
     {
+        $logo = YATRI_THEME_URI . 'core/info/assets/images/yatri-logo.png';
         ?>
         <div class="mb-about-header">
             <div class="mb-about-row">
                 <div class="mb-about-header-inner">
-                    <h1><?php echo esc_html($this->config['name']); ?></h1>
+                    <img src="<?php echo esc_url($logo); ?>" style="width: 200px;"/>
                     <span class="mb-about-version"><?php echo esc_html($this->config['version']); ?></span>
                 </div>
             </div>
@@ -352,6 +353,7 @@ class Yatri_About
         if (file_exists($file)) {
             $file_contents = $wp_filesystem->get_contents($file);
         }
+
         ?>
 
         <?php
@@ -392,8 +394,63 @@ class Yatri_About
         $links = array(
             array(
                 'label' => __('Logo & Site Identity', 'yatri'),
-                'url' => add_query_arg(array('autofocus' => array('section' => 'title_tagline')), $url),
+                'url' => add_query_arg(array('autofocus' => array('section' => 'yatri_section_logo_options')), $url),
                 'icon' => 'dashicons dashicons-format-image'
+            ),
+            array(
+                'label' => __('Global Layouts', 'yatri'),
+                'url' => add_query_arg(array('autofocus' => array('section' => 'yatri_theme_base_layouts')), $url),
+                'icon' => 'dashicons dashicons-admin-site'
+            ),
+            array(
+                'label' => __('Global Typography', 'yatri'),
+                'url' => add_query_arg(array('autofocus' => array('section' => 'yatri_theme_base_typography')), $url),
+                'icon' => 'dashicons dashicons-editor-paragraph'
+            ),
+            array(
+                'label' => __('Global Colors', 'yatri'),
+                'url' => add_query_arg(array('autofocus' => array('section' => 'colors')), $url),
+                'icon' => 'dashicons dashicons-edit'
+            ),
+            array(
+                'label' => __('Top Header', 'yatri'),
+                'url' => add_query_arg(array('autofocus' => array('section' => 'yatri_section_top_header_options')), $url),
+                'icon' => 'dashicons dashicons-editor-kitchensink'
+            ),
+            array(
+                'label' => __('Mid Header', 'yatri'),
+                'url' => add_query_arg(array('autofocus' => array('section' => 'yatri_section_mid_header_options')), $url),
+                'icon' => 'dashicons dashicons-editor-kitchensink'
+            ),
+            array(
+                'label' => __('Main Header', 'yatri'),
+                'url' => add_query_arg(array('autofocus' => array('section' => 'yatri_section_bottom_header_options')), $url),
+                'icon' => 'dashicons dashicons-editor-kitchensink'
+            ),
+            array(
+                'label' => __('Blog/Archive', 'yatri'),
+                'url' => add_query_arg(array('autofocus' => array('section' => 'yatri_section_blog_archive_page_options')), $url),
+                'icon' => 'dashicons dashicons-media-archive'
+            ),
+            array(
+                'label' => __('Single Post', 'yatri'),
+                'url' => add_query_arg(array('autofocus' => array('section' => 'yatri_section_single_post_options')), $url),
+                'icon' => 'dashicons dashicons-media-default'
+            ),
+            array(
+                'label' => __('Single Page', 'yatri'),
+                'url' => add_query_arg(array('autofocus' => array('section' => 'yatri_section_single_page_options')), $url),
+                'icon' => 'dashicons dashicons-media-text'
+            ),
+            array(
+                'label' => __('Sidebar', 'yatri'),
+                'url' => add_query_arg(array('autofocus' => array('section' => 'yatri_section_sidebars_options')), $url),
+                'icon' => 'dashicons dashicons-controls-pause'
+            ),
+            array(
+                'label' => __('Footer', 'yatri'),
+                'url' => add_query_arg(array('autofocus' => array('section' => 'yatri_section_footer_options')), $url),
+                'icon' => 'dashicons dashicons-minus'
             ),
         );
 
@@ -451,7 +508,7 @@ class Yatri_About
         <div class="mb-about-box box-plugins">
             <div class="mb-about-box-top">
                 <span class="dashicons dashicons-admin-customizer"></span>
-                <?php _e('Yatri Tools', 'yatri'); ?></div>
+                <?php _e('Demo Import ( Yatri Tools )', 'yatri'); ?></div>
             <!-- <div class="mb-about-sites-thumb">
                 <img src="<?php /*echo esc_url(get_template_directory_uri()) . '/core/info/assets/images/yatri-yatri-tools-install-demos.jpg'; */
             ?>">
