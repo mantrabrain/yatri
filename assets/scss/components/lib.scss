@@ -1843,9 +1843,14 @@ body.single .meta {
 body.single .meta [class*="meta-"],
 article.post .post-content .meta [class*="meta-"] {
   display: inline-block;
-  font-size: 12px;
+  font-size: inherit;
   padding: 0 10px;
-  line-height: 1;
+  line-height: inherit;
+}
+
+body.single .meta.yatri-content-item,
+article.post .post-content .meta.yatri-content-item {
+  font-size: 14px;
 }
 
 article.post .post-content .meta [class*="meta-"]:first-child {
