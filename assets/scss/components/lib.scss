@@ -1506,7 +1506,6 @@ sidebar.sidebar .widget:after {
   margin-right: 5px;
   text-transform: uppercase;
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
 }
 
 .related-post {
@@ -1846,11 +1845,13 @@ article.post .post-content .meta [class*="meta-"] {
   font-size: inherit;
   padding: 0 10px;
   line-height: inherit;
+  text-decoration:inherit;
 }
 
 body.single .meta.yatri-content-item,
 article.post .post-content .meta.yatri-content-item {
   font-size: 14px;
+  text-decoration:none;
 }
 
 article.post .post-content .meta [class*="meta-"]:first-child {

@@ -7623,8 +7623,7 @@ sidebar.sidebar .widget:after {
   font-weight: 600;
   margin-right: 5px;
   text-transform: uppercase;
-  font-size: 16px;
-  font-family: "Poppins", sans-serif; }
+  font-size: 16px; }
 
 .related-post {
   background-color: #ffffff;
@@ -7913,11 +7912,13 @@ article.post .post-content .meta [class*="meta-"] {
   display: inline-block;
   font-size: inherit;
   padding: 0 10px;
-  line-height: inherit; }
+  line-height: inherit;
+  text-decoration: inherit; }
 
 body.single .meta.yatri-content-item,
 article.post .post-content .meta.yatri-content-item {
-  font-size: 14px; }
+  font-size: 14px;
+  text-decoration: none; }
 
 article.post .post-content .meta [class*="meta-"]:first-child {
   padding-left: 0;

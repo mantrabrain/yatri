@@ -400,7 +400,7 @@ if (!function_exists('yatri_get_post_meta_comment')) {
     {
         ?>
         <div class="meta-comment yatri-meta-item">
-								<span class="comment-link">
+								<span class="meta-comment comment-link">
 									<a href="<?php comments_link(); ?>">
 										<?php echo absint(wp_count_comments(get_the_ID())->approved); ?>
                                         <?php echo esc_html__('Comment', 'yatri') ?>

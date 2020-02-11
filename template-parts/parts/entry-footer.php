@@ -2,7 +2,7 @@
     <div class="detail">
         <?php yatri_single_post_author() ?>
         <?php yatri_time_link(); ?>
-        <span class="comment-link"><a
+        <span class="meta-comment comment-link"><a
                     href="<?php comments_link(); ?>"><?php printf(esc_html('%d'), absint(wp_count_comments(get_the_ID())->approved)); ?></a></span>
 
         <?php if (is_single() && 'post' == get_post_type()): ?>
