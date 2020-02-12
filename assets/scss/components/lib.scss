@@ -1494,7 +1494,6 @@ sidebar.sidebar .widget:after {
 
 .author-detail .author-content .author-name {
   color: #545454;
-  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   margin-bottom: 5px;
@@ -1546,7 +1545,7 @@ sidebar.sidebar .widget:after {
 
 .related-post .related-post-list h3 a {
   color: #3b3b3b;
-  font-family: "Rubik", sans-serif;
+
   font-size: 17px;
 }
 
@@ -1793,7 +1792,7 @@ object {
   border: none;
   color: #ffffff;
   float: right;
-  font-family: "Rubik", sans-serif;
+
   width: 50px !important;
   padding-left: 0;
   padding-right: 0;
@@ -1862,7 +1861,6 @@ article.post .post-content .meta [class*="meta-"]:first-child {
 article.post .post-content .meta [class*="meta-"]:last-child {
   padding-right: 0;
 }
-
 article.post .post-content .meta [class*="meta-"] .day:before,
 body.single .meta [class*="meta-"] .day:before,
 body.single .meta [class*="meta-"] .author-name:before,
