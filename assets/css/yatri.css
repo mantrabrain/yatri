@@ -8784,11 +8784,6 @@ sidebar.sidebar .widget:last-child {
   padding: 10px 15px;
   text-transform: capitalize; }
 
-.main-header {
-  padding: 20px 0;
-  -webkit-box-shadow: -1px 4px 9px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: -1px 4px 9px 0px rgba(0, 0, 0, 0.1); }
-
 section.wrapper.site-content, .wrap-detail-page, .yatra-page-wrapper {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -10891,6 +10886,9 @@ body.admin-bar .yatri-mobile-menu.yatri-section-menu {
     color: #6e6e6e; }
 
 .main-header {
+  -webkit-box-shadow: -1px 4px 9px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: -1px 4px 9px 0px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
   /* .primary-nav-container, .yatri-search-form-container {
      display: flex;
      align-items: center;

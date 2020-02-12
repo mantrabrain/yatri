@@ -1,4 +1,6 @@
 .main-header {
+  box-shadow: -1px 4px 9px 0px rgba(0, 0, 0, .1);
+  padding: 10px 0;
   .yatri-section-site-branding {
     &.logo-title-text {
       a.custom-logo-link {
@@ -6,6 +8,7 @@
       }
     }
   }
+
   /* .primary-nav-container, .yatri-search-form-container {
      display: flex;
      align-items: center;

@@ -157,6 +157,24 @@ class Yatri_Section_Nav_Menu_Config
                         'css_property' => 'text-align:{{value}};'
                     ),
                     array(
+                        'name' => $id . '_mobile_menu_container_background',
+                        'type' => 'color',
+                        'label' => __('Mobile Menu Container Background', 'yatri'),
+                        'description' => '',
+                        'default' => '#c1c1c1',
+                        'selector' => "{$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu",
+                        'css_property' => 'background-color:{{value}};'
+                    ),
+                    array(
+                        'name' => $id . '_mobile_menu_close_color',
+                        'type' => 'color',
+                        'label' => __('Mobile Menu Close Icon Color', 'yatri'),
+                        'description' => '',
+                        'default' => '#c1c1c1',
+                        'selector' => "{$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu .yatri-mobile-navigation-close",
+                        'css_property' => 'color:{{value}};'
+                    ),
+                    array(
                         'name' => $id . '_nav_padding_margin_heading',
                         'type' => 'heading',
                         'label' => __('Padding & Margin', 'yatri'),
