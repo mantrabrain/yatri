@@ -17,6 +17,7 @@ if (!isset($bottom_footer_visibility['mobile']) || (isset($bottom_footer_visibil
 
     $class .= ' yatri-mobile-hidden';
 }
+$class = apply_filters('yatri_bottom_footer_css_class', $class);
 
 ?>
 <div class="<?php echo esc_attr($class); ?>">

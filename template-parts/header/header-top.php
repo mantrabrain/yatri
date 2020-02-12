@@ -18,7 +18,7 @@ if (!isset($top_header_visibility['mobile']) || (isset($top_header_visibility['m
 
     $class .= ' yatri-mobile-hidden';
 }
-
+$class = apply_filters('yatri_top_header_css_class', $class);
 ?>
 <div class="<?php echo esc_attr($class); ?>">
 

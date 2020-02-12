@@ -17,7 +17,7 @@ if (!isset($bottom_header_visibility['mobile']) || (isset($bottom_header_visibil
 
     $class .= ' yatri-mobile-hidden';
 }
-
+$class = apply_filters('yatri_bottom_header_css_class', $class);
 ?>
 <div class="<?php echo esc_attr($class); ?>">
     <div class="yat-container">
