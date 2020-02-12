@@ -705,11 +705,11 @@ if (!function_exists('yatri_get_bottom_header_sections')) {
             ),
             array(
                 'section' => 'menu',
-                'width' => '60'
+                'width' => '50'
             ),
             array(
-                'section' => 'button',
-                'width' => '15'
+                'section' => 'search_form',
+                'width' => '25'
             )
         );
         if (!$from_option) {
