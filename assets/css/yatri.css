@@ -10539,7 +10539,10 @@ body .entry-title {
     right: unset;
     left: 5px; }
 
-body.admin-bar .yatri-offcanvas-menu-content, body.admin-bar .yatri-section-menu.yatri-mobile-menu {
+body.admin-bar .yatri-offcanvas-menu-content {
+  top: 32px; }
+
+body.admin-bar .yatri-section-menu.yatri-mobile-menu {
   top: 45px; }
 
 .yatri-offcanvas-menu-content.yatri-offcanvas-open, .yatri-offcanvas-menu-content.yatri-offcanvas-open.right {

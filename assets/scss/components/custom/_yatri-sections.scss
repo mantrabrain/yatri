@@ -109,12 +109,14 @@
 }
 
 body.admin-bar {
-  .yatri-offcanvas-menu-content, .yatri-section-menu.yatri-mobile-menu {
+  .yatri-offcanvas-menu-content {
+    top: 32px;
+  }
+  .yatri-section-menu.yatri-mobile-menu {
     top: 45px;
   }
 
 }
-
 .yatri-offcanvas-menu-content.yatri-offcanvas-open, .yatri-offcanvas-menu-content.yatri-offcanvas-open.right {
 
   display: block;
