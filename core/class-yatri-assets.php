@@ -83,6 +83,8 @@ if (!class_exists('Yatri_Assets')) :
 
                 if (!isset($script['version'])) {
                     $version = null;
+                }else{
+                    $version =  $script['version'];
                 }
 
                 # Enqueue each vendor's style
