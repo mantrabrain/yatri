@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: mantrabrain@gmail.com\n"
-"POT-Creation-Date: 2020-02-11 19:16:16+00:00\n"
+"POT-Creation-Date: 2020-02-13 06:27:41+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -518,8 +518,8 @@ msgstr ""
 #: core/customizer/config/class-yatri-section-custom-html-config.php:94
 #: core/customizer/config/class-yatri-section-footer-nav-menu-config.php:118
 #: core/customizer/config/class-yatri-section-footer-social-icons-config.php:91
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:169
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:422
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:187
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:440
 #: core/customizer/config/class-yatri-section-offcanvas-config.php:206
 #: core/customizer/config/class-yatri-section-pagination-config.php:76
 #: core/customizer/config/class-yatri-section-post-config.php:40
@@ -590,15 +590,15 @@ msgid "Menu Alignment"
 msgstr ""
 
 #: core/customizer/config/class-yatri-section-footer-nav-menu-config.php:111
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:162
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:415
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:180
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:433
 msgid "Padding & Margin"
 msgstr ""
 
 #: core/customizer/config/class-yatri-section-footer-nav-menu-config.php:186
 #: core/customizer/config/class-yatri-section-footer-social-icons-config.php:120
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:240
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:493
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:258
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:511
 #: core/customizer/config/class-yatri-section-post-config.php:71
 #: core/customizer/config/class-yatri-section-social-icons-config.php:134
 msgid "Margin"
@@ -690,43 +690,51 @@ msgstr ""
 msgid "Hamburger Alignment"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:309
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:162
+msgid "Mobile Menu Container Background"
+msgstr ""
+
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:171
+msgid "Mobile Menu Close Icon Color"
+msgstr ""
+
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:327
 msgid "Main Menu Border"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:336
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:354
 msgid "Dropdown Menu Colors"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:341
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:359
 msgid "Dropdown font color"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:353
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:371
 msgid "Dropdown hover font color"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:367
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:385
 msgid "Dropdown background color"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:378
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:396
 msgid "Dropdown hover background color"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:392
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:410
 msgid "Dropdown active font color"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:403
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:421
 msgid "Dropdown active background color"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:564
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:582
 msgid "Wrapper Margin"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-nav-menu-config.php:576
+#: core/customizer/config/class-yatri-section-nav-menu-config.php:594
 msgid "Dropdown Menu Border"
 msgstr ""
 
