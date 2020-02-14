@@ -42,7 +42,8 @@ class Mantrabrain_Theme_Customizer_Control_Sortable extends Mantrabrain_Theme_Cu
             $value_array = is_string($field_value) ? json_decode($field_value, true) : $field_value;
 
         } catch (Exception $e) {
-            // Ignore
+
+            $value_array = array();
         }
         $value_array = empty($value_array) ? array_keys($defaults) : $value_array;
 

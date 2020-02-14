@@ -41,7 +41,7 @@ if (!function_exists('yatri_sanitize_repeater')) :
 
         } catch (Exception $e) {
 
-            // Ignore
+            $value_array = array();
         }
         $fields = ($setting->manager->get_control($setting->id)->fields);
 
@@ -135,7 +135,8 @@ if (!function_exists('yatri_sanitize_ordering')) :
             $value_array = is_string($input) ? json_decode($input, true) : $yatri_blog_archive_page_content_order;
 
         } catch (Exception $e) {
-            // Ignore
+
+            $value_array = array();
 
         }
         $value_array = empty($value_array) ? $yatri_blog_archive_page_content_order

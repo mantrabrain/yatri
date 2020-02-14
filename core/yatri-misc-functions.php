@@ -294,7 +294,8 @@ if (!function_exists('yatri_maybe_json_encode')):
             }
 
         } catch (Exception $e) {
-            // Ignore
+
+            $encoded_value = '{}';
         }
         return $encoded_value;
     }
@@ -324,7 +325,8 @@ if (!function_exists('yatri_maybe_json_decode')):
             }
 
         } catch (Exception $e) {
-            // Ignore
+
+            $decoded_value = array();
         }
         return $decoded_value;
     }

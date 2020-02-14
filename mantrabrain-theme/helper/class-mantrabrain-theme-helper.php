@@ -1432,7 +1432,8 @@ if (!class_exists('Mantrabrain_Theme_Helper')) {
                 $all_field_value = json_decode($input, true);
 
             } catch (Exception $e) {
-                // Ignore
+
+                $all_field_value = array();
             }
 
             foreach ($all_field_from_modal as $field) {
@@ -1612,7 +1613,8 @@ if (!class_exists('Mantrabrain_Theme_Helper')) {
                 $all_field_value = json_decode($input, true);
 
             } catch (Exception $e) {
-                // Ignore
+
+                $all_field_value = array();
             }
             $is_empty_field_count = 0;
 
@@ -1660,7 +1662,8 @@ if (!class_exists('Mantrabrain_Theme_Helper')) {
                 $all_field_value = json_decode($input, true);
 
             } catch (Exception $e) {
-                // Ignore
+
+                $all_field_value = array();
             }
             $switch_choices = ($setting->manager->get_control($setting->id)->switch_choices);
 
