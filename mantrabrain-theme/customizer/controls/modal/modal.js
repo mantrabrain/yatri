@@ -435,7 +435,7 @@
                 result_node.val(value_string).trigger('change');
 
                 _that.setLocalStorate($(this));
-                console.log(value_string);
+                //console.log(value_string);
 
             });
         },
