@@ -665,6 +665,9 @@
              if (!window.yatriLoadedFontFromJs.includes(font_name)) {
                  window.yatriLoadedFontFromJs.push(font_name);
              }*/
+            var html_node_id = 'head';
+            var rel_type = 'stylesheet';
+            var yatri_node_type= 'text/css';
             field_id = field_id.replace("_font_family", "");
             field_id = field_id.replace("_font_weight", "");
             field_id = field_id.replace("_font_languages", "");
@@ -690,8 +693,8 @@
                     body.find("#" + idfirst).attr("href", google_font_url);
                 } else {
                     var node_id = 'link';
-                    var link_js = '<'+node_id+' id="' + idfirst + '" rel="stylesheet" type="text/css" href="' + google_font_url + '"/>';
-                    body.find("head").append(link_js);
+                    var link_js = '<' + node_id + ' id="' + idfirst + '" rel="'+rel_type+'" type="'+yatri_node_type+'" href="' + google_font_url + '"/>';
+                    body.find(html_node_id).append(link_js);
                 }
             }
         },
