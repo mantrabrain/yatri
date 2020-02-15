@@ -75,6 +75,8 @@ if (!class_exists('Yatri_Loop')) :
 
                     $is_disable = isset($order_content['disable']) ? (boolean)$order_content['disable'] : false;
 
+                    do_action('yatri_single_post_content_order_' . $order, $order_content);
+
                     if (!$is_disable) {
 
                         switch ($order) {
