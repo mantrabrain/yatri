@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: mantrabrain@gmail.com\n"
-"POT-Creation-Date: 2020-02-14 12:34:59+00:00\n"
+"POT-Creation-Date: 2020-02-16 14:06:08+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2477,7 +2477,7 @@ msgid "Enter %s preview mode"
 msgstr ""
 
 #: mantrabrain-theme/customizer/controls/class-mantrabrain-theme-customizer-control-builder.php:88
-msgid "Please drop above item here"
+msgid "Drag & drop above item here"
 msgstr ""
 
 #: mantrabrain-theme/customizer/controls/class-mantrabrain-theme-customizer-control-builder.php:97
