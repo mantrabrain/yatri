@@ -7789,7 +7789,7 @@ object {
   position: relative; }
 
 .post .feature-image > a {
-  display: block;
+  display: inline-block;
   position: relative; }
 
 .post .feature-image > a:before {
