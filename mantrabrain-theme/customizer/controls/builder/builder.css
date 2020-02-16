@@ -139,8 +139,21 @@
     margin-left: 5px;
     border: none;
     text-align: center;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
 }
 
 .yatri-builder-control .yatri-builder-drop-area .grid-width input.warning {
     border: 1px solid red;
+}
+
+.yatri-drag-drop-notice {
+    font-weight: bold;
+    letter-spacing: 1px;
+
 }

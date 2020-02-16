@@ -85,7 +85,7 @@ class Mantrabrain_Theme_Customizer_Control_Builder extends Mantrabrain_Theme_Cus
                     }
                     ?>
                 </div>
-                <p><?php echo esc_html__('Please drop above item here', 'yatri'); ?> </p>
+                <p class="yatri-drag-drop-notice"><?php echo esc_html__('Drag & drop above item here', 'yatri'); ?> </p>
                 <div class="yatri-builder-dropper">
                     <?php
                     $number_of_grid = 3;

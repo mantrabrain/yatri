@@ -35,8 +35,8 @@
 }
 
 .yatri-slider-control-wrap input {
-    width: 70px;
-    max-width: 70px;
+    width: 65px;
+    max-width: 65px;
     position: absolute;
     top: -9px;
     right: 18px;
@@ -44,6 +44,13 @@
     line-height: 18px;
     min-height: 24px;
     border-radius: 0;
+    padding: 0 0 0 10px;
+}
+
+.yatri-slider-control-wrap input:focus {
+    border-color: #a7abaf;
+    box-shadow: none;
+    outline: none;
 }
 
 .yatri-slider-control-wrap .yatri-slider-reset {
