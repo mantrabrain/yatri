@@ -64,7 +64,13 @@ li.customize-control.yatri-open .yatri-actions .action--edit span.dashicons:befo
 .yatri-modal-settings--inner input,
 .yatri-modal-settings--inner select {
     border-radius: 0;
-    /*border-color: #c1c1c1;*/
+    border: 1px solid #d5dadf;
+}
+
+.yatri-modal-settings--inner input[disabled="disabled"],
+.yatri-modal-settings--inner select[disabled="disabled"] {
+
+    background: #f1f1f1;
 }
 
 .yatri--group-field.ft--padding .yatri--css-ruler.yatri--field-inputs,
@@ -73,14 +79,37 @@ li.customize-control.yatri-open .yatri-actions .action--edit span.dashicons:befo
     display: -webkit-box;
     display: -webkit-flex;
     display: flex;
-    margin-left: -2px;
-    margin-right: -2px;
+
+}
+
+.yatri--group-field.ft--padding input[type="number"],
+.yatri--group-field.ft--margin input[type="number"],
+.yatri--group-field.ft--border input[type="number"] {
+
+    padding: 0 0px 0 5px;
 }
 
 .yatri--group-field.ft--padding .yatri--css-ruler.yatri--field-inputs span,
 .yatri--group-field.ft--margin .yatri--css-ruler.yatri--field-inputs span,
 .yatri--group-field.ft--border .yatri--css-ruler.yatri--field-inputs span {
-    padding: 0px 2px;
+    padding: 0;
+    text-align: center;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #6d6d6d;
+    margin-left: -1px;
+}
+
+.yatri--group-field.ft--border .yatri--css-ruler.yatri--field-inputs span span.yatri--checked,
+.yatri--group-field.ft--border .yatri--css-ruler.yatri--field-inputs span span.yatri--small-label {
+    padding-left: 8px;
+}
+
+.yatri-modal-settings input:focus,
+.yatri-modal-settings select:focus {
+    border-color: #a7abaf;
+    box-shadow: none;
+    outline: none;
 }
 
 .yatri--field-inputs label.yatri--css-ruler-link {
@@ -526,6 +555,7 @@ li.customize-control.yatri-open .yatri-actions .action--edit span.dashicons:befo
 
 .yatri-modal-settings--fields .customize-control-title {
     float: left;
+    font-weight: 400;
 }
 
 .yatri-input-color .wp-picker-clear {
