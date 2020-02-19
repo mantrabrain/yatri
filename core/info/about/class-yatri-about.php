@@ -12,7 +12,9 @@ class Yatri_About
 
     public $url = '';
 
-    static function get_instance()
+    public $from_plugin = false;
+
+    static function get_instance($from_plugin = false)
     {
         if (is_null(self::$_instance)) {
             self::$_instance = new self();
@@ -22,12 +24,15 @@ class Yatri_About
                 self::$_instance->url
             );
 
+            self::$_instance->from_plugin = $from_plugin;
 
             self::$_instance->title = __('Yatri Options', 'yatri');
 
             self::$_instance->setup();
 
-            add_action('admin_menu', array(self::$_instance, 'add_menu'), 5);
+            if (!class_exists('Yatri_Tools')) {
+                add_action('admin_menu', array(self::$_instance, 'add_menu'), 5);
+            }
             add_action('admin_enqueue_scripts', array(self::$_instance, 'scripts'));
 
             add_action('yatri_about_menu_tabs', array(self::$_instance, 'menu_tabs'), 5);
@@ -61,6 +66,11 @@ class Yatri_About
             'plugin' => array(),
             'redirect' => admin_url('/themes.php?page=yatri-tools-install-demos')
         );
+        if (class_exists('Yatri_Tools')) {
+            $installation_details['redirect'] = admin_url('/admin.php?page=yatri-panel');
+        } else {
+            $installation_details['redirect'] = admin_url('/themes.php?page=yatri-options');
+        }
 
         include_once ABSPATH . 'wp-admin/includes/class-wp-upgrader.php';
 
@@ -152,16 +162,15 @@ class Yatri_About
         }
 
         if (
-            !isset($installation_details['plugin']['yatri-tools'])
-            || (
-                isset($installation_details['plugin']['yatri-tools']) &&
-                'active' != $installation_details['plugin']['yatri-tools']
-            )
-        ) {
+            isset($installation_details['plugin']['yatri-tools'])
+            &&
+            'active' === $installation_details['plugin']['yatri-tools']
 
-            $installation_details['redirect'] = admin_url('/themes.php?page=yatri-options');
+        ) {
+            $installation_details['redirect'] = admin_url('/admin.php?page=yatri-tools-install-demos');
 
         }
+
         $is_redirect = isset($_POST['redirect']) && $_POST['redirect'] == 'no' ? false : true;
         if (!$is_redirect) {
             unset ($installation_details['redirect']);
@@ -269,7 +278,8 @@ class Yatri_About
      */
     function scripts($id)
     {
-        if ('appearance_page_yatri-options' != $id && 'themes.php' != $id) {
+        if (('appearance_page_yatri-options' != $id && 'themes.php' != $id) && $id != 'toplevel_page_yatri-panel') {
+
             return;
         }
 
@@ -542,7 +552,7 @@ class Yatri_About
                     array(
                         'page' => 'yatri-tools-install-demos',
                     ),
-                    admin_url('themes.php')
+                    admin_url('admin.php')
                 );
 
                 $view_site_txt = __('View Site Library', 'yatri');
