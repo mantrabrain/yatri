@@ -18,11 +18,21 @@ class Yatri_About
     {
         if (is_null(self::$_instance)) {
             self::$_instance = new self();
-            self::$_instance->url = admin_url('themes.php');
-            self::$_instance->url = add_query_arg(
-                array('page' => 'yatri-options'),
-                self::$_instance->url
-            );
+
+
+            if (!class_exists('Yatri_Tools')) {
+                self::$_instance->url = admin_url('themes.php');
+                self::$_instance->url = add_query_arg(
+                    array('page' => 'yatri-options'),
+                    self::$_instance->url
+                );
+            } else {
+                self::$_instance->url = admin_url('admin.php');
+                self::$_instance->url = add_query_arg(
+                    array('page' => 'yatri-panel'),
+                    self::$_instance->url
+                );
+            }
 
             self::$_instance->from_plugin = $from_plugin;
 
