@@ -4,8 +4,8 @@ Tags: blog, grid-Layout, two-columns, left-sidebar, right-sidebar, custom-backgr
 Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 5.3.2
-Version: 1.0.4
-Stable tag: 1.0.4
+Version: 1.0.5
+Stable tag: 1.0.5
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
