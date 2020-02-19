@@ -19,44 +19,6 @@ define('YATRI_THEME_URI', trailingslashit(esc_url(get_template_directory_uri()))
 
 require_once YATRI_THEME_DIR . 'core/class-yatri-core.php';
 
-
-/*if ( ! function_exists( 'yt_fs' ) ) {
-    // Create a helper function for easy SDK access.
-    function yt_fs() {
-        global $yt_fs;
-
-        if ( ! isset( $yt_fs ) ) {
-            // Include Freemius SDK.
-            require_once YATRI_TOOLS_ABSPATH . 'includes/freemius/start.php';
-
-            $yt_fs = fs_dynamic_init( array(
-                'id'                  => '5578',
-                'slug'                => 'yatri-theme',
-                'premium_slug'        => 'yatri-test-addon-premium',
-                'type'                => 'theme',
-                'public_key'          => 'pk_b9172980a3d756b764261a3690e5d',
-                'is_premium'          => false,
-                'has_addons'          => true,
-                'has_paid_plans'      => false,
-                'is_org_compliant'    => false,
-                'menu'                => array(
-                    'slug'           => 'yatri-theme',
-                    'account'        => false,
-                    'support'        => false,
-                ),
-            ) );
-        }
-
-        return $yt_fs;
-    }
-
-    // Init Freemius.
-    yt_fs();
-    // Signal that SDK was initiated.
-    do_action( 'yt_fs_loaded' );
-}*/
-
-
 if ( ! function_exists( 'yat_fs' ) ) {
 
     if ( class_exists( 'Yatri_Tools' ) &&
