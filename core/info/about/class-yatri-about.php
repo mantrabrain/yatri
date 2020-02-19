@@ -64,7 +64,7 @@ class Yatri_About
         $installation_details = array(
             'total_plugins' => count($yatri_all_plugins),
             'plugin' => array(),
-            'redirect' => admin_url('/themes.php?page=yatri-tools-install-demos')
+            'redirect' => admin_url('/themes.php?page=yatri-panel')
         );
         if (class_exists('Yatri_Tools')) {
             $installation_details['redirect'] = admin_url('/admin.php?page=yatri-panel');
@@ -167,7 +167,7 @@ class Yatri_About
             'active' === $installation_details['plugin']['yatri-tools']
 
         ) {
-            $installation_details['redirect'] = admin_url('/admin.php?page=yatri-tools-install-demos');
+            $installation_details['redirect'] = admin_url('/admin.php?page=yatri-panel');
 
         }
 
@@ -548,14 +548,27 @@ class Yatri_About
                     $active_file_name = $plugin_slug . '/' . $plugin_slug . '.php';
                 }
 
-                $sites_url = add_query_arg(
-                    array(
-                        'page' => 'yatri-tools-install-demos',
-                    ),
-                    admin_url('admin.php')
-                );
 
-                $view_site_txt = __('View Site Library', 'yatri');
+                if (class_exists('Yatri_Tools')) {
+
+                    $view_site_txt = __('View Site Library / Install Demo', 'yatri');
+                    $sites_url = add_query_arg(
+                        array(
+                            'page' => 'yatri-tools-install-demos',
+                        ),
+                        admin_url('admin.php')
+                    );
+
+                } else {
+
+                    $view_site_txt = __('Go to Yatri Options', 'yatri');
+                    $sites_url = add_query_arg(
+                        array(
+                            'page' => 'yatri-panel',
+                        ),
+                        admin_url('admin.php')
+                    );
+                }
 
                 if (!is_plugin_active($active_file_name)) {
                     $button_txt = esc_html__('Install Importer Plugin', 'yatri');

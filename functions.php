@@ -19,11 +19,11 @@ define('YATRI_THEME_URI', trailingslashit(esc_url(get_template_directory_uri()))
 
 require_once YATRI_THEME_DIR . 'core/class-yatri-core.php';
 
-if ( ! function_exists( 'yat_fs' ) ) {
+if (!function_exists('yat_fs')) {
 
-    if ( class_exists( 'Yatri_Tools' ) &&
-        defined( 'YATRI_TOOLS_ABSPATH' ) &&
-        file_exists( YATRI_TOOLS_ABSPATH . 'includes/freemius/start.php' )
+    if (class_exists('Yatri_Tools') &&
+        defined('YATRI_TOOLS_ABSPATH') &&
+        file_exists(YATRI_TOOLS_ABSPATH . 'includes/freemius/start.php')
     ) {
         // Create a helper function for easy SDK access.
         function yat_fs()
