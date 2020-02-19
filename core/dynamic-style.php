@@ -264,16 +264,20 @@ function yatri_get_processed_css($field_type, $value, $property)
                 $border_keys = array_keys($border_field_val);
 
 
-                foreach ($border_keys as $border_key) {
-                    if (!empty($border_field_val[$border_key])) {
-                        $border_width_property = 'border-' . ($border_key) . '-width';
-                        $border_style_property = 'border-' . ($border_key) . '-style';
-                        $css_property .= esc_attr($border_width_property) . ':' . esc_attr($border_field_val[$border_key]) . '; ';
-                        $css_property .= esc_attr($border_style_property) . ':' . esc_attr($value['style']) . '; ';
+                if ($value['style'] == 'none') {
+                    $css_property .= 'border: none;';
+                } else {
+                    foreach ($border_keys as $border_key) {
+                        if (!empty($border_field_val[$border_key])) {
+                            $border_width_property = 'border-' . ($border_key) . '-width';
+                            $border_style_property = 'border-' . ($border_key) . '-style';
+                            $css_property .= esc_attr($border_width_property) . ':' . esc_attr($border_field_val[$border_key]) . '; ';
+                            $css_property .= esc_attr($border_style_property) . ':' . esc_attr($value['style']) . '; ';
+                        }
                     }
-                }
-                if (!empty($value['border_color'])) {
-                    $css_property .= 'border-color:' . esc_attr($value['border_color']) . '; ';
+                    if (!empty($value['border_color'])) {
+                        $css_property .= 'border-color:' . esc_attr($value['border_color']) . '; ';
+                    }
                 }
 
             }

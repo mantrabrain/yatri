@@ -1460,6 +1460,15 @@ if (!class_exists('Mantrabrain_Theme_Helper')) {
 
         }
 
+        static function mabye_int_empty($value)
+        {
+            if ('' !== $value) {
+                return absint($value);
+            }
+            return '';
+
+        }
+
         static function get_modal_value($field_type, $field_name, $field_value, $devices, $field = array())
         {
 
@@ -1490,15 +1499,15 @@ if (!class_exists('Mantrabrain_Theme_Helper')) {
                     case "border":
                         $valid_value = isset($field_value['value']) ? ($field_value['value']) : '';
                         $valid_value['style'] = isset($valid_value['style']) ? sanitize_text_field($valid_value['style']) : '';
-                        $valid_value['border_top'] = isset($valid_value['border_top']) ? absint($valid_value['border_top']) : '';
-                        $valid_value['border_right'] = isset($valid_value['border_right']) ? absint($valid_value['border_right']) : '';
-                        $valid_value['border_bottom'] = isset($valid_value['border_bottom']) ? absint($valid_value['border_bottom']) : '';
-                        $valid_value['border_left'] = isset($valid_value['border_left']) ? absint($valid_value['border_left']) : '';
+                        $valid_value['border_top'] = isset($valid_value['border_top']) ? self::mabye_int_empty($valid_value['border_top']) : '';
+                        $valid_value['border_right'] = isset($valid_value['border_right']) ? self::mabye_int_empty($valid_value['border_right']) : '';
+                        $valid_value['border_bottom'] = isset($valid_value['border_bottom']) ? self::mabye_int_empty($valid_value['border_bottom']) : '';
+                        $valid_value['border_left'] = isset($valid_value['border_left']) ? self::mabye_int_empty($valid_value['border_left']) : '';
                         $valid_value['border_color'] = isset($valid_value['border_color']) ? self::sanitize_color($valid_value['border_color']) : '';
-                        $valid_value['border_radius_top'] = isset($valid_value['border_radius_top']) ? absint($valid_value['border_radius_top']) : '';
-                        $valid_value['border_radius_right'] = isset($valid_value['border_radius_right']) ? absint($valid_value['border_radius_right']) : '';
-                        $valid_value['border_radius_bottom'] = isset($valid_value['border_radius_bottom']) ? absint($valid_value['border_radius_bottom']) : '';
-                        $valid_value['border_radius_left'] = isset($valid_value['border_radius_left']) ? absint($valid_value['border_radius_left']) : '';
+                        $valid_value['border_radius_top'] = isset($valid_value['border_radius_top']) ? self::mabye_int_empty($valid_value['border_radius_top']) : '';
+                        $valid_value['border_radius_right'] = isset($valid_value['border_radius_right']) ? self::mabye_int_empty($valid_value['border_radius_right']) : '';
+                        $valid_value['border_radius_bottom'] = isset($valid_value['border_radius_bottom']) ? self::mabye_int_empty($valid_value['border_radius_bottom']) : '';
+                        $valid_value['border_radius_left'] = isset($valid_value['border_radius_left']) ? self::mabye_int_empty($valid_value['border_radius_left']) : '';
                         $valid_value['box_shadow_color'] = isset($valid_value['box_shadow_color']) ? self::sanitize_color($valid_value['box_shadow_color']) : '';
                         $valid_value['box_shadow_x'] = isset($valid_value['box_shadow_x']) ? absint($valid_value['box_shadow_x']) : '';
                         $valid_value['box_shadow_y'] = isset($valid_value['box_shadow_y']) ? absint($valid_value['box_shadow_y']) : '';
