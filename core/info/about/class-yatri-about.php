@@ -508,7 +508,7 @@ class Yatri_About
         <div class="mb-about-box">
             <div class="mb-about-box-top">
                 <span class="dashicons dashicons-facebook-alt"></span>
-                <?php _e('Join Mantra Brain Community!', 'yatri'); ?></div>
+                <?php _e('Join Yatri Theme Community!', 'yatri'); ?></div>
             <div class="mb-about-box-content">
                 <p><?php _e('Join our facebook community group so that you can post question and help each other.', 'yatri'); ?></p>
                 <a target="_blank"
