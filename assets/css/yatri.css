@@ -10858,9 +10858,10 @@ body.admin-bar .yatri-section-menu.yatri-mobile-menu {
   .top-header .yatri-section-container.menu-container li.menu-item-has-children > a:after {
     right: 11%; }
   .top-header .yatri-responsive-toggle-menu {
-    border-color: #fff; }
+    border-color: #fff;
+    color: #fff; }
     .top-header .yatri-responsive-toggle-menu span {
-      color: #fff; }
+      color: inherit; }
   .top-header .yatri-section-search-form .search-main {
     padding: 4px 10px; }
     .top-header .yatri-section-search-form .search-main .yatri-search-icon {
