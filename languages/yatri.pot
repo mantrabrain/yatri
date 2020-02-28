@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: mantrabrain@gmail.com\n"
-"POT-Creation-Date: 2020-02-19 19:32:57+00:00\n"
+"POT-Creation-Date: 2020-02-28 13:16:01+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -382,19 +382,19 @@ msgstr ""
 msgid "Right"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-branding-config.php:79
+#: core/customizer/config/class-yatri-section-branding-config.php:81
 msgid "Logo Width"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-branding-config.php:93
+#: core/customizer/config/class-yatri-section-branding-config.php:95
 msgid "Logo Margin"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-branding-config.php:102
+#: core/customizer/config/class-yatri-section-branding-config.php:104
 msgid "Title Margin"
 msgstr ""
 
-#: core/customizer/config/class-yatri-section-branding-config.php:111
+#: core/customizer/config/class-yatri-section-branding-config.php:113
 msgid "Tagline Margin"
 msgstr ""
 
@@ -2074,7 +2074,7 @@ msgid "Links to Customizer Settings"
 msgstr ""
 
 #: core/info/about/class-yatri-about.php:511
-msgid "Join Mantra Brain Community!"
+msgid "Join Yatri Theme Community!"
 msgstr ""
 
 #: core/info/about/class-yatri-about.php:513
