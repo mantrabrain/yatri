@@ -11364,6 +11364,8 @@ footer.site-footer .site-branding .site-title a {
     display: none; }
   .yatri-mobile-menu {
     display: block; }
+  .yatri-bottom-footer-area .yatri-section-container .yatri-section-menu {
+    display: block; }
   .top-header .yatri-responsive-toggle-menu-wrap, .yatri-mid-header .yatri-responsive-toggle-menu-wrap, .bottom-header .yatri-responsive-toggle-menu-wrap {
     display: block; }
   .top-header .yatri-section-container, .yatri-mid-header .yatri-section-container, .bottom-header .yatri-section-container {
