@@ -534,9 +534,9 @@ if (!function_exists('yatri_get_default_theme_options')) :
         $defaults['blog_archive_page_readmore_text'] = __('Learn More', 'yatri');
         $defaults['blog_archive_page_readmore_text_icon'] = 'fas fa-long-arrow-alt-right';
         $defaults['blog_archive_page_readmore_design_styling'] = '{}';
-        $defaults['blog_archive_page_excerpt_type'] = 'custom';
-        $defaults['blog_archive_page_excerpt_length'] = 15;
-        $defaults['blog_archive_page_excerpt_more_text'] = '';
+        $defaults['blog_archive_page_excerpt_type'] = 'excerpt_metabox';
+        $defaults['blog_archive_page_excerpt_length'] = 55;
+        $defaults['blog_archive_page_excerpt_more_text'] = '...';
         $defaults['blog_archive_pagination_style'] = 'numeric';
         $defaults['blog_archive_pagination_design_style'] = '{}';
         // End Of Archive Page Options
