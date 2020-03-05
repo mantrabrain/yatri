@@ -6064,6 +6064,13 @@ mark, ins {
   padding-right: 5px;
   color: #545454; }
 
+.yat-clear-before::before,
+.yat-clear-after::after {
+  content: "";
+  width: 100%;
+  display: block;
+  clear: both; }
+
 form {
   position: relative; }
 

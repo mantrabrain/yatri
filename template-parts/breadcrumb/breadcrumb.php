@@ -5,7 +5,7 @@
  * @since 1.0.0
  */
 ?>
-<section class="wrapper section-breadcrumb-wrap yatri-breadcrumb-wrap">
+<section class="wrapper section-breadcrumb-wrap yatri-breadcrumb-wrap yat-clear-after">
     <section class="breadcrumb-wrap">
         <div class="yat-container">
             <?php

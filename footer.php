@@ -9,7 +9,7 @@
 
 ?>
 
-<footer id="colophon" class="wrapper site-footer site-footer-two">
+<footer id="colophon" class="wrapper site-footer site-footer-two yat-clear-before">
 
     <?php
 
