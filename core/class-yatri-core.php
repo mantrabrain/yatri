@@ -117,6 +117,12 @@ if (!class_exists('Yatri_Core')) :
             //Yatra
             require_once YATRI_THEME_DIR . 'core/compatibility/class-yatri-yatra.php';
 
+            /**
+             * Load TGMPA Configs.
+             */
+            require_once YATRI_THEME_DIR . 'core/tgmpa/class-tgm-plugin-activation.php';
+            require_once YATRI_THEME_DIR . 'core/tgmpa/tgmpa-yatri.php';
+
 
         }
 

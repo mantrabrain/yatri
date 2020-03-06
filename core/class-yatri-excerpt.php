@@ -95,7 +95,7 @@ if (!class_exists('Yatri_Excerpt')):
 
                 $text = '';
                 if ($post) {
-                    if ('' != get_the_excerpt()) {
+                    if ('' != trim(get_the_excerpt())) {
                         $text = get_the_excerpt();
                     } elseif ($post->post_excerpt) {
                         $text = $post->post_excerpt;
@@ -104,6 +104,7 @@ if (!class_exists('Yatri_Excerpt')):
                     }
                 }
                 $excerpt = $this->trim_excerpt($text, $length);
+
                 if ($excerpt) {
                     // WPCS: XSS OK.
                     return apply_filters('the_excerpt', $excerpt);
