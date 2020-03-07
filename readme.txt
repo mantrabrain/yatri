@@ -50,10 +50,7 @@ License: (CSS)[MIT](http://opensource.org/licenses/MIT), (Fonts)[SIL OFL 1.1](ht
 == Images ==
 
 * Image used in screenshot, License CC0 Public Domain
-- https://pxhere.com/en/photo/1522469
-- https://pxhere.com/en/photo/1568245
-- https://pxhere.com/en/photo/1556181
-- https://pxhere.com/en/photo/1456023
+- https://pxhere.com/en/photo/1456587
 
 * Other Image
 - Copyright (C) 2020, mantrabrain, GPLv2](https://www.gnu.org/licenses/gpl-2.0.html)

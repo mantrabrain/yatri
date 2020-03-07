@@ -152,19 +152,19 @@ if (!function_exists('yatri_get_header_theme_options')) :
                 'icon_url' => '#',
                 'open_in_new_tab' => true,
                 'icon_text' => 'fab fa-facebook-f',
-                'icon_title_text' => esc_html__('Facebook Icon Goes Here', 'yatri'),
+                'icon_title_text' => esc_html__('Facebook', 'yatri'),
             ),
             array(
                 'icon_url' => '#',
                 'open_in_new_tab' => true,
                 'icon_text' => 'fab  fa-twitter',
-                'icon_title_text' => esc_html__('Twitter Icon Goes Here', 'yatri'),
+                'icon_title_text' => esc_html__('Twitter', 'yatri'),
             ),
             array(
                 'icon_url' => '#',
                 'open_in_new_tab' => true,
                 'icon_text' => 'fab  fa-google',
-                'icon_title_text' => esc_html__('Google Icon Goes Here', 'yatri'),
+                'icon_title_text' => esc_html__('Google', 'yatri'),
             ),
         );
         $defaults['top_header_main_menu'] = 'top_header_menu';
@@ -259,19 +259,19 @@ if (!function_exists('yatri_get_header_theme_options')) :
                 'icon_url' => '#',
                 'open_in_new_tab' => true,
                 'icon_text' => 'fab fa-facebook-f',
-                'icon_title_text' => esc_html__('Facebook Icon Goes Here', 'yatri'),
+                'icon_title_text' => esc_html__('Facebook', 'yatri'),
             ),
             array(
                 'icon_url' => '#',
                 'open_in_new_tab' => true,
                 'icon_text' => 'fab  fa-twitter',
-                'icon_title_text' => esc_html__('Twitter Icon Goes Here', 'yatri'),
+                'icon_title_text' => esc_html__('Twitter', 'yatri'),
             ),
             array(
                 'icon_url' => '#',
                 'open_in_new_tab' => true,
                 'icon_text' => 'fab  fa-google',
-                'icon_title_text' => esc_html__('Google Icon Goes Here', 'yatri'),
+                'icon_title_text' => esc_html__('Google', 'yatri'),
             ),
         );
         $defaults['mid_header_main_menu'] = 'mid_header_menu';
@@ -367,19 +367,19 @@ if (!function_exists('yatri_get_header_theme_options')) :
                 'icon_url' => '#',
                 'open_in_new_tab' => true,
                 'icon_text' => 'fab fa-facebook-f',
-                'icon_title_text' => esc_html__('Facebook Icon Goes Here', 'yatri'),
+                'icon_title_text' => esc_html__('Facebook', 'yatri'),
             ),
             array(
                 'icon_url' => '#',
                 'open_in_new_tab' => true,
                 'icon_text' => 'fab  fa-twitter',
-                'icon_title_text' => esc_html__('Twitter Icon Goes Here', 'yatri'),
+                'icon_title_text' => esc_html__('Twitter', 'yatri'),
             ),
             array(
                 'icon_url' => '#',
                 'open_in_new_tab' => true,
                 'icon_text' => 'fab  fa-google',
-                'icon_title_text' => esc_html__('Google Icon Goes Here', 'yatri'),
+                'icon_title_text' => esc_html__('Google', 'yatri'),
             ),
         );
         $defaults['bottom_header_main_menu'] = 'primary';
@@ -628,19 +628,19 @@ if (!function_exists('yatri_get_default_theme_options')) :
                 'icon_url' => '#',
                 'open_in_new_tab' => true,
                 'icon_text' => 'fab fa-facebook-f',
-                'icon_title_text' => esc_html__('Facebook Icon Goes Here', 'yatri'),
+                'icon_title_text' => esc_html__('Facebook', 'yatri'),
             ),
             array(
                 'icon_url' => '#',
                 'open_in_new_tab' => true,
                 'icon_text' => 'fab  fa-twitter',
-                'icon_title_text' => esc_html__('Twitter Icon Goes Here', 'yatri'),
+                'icon_title_text' => esc_html__('Twitter', 'yatri'),
             ),
             array(
                 'icon_url' => '#',
                 'open_in_new_tab' => true,
                 'icon_text' => 'fab  fa-google',
-                'icon_title_text' => esc_html__('Google Icon Goes Here', 'yatri'),
+                'icon_title_text' => esc_html__('Google', 'yatri'),
             ),
         );
         $defaults['bottom_footer_social_icons_design'] = "{}";
