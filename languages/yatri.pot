@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: mantrabrain@gmail.com\n"
-"POT-Creation-Date: 2020-03-06 03:33:56+00:00\n"
+"POT-Creation-Date: 2020-03-07 08:29:30+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -905,17 +905,17 @@ msgstr ""
 
 #: core/customizer/core.php:155 core/customizer/core.php:262
 #: core/customizer/core.php:370 core/customizer/core.php:631
-msgid "Facebook Icon Goes Here"
+msgid "Facebook"
 msgstr ""
 
 #: core/customizer/core.php:161 core/customizer/core.php:268
 #: core/customizer/core.php:376 core/customizer/core.php:637
-msgid "Twitter Icon Goes Here"
+msgid "Twitter"
 msgstr ""
 
 #: core/customizer/core.php:167 core/customizer/core.php:274
 #: core/customizer/core.php:382 core/customizer/core.php:643
-msgid "Google Icon Goes Here"
+msgid "Google"
 msgstr ""
 
 #: core/customizer/core.php:232 core/customizer/core.php:339
