@@ -1,6 +1,7 @@
 = 1.0.6 |  =
 - Added: TGMPA
 - Improvement: Screenshot changed
+- Improvement: figurecaption tag design issue fixed
 - Improvement: Default Value modify
 = 1.0.5 | 2020/02/19 =
 - Improvement: design issue fixed and theme reviewer feedback fixed

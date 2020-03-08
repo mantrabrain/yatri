@@ -6273,8 +6273,10 @@ img {
 figure {
   margin: 0; }
 
+.blocks-gallery-caption, .wp-block-embed figcaption, .wp-block-image figcaption {
+  font-size: 14px; }
+
 figcaption {
-  background-color: #4285f4;
   color: #ffffff;
   font-size: 14px;
   padding: 5px 10px; }
