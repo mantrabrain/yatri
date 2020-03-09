@@ -3,6 +3,7 @@
 - Improvement: Screenshot changed
 - Improvement: figurecaption tag design issue fixed
 - Improvement: Default Value modify
+- Improvement: escaping issue fixed and commented code removed
 = 1.0.5 | 2020/02/19 =
 - Improvement: design issue fixed and theme reviewer feedback fixed
 = 1.0.4 | 2020/02/17 =

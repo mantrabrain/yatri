@@ -26,14 +26,14 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
     // Top Header Configurations
     $fields['main_layout_boxed_styling'] = array(
         'tabs' => array(
-            'main_layout_boxed_color' => __('Colors', 'yatri'),
-            'main_layout_boxed_spacing' => __('Spacing', 'yatri'),
+            'main_layout_boxed_color' => esc_html__('Colors', 'yatri'),
+            'main_layout_boxed_spacing' => esc_html__('Spacing', 'yatri'),
         ),
         'main_layout_boxed_color_fields' => array(
             array(
                 'name' => 'main_layout_boxed_styling_inside_background_color',
                 'type' => 'color',
-                'label' => __('Inside Background Color', 'yatri'),
+                'label' => esc_html__('Inside Background Color', 'yatri'),
                 'description' => '',
                 'default' => '#c1c1c1',
                 'additional_css' => 'body.yatri-global-layout-boxed .top-header, 
@@ -52,7 +52,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
             array(
                 'name' => 'main_layout_boxed_styling_inside_background_image',
                 'type' => 'image',
-                'label' => __('Inside Background Image', 'yatri'),
+                'label' => esc_html__('Inside Background Image', 'yatri'),
                 'description' => '',
                 'additional_css' => 'body.yatri-global-layout-boxed .top-header, 
                     body.yatri-global-layout-boxed .yatri-mid-header,
@@ -70,7 +70,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
             array(
                 'name' => 'main_layout_boxed_styling_outside_background_color',
                 'type' => 'color',
-                'label' => __('Outside Background Color', 'yatri'),
+                'label' => esc_html__('Outside Background Color', 'yatri'),
                 'description' => '',
                 'default' => '#c1c1c1',
                 'selector' => 'body.yatri-global-layout-boxed',
@@ -79,7 +79,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
             array(
                 'name' => 'main_layout_boxed_styling_outside_background_image',
                 'type' => 'image',
-                'label' => __('Outside Background Image', 'yatri'),
+                'label' => esc_html__('Outside Background Image', 'yatri'),
                 'description' => '',
                 'selector' => 'body.yatri-global-layout-boxed',
                 'css_property' => 'background-image:{{value}};'
@@ -92,7 +92,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
                     'type' => 'padding',
                     'device_settings' => true,
                     'devices' => array('desktop', 'tablet', 'mobile'),
-                    'label' => __('Container Padding', 'yatri'),
+                    'label' => esc_html__('Container Padding', 'yatri'),
                     'description' => '',
                     'default' => array(
 
@@ -125,7 +125,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
                 array(
                     'name' => 'main_layout_boxed_styling_container_margin',
                     'type' => 'margin',
-                    'label' => __('Layout Margin', 'yatri'),
+                    'label' => esc_html__('Layout Margin', 'yatri'),
                     'device_settings' => true,
                     'devices' => array('desktop', 'tablet', 'mobile'),
                     'description' => '',
@@ -158,7 +158,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
                 array(
                     'name' => 'main_layout_boxed_spacing_fields_border_heading',
                     'type' => 'heading',
-                    'label' => __('Layout Border', 'yatri'),
+                    'label' => esc_html__('Layout Border', 'yatri'),
                 ),
                 array(
                     'name' => 'main_layout_boxed_spacing_border',
@@ -182,14 +182,14 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
 
     $fields['main_layout_full_width_styling'] = array(
         'tabs' => array(
-            'main_layout_full_width_color' => __('Colors', 'yatri'),
-            'main_layout_full_width_spacing' => __('Spacing', 'yatri'),
+            'main_layout_full_width_color' => esc_html__('Colors', 'yatri'),
+            'main_layout_full_width_spacing' => esc_html__('Spacing', 'yatri'),
         ),
         'main_layout_full_width_color_fields' => array(
             array(
                 'name' => 'main_layout_full_width_styling_background_color',
                 'type' => 'color',
-                'label' => __('Background Color', 'yatri'),
+                'label' => esc_html__('Background Color', 'yatri'),
                 'description' => '',
                 'default' => '#c1c1c1',
                 'additional_css' => 'body.yatri-global-layout-full_width .top-header, 
@@ -209,7 +209,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
             array(
                 'name' => 'main_layout_full_width_styling_background_image',
                 'type' => 'image',
-                'label' => __('Background Image', 'yatri'),
+                'label' => esc_html__('Background Image', 'yatri'),
                 'description' => '',
                 'additional_css' => 'body.yatri-global-layout-full_width .top-header, 
                     body.yatri-global-layout-full_width .yatri-mid-header,
@@ -233,7 +233,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
                     'type' => 'padding',
                     'device_settings' => true,
                     'devices' => array('desktop', 'tablet', 'mobile'),
-                    'label' => __('Container Padding', 'yatri'),
+                    'label' => esc_html__('Container Padding', 'yatri'),
                     'description' => '',
                     'default' => array(
 
@@ -280,14 +280,14 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
     // Button Design
     $fields['yatri_button_style_design'] = array(
         'tabs' => array(
-            'yatri_button_style_design_color' => __('Colors', 'yatri'),
-            'yatri_button_style_design_spacing' => __('Spacing', 'yatri'),
+            'yatri_button_style_design_color' => esc_html__('Colors', 'yatri'),
+            'yatri_button_style_design_spacing' => esc_html__('Spacing', 'yatri'),
         ),
         'yatri_button_style_design_color_fields' => array(
             array(
                 'name' => 'yatri_button_style_design_text_color',
                 'type' => 'color',
-                'label' => __('Text Color', 'yatri'),
+                'label' => esc_html__('Text Color', 'yatri'),
                 'description' => '',
                 'default' => '#c1c1c1',
                 'selector' => 'button:not(.search-button):not(.customize-partial-edit-shortcut-button):not(.search-main):not(.yatri-toggle-wrap),.button, input[type="submit"], .yatri-button, .yatri-button span ,.yatri-button .yatri-button-icon',
@@ -296,7 +296,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
             array(
                 'name' => 'yatri_button_style_design_hover_text_color',
                 'type' => 'color',
-                'label' => __('Hover Text Color', 'yatri'),
+                'label' => esc_html__('Hover Text Color', 'yatri'),
                 'description' => '',
                 'default' => '#c1c1c1',
                 'selector' => 'button:not(.search-button):not(.customize-partial-edit-shortcut-button):not(.search-main):not(.yatri-toggle-wrap):hover,.button:hover, input[type="submit"]:hover, .yatri-button:hover, .yatri-button:hover span, .yatri-button:hover .yatri-button-icon',
@@ -305,7 +305,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
             array(
                 'name' => 'yatri_button_style_design_background_color',
                 'type' => 'color',
-                'label' => __('Background Color', 'yatri'),
+                'label' => esc_html__('Background Color', 'yatri'),
                 'description' => '',
                 'default' => '#c1c1c1',
                 'selector' => 'button:not(.search-button):not(.customize-partial-edit-shortcut-button):not(.search-main):not(.yatri-toggle-wrap),.button, input[type="submit"], .yatri-button',
@@ -314,7 +314,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
             array(
                 'name' => 'yatri_button_style_design_hover_background_color',
                 'type' => 'color',
-                'label' => __('Hover Background Color', 'yatri'),
+                'label' => esc_html__('Hover Background Color', 'yatri'),
                 'description' => '',
                 'default' => '#c1c1c1',
                 'selector' => 'button:not(.search-button):not(.customize-partial-edit-shortcut-button):not(.search-main):not(.yatri-toggle-wrap):hover,.button:hover, input[type="submit"]:hover, .yatri-button:hover',
@@ -328,7 +328,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
                     'type' => 'padding',
                     'device_settings' => true,
                     'devices' => array('desktop', 'tablet', 'mobile'),
-                    'label' => __('Padding', 'yatri'),
+                    'label' => esc_html__('Padding', 'yatri'),
                     'description' => '',
                     'default' => array(
 
@@ -357,7 +357,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
                 array(
                     'name' => 'yatri_button_style_design_border_heading',
                     'type' => 'heading',
-                    'label' => __('Border', 'yatri'),
+                    'label' => esc_html__('Border', 'yatri'),
                 ),
                 array(
                     'name' => 'yatri_button_style_design_border',
@@ -378,14 +378,14 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
 
     $fields['yatri_form_style_design'] = array(
         'tabs' => array(
-            'yatri_form_style_design_color' => __('Colors', 'yatri'),
-            'yatri_form_style_design_spacing' => __('Spacing', 'yatri'),
+            'yatri_form_style_design_color' => esc_html__('Colors', 'yatri'),
+            'yatri_form_style_design_spacing' => esc_html__('Spacing', 'yatri'),
         ),
         'yatri_form_style_design_color_fields' => array(
             array(
                 'name' => 'yatri_form_style_design_label_color',
                 'type' => 'color',
-                'label' => __('Label Color', 'yatri'),
+                'label' => esc_html__('Label Color', 'yatri'),
                 'description' => '',
                 'default' => '#c1c1c1',
                 'selector' => 'label,.comments-area .comment-respond label',
@@ -394,7 +394,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
             array(
                 'name' => 'yatri_form_style_design_background_color',
                 'type' => 'color',
-                'label' => __('Background Color', 'yatri'),
+                'label' => esc_html__('Background Color', 'yatri'),
                 'description' => '',
                 'default' => '#c1c1c1',
                 'selector' => 'form input[type="text"]:not(.yatri-custom-search-input), form input[type="password"], form input[type="email"], form input[type="tel"], form input[type="url"], form input[type="search"], form textarea,
@@ -404,7 +404,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
             array(
                 'name' => 'yatri_form_style_design_text_color',
                 'type' => 'color',
-                'label' => __('Text Color', 'yatri'),
+                'label' => esc_html__('Text Color', 'yatri'),
                 'description' => '',
                 'default' => '#c1c1c1',
                 'selector' => 'form input[type="text"]:not(.yatri-custom-search-input), form input[type="password"], form input[type="email"], form input[type="tel"], form input[type="url"], form input[type="search"], form textarea,
@@ -419,7 +419,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
                     'type' => 'padding',
                     'device_settings' => true,
                     'devices' => array('desktop', 'tablet', 'mobile'),
-                    'label' => __('Padding', 'yatri'),
+                    'label' => esc_html__('Padding', 'yatri'),
                     'description' => '',
                     'default' => array(
 
@@ -449,7 +449,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
                 array(
                     'name' => 'yatri_form_style_design_border_heading',
                     'type' => 'heading',
-                    'label' => __('Border', 'yatri'),
+                    'label' => esc_html__('Border', 'yatri'),
                 ),
                 array(
                     'name' => 'yatri_form_style_design_border',

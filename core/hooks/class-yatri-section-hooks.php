@@ -27,33 +27,33 @@ class Yatri_Section_Hooks
         Yatri_Sections::init();
 
         Yatri_Sections::register('office_information', array(
-            'title' => __('Office Info', 'yatri')
+            'title' => esc_html__('Office Info', 'yatri')
         ));
         Yatri_Sections::register('button', array(
 
-            'title' => __('Button', 'yatri'),
+            'title' => esc_html__('Button', 'yatri'),
         ));
         Yatri_Sections::register('offcanvas_menu', array(
-            'title' => __('Offcanvas Menu', 'yatri')
+            'title' => esc_html__('Offcanvas Menu', 'yatri')
         ));
         Yatri_Sections::register('social_icons', array(
-            'title' => __('Social Icons', 'yatri')
+            'title' => esc_html__('Social Icons', 'yatri')
         ));
         Yatri_Sections::register('menu', array(
-            'title' => __('Navigation Menu', 'yatri')
+            'title' => esc_html__('Navigation Menu', 'yatri')
         ));
         Yatri_Sections::register('site_branding', array(
-            'title' => __('Site Branding', 'yatri')
+            'title' => esc_html__('Site Branding', 'yatri')
         ));
         Yatri_Sections::register('search_form', array(
-            'title' => __('Search Form', 'yatri')
+            'title' => esc_html__('Search Form', 'yatri')
         ));
 
         Yatri_Sections::register('custom_html', array(
-            'title' => __('Custom HTML', 'yatri')
+            'title' => esc_html__('Custom HTML', 'yatri')
         ));
         Yatri_Sections::register('copyright', array(
-            'title' => __('Copyright', 'yatri')
+            'title' => esc_html__('Copyright', 'yatri')
         ));
 
 

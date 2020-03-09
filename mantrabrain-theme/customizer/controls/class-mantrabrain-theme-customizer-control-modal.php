@@ -104,6 +104,7 @@ class Mantrabrain_Theme_Customizer_Control_Modal extends Mantrabrain_Theme_Custo
     public function enqueue()
     {
 
+        
         $css_uri = YATRI_THEME_URI . 'mantrabrain-theme/customizer/controls/modal/';
 
         $js_uri = YATRI_THEME_URI . 'mantrabrain-theme/customizer/controls/modal/';
@@ -430,6 +431,7 @@ class Mantrabrain_Theme_Customizer_Control_Modal extends Mantrabrain_Theme_Custo
         if ($field_type == 'heading') {
             return;
         }
+
         switch ($field_type) {
             case "padding":
                 include "modal/fields/padding.php";

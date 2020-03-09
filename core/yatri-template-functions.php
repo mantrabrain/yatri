@@ -22,7 +22,7 @@ if (!function_exists('yatri_edit_link')) :
         edit_post_link(
             sprintf(
             /* translators: %s: Name of the current post */
-                __('EDIT<span class="screen-reader-text"> "%s"</span>', 'yatri'),
+                esc_html__('EDIT<span class="screen-reader-text"> "%s"</span>', 'yatri'),
                 get_the_title()
             ),
             '<span class="edit-link">',

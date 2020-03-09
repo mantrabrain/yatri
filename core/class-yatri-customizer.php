@@ -199,8 +199,6 @@ class Yatri_Customizer
 
         $default = yatri_get_default_theme_options();
 
-        require_once YATRI_THEME_DIR . '/core/customizer/selective-refresh.php';
-
         // Theme Panel
         require_once YATRI_THEME_DIR . '/core/customizer/panels/theme-panel.php';
 

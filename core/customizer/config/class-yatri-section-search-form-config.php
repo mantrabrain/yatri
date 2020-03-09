@@ -8,7 +8,7 @@ class Yatri_Section_Search_Form_Config
             array(
                 'name' => $id . '_alignment',
                 'type' => 'alignment',
-                'label' => __('Alignment', 'yatri'),
+                'label' => esc_html__('Alignment', 'yatri'),
                 'description' => '',
                 'default' => array(
                     'desktop' => '',
@@ -23,15 +23,15 @@ class Yatri_Section_Search_Form_Config
                         'icon' => '',
                     ),
                     'left' => array(
-                        'title' => __('Left', 'yatri'),
+                        'title' => esc_html__('Left', 'yatri'),
                         'icon' => 'dashicons dashicons-editor-alignleft',
                     ),
                     'center' => array(
-                        'title' => __('Center', 'yatri'),
+                        'title' => esc_html__('Center', 'yatri'),
                         'icon' => 'dashicons dashicons-editor-aligncenter',
                     ),
                     'right' => array(
-                        'title' => __('Right', 'yatri'),
+                        'title' => esc_html__('Right', 'yatri'),
                         'icon' => 'dashicons dashicons-editor-alignright',
                     )
                 ),
@@ -41,7 +41,7 @@ class Yatri_Section_Search_Form_Config
             array(
                 'name' => $id . '_font_color',
                 'type' => 'color',
-                'label' => __('Font Color', 'yatri'),
+                'label' => esc_html__('Font Color', 'yatri'),
                 'description' => '',
                 'default' => '#c1c1c1',
                 'selector' => "{$parent_selector} .yatri-section-search-form .search-form-main input,
@@ -53,7 +53,7 @@ class Yatri_Section_Search_Form_Config
             array(
                 'name' => $id . '_icon_color',
                 'type' => 'color',
-                'label' => __('Icon Color', 'yatri'),
+                'label' => esc_html__('Icon Color', 'yatri'),
                 'description' => '',
                 'default' => '#c1c1c1',
                 'selector' => "

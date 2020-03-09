@@ -24,7 +24,7 @@ class Mantrabrain_Theme_Customizer_Control_Icon_Picker extends Mantrabrain_Theme
 
         $icon_lists = array(
             'font_awesome' => array(
-                'title' => __('Font Awesome', 'yatri'),
+                'title' => esc_html__('Font Awesome', 'yatri'),
                 'icons' => Mantrabrain_Theme_Helper::font_awesome_icon_list()
             )
         );

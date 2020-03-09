@@ -1124,17 +1124,17 @@ if (!class_exists('Mantrabrain_Theme_Helper')) {
         {
             $varients = array(
 
-                'normal' => __('Normal', 'yatri'),
-                'bold' => __('Bold', 'yatri'),
-                '100' => __('100', 'yatri'),
-                '200' => __('200', 'yatri'),
-                '300' => __('Light 300', 'yatri'),
-                '400' => __('Normal 400', 'yatri'),
-                '500' => __('Medium 500', 'yatri'),
-                '600' => __('Semi-Bold 600', 'yatri'),
-                '700' => __('Bold 700', 'yatri'),
-                '800' => __('Extra-Bold 800', 'yatri'),
-                '900' => __('Ultra-Bold 900', 'yatri'),
+                'normal' => esc_html__('Normal', 'yatri'),
+                'bold' => esc_html__('Bold', 'yatri'),
+                '100' => esc_html__('100', 'yatri'),
+                '200' => esc_html__('200', 'yatri'),
+                '300' => esc_html__('Light 300', 'yatri'),
+                '400' => esc_html__('Normal 400', 'yatri'),
+                '500' => esc_html__('Medium 500', 'yatri'),
+                '600' => esc_html__('Semi-Bold 600', 'yatri'),
+                '700' => esc_html__('Bold 700', 'yatri'),
+                '800' => esc_html__('Extra-Bold 800', 'yatri'),
+                '900' => esc_html__('Ultra-Bold 900', 'yatri'),
 
             );
 
@@ -1165,11 +1165,11 @@ if (!class_exists('Mantrabrain_Theme_Helper')) {
         {
             $fonts = array(
                 'normal' => array(
-                    'title' => __('Default Web Fonts', 'yatri'),
+                    'title' => esc_html__('Default Web Fonts', 'yatri'),
                     'fonts' => self::get_normal_fonts(),
                 ),
                 'google' => array(
-                    'title' => __('Google Web Fonts', 'yatri'),
+                    'title' => esc_html__('Google Web Fonts', 'yatri'),
                     'fonts' => self::get_google_fonts(),
                 ),
             );
@@ -1243,78 +1243,78 @@ if (!class_exists('Mantrabrain_Theme_Helper')) {
         static function css_units()
         {
             return apply_filters('yatri_css_units', array(
-                'px' => __('px', 'yatri'),
-                'rem' => __('rem', 'yatri'),
-                'em' => __('em', 'yatri'),
-                '%' => __('%', 'yatri'),
+                'px' => esc_html__('px', 'yatri'),
+                'rem' => esc_html__('rem', 'yatri'),
+                'em' => esc_html__('em', 'yatri'),
+                '%' => esc_html__('%', 'yatri'),
             ));
         }
 
         static function css_image_sizes()
         {
             return apply_filters('yatri_css_image_sizes', array(
-                '' => __('Default', 'yatri'),
-                'auto' => __('Auto', 'yatri'),
-                'cover' => __('Cover', 'yatri'),
-                'contain' => __('Contain', 'yatri'),
+                '' => esc_html__('Default', 'yatri'),
+                'auto' => esc_html__('Auto', 'yatri'),
+                'cover' => esc_html__('Cover', 'yatri'),
+                'contain' => esc_html__('Contain', 'yatri'),
             ));
         }
 
         public static function css_image_positions()
         {
             return apply_filters('yatri_css_image_positions', array(
-                '' => __('Default', 'yatri'),
-                'center' => __('Center', 'yatri'),
-                'top left' => __('Top Left', 'yatri'),
-                'top right' => __('Top Right', 'yatri'),
-                'top center' => __('Top Center', 'yatri'),
-                'bottom left' => __('Bottom Left', 'yatri'),
-                'bottom center' => __('Bottom Center', 'yatri'),
-                'bottom right' => __('Bottom Right', 'yatri'),
+                '' => esc_html__('Default', 'yatri'),
+                'center' => esc_html__('Center', 'yatri'),
+                'top left' => esc_html__('Top Left', 'yatri'),
+                'top right' => esc_html__('Top Right', 'yatri'),
+                'top center' => esc_html__('Top Center', 'yatri'),
+                'bottom left' => esc_html__('Bottom Left', 'yatri'),
+                'bottom center' => esc_html__('Bottom Center', 'yatri'),
+                'bottom right' => esc_html__('Bottom Right', 'yatri'),
             ));
         }
 
         public static function css_image_repeats()
         {
             return apply_filters('yatri_css_image_sizes', array(
-                'repeat' => __('Default', 'yatri'),
-                'no-repeat' => __('No repeat', 'yatri'),
-                'repeat-x' => __('Repeat horizontal', 'yatri'),
-                'repeat-y' => __('Repeat vertical', 'yatri'),
+                'repeat' => esc_html__('Default', 'yatri'),
+                'no-repeat' => esc_html__('No repeat', 'yatri'),
+                'repeat-x' => esc_html__('Repeat horizontal', 'yatri'),
+                'repeat-y' => esc_html__('Repeat vertical', 'yatri'),
             ));
         }
 
         public static function css_image_parallax_styles()
         {
             return apply_filters('yatri_css_image_parallax_styles', array(
-                '' => __('Default', 'yatri'),
-                'scroll' => __('Scroll', 'yatri'),
-                'fixed' => __('Fixed', 'yatri'),
+                '' => esc_html__('Default', 'yatri'),
+                'scroll' => esc_html__('Scroll', 'yatri'),
+                'fixed' => esc_html__('Fixed', 'yatri'),
             ));
         }
 
         public static function css_border_styles()
         {
             return apply_filters('yatri_css_border_styles', array(
-                '' => __('Default', 'yatri'),
-                'none' => __('None', 'yatri'),
-                'solid' => __('Solid', 'yatri'),
-                'dotted' => __('Dotted', 'yatri'),
-                'dashed' => __('Dashed', 'yatri'),
-                'double' => __('Double', 'yatri'),
-                'ridge' => __('Ridge', 'yatri'),
-                'inset' => __('Inset', 'yatri'),
-                'outset' => __('Outset', 'yatri'),
+                '' => esc_html__('Default', 'yatri'),
+                'none' => esc_html__('None', 'yatri'),
+                'solid' => esc_html__('Solid', 'yatri'),
+                'dotted' => esc_html__('Dotted', 'yatri'),
+                'dashed' => esc_html__('Dashed', 'yatri'),
+                'double' => esc_html__('Double', 'yatri'),
+                'ridge' => esc_html__('Ridge', 'yatri'),
+                'inset' => esc_html__('Inset', 'yatri'),
+                'outset' => esc_html__('Outset', 'yatri'),
             ));
         }
 
         public static function css_font_style()
         {
             return array(
-                '' => __('Default', 'yatri'),
-                'normal' => __('Normal', 'yatri'),
-                'italic' => __('Italic', 'yatri'),
-                'oblique' => __('Oblique', 'yatri'),
+                '' => esc_html__('Default', 'yatri'),
+                'normal' => esc_html__('Normal', 'yatri'),
+                'italic' => esc_html__('Italic', 'yatri'),
+                'oblique' => esc_html__('Oblique', 'yatri'),
 
             );
 
@@ -1323,11 +1323,11 @@ if (!class_exists('Mantrabrain_Theme_Helper')) {
         public static function css_text_decoration()
         {
             return array(
-                '' => __('Default', 'yatri'),
-                'underline' => __('Underline', 'yatri'),
-                'overline' => __('Overline', 'yatri'),
-                'line-through' => __('Line through', 'yatri'),
-                'none' => __('None', 'yatri'),
+                '' => esc_html__('Default', 'yatri'),
+                'underline' => esc_html__('Underline', 'yatri'),
+                'overline' => esc_html__('Overline', 'yatri'),
+                'line-through' => esc_html__('Line through', 'yatri'),
+                'none' => esc_html__('None', 'yatri'),
 
             );
         }
@@ -1335,11 +1335,11 @@ if (!class_exists('Mantrabrain_Theme_Helper')) {
         public static function css_text_transform()
         {
             return array(
-                '' => __('Default', 'yatri'),
-                'uppercase' => __('Uppercase', 'yatri'),
-                'lowercase' => __('Lowercase', 'yatri'),
-                'capitalize' => __('Capitalize', 'yatri'),
-                'none' => __('None', 'yatri'),
+                '' => esc_html__('Default', 'yatri'),
+                'uppercase' => esc_html__('Uppercase', 'yatri'),
+                'lowercase' => esc_html__('Lowercase', 'yatri'),
+                'capitalize' => esc_html__('Capitalize', 'yatri'),
+                'none' => esc_html__('None', 'yatri'),
 
             );
         }

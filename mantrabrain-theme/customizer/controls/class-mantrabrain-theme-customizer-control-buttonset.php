@@ -1,13 +1,4 @@
 <?php
-/**
- * Customizer Control: aces-buttonset.
- *
- * @package     Aces WordPress theme
- * @subpackage  Controls
- * @see        https://github.com/aristath/kirki
- * @license     http://opensource.org/licenses/https://opensource.org/licenses/MIT
- * @since       1.0
- */
 
 // Exit if accessed directly.
 if (!defined('ABSPATH')) {

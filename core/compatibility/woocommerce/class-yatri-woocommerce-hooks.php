@@ -107,7 +107,7 @@ class Yatri_WooCommerce_Hooks
     {
         woocommerce_breadcrumb(
             array(
-                'wrap_before' => '<nav role="navigation" aria-label="' . esc_html__('Breadcrumbs', 'yatri') . '" class="yatri-woo-breadcrumb-nav breadcrumb-trail breadcrumbs"><ul class="trail-items">',
+                'wrap_before' => '<nav role="navigation" aria-label="' . esc_attr__('Breadcrumbs', 'yatri') . '" class="yatri-woo-breadcrumb-nav breadcrumb-trail breadcrumbs"><ul class="trail-items">',
                 'wrap_after' => '</ul></nav>',
                 'before' => '<li class="trail-item">',
                 'after' => '</li>',

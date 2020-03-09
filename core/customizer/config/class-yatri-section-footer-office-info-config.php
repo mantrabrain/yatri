@@ -6,14 +6,14 @@ class Yatri_Section_Footer_Office_Info_Config
     {
         return array(
             'tabs' => array(
-                $id . '_color' => __('Colors', 'yatri'),
-                $id . '_spacing' => __('Spacing', 'yatri'),
+                $id . '_color' => esc_html__('Colors', 'yatri'),
+                $id . '_spacing' => esc_html__('Spacing', 'yatri'),
             ),
             $id . '_color_fields' => array(
                 array(
                     'name' => $id . '_text_color',
                     'type' => 'color',
-                    'label' => __('Text Color', 'yatri'),
+                    'label' => esc_html__('Text Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "
@@ -25,7 +25,7 @@ class Yatri_Section_Footer_Office_Info_Config
                 array(
                     'name' => $id . '_link_color',
                     'type' => 'color',
-                    'label' => __('Link Color', 'yatri'),
+                    'label' => esc_html__('Link Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .yatri-section-container.office_information-container .yatri-section-office-information ul li a.text",
@@ -34,7 +34,7 @@ class Yatri_Section_Footer_Office_Info_Config
                 array(
                     'name' => $id . '_link_hover_color',
                     'type' => 'color',
-                    'label' => __('Link Hover Color', 'yatri'),
+                    'label' => esc_html__('Link Hover Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .yatri-section-container.office_information-container .yatri-section-office-information ul li:hover a.text",
@@ -43,7 +43,7 @@ class Yatri_Section_Footer_Office_Info_Config
                 array(
                     'name' => $id . '_icon_color',
                     'type' => 'color',
-                    'label' => __('Icon Color', 'yatri'),
+                    'label' => esc_html__('Icon Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .yatri-section-container.office_information-container .yatri-section-office-information ul li span.icon",
@@ -52,7 +52,7 @@ class Yatri_Section_Footer_Office_Info_Config
                 array(
                     'name' => $id . '_list_background_color',
                     'type' => 'color',
-                    'label' => __('List Background Color', 'yatri'),
+                    'label' => esc_html__('List Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .yatri-section-container.office_information-container .yatri-section-office-information ul li",
@@ -61,7 +61,7 @@ class Yatri_Section_Footer_Office_Info_Config
                 array(
                     'name' => $id . '_list_hover_background_color',
                     'type' => 'color',
-                    'label' => __('List Hover Background Color', 'yatri'),
+                    'label' => esc_html__('List Hover Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .yatri-section-container.office_information-container .yatri-section-office-information ul li:hover",
@@ -73,7 +73,7 @@ class Yatri_Section_Footer_Office_Info_Config
                     array(
                         'name' => $id . '_alignment',
                         'type' => 'alignment',
-                        'label' => __('Alignment', 'yatri'),
+                        'label' => esc_html__('Alignment', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'desktop' => '',
@@ -88,15 +88,15 @@ class Yatri_Section_Footer_Office_Info_Config
                                 'icon' => '',
                             ),
                             'left' => array(
-                                'title' => __('Left', 'yatri'),
+                                'title' => esc_html__('Left', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-alignleft',
                             ),
                             'center' => array(
-                                'title' => __('Center', 'yatri'),
+                                'title' => esc_html__('Center', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-aligncenter',
                             ),
                             'right' => array(
-                                'title' => __('Right', 'yatri'),
+                                'title' => esc_html__('Right', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-alignright',
                             )
                         ),
@@ -108,7 +108,7 @@ class Yatri_Section_Footer_Office_Info_Config
                         'type' => 'margin',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('Icon Margin', 'yatri'),
+                        'label' => esc_html__('Icon Margin', 'yatri'),
                         'description' => '',
                         'disabled_fields' => array(
                             'desktop' => array('top', 'bottom'),
@@ -143,7 +143,7 @@ class Yatri_Section_Footer_Office_Info_Config
                         'type' => 'margin',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('List Margin', 'yatri'),
+                        'label' => esc_html__('List Margin', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'top' => array(
@@ -173,7 +173,7 @@ class Yatri_Section_Footer_Office_Info_Config
                         'type' => 'padding',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('List Padding', 'yatri'),
+                        'label' => esc_html__('List Padding', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'top' => array(
@@ -200,7 +200,7 @@ class Yatri_Section_Footer_Office_Info_Config
                     array(
                         'name' => $id . '_border_heading',
                         'type' => 'heading',
-                        'label' => __('Border', 'yatri'),
+                        'label' => esc_html__('Border', 'yatri'),
                     ),
                     array(
                         'name' => $id . '_border',

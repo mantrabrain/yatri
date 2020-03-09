@@ -6,14 +6,14 @@ class Yatri_Section_Button_Config
     {
         return array(
             'tabs' => array(
-                $id . '_color' => __('Colors', 'yatri'),
-                $id . '_spacing' => __('Spacing', 'yatri'),
+                $id . '_color' => esc_html__('Colors', 'yatri'),
+                $id . '_spacing' => esc_html__('Spacing', 'yatri'),
             ),
             $id . '_color_fields' => array(
                 array(
                     'name' => $id . '_text_color',
                     'type' => 'color',
-                    'label' => __('Text Color', 'yatri'),
+                    'label' => esc_html__('Text Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .yatri-button .yatri-button-icon, {$parent_selector} .yatri-button span",
@@ -22,7 +22,7 @@ class Yatri_Section_Button_Config
                 array(
                     'name' => $id . '_hover_text_color',
                     'type' => 'color',
-                    'label' => __('Hover Text Color', 'yatri'),
+                    'label' => esc_html__('Hover Text Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .yatri-button:hover .yatri-button-icon, {$parent_selector} .yatri-button:hover span",
@@ -31,7 +31,7 @@ class Yatri_Section_Button_Config
                 array(
                     'name' => $id . '_background_color',
                     'type' => 'color',
-                    'label' => __('Background Color', 'yatri'),
+                    'label' => esc_html__('Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .yatri-button",
@@ -40,7 +40,7 @@ class Yatri_Section_Button_Config
                 array(
                     'name' => $id . '_hover_background_color',
                     'type' => 'color',
-                    'label' => __('Hover Background Color', 'yatri'),
+                    'label' => esc_html__('Hover Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .yatri-button:hover",
@@ -52,7 +52,7 @@ class Yatri_Section_Button_Config
                     array(
                         'name' => $id . '_alignment',
                         'type' => 'alignment',
-                        'label' => __('Alignment', 'yatri'),
+                        'label' => esc_html__('Alignment', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'desktop' => '',
@@ -67,15 +67,15 @@ class Yatri_Section_Button_Config
                                 'icon' => '',
                             ),
                             'left' => array(
-                                'title' => __('Left', 'yatri'),
+                                'title' => esc_html__('Left', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-alignleft',
                             ),
                             'center' => array(
-                                'title' => __('Center', 'yatri'),
+                                'title' => esc_html__('Center', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-aligncenter',
                             ),
                             'right' => array(
-                                'title' => __('Right', 'yatri'),
+                                'title' => esc_html__('Right', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-alignright',
                             )
                         ),
@@ -87,7 +87,7 @@ class Yatri_Section_Button_Config
                         'type' => 'padding',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('Padding', 'yatri'),
+                        'label' => esc_html__('Padding', 'yatri'),
                         'description' => '',
                         'default' => array(
 
@@ -117,7 +117,7 @@ class Yatri_Section_Button_Config
                     array(
                         'name' => $id . '_border_heading',
                         'type' => 'heading',
-                        'label' => __('Border', 'yatri'),
+                        'label' => esc_html__('Border', 'yatri'),
                     ),
                     array(
                         'name' => $id . '_border',

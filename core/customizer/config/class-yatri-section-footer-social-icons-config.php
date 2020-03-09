@@ -6,14 +6,14 @@ class Yatri_Section_Footer_Social_Icons_Config
     {
         return array(
             'tabs' => array(
-                $id . '_color' => __('Colors', 'yatri'),
-                $id . '_spacing' => __('Spacing', 'yatri'),
+                $id . '_color' => esc_html__('Colors', 'yatri'),
+                $id . '_spacing' => esc_html__('Spacing', 'yatri'),
             ),
             $id . '_color_fields' => array(
                 array(
                     'name' => $id . '_icon_color',
                     'type' => 'color',
-                    'label' => __('Icon Color', 'yatri'),
+                    'label' => esc_html__('Icon Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .yatri-section-container.social_icons-container .yatri-section-social-icons ul li a span",
@@ -23,7 +23,7 @@ class Yatri_Section_Footer_Social_Icons_Config
                 array(
                     'name' => $id . '_icon_hover_color',
                     'type' => 'color',
-                    'label' => __('Icon Hover Color', 'yatri'),
+                    'label' => esc_html__('Icon Hover Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .yatri-section-container.social_icons-container .yatri-section-social-icons ul li:hover a span",
@@ -32,7 +32,7 @@ class Yatri_Section_Footer_Social_Icons_Config
                 array(
                     'name' => $id . '_background_color',
                     'type' => 'color',
-                    'label' => __('Background Color', 'yatri'),
+                    'label' => esc_html__('Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .yatri-section-container.social_icons-container .yatri-section-social-icons ul li",
@@ -41,7 +41,7 @@ class Yatri_Section_Footer_Social_Icons_Config
                 array(
                     'name' => $id . '_background_hover_color',
                     'type' => 'color',
-                    'label' => __('Hover Background Color', 'yatri'),
+                    'label' => esc_html__('Hover Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .yatri-section-container.social_icons-container .yatri-section-social-icons ul li:hover",
@@ -53,7 +53,7 @@ class Yatri_Section_Footer_Social_Icons_Config
                     array(
                         'name' => $id . '_alignment',
                         'type' => 'alignment',
-                        'label' => __('Alignment', 'yatri'),
+                        'label' => esc_html__('Alignment', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'desktop' => '',
@@ -68,15 +68,15 @@ class Yatri_Section_Footer_Social_Icons_Config
                                 'icon' => '',
                             ),
                             'left' => array(
-                                'title' => __('Left', 'yatri'),
+                                'title' => esc_html__('Left', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-alignleft',
                             ),
                             'center' => array(
-                                'title' => __('Center', 'yatri'),
+                                'title' => esc_html__('Center', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-aligncenter',
                             ),
                             'right' => array(
-                                'title' => __('Right', 'yatri'),
+                                'title' => esc_html__('Right', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-alignright',
                             )
                         ),
@@ -88,7 +88,7 @@ class Yatri_Section_Footer_Social_Icons_Config
                         'type' => 'padding',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('Padding', 'yatri'),
+                        'label' => esc_html__('Padding', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'top' => array(
@@ -117,7 +117,7 @@ class Yatri_Section_Footer_Social_Icons_Config
                         'type' => 'margin',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('Margin', 'yatri'),
+                        'label' => esc_html__('Margin', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'top' => array(
@@ -147,7 +147,7 @@ class Yatri_Section_Footer_Social_Icons_Config
                     array(
                         'name' => $id . '_border_heading',
                         'type' => 'heading',
-                        'label' => __('Border', 'yatri'),
+                        'label' => esc_html__('Border', 'yatri'),
                     ),
                     array(
                         'name' => $id . '_border',
@@ -161,7 +161,6 @@ class Yatri_Section_Footer_Social_Icons_Config
                             'top' => 0,
                             'bottom' => 0
                         ),
-                        // 'additional_css' => "@media (max-width: 768px){{$parent_selector} .yatri-section-container.social_icons-container .yatri-section-social-icons.yatri-section-inner ul li:last-child{border-bottom:auto;}} ",
                         'selector' => "{$parent_selector} .yatri-section-container.social_icons-container .yatri-section-social-icons ul li",
                     )
                 ),

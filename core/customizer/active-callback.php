@@ -155,60 +155,7 @@ if (!function_exists('yatri_single_post_related_posts_has_custom_excerpt')) :
 
 endif;
 
-// End of Single Post Callback
-if (!function_exists('yatri_blog_page_has_thumbnail')) :
 
-    function yatri_blog_page_has_thumbnail($control)
-    {
-        $yatri_blog_archive_page_content_order = yatri_blog_archive_page_content_order(false, 'blog_page_content_order');
-
-        if (is_array($yatri_blog_archive_page_content_order)) {
-
-            if (isset($yatri_blog_archive_page_content_order['thumbnail'])) {
-
-                $disable = isset($yatri_blog_archive_page_content_order['thumbnail']['disable']) ? (boolean)$yatri_blog_archive_page_content_order['thumbnail']['disable'] : false;
-
-                if ($disable) {
-                    return false;
-                } else {
-                    return true;
-                }
-            }
-            return false;
-        }
-        return false;
-
-
-    }
-
-endif;
-
-if (!function_exists('yatri_blog_page_has_meta')) :
-
-    function yatri_blog_page_has_meta($control)
-    {
-        $yatri_blog_archive_page_content_order = yatri_blog_archive_page_content_order(false, 'blog_page_content_order');
-
-        if (is_array($yatri_blog_archive_page_content_order)) {
-
-            if (isset($yatri_blog_archive_page_content_order['post_meta'])) {
-
-                $disable = isset($yatri_blog_archive_page_content_order['post_meta']['disable']) ? (boolean)$yatri_blog_archive_page_content_order['post_meta']['disable'] : false;
-
-                if ($disable) {
-                    return false;
-                } else {
-                    return true;
-                }
-            }
-            return false;
-        }
-        return false;
-
-
-    }
-
-endif;
 require_once "active-callback/logo-and-branding.php";
 require_once "active-callback/breadcrumb.php";
 require_once "active-callback/top-header.php";

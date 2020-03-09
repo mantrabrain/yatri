@@ -36,7 +36,7 @@ class Yatri_About
 
             self::$_instance->from_plugin = $from_plugin;
 
-            self::$_instance->title = __('Yatri Options', 'yatri');
+            self::$_instance->title = esc_html__('Yatri Options', 'yatri');
 
             self::$_instance->setup();
 
@@ -247,8 +247,8 @@ class Yatri_About
     {
         $current_tab = isset($_GET['tab']) ? sanitize_text_field($_GET['tab']) : '';
         $menus = array(
-            '' => __('General', 'yatri'),
-            'changelog' => __('Changelog', 'yatri')
+            '' => esc_html__('General', 'yatri'),
+            'changelog' => esc_html__('Changelog', 'yatri')
 
         );
 
@@ -413,62 +413,62 @@ class Yatri_About
 
         $links = array(
             array(
-                'label' => __('Logo & Site Identity', 'yatri'),
+                'label' => esc_html__('Logo & Site Identity', 'yatri'),
                 'url' => add_query_arg(array('autofocus' => array('section' => 'yatri_section_logo_options')), $url),
                 'icon' => 'dashicons dashicons-format-image'
             ),
             array(
-                'label' => __('Global Layouts', 'yatri'),
+                'label' => esc_html__('Global Layouts', 'yatri'),
                 'url' => add_query_arg(array('autofocus' => array('section' => 'yatri_theme_base_layouts')), $url),
                 'icon' => 'dashicons dashicons-admin-site'
             ),
             array(
-                'label' => __('Global Typography', 'yatri'),
+                'label' => esc_html__('Global Typography', 'yatri'),
                 'url' => add_query_arg(array('autofocus' => array('section' => 'yatri_theme_base_typography')), $url),
                 'icon' => 'dashicons dashicons-editor-paragraph'
             ),
             array(
-                'label' => __('Global Colors', 'yatri'),
+                'label' => esc_html__('Global Colors', 'yatri'),
                 'url' => add_query_arg(array('autofocus' => array('section' => 'colors')), $url),
                 'icon' => 'dashicons dashicons-edit'
             ),
             array(
-                'label' => __('Top Header', 'yatri'),
+                'label' => esc_html__('Top Header', 'yatri'),
                 'url' => add_query_arg(array('autofocus' => array('section' => 'yatri_section_top_header_options')), $url),
                 'icon' => 'dashicons dashicons-editor-kitchensink'
             ),
             array(
-                'label' => __('Mid Header', 'yatri'),
+                'label' => esc_html__('Mid Header', 'yatri'),
                 'url' => add_query_arg(array('autofocus' => array('section' => 'yatri_section_mid_header_options')), $url),
                 'icon' => 'dashicons dashicons-editor-kitchensink'
             ),
             array(
-                'label' => __('Main Header', 'yatri'),
+                'label' => esc_html__('Main Header', 'yatri'),
                 'url' => add_query_arg(array('autofocus' => array('section' => 'yatri_section_bottom_header_options')), $url),
                 'icon' => 'dashicons dashicons-editor-kitchensink'
             ),
             array(
-                'label' => __('Blog/Archive', 'yatri'),
+                'label' => esc_html__('Blog/Archive', 'yatri'),
                 'url' => add_query_arg(array('autofocus' => array('section' => 'yatri_section_blog_archive_page_options')), $url),
                 'icon' => 'dashicons dashicons-media-archive'
             ),
             array(
-                'label' => __('Single Post', 'yatri'),
+                'label' => esc_html__('Single Post', 'yatri'),
                 'url' => add_query_arg(array('autofocus' => array('section' => 'yatri_section_single_post_options')), $url),
                 'icon' => 'dashicons dashicons-media-default'
             ),
             array(
-                'label' => __('Single Page', 'yatri'),
+                'label' => esc_html__('Single Page', 'yatri'),
                 'url' => add_query_arg(array('autofocus' => array('section' => 'yatri_section_single_page_options')), $url),
                 'icon' => 'dashicons dashicons-media-text'
             ),
             array(
-                'label' => __('Sidebar', 'yatri'),
+                'label' => esc_html__('Sidebar', 'yatri'),
                 'url' => add_query_arg(array('autofocus' => array('section' => 'yatri_section_sidebars_options')), $url),
                 'icon' => 'dashicons dashicons-controls-pause'
             ),
             array(
-                'label' => __('Footer', 'yatri'),
+                'label' => esc_html__('Footer', 'yatri'),
                 'url' => add_query_arg(array('autofocus' => array('section' => 'yatri_section_footer_options')), $url),
                 'icon' => 'dashicons dashicons-minus'
             ),
@@ -561,7 +561,7 @@ class Yatri_About
 
                 if (class_exists('Yatri_Tools')) {
 
-                    $view_site_txt = __('View Site Library / Install Demo', 'yatri');
+                    $view_site_txt = esc_html__('View Site Library / Install Demo', 'yatri');
                     $sites_url = add_query_arg(
                         array(
                             'page' => 'yatri-tools-install-demos',
@@ -571,7 +571,7 @@ class Yatri_About
 
                 } else {
 
-                    $view_site_txt = __('Go to Yatri Options', 'yatri');
+                    $view_site_txt = esc_html__('Go to Yatri Options', 'yatri');
                     $sites_url = add_query_arg(
                         array(
                             'page' => 'yatri-panel',
@@ -675,20 +675,20 @@ class Yatri_About
         $modules = array(
 
             array(
-                'name' => __('WooCommerce Booster', 'yatri'),
-                'desc' => __('Gives you creative control of style and layout options for your shop.', 'yatri'),
+                'name' => esc_html__('WooCommerce Booster', 'yatri'),
+                'desc' => esc_html__('Gives you creative control of style and layout options for your shop.', 'yatri'),
                 'url' => '',
             ),
 
             array(
-                'name' => __('Single Product Layouts', 'yatri'),
-                'desc' => __('More beautiful layouts for your single product.', 'yatri'),
+                'name' => esc_html__('Single Product Layouts', 'yatri'),
+                'desc' => esc_html__('More beautiful layouts for your single product.', 'yatri'),
                 'url' => '',
                 'sub' => true,
             ),
 
             array(
-                'name' => __('Infinity Scroll.', 'yatri'),
+                'name' => esc_html__('Infinity Scroll.', 'yatri'),
                 'desc' => '',
                 'url' => '',
             ),

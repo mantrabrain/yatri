@@ -267,7 +267,7 @@ class Yatri_Sections
         $class = isset($options['class']) ? $options['class'] : '';
         $icon = isset($options['icon']) ? $options['icon'] : 'fas fa-search';
         $type = isset($options['type']) ? $options['type'] : 'default';
-        $placeholder = isset($options['placeholder']) ? $options['placeholder'] : __('Search', 'yatri');
+        $placeholder = isset($options['placeholder']) ? $options['placeholder'] : esc_html__('Search', 'yatri');
         ?>
         <div class="yatri-section-search-form <?php echo esc_attr($class); ?> form-type-<?php echo esc_attr($type) ?> yatri-section-inner">
             <button class="search-main"><i class="yatri-search-icon <?php echo esc_attr($icon); ?>"></i></button>

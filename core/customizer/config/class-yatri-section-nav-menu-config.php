@@ -6,15 +6,15 @@ class Yatri_Section_Nav_Menu_Config
     {
         return array(
             'tabs' => array(
-                $id . '_main_menu' => __('Main Menu', 'yatri'),
-                $id . '_dropdown_menu' => __('Dropdown', 'yatri'),
+                $id . '_main_menu' => esc_html__('Main Menu', 'yatri'),
+                $id . '_dropdown_menu' => esc_html__('Dropdown', 'yatri'),
             ),
             $id . '_main_menu_fields' =>
                 array(
                     array(
                         'name' => $id . '_nav__alignment',
                         'type' => 'alignment',
-                        'label' => __('Menu Alignment', 'yatri'),
+                        'label' => esc_html__('Menu Alignment', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'desktop' => 'center',
@@ -27,15 +27,15 @@ class Yatri_Section_Nav_Menu_Config
                                 'icon' => '',
                             ),
                             'left' => array(
-                                'title' => __('Left', 'yatri'),
+                                'title' => esc_html__('Left', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-alignleft',
                             ),
                             'center' => array(
-                                'title' => __('Center', 'yatri'),
+                                'title' => esc_html__('Center', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-aligncenter',
                             ),
                             'right' => array(
-                                'title' => __('Right', 'yatri'),
+                                'title' => esc_html__('Right', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-alignright',
                             )
                         ),
@@ -46,12 +46,12 @@ class Yatri_Section_Nav_Menu_Config
                     array(
                         'name' => $id . '_nav_color_heading',
                         'type' => 'heading',
-                        'label' => __('Menu Colors', 'yatri'),
+                        'label' => esc_html__('Menu Colors', 'yatri'),
                     ),
                     array(
                         'name' => $id . '_nav_color',
                         'type' => 'color',
-                        'label' => __('Font color', 'yatri'),
+                        'label' => esc_html__('Font color', 'yatri'),
                         'description' => '',
                         'default' => '#fff',
                         'css_property' => 'color:{{value}};',
@@ -61,7 +61,7 @@ class Yatri_Section_Nav_Menu_Config
                     array(
                         'name' => $id . '_nav_hover_color',
                         'type' => 'color',
-                        'label' => __('Hover font color', 'yatri'),
+                        'label' => esc_html__('Hover font color', 'yatri'),
                         'description' => '',
                         'default' => '#fff',
                         'css_property' => 'color:{{value}};',
@@ -75,7 +75,7 @@ class Yatri_Section_Nav_Menu_Config
                     array(
                         'name' => $id . '_nav_background_color',
                         'type' => 'color',
-                        'label' => __('Background color', 'yatri'),
+                        'label' => esc_html__('Background color', 'yatri'),
                         'description' => '',
                         'default' => '#fff',
                         'css_property' => 'background-color:{{value}};',
@@ -85,7 +85,7 @@ class Yatri_Section_Nav_Menu_Config
                     array(
                         'name' => $id . '_nav_hover_background_color',
                         'type' => 'color',
-                        'label' => __('Hover background color', 'yatri'),
+                        'label' => esc_html__('Hover background color', 'yatri'),
                         'description' => '',
                         'default' => '#fff',
                         'css_property' => 'background-color:{{value}};',
@@ -97,7 +97,7 @@ class Yatri_Section_Nav_Menu_Config
                     array(
                         'name' => $id . '_nav_active_font_color',
                         'type' => 'color',
-                        'label' => __('Active font color', 'yatri'),
+                        'label' => esc_html__('Active font color', 'yatri'),
                         'description' => '',
                         'default' => '#fff',
                         'css_property' => 'color:{{value}};',
@@ -107,7 +107,7 @@ class Yatri_Section_Nav_Menu_Config
                     array(
                         'name' => $id . '_nav_active_background_color',
                         'type' => 'color',
-                        'label' => __('Active background color', 'yatri'),
+                        'label' => esc_html__('Active background color', 'yatri'),
                         'description' => '',
                         'default' => '#fff',
                         'css_property' => 'background-color:{{value}};',
@@ -118,12 +118,12 @@ class Yatri_Section_Nav_Menu_Config
                     array(
                         'name' => $id . '_hamburger',
                         'type' => 'heading',
-                        'label' => __('Mobile/Tablet Menu', 'yatri'),
+                        'label' => esc_html__('Mobile/Tablet Menu', 'yatri'),
                     ),
                     array(
                         'name' => $id . '_hamburger_color',
                         'type' => 'color',
-                        'label' => __('Hamburger Color', 'yatri'),
+                        'label' => esc_html__('Hamburger Color', 'yatri'),
                         'description' => '',
                         'default' => '#c1c1c1',
                         'selector' => "{$parent_selector} .yatri-section-container.menu-container .yatri-responsive-toggle-menu",
@@ -132,7 +132,7 @@ class Yatri_Section_Nav_Menu_Config
                     array(
                         'name' => $id . '_nav_hamburger_alignment',
                         'type' => 'alignment',
-                        'label' => __('Hamburger Alignment', 'yatri'),
+                        'label' => esc_html__('Hamburger Alignment', 'yatri'),
                         'description' => '',
                         'default' => 'center',
                         'options' => array(
@@ -141,15 +141,15 @@ class Yatri_Section_Nav_Menu_Config
                                 'icon' => '',
                             ),
                             'left' => array(
-                                'title' => __('Left', 'yatri'),
+                                'title' => esc_html__('Left', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-alignleft',
                             ),
                             'center' => array(
-                                'title' => __('Center', 'yatri'),
+                                'title' => esc_html__('Center', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-aligncenter',
                             ),
                             'right' => array(
-                                'title' => __('Right', 'yatri'),
+                                'title' => esc_html__('Right', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-alignright',
                             )
                         ),
@@ -159,7 +159,7 @@ class Yatri_Section_Nav_Menu_Config
                     array(
                         'name' => $id . '_mobile_menu_container_background',
                         'type' => 'color',
-                        'label' => __('Mobile Menu Container Background', 'yatri'),
+                        'label' => esc_html__('Mobile Menu Container Background', 'yatri'),
                         'description' => '',
                         'default' => '#c1c1c1',
                         'selector' => "{$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu",
@@ -168,7 +168,7 @@ class Yatri_Section_Nav_Menu_Config
                     array(
                         'name' => $id . '_mobile_menu_close_color',
                         'type' => 'color',
-                        'label' => __('Mobile Menu Close Icon Color', 'yatri'),
+                        'label' => esc_html__('Mobile Menu Close Icon Color', 'yatri'),
                         'description' => '',
                         'default' => '#c1c1c1',
                         'selector' => "{$parent_selector}_navigation_menu.yatri-section-menu.yatri-mobile-menu .yatri-mobile-navigation-close",
@@ -177,14 +177,14 @@ class Yatri_Section_Nav_Menu_Config
                     array(
                         'name' => $id . '_nav_padding_margin_heading',
                         'type' => 'heading',
-                        'label' => __('Padding & Margin', 'yatri'),
+                        'label' => esc_html__('Padding & Margin', 'yatri'),
                     ),
                     array(
                         'name' => $id . '_nav_padding',
                         'type' => 'padding',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('Padding', 'yatri'),
+                        'label' => esc_html__('Padding', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'desktop' => array(
@@ -255,7 +255,7 @@ class Yatri_Section_Nav_Menu_Config
                         'type' => 'margin',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('Margin', 'yatri'),
+                        'label' => esc_html__('Margin', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'desktop' => array(
@@ -324,7 +324,7 @@ class Yatri_Section_Nav_Menu_Config
                     array(
                         'name' => $id . '_nav_border_heading',
                         'type' => 'heading',
-                        'label' => __('Main Menu Border', 'yatri'),
+                        'label' => esc_html__('Main Menu Border', 'yatri'),
                     ),
                     array(
                         'name' => $id . '_nav_border',
@@ -351,12 +351,12 @@ class Yatri_Section_Nav_Menu_Config
                 array(
                     'name' => $id . '_dropdown_nav_color_heading',
                     'type' => 'heading',
-                    'label' => __('Dropdown Menu Colors', 'yatri'),
+                    'label' => esc_html__('Dropdown Menu Colors', 'yatri'),
                 ),
                 array(
                     'name' => $id . '_dropdown_nav_color',
                     'type' => 'color',
-                    'label' => __('Dropdown font color', 'yatri'),
+                    'label' => esc_html__('Dropdown font color', 'yatri'),
                     'description' => '',
                     'default' => '#fff',
                     'css_property' => 'color:{{value}};',
@@ -368,7 +368,7 @@ class Yatri_Section_Nav_Menu_Config
                 array(
                     'name' => $id . '_dropdown_nav_hover_color',
                     'type' => 'color',
-                    'label' => __('Dropdown hover font color', 'yatri'),
+                    'label' => esc_html__('Dropdown hover font color', 'yatri'),
                     'description' => '',
                     'default' => '#fff',
                     'css_property' => 'color:{{value}};',
@@ -382,7 +382,7 @@ class Yatri_Section_Nav_Menu_Config
                 array(
                     'name' => $id . '_dropdown_nav_background_color',
                     'type' => 'color',
-                    'label' => __('Dropdown background color', 'yatri'),
+                    'label' => esc_html__('Dropdown background color', 'yatri'),
                     'description' => '',
                     'default' => '#fff',
                     'css_property' => 'background-color:{{value}};',
@@ -393,7 +393,7 @@ class Yatri_Section_Nav_Menu_Config
                 ), array(
                     'name' => $id . '_dropdown_nav_hover_background_color',
                     'type' => 'color',
-                    'label' => __('Dropdown hover background color', 'yatri'),
+                    'label' => esc_html__('Dropdown hover background color', 'yatri'),
                     'description' => '',
                     'default' => '#fff',
                     'css_property' => 'background-color:{{value}};',
@@ -407,7 +407,7 @@ class Yatri_Section_Nav_Menu_Config
                 ), array(
                     'name' => $id . '_dropdown_nav_active_font_color',
                     'type' => 'color',
-                    'label' => __('Dropdown active font color', 'yatri'),
+                    'label' => esc_html__('Dropdown active font color', 'yatri'),
                     'description' => '',
                     'default' => '#fff',
                     'css_property' => 'color:{{value}};',
@@ -418,7 +418,7 @@ class Yatri_Section_Nav_Menu_Config
                 ), array(
                     'name' => $id . '_dropdown_nav_active_background_color',
                     'type' => 'color',
-                    'label' => __('Dropdown active background color', 'yatri'),
+                    'label' => esc_html__('Dropdown active background color', 'yatri'),
                     'description' => '',
                     'default' => '#fff',
                     'css_property' => 'background-color:{{value}};',
@@ -430,14 +430,14 @@ class Yatri_Section_Nav_Menu_Config
                 array(
                     'name' => $id . '_dropdown_nav_padding_margin_heading',
                     'type' => 'heading',
-                    'label' => __('Padding & Margin', 'yatri'),
+                    'label' => esc_html__('Padding & Margin', 'yatri'),
                 ),
                 array(
                     'name' => $id . '_dropdown_nav_padding',
                     'type' => 'padding',
                     'device_settings' => true,
                     'devices' => array('desktop', 'tablet', 'mobile'),
-                    'label' => __('Padding', 'yatri'),
+                    'label' => esc_html__('Padding', 'yatri'),
                     'description' => '',
                     'default' => array(
                         'desktop' => array(
@@ -508,7 +508,7 @@ class Yatri_Section_Nav_Menu_Config
                     'type' => 'margin',
                     'device_settings' => true,
                     'devices' => array('desktop', 'tablet', 'mobile'),
-                    'label' => __('Margin', 'yatri'),
+                    'label' => esc_html__('Margin', 'yatri'),
                     'description' => '',
                     'default' => array(
                         'desktop' => array(
@@ -579,7 +579,7 @@ class Yatri_Section_Nav_Menu_Config
                 array(
                     'name' => $id . '_dropdown_nav_wrapper_margin',
                     'type' => 'margin',
-                    'label' => __('Wrapper Margin', 'yatri'),
+                    'label' => esc_html__('Wrapper Margin', 'yatri'),
                     'description' => '',
                     'selector' => "
                         {$parent_selector} .yatri-section-container.menu-container nav > ul > li:hover > ul,
@@ -591,7 +591,7 @@ class Yatri_Section_Nav_Menu_Config
                 array(
                     'name' => $id . '_nav_border_heading',
                     'type' => 'heading',
-                    'label' => __('Dropdown Menu Border', 'yatri'),
+                    'label' => esc_html__('Dropdown Menu Border', 'yatri'),
                 ),
                 array(
                     'name' => $id . '_dropdown_nav_border',

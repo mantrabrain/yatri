@@ -5,15 +5,15 @@ class Yatri_Section_Header_Config
     {
         return array(
             'tabs' => array(
-                $id . '_color' => __('Color', 'yatri'),
-                $id . '_spacing' => __('Spacing', 'yatri'),
+                $id . '_color' => esc_html__('Color', 'yatri'),
+                $id . '_spacing' => esc_html__('Spacing', 'yatri'),
             ),
             $id . '_color_fields' => array(
 
                 array(
                     'name' => $id . '_section_background_color',
                     'type' => 'color',
-                    'label' => __('Section Background Color', 'yatri'),
+                    'label' => esc_html__('Section Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$selector},
@@ -23,7 +23,7 @@ class Yatri_Section_Header_Config
                 array(
                     'name' => $id . '_section_background_image',
                     'type' => 'image',
-                    'label' => __('Section Background Image', 'yatri'),
+                    'label' => esc_html__('Section Background Image', 'yatri'),
                     'description' => '',
                     'selector' => "{$selector}",
                     'css_property' => 'background-image:{{value}};'
@@ -31,7 +31,7 @@ class Yatri_Section_Header_Config
                 array(
                     'name' => $id . '_section_overlay_color',
                     'type' => 'overlay',
-                    'label' => __('Section Background Overlay', 'yatri'),
+                    'label' => esc_html__('Section Background Overlay', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'additional_css' => "{$selector} .yat-container{position:relative;z-index:1;}",
@@ -41,7 +41,7 @@ class Yatri_Section_Header_Config
                 array(
                     'name' => $id . '_container_background_color',
                     'type' => 'color',
-                    'label' => __('Container Background Color', 'yatri'),
+                    'label' => esc_html__('Container Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$selector} .yat-container",
@@ -55,7 +55,7 @@ class Yatri_Section_Header_Config
                         'type' => 'padding',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('Section Padding', 'yatri'),
+                        'label' => esc_html__('Section Padding', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'desktop' => array(
@@ -123,7 +123,7 @@ class Yatri_Section_Header_Config
                         'type' => 'margin',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('Section Margin', 'yatri'),
+                        'label' => esc_html__('Section Margin', 'yatri'),
                         'description' => '',
                         'disabled_fields' => array(
                             'desktop' => array('right', 'left'),
@@ -197,7 +197,7 @@ class Yatri_Section_Header_Config
                         'type' => 'padding',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('Container Padding', 'yatri'),
+                        'label' => esc_html__('Container Padding', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'desktop' => array(
@@ -265,7 +265,7 @@ class Yatri_Section_Header_Config
                     array(
                         'name' => $id . '_section_border_heading',
                         'type' => 'heading',
-                        'label' => __('Section Border', 'yatri'),
+                        'label' => esc_html__('Section Border', 'yatri'),
                     ),
                     array(
                         'name' => $id . '_section_border',
@@ -285,7 +285,7 @@ class Yatri_Section_Header_Config
                     array(
                         'name' => $id . '_container_border_heading',
                         'type' => 'heading',
-                        'label' => __('Container Border', 'yatri'),
+                        'label' => esc_html__('Container Border', 'yatri'),
                     ),
                     array(
                         'name' => $id . '_container_border',

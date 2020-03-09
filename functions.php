@@ -10,7 +10,7 @@
  * @since 1.0.0
  */
 
-define('YATRI_THEME_VERSION', '1.0.5');
+define('YATRI_THEME_VERSION', '1.0.6');
 define('YATRI_THEME_SETTINGS', 'yatri_theme_options');
 define('YATRI_THEME_OPTION_PANEL', 'yatri_theme_option_panel');
 define('YATRI_THEME_DIR', trailingslashit(get_template_directory()));
@@ -24,6 +24,7 @@ if (!function_exists('yat_fs')) {
     if (class_exists('Yatri_Tools') &&
         defined('YATRI_TOOLS_ABSPATH') &&
         file_exists(YATRI_TOOLS_ABSPATH . 'includes/freemius/start.php')
+
     ) {
         // Create a helper function for easy SDK access.
         function yat_fs()
@@ -59,10 +60,12 @@ if (!function_exists('yat_fs')) {
             return $yat_fs;
         }
 
-        // Init Freemius.
-        yat_fs();
-        // Signal that SDK was initiated.
-        do_action('yat_fs_loaded');
+        if (is_admin()) {
+            // Init Freemius.
+            yat_fs();
+            // Signal that SDK was initiated.
+            do_action('yat_fs_loaded');
+        }
     }
 }
 

@@ -6,15 +6,15 @@ class Yatri_Section_Content_Config
     {
         return array(
             'tabs' => array(
-                $id . '_color' => __('Colors', 'yatri'),
-                $id . '_spacing' => __('Spacing', 'yatri'),
+                $id . '_color' => esc_html__('Colors', 'yatri'),
+                $id . '_spacing' => esc_html__('Spacing', 'yatri'),
             ),
             $id . '_color_fields' => array(
 
                 array(
                     'name' => $id . '_background_color',
                     'type' => 'color',
-                    'label' => __('Background Color', 'yatri'),
+                    'label' => esc_html__('Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$selector}",
@@ -23,7 +23,7 @@ class Yatri_Section_Content_Config
                 array(
                     'name' => $id . '_background_image',
                     'type' => 'image',
-                    'label' => __('Background Image', 'yatri'),
+                    'label' => esc_html__('Background Image', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$selector}",
@@ -37,7 +37,7 @@ class Yatri_Section_Content_Config
                         'type' => 'padding',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('Padding', 'yatri'),
+                        'label' => esc_html__('Padding', 'yatri'),
                         'description' => '',
                         'default' => array(
 
@@ -68,7 +68,7 @@ class Yatri_Section_Content_Config
                     array(
                         'name' => $id . '_border_heading',
                         'type' => 'heading',
-                        'label' => __('Border', 'yatri'),
+                        'label' => esc_html__('Border', 'yatri'),
                     ),
                     array(
                         'name' => $id . '_border',

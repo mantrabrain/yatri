@@ -16,7 +16,9 @@ if (!class_exists('Mantrabrain_Theme_Breadcrumbs')) {
 
         public function breadcrumb_trail($args = array())
         {
-            include_once "class-breadcrumb-trail.php";
+            if(!class_exists('Breadcrumb_Trail')) {
+                include_once "class-breadcrumb-trail.php";
+            }
 
             $breadcrumb = apply_filters('mantrabrain_theme_breadcrumb_trail_object', null, $args);
 

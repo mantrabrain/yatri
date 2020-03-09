@@ -6,19 +6,19 @@ class Yatri_Section_Sidebar_Config
     {
         return array(
             'tabs' => array(
-                $id . '_color' => __('Colors', 'yatri'),
-                $id . '_spacing' => __('Spacing', 'yatri'),
+                $id . '_color' => esc_html__('Colors', 'yatri'),
+                $id . '_spacing' => esc_html__('Spacing', 'yatri'),
             ),
             $id . '_color_fields' => array(
                 array(
                     'name' => $id . '_sidebar_heading',
                     'type' => 'heading',
-                    'label' => __('Sidebar', 'yatri'),
+                    'label' => esc_html__('Sidebar', 'yatri'),
                 ),
                 array(
                     'name' => $id . '_sidebar_background_color',
                     'type' => 'color',
-                    'label' => __('Sidebar Background Color', 'yatri'),
+                    'label' => esc_html__('Sidebar Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector}",
@@ -27,7 +27,7 @@ class Yatri_Section_Sidebar_Config
                 array(
                     'name' => $id . '_sidebar_background_image',
                     'type' => 'image',
-                    'label' => __('Sidebar Background Image', 'yatri'),
+                    'label' => esc_html__('Sidebar Background Image', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector}",
@@ -36,12 +36,12 @@ class Yatri_Section_Sidebar_Config
                 array(
                     'name' => $id . '_widgets_heading',
                     'type' => 'heading',
-                    'label' => __('Widgets', 'yatri'),
+                    'label' => esc_html__('Widgets', 'yatri'),
                 ),
                 array(
                     'name' => $id . '_widget_background_color',
                     'type' => 'color',
-                    'label' => __('Background Color', 'yatri'),
+                    'label' => esc_html__('Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .widget",
@@ -50,7 +50,7 @@ class Yatri_Section_Sidebar_Config
                 array(
                     'name' => $id . '_widget_title_color',
                     'type' => 'color',
-                    'label' => __('Title Color', 'yatri'),
+                    'label' => esc_html__('Title Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .widget-title,
@@ -61,7 +61,7 @@ class Yatri_Section_Sidebar_Config
                 array(
                     'name' => $id . '_widget_title_background_color',
                     'type' => 'color',
-                    'label' => __('Title Background Color', 'yatri'),
+                    'label' => esc_html__('Title Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .widget-title,
@@ -72,7 +72,7 @@ class Yatri_Section_Sidebar_Config
                 array(
                     'name' => $id . '_widget_text_color',
                     'type' => 'color',
-                    'label' => __('Text Color', 'yatri'),
+                    'label' => esc_html__('Text Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector},
@@ -87,7 +87,7 @@ class Yatri_Section_Sidebar_Config
                 array(
                     'name' => $id . '_widget_link_color',
                     'type' => 'color',
-                    'label' => __('Link Color', 'yatri'),
+                    'label' => esc_html__('Link Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} a",
@@ -96,7 +96,7 @@ class Yatri_Section_Sidebar_Config
                 array(
                     'name' => $id . '_widget_link_hover_color',
                     'type' => 'color',
-                    'label' => __('Link Hover Color', 'yatri'),
+                    'label' => esc_html__('Link Hover Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} a:hover",
@@ -108,14 +108,14 @@ class Yatri_Section_Sidebar_Config
                     array(
                         'name' => $id . '_spacing_sidebar_heading',
                         'type' => 'heading',
-                        'label' => __('Sidebar', 'yatri'),
+                        'label' => esc_html__('Sidebar', 'yatri'),
                     ),
                     array(
                         'name' => $id . '_sidebar_padding',
                         'type' => 'padding',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('Padding', 'yatri'),
+                        'label' => esc_html__('Padding', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'top' => array(
@@ -142,7 +142,7 @@ class Yatri_Section_Sidebar_Config
                     array(
                         'name' => $id . '_content_alignment',
                         'type' => 'alignment',
-                        'label' => __('Content Alignment', 'yatri'),
+                        'label' => esc_html__('Content Alignment', 'yatri'),
                         'description' => '',
                         'default' => 'left',
                         'options' => array(
@@ -151,15 +151,15 @@ class Yatri_Section_Sidebar_Config
                                 'icon' => '',
                             ),
                             'left' => array(
-                                'title' => __('Left', 'yatri'),
+                                'title' => esc_html__('Left', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-alignleft',
                             ),
                             'center' => array(
-                                'title' => __('Center', 'yatri'),
+                                'title' => esc_html__('Center', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-aligncenter',
                             ),
                             'right' => array(
-                                'title' => __('Right', 'yatri'),
+                                'title' => esc_html__('Right', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-alignright',
                             )
                         ),
@@ -169,14 +169,14 @@ class Yatri_Section_Sidebar_Config
                     array(
                         'name' => $id . '_spacing_widgets_heading',
                         'type' => 'heading',
-                        'label' => __('Widgets', 'yatri'),
+                        'label' => esc_html__('Widgets', 'yatri'),
                     ),
                     array(
                         'name' => $id . '_widget_padding',
                         'type' => 'padding',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('Widgets Padding', 'yatri'),
+                        'label' => esc_html__('Widgets Padding', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'top' => array(
@@ -205,7 +205,7 @@ class Yatri_Section_Sidebar_Config
                         'type' => 'margin',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('Widgets Margin', 'yatri'),
+                        'label' => esc_html__('Widgets Margin', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'top' => array(
@@ -236,7 +236,7 @@ class Yatri_Section_Sidebar_Config
                         'type' => 'padding',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('Widget Title Padding', 'yatri'),
+                        'label' => esc_html__('Widget Title Padding', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'top' => array(
@@ -267,7 +267,7 @@ class Yatri_Section_Sidebar_Config
                         'type' => 'margin',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('Widget Title Margin', 'yatri'),
+                        'label' => esc_html__('Widget Title Margin', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'top' => array(
@@ -298,7 +298,7 @@ class Yatri_Section_Sidebar_Config
                     array(
                         'name' => $id . '_spacing_sidebar_border',
                         'type' => 'heading',
-                        'label' => __('Sidebar Border', 'yatri'),
+                        'label' => esc_html__('Sidebar Border', 'yatri'),
                     ),
                     array(
                         'name' => $id . '_sidebar_border',
@@ -318,7 +318,7 @@ class Yatri_Section_Sidebar_Config
                     array(
                         'name' => $id . '_spacing_widgets_border',
                         'type' => 'heading',
-                        'label' => __('Widgets Border', 'yatri'),
+                        'label' => esc_html__('Widgets Border', 'yatri'),
                     ),
                     array(
                         'name' => $id . '_widgets_border',
@@ -337,7 +337,7 @@ class Yatri_Section_Sidebar_Config
                     array(
                         'name' => $id . '_spacing_widget_title_border',
                         'type' => 'heading',
-                        'label' => __('Widget Title Border', 'yatri'),
+                        'label' => esc_html__('Widget Title Border', 'yatri'),
                     ),
                     array(
                         'name' => $id . '_widget_title_border',

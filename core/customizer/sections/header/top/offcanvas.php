@@ -38,8 +38,8 @@ $wp_customize->add_control(yatri_get_customizer_id('top_header_offcanvas_open_fr
         'type' => 'select',
         'priority' => 820,
         'choices' => array(
-            'left' => __('Left', 'yatri'),
-            'right' => __('Right', 'yatri'),
+            'left' => esc_html__('Left', 'yatri'),
+            'right' => esc_html__('Right', 'yatri'),
         ),
         'active_callback' => 'yatri_is_top_header_offcanvas_enabled'
 

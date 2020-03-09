@@ -123,24 +123,3 @@ $wp_customize->add_control(
         )
     )
 );
-
-/*// Setting show_logo_abc.
-$wp_customize->add_setting(yatri_get_customizer_id('show_logo_abc'),
-    array(
-        'default' => $default['show_logo_abc'],
-        'sanitize_callback' => 'yatri_sanitize_checkbox',
-    )
-);
-
-$wp_customize->add_control(
-    new Mantrabrain_Theme_Customizer_Control_Switch(
-        $wp_customize,
-        yatri_get_customizer_id('show_logo_abc'),
-        array(
-            'label' => esc_html__('Show Top Header', 'yatri'),
-            'section' => 'yatri_section_logo_options',
-            'priority' => 20,
-
-        )
-    )
-);*/

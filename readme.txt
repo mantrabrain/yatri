@@ -4,8 +4,8 @@ Tags: blog, grid-Layout, two-columns, left-sidebar, right-sidebar, custom-backgr
 Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 5.3.2
-Version: 1.0.5
-Stable tag: 1.0.5
+Version: 1.0.6
+Stable tag: 1.0.6
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -44,8 +44,22 @@ License: SIL Open Font License, 1.1 - scripts.sil.org/OFL
 Source: http://fontawesome.io/, (C) Dave Gandy
 License: (CSS)[MIT](http://opensource.org/licenses/MIT), (Fonts)[SIL OFL 1.1](http://scripts.sil.org/OFL)
 
+- Select2:
+Source: https://github.com/select2/select2/, (C)  Kevin Brown, Igor Vaynberg, and Select2 contributors
+License: (JS/CSS)[MIT](http://opensource.org/licenses/MIT)
+
+- wp-color-picker-alpha
+Source: https://github.com/kallookoo/wp-color-picker-alpha
+License: [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+
 - Breadcrumb Trail
 (C) 2008 - 2015, Justin Tadlock (http://themehybrid.com/plugins/breadcrumb-trail/), [GPLv2](https://www.gnu.org/licenses/gpl-2.0.html)
+
+- Bootstrap
+(C) 2011 - 2018, The Bootstrap Authors [MIT] (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+
+- TGM Plugin Activation
+ (C) 2011, TGMPA (https://github.com/TGMPA/TGM-Plugin-Activation/), [GPLv2](https://www.gnu.org/licenses/gpl-2.0.html)
 
 == Images ==
 

@@ -6,14 +6,14 @@ class Yatri_Section_Custom_HTML_Config
     {
         return array(
             'tabs' => array(
-                $id . '_color' => __('Colors', 'yatri'),
-                $id . '_spacing' => __('Spacing', 'yatri'),
+                $id . '_color' => esc_html__('Colors', 'yatri'),
+                $id . '_spacing' => esc_html__('Spacing', 'yatri'),
             ),
             $id . '_color_fields' => array(
                 array(
                     'name' => $id . '_background_color',
                     'type' => 'color',
-                    'label' => __('Background Color', 'yatri'),
+                    'label' => esc_html__('Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .yatri-section-container.custom_html-container .yatri-section-inner",
@@ -22,7 +22,7 @@ class Yatri_Section_Custom_HTML_Config
                 array(
                     'name' => $id . '_text_color',
                     'type' => 'color',
-                    'label' => __('Text Color', 'yatri'),
+                    'label' => esc_html__('Text Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "
@@ -34,7 +34,7 @@ class Yatri_Section_Custom_HTML_Config
                 array(
                     'name' => $id . '_link_color',
                     'type' => 'color',
-                    'label' => __('Link Color', 'yatri'),
+                    'label' => esc_html__('Link Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .yatri-section-container.custom_html-container .yatri-section-inner a",
@@ -44,7 +44,7 @@ class Yatri_Section_Custom_HTML_Config
                 array(
                     'name' => $id . '_link_hover_color',
                     'type' => 'color',
-                    'label' => __('Link Hover Color', 'yatri'),
+                    'label' => esc_html__('Link Hover Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .yatri-section-container.custom_html-container .yatri-section-inner a:hover",
@@ -56,7 +56,7 @@ class Yatri_Section_Custom_HTML_Config
                     array(
                         'name' => $id . '_alignment',
                         'type' => 'alignment',
-                        'label' => __('Alignment', 'yatri'),
+                        'label' => esc_html__('Alignment', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'desktop' => '',
@@ -71,15 +71,15 @@ class Yatri_Section_Custom_HTML_Config
                                 'icon' => '',
                             ),
                             'left' => array(
-                                'title' => __('Left', 'yatri'),
+                                'title' => esc_html__('Left', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-alignleft',
                             ),
                             'center' => array(
-                                'title' => __('Center', 'yatri'),
+                                'title' => esc_html__('Center', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-aligncenter',
                             ),
                             'right' => array(
-                                'title' => __('Right', 'yatri'),
+                                'title' => esc_html__('Right', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-alignright',
                             )
                         ),
@@ -91,7 +91,7 @@ class Yatri_Section_Custom_HTML_Config
                         'type' => 'padding',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('Padding', 'yatri'),
+                        'label' => esc_html__('Padding', 'yatri'),
                         'description' => '',
                         'default' => array(
 
@@ -121,7 +121,7 @@ class Yatri_Section_Custom_HTML_Config
                     array(
                         'name' => $id . '_border_heading',
                         'type' => 'heading',
-                        'label' => __('Border', 'yatri'),
+                        'label' => esc_html__('Border', 'yatri'),
                     ),
                     array(
                         'name' => $id . '_border',

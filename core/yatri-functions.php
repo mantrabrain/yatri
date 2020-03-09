@@ -97,8 +97,8 @@ if (!function_exists('yatri_global_layout_options')) :
     {
 
         $layout_options = apply_filters('yatri_global_layout_options', array(
-            'boxed' => __('Boxed', 'yatri'),
-            'full_width' => __('Full Width ', 'yatri'),
+            'boxed' => esc_html__('Boxed', 'yatri'),
+            'full_width' => esc_html__('Full Width ', 'yatri'),
         ));
 
         return $layout_options;
@@ -243,28 +243,28 @@ if (!function_exists('yatri_blog_archive_page_content_order')) {
                  'excerpt'*/
                 'thumbnail' =>
                     array(
-                        'title' => __('Thumbnail', 'yatri'),
+                        'title' => esc_html__('Thumbnail', 'yatri'),
                         'disable' => false
 
                     ),
 
                 'post_title' => array(
-                    'title' => __('Post Title', 'yatri'),
+                    'title' => esc_html__('Post Title', 'yatri'),
                     'disable' => false
 
                 ),
                 'post_meta' => array(
-                    'title' => __('Post Meta', 'yatri'),
+                    'title' => esc_html__('Post Meta', 'yatri'),
                     'disable' => false
 
                 ),
                 'excerpt' => array(
-                    'title' => __('Excerpt', 'yatri'),
+                    'title' => esc_html__('Excerpt', 'yatri'),
                     'disable' => false
 
                 ),
                 'category' => array(
-                    'title' => __('Category/Tags', 'yatri'),
+                    'title' => esc_html__('Category/Tags', 'yatri'),
                     'disable' => false
 
                 ),
@@ -306,56 +306,56 @@ if (!function_exists('yatri_single_post_content_order')) {
 
                 'thumbnail' =>
                     array(
-                        'title' => __('Thumbnail', 'yatri'),
+                        'title' => esc_html__('Thumbnail', 'yatri'),
                         'disable' => false
 
                     ),
                 'post_title' => array(
-                    'title' => __('Post Title', 'yatri'),
+                    'title' => esc_html__('Post Title', 'yatri'),
                     'disable' => false
 
                 ),
                 'post_meta' =>
                     array(
-                        'title' => __('Post Meta', 'yatri'),
+                        'title' => esc_html__('Post Meta', 'yatri'),
                         'disable' => false
 
                     ),
                 'content' =>
                     array(
-                        'title' => __('Content', 'yatri'),
+                        'title' => esc_html__('Content', 'yatri'),
                         'disable' => false
 
                     ),
 
                 'tags' => array(
-                    'title' => __('Tags', 'yatri'),
+                    'title' => esc_html__('Tags', 'yatri'),
                     'disable' => true
 
                 ),
                 'categories' => array(
-                    'title' => __('Categories', 'yatri'),
+                    'title' => esc_html__('Categories', 'yatri'),
                     'disable' => false
 
                 ),
 
                 'author_bio' => array(
-                    'title' => __('Author Bio', 'yatri'),
+                    'title' => esc_html__('Author Bio', 'yatri'),
                     'disable' => false
 
                 ),
                 'comment_form' => array(
-                    'title' => __('Comment Form', 'yatri'),
+                    'title' => esc_html__('Comment Form', 'yatri'),
                     'disable' => false
 
                 ),
                 'post_navigation' => array(
-                    'title' => __('Post Navigation', 'yatri'),
+                    'title' => esc_html__('Post Navigation', 'yatri'),
                     'disable' => false
 
                 ),
                 'related_posts' => array(
-                    'title' => __('Related Posts', 'yatri'),
+                    'title' => esc_html__('Related Posts', 'yatri'),
                     'disable' => false
 
                 ),
@@ -395,24 +395,18 @@ if (!function_exists('yatri_meta_content_order')) {
 
                 'author' =>
                     array(
-                        'title' => __('Author', 'yatri'),
+                        'title' => esc_html__('Author', 'yatri'),
                         'disable' => false
 
                     ),
                 'date' =>
                     array(
-                        'title' => __('Date', 'yatri'),
+                        'title' => esc_html__('Date', 'yatri'),
                         'disable' => false
 
                     ),
-                /* 'categories' =>
-                     array(
-                         'title' => __('Categories', 'yatri'),
-                         'disable' => false
-
-                     ),*/
                 'comment' => array(
-                    'title' => __('Comment', 'yatri'),
+                    'title' => esc_html__('Comment', 'yatri'),
                     'disable' => false
 
                 ),
@@ -474,8 +468,8 @@ if (!function_exists('yatri_meta_style_list')) {
     function yatri_meta_style_list()
     {
         return apply_filters('yatri_meta_style_list', array(
-            'with_icon' => __('Style 1 ( Meta with icon )', 'yatri'),
-            'without_icon' => __('Style 2 ( Meta without icon )', 'yatri')
+            'with_icon' => esc_html__('Style 1 ( Meta with icon )', 'yatri'),
+            'without_icon' => esc_html__('Style 2 ( Meta without icon )', 'yatri')
         ));
     }
 }
@@ -485,15 +479,15 @@ if (!function_exists('yatri_heading_tags')) {
     function yatri_heading_tags()
     {
         return apply_filters('yatri_heading_tag_list', array(
-            'h1' => __('H1', 'yatri'),
-            'h2' => __('H2', 'yatri'),
-            'h3' => __('H3', 'yatri'),
-            'h4' => __('H4', 'yatri'),
-            'h5' => __('H5', 'yatri'),
-            'h6' => __('H6', 'yatri'),
-            'div' => __('div', 'yatri'),
-            'span' => __('span', 'yatri'),
-            'p' => __('p', 'yatri'),
+            'h1' => esc_html__('H1', 'yatri'),
+            'h2' => esc_html__('H2', 'yatri'),
+            'h3' => esc_html__('H3', 'yatri'),
+            'h4' => esc_html__('H4', 'yatri'),
+            'h5' => esc_html__('H5', 'yatri'),
+            'h6' => esc_html__('H6', 'yatri'),
+            'div' => esc_html__('div', 'yatri'),
+            'span' => esc_html__('span', 'yatri'),
+            'p' => esc_html__('p', 'yatri'),
 
         ));
     }
@@ -503,8 +497,8 @@ if (!function_exists('yatri_content_layouts')) {
     function yatri_content_layouts()
     {
         return apply_filters('yatri_content_layouts', array(
-            'yatri_list_layout' => __('List Layout', 'yatri'),
-            //'yatri_grid_layout' => __('Grid Layout', 'yatri'),
+            'yatri_list_layout' => esc_html__('List Layout', 'yatri'),
+            //'yatri_grid_layout' => esc_html__('Grid Layout', 'yatri'),
 
         ));
     }
@@ -514,9 +508,9 @@ if (!function_exists('yatri_page_title_position')) {
     function yatri_page_title_position()
     {
         return apply_filters('yatri_page_title_position', array(
-            'inside_breadcrumb' => __('Inside Breadcrumb', 'yatri'),
-            'inside_content' => __('Inside Content', 'yatri'),
-            'none' => __('None', 'yatri'),
+            'inside_breadcrumb' => esc_html__('Inside Breadcrumb', 'yatri'),
+            'inside_content' => esc_html__('Inside Content', 'yatri'),
+            'none' => esc_html__('None', 'yatri'),
 
         ));
     }
@@ -527,8 +521,8 @@ if (!function_exists('yatri_pagination_style')) {
     function yatri_pagination_style()
     {
         return apply_filters('yatri_pagination_styles', array(
-            'next_prev' => __('Next/Prev', 'yatri'),
-            'numeric' => __('Numeric', 'yatri'),
+            'next_prev' => esc_html__('Next/Prev', 'yatri'),
+            'numeric' => esc_html__('Numeric', 'yatri'),
 
         ));
     }
@@ -541,8 +535,8 @@ if (!function_exists('yatri_get_excerpt_type')) {
     {
 
         return apply_filters('yatri_excerpt_type', array(
-            'custom' => __('Custom', 'yatri'),
-            'excerpt_metabox' => __('Use excerpt metabox', 'yatri'),
+            'custom' => esc_html__('Custom', 'yatri'),
+            'excerpt_metabox' => esc_html__('Use excerpt metabox', 'yatri'),
 
         ));
     }
@@ -554,11 +548,11 @@ if (!function_exists('yatri_sidebar_styles')) {
     {
 
         return apply_filters('yatri_sidebar_styles', array(
-            '' => __('Default', 'yatri'),
-            'left' => __('Left sidebar', 'yatri'),
-            'right' => __('Right sidebar', 'yatri'),
-            'both' => __('Both Sidebars', 'yatri'),
-            'no' => __('No Sidebar', 'yatri'),
+            '' => esc_html__('Default', 'yatri'),
+            'left' => esc_html__('Left sidebar', 'yatri'),
+            'right' => esc_html__('Right sidebar', 'yatri'),
+            'both' => esc_html__('Both Sidebars', 'yatri'),
+            'no' => esc_html__('No Sidebar', 'yatri'),
 
         ));
     }
@@ -594,8 +588,8 @@ if (!function_exists('yatri_get_post_taxonomy')) {
     function yatri_get_post_taxonomy()
     {
         return apply_filters('yatr_post_taxonomy', array(
-            'category' => __('Category', 'yatri'),
-            'tag' => __('Tag', 'yatri'),
+            'category' => esc_html__('Category', 'yatri'),
+            'tag' => esc_html__('Tag', 'yatri'),
         ));
 
     }

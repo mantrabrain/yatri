@@ -6,19 +6,19 @@ class Yatri_Section_Offcanvas_Config
     {
         return array(
             'tabs' => array(
-                $id . '_color' => __('Colors', 'yatri'),
-                $id . '_spacing' => __('Spacing', 'yatri'),
+                $id . '_color' => esc_html__('Colors', 'yatri'),
+                $id . '_spacing' => esc_html__('Spacing', 'yatri'),
             ),
             $id . '_color_fields' => array(
                 array(
                     'name' => $id . '_icon_heading',
                     'type' => 'heading',
-                    'label' => __('Icons', 'yatri'),
+                    'label' => esc_html__('Icons', 'yatri'),
                 ),
                 array(
                     'name' => $id . '_icon_color',
                     'type' => 'color',
-                    'label' => __('Icon Color', 'yatri'),
+                    'label' => esc_html__('Icon Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-toggle-wrap span.toggle-icon,
@@ -29,7 +29,7 @@ class Yatri_Section_Offcanvas_Config
                 array(
                     'name' => $id . '_icon_hover_color',
                     'type' => 'color',
-                    'label' => __('Icon Hover Color', 'yatri'),
+                    'label' => esc_html__('Icon Hover Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-toggle-wrap:hover span.toggle-icon",
@@ -38,7 +38,7 @@ class Yatri_Section_Offcanvas_Config
                 array(
                     'name' => $id . '_close_icon_color',
                     'type' => 'color',
-                    'label' => __('Close Icon Color', 'yatri'),
+                    'label' => esc_html__('Close Icon Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-toggle-wrap span.toggle-icon,
@@ -49,7 +49,7 @@ class Yatri_Section_Offcanvas_Config
                 array(
                     'name' => $id . '_close_icon_hover_color',
                     'type' => 'color',
-                    'label' => __('Close Icon Hover Color', 'yatri'),
+                    'label' => esc_html__('Close Icon Hover Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} .yatri-section-offcanvas-menu .yatri-toggle-wrap span.toggle-icon:hover,
@@ -59,7 +59,7 @@ class Yatri_Section_Offcanvas_Config
                 array(
                     'name' => $id . '_close_icon_background_color',
                     'type' => 'color',
-                    'label' => __('Close Icon Inside Background Color', 'yatri'),
+                    'label' => esc_html__('Close Icon Inside Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .yatri-canvas-close",
@@ -68,12 +68,12 @@ class Yatri_Section_Offcanvas_Config
                 array(
                     'name' => $id . '_sidebar_heading',
                     'type' => 'heading',
-                    'label' => __('Sidebar', 'yatri'),
+                    'label' => esc_html__('Sidebar', 'yatri'),
                 ),
                 array(
                     'name' => $id . '_sidebar_background_color',
                     'type' => 'color',
-                    'label' => __('Sidebar Background Color', 'yatri'),
+                    'label' => esc_html__('Sidebar Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content",
@@ -82,7 +82,7 @@ class Yatri_Section_Offcanvas_Config
                 array(
                     'name' => $id . '_sidebar_background_image',
                     'type' => 'image',
-                    'label' => __('Sidebar Background Image', 'yatri'),
+                    'label' => esc_html__('Sidebar Background Image', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content",
@@ -91,12 +91,12 @@ class Yatri_Section_Offcanvas_Config
                 array(
                     'name' => $id . '_widgets_heading',
                     'type' => 'heading',
-                    'label' => __('Widgets', 'yatri'),
+                    'label' => esc_html__('Widgets', 'yatri'),
                 ),
                 array(
                     'name' => $id . '_widget_background_color',
                     'type' => 'color',
-                    'label' => __('Background Color', 'yatri'),
+                    'label' => esc_html__('Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .widget",
@@ -105,7 +105,7 @@ class Yatri_Section_Offcanvas_Config
                 array(
                     'name' => $id . '_widget_title_color',
                     'type' => 'color',
-                    'label' => __('Title Color', 'yatri'),
+                    'label' => esc_html__('Title Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .widget-title,
@@ -116,7 +116,7 @@ class Yatri_Section_Offcanvas_Config
                 array(
                     'name' => $id . '_widget_title_background_color',
                     'type' => 'color',
-                    'label' => __('Title Background Color', 'yatri'),
+                    'label' => esc_html__('Title Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content .widget-title,
@@ -127,7 +127,7 @@ class Yatri_Section_Offcanvas_Config
                 array(
                     'name' => $id . '_widget_text_color',
                     'type' => 'color',
-                    'label' => __('Text Color', 'yatri'),
+                    'label' => esc_html__('Text Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content,
@@ -142,7 +142,7 @@ class Yatri_Section_Offcanvas_Config
                 array(
                     'name' => $id . '_widget_link_color',
                     'type' => 'color',
-                    'label' => __('Link Color', 'yatri'),
+                    'label' => esc_html__('Link Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content a",
@@ -151,7 +151,7 @@ class Yatri_Section_Offcanvas_Config
                 array(
                     'name' => $id . '_widget_link_hover_color',
                     'type' => 'color',
-                    'label' => __('Link Hover Color', 'yatri'),
+                    'label' => esc_html__('Link Hover Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector}_offcanvas_menu.yatri-offcanvas-menu-content a:hover",
@@ -163,7 +163,7 @@ class Yatri_Section_Offcanvas_Config
                     array(
                         'name' => $id . '_alignment',
                         'type' => 'alignment',
-                        'label' => __('Icon Alignment', 'yatri'),
+                        'label' => esc_html__('Icon Alignment', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'desktop' => '',
@@ -178,15 +178,15 @@ class Yatri_Section_Offcanvas_Config
                                 'icon' => '',
                             ),
                             'left' => array(
-                                'title' => __('Left', 'yatri'),
+                                'title' => esc_html__('Left', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-alignleft',
                             ),
                             'center' => array(
-                                'title' => __('Center', 'yatri'),
+                                'title' => esc_html__('Center', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-aligncenter',
                             ),
                             'right' => array(
-                                'title' => __('Right', 'yatri'),
+                                'title' => esc_html__('Right', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-alignright',
                             )
                         ),
@@ -196,14 +196,14 @@ class Yatri_Section_Offcanvas_Config
                     array(
                         'name' => $id . '_spacing_sidebar_heading',
                         'type' => 'heading',
-                        'label' => __('Sidebar', 'yatri'),
+                        'label' => esc_html__('Sidebar', 'yatri'),
                     ),
                     array(
                         'name' => $id . '_offcanvas_content_padding',
                         'type' => 'padding',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('Padding', 'yatri'),
+                        'label' => esc_html__('Padding', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'top' => array(
@@ -230,7 +230,7 @@ class Yatri_Section_Offcanvas_Config
                     array(
                         'name' => $id . '_offcanvas_content_alignment',
                         'type' => 'alignment',
-                        'label' => __('Content Alignment', 'yatri'),
+                        'label' => esc_html__('Content Alignment', 'yatri'),
                         'description' => '',
                         'default' => 'left',
                         'options' => array(
@@ -239,15 +239,15 @@ class Yatri_Section_Offcanvas_Config
                                 'icon' => '',
                             ),
                             'left' => array(
-                                'title' => __('Left', 'yatri'),
+                                'title' => esc_html__('Left', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-alignleft',
                             ),
                             'center' => array(
-                                'title' => __('Center', 'yatri'),
+                                'title' => esc_html__('Center', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-aligncenter',
                             ),
                             'right' => array(
-                                'title' => __('Right', 'yatri'),
+                                'title' => esc_html__('Right', 'yatri'),
                                 'icon' => 'dashicons dashicons-editor-alignright',
                             )
                         ),
@@ -257,14 +257,14 @@ class Yatri_Section_Offcanvas_Config
                     array(
                         'name' => $id . '_spacing_widgets_heading',
                         'type' => 'heading',
-                        'label' => __('Widgets', 'yatri'),
+                        'label' => esc_html__('Widgets', 'yatri'),
                     ),
                     array(
                         'name' => $id . '_offcanvas_content_widget_padding',
                         'type' => 'padding',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('Widgets Padding', 'yatri'),
+                        'label' => esc_html__('Widgets Padding', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'top' => array(
@@ -293,7 +293,7 @@ class Yatri_Section_Offcanvas_Config
                         'type' => 'margin',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('Widgets Margin', 'yatri'),
+                        'label' => esc_html__('Widgets Margin', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'top' => array(
@@ -324,7 +324,7 @@ class Yatri_Section_Offcanvas_Config
                         'type' => 'padding',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('Widget Title Padding', 'yatri'),
+                        'label' => esc_html__('Widget Title Padding', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'top' => array(
@@ -355,7 +355,7 @@ class Yatri_Section_Offcanvas_Config
                         'type' => 'margin',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('Widget Title Margin', 'yatri'),
+                        'label' => esc_html__('Widget Title Margin', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'top' => array(
@@ -386,7 +386,7 @@ class Yatri_Section_Offcanvas_Config
                     array(
                         'name' => $id . '_spacing_sidebar_border',
                         'type' => 'heading',
-                        'label' => __('Sidebar Border', 'yatri'),
+                        'label' => esc_html__('Sidebar Border', 'yatri'),
                     ),
                     array(
                         'name' => $id . '_sidebar_border',
@@ -405,7 +405,7 @@ class Yatri_Section_Offcanvas_Config
                     array(
                         'name' => $id . '_spacing_widgets_border',
                         'type' => 'heading',
-                        'label' => __('Widgets Border', 'yatri'),
+                        'label' => esc_html__('Widgets Border', 'yatri'),
                     ),
                     array(
                         'name' => $id . '_widgets_border',
@@ -424,7 +424,7 @@ class Yatri_Section_Offcanvas_Config
                     array(
                         'name' => $id . '_spacing_widget_title_border',
                         'type' => 'heading',
-                        'label' => __('Widget Title Border', 'yatri'),
+                        'label' => esc_html__('Widget Title Border', 'yatri'),
                     ),
                     array(
                         'name' => $id . '_widget_title_border',

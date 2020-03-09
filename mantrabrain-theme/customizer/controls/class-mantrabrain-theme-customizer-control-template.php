@@ -73,7 +73,7 @@ class Mantrabrain_Theme_Customizer_Control_Template extends Mantrabrain_Theme_Cu
                     <input type="text" data-template-id="<?php echo esc_attr($this->template_id); ?>"
                            class="yatri-template-name"/>
                     <button class="button button-secondary yatri-save-header-template"
-                            type="button"><?php echo __('Save', 'yatri') ?></button>
+                            type="button"><?php echo esc_html__('Save', 'yatri') ?></button>
                 </div>
             </div>
             <ul class="template-list">

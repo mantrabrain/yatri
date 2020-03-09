@@ -6,8 +6,8 @@ class Yatri_Section_Footer_Nav_Menu_Config
     {
         return array(
             'tabs' => array(
-                $id . '_color' => __('Colors', 'yatri'),
-                $id . '_spacing' => __('Spacing', 'yatri'),
+                $id . '_color' => esc_html__('Colors', 'yatri'),
+                $id . '_spacing' => esc_html__('Spacing', 'yatri'),
             ),
             $id . '_color_fields' =>
                 array(
@@ -15,7 +15,7 @@ class Yatri_Section_Footer_Nav_Menu_Config
                     array(
                         'name' => $id . '_nav_color',
                         'type' => 'color',
-                        'label' => __('Font color', 'yatri'),
+                        'label' => esc_html__('Font color', 'yatri'),
                         'description' => '',
                         'default' => '#fff',
                         'css_property' => 'color:{{value}};',
@@ -24,7 +24,7 @@ class Yatri_Section_Footer_Nav_Menu_Config
                     array(
                         'name' => $id . '_nav_hover_color',
                         'type' => 'color',
-                        'label' => __('Hover font color', 'yatri'),
+                        'label' => esc_html__('Hover font color', 'yatri'),
                         'description' => '',
                         'default' => '#fff',
                         'css_property' => 'color:{{value}};',
@@ -34,7 +34,7 @@ class Yatri_Section_Footer_Nav_Menu_Config
                     array(
                         'name' => $id . '_nav_background_color',
                         'type' => 'color',
-                        'label' => __('Background color', 'yatri'),
+                        'label' => esc_html__('Background color', 'yatri'),
                         'description' => '',
                         'default' => '#fff',
                         'css_property' => 'background-color:{{value}};',
@@ -43,7 +43,7 @@ class Yatri_Section_Footer_Nav_Menu_Config
                     array(
                         'name' => $id . '_nav_hover_background_color',
                         'type' => 'color',
-                        'label' => __('Hover background color', 'yatri'),
+                        'label' => esc_html__('Hover background color', 'yatri'),
                         'description' => '',
                         'default' => '#fff',
                         'css_property' => 'background-color:{{value}};',
@@ -53,7 +53,7 @@ class Yatri_Section_Footer_Nav_Menu_Config
                     array(
                         'name' => $id . '_nav_active_font_color',
                         'type' => 'color',
-                        'label' => __('Active font color', 'yatri'),
+                        'label' => esc_html__('Active font color', 'yatri'),
                         'description' => '',
                         'default' => '#fff',
                         'css_property' => 'color:{{value}};',
@@ -62,7 +62,7 @@ class Yatri_Section_Footer_Nav_Menu_Config
                     array(
                         'name' => $id . '_nav_active_background_color',
                         'type' => 'color',
-                        'label' => __('Active background color', 'yatri'),
+                        'label' => esc_html__('Active background color', 'yatri'),
                         'description' => '',
                         'default' => '#fff',
                         'css_property' => 'background-color:{{value}};',
@@ -75,7 +75,7 @@ class Yatri_Section_Footer_Nav_Menu_Config
                 array(
                     'name' => $id . '_nav__alignment',
                     'type' => 'alignment',
-                    'label' => __('Menu Alignment', 'yatri'),
+                    'label' => esc_html__('Menu Alignment', 'yatri'),
                     'description' => '',
                     'default' => array(
                         'desktop' => 'center',
@@ -90,15 +90,15 @@ class Yatri_Section_Footer_Nav_Menu_Config
                             'icon' => '',
                         ),
                         'left' => array(
-                            'title' => __('Left', 'yatri'),
+                            'title' => esc_html__('Left', 'yatri'),
                             'icon' => 'dashicons dashicons-editor-alignleft',
                         ),
                         'center' => array(
-                            'title' => __('Center', 'yatri'),
+                            'title' => esc_html__('Center', 'yatri'),
                             'icon' => 'dashicons dashicons-editor-aligncenter',
                         ),
                         'right' => array(
-                            'title' => __('Right', 'yatri'),
+                            'title' => esc_html__('Right', 'yatri'),
                             'icon' => 'dashicons dashicons-editor-alignright',
                         )
                     ),
@@ -108,14 +108,14 @@ class Yatri_Section_Footer_Nav_Menu_Config
                 array(
                     'name' => $id . '_nav_padding_margin_heading',
                     'type' => 'heading',
-                    'label' => __('Padding & Margin', 'yatri'),
+                    'label' => esc_html__('Padding & Margin', 'yatri'),
                 ),
                 array(
                     'name' => $id . '_nav_padding',
                     'type' => 'padding',
                     'device_settings' => true,
                     'devices' => array('desktop', 'tablet', 'mobile'),
-                    'label' => __('Padding', 'yatri'),
+                    'label' => esc_html__('Padding', 'yatri'),
                     'description' => '',
                     'default' => array(
                         'desktop' => array(
@@ -183,7 +183,7 @@ class Yatri_Section_Footer_Nav_Menu_Config
                     'type' => 'margin',
                     'device_settings' => true,
                     'devices' => array('desktop', 'tablet', 'mobile'),
-                    'label' => __('Margin', 'yatri'),
+                    'label' => esc_html__('Margin', 'yatri'),
                     'description' => '',
                     'default' => array(
                         'desktop' => array(
@@ -249,7 +249,7 @@ class Yatri_Section_Footer_Nav_Menu_Config
                 array(
                     'name' => $id . '_nav_border_heading',
                     'type' => 'heading',
-                    'label' => __('Border', 'yatri'),
+                    'label' => esc_html__('Border', 'yatri'),
                 ),
                 array(
                     'name' => $id . '_nav_border',

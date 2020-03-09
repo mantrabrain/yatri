@@ -223,7 +223,7 @@ if (!function_exists('yatri_get_header_theme_options')) :
         $defaults['top_header_site_identity'] = 'logo-title-text';
         $defaults['top_header_branding_layout'] = 'layout-1';
         $defaults['top_header_search_button_icon'] = 'fas fa-search';
-        $defaults['top_header_search_form_placeholder_text'] = __('Search', 'yatri');
+        $defaults['top_header_search_form_placeholder_text'] = esc_html__('Search', 'yatri');
         $defaults['top_header_search_form_type'] = 'default';
         $defaults['top_header_button_icon'] = '';
         $defaults['top_header_button_icon'] = '';
@@ -330,7 +330,7 @@ if (!function_exists('yatri_get_header_theme_options')) :
         $defaults['mid_header_site_identity'] = 'logo-title-text';
         $defaults['mid_header_branding_layout'] = 'layout-1';
         $defaults['mid_header_search_button_icon'] = 'fas fa-search';
-        $defaults['mid_header_search_form_placeholder_text'] = __('Search', 'yatri');
+        $defaults['mid_header_search_form_placeholder_text'] = esc_html__('Search', 'yatri');
         $defaults['mid_header_search_form_type'] = 'show_search_box_only';
         $defaults['mid_header_button_icon'] = '';
         $defaults['mid_header_button_icon'] = '';
@@ -438,7 +438,7 @@ if (!function_exists('yatri_get_header_theme_options')) :
         $defaults['bottom_header_site_identity'] = 'logo-title-text';
         $defaults['bottom_header_branding_layout'] = 'layout-1';
         $defaults['bottom_header_search_button_icon'] = 'fas fa-search';
-        $defaults['bottom_header_search_form_placeholder_text'] = __('Search', 'yatri');
+        $defaults['bottom_header_search_form_placeholder_text'] = esc_html__('Search', 'yatri');
         $defaults['bottom_header_search_form_type'] = 'default';
         $defaults['bottom_header_button_icon'] = '';
         $defaults['bottom_header_button_icon'] = '';
@@ -531,7 +531,7 @@ if (!function_exists('yatri_get_default_theme_options')) :
         $defaults['blog_archive_page_meta_content_separator'] = '|';
         $defaults['blog_archive_page_meta_content_separator_width'] = '';
         $defaults['blog_archive_page_meta_style'] = 'with_icon';
-        $defaults['blog_archive_page_readmore_text'] = __('Learn More', 'yatri');
+        $defaults['blog_archive_page_readmore_text'] = esc_html__('Learn More', 'yatri');
         $defaults['blog_archive_page_readmore_text_icon'] = 'fas fa-long-arrow-alt-right';
         $defaults['blog_archive_page_readmore_design_styling'] = '{}';
         $defaults['blog_archive_page_excerpt_type'] = 'excerpt_metabox';
@@ -554,7 +554,7 @@ if (!function_exists('yatri_get_default_theme_options')) :
         $defaults['single_post_article_design_styling'] = '{}';
         // Single post related posts
 
-        $defaults['single_post_related_posts_heading_text'] = __('Related Posts', 'yatri');
+        $defaults['single_post_related_posts_heading_text'] = esc_html__('Related Posts', 'yatri');
 
         $defaults['single_post_related_posts_taxonomy'] = 'category';
         $defaults['single_post_related_posts_count'] = 2;

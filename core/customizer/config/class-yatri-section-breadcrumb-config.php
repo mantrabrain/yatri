@@ -6,15 +6,15 @@ class Yatri_Section_Breadcrumb_Config
     {
         return array(
             'tabs' => array(
-                'yatri_breadcrumb_style_design_color' => __('Colors', 'yatri'),
-                'yatri_breadcrumb_style_design_spacing' => __('Spacing', 'yatri'),
+                'yatri_breadcrumb_style_design_color' => esc_html__('Colors', 'yatri'),
+                'yatri_breadcrumb_style_design_spacing' => esc_html__('Spacing', 'yatri'),
             ),
             'yatri_breadcrumb_style_design_color_fields' => array(
 
                 array(
                     'name' => 'yatri_breadcrumb_style_design_background_color',
                     'type' => 'color',
-                    'label' => __('Section Background Color', 'yatri'),
+                    'label' => esc_html__('Section Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => '.section-breadcrumb-wrap.yatri-breadcrumb-wrap, body.yatri-global-layout-boxed .section-breadcrumb-wrap.yatri-breadcrumb-wrap, body.yatri-global-layout-full_width .section-breadcrumb-wrap.yatri-breadcrumb-wrap',
@@ -23,7 +23,7 @@ class Yatri_Section_Breadcrumb_Config
                 array(
                     'name' => 'yatri_breadcrumb_style_design_background_image',
                     'type' => 'image',
-                    'label' => __('Section Background Image', 'yatri'),
+                    'label' => esc_html__('Section Background Image', 'yatri'),
                     'description' => '',
                     'selector' => '.section-breadcrumb-wrap.yatri-breadcrumb-wrap',
                     'css_property' => 'background-image:{{value}};'
@@ -31,7 +31,7 @@ class Yatri_Section_Breadcrumb_Config
                 array(
                     'name' => 'yatri_breadcrumb_style_design_overlay_color',
                     'type' => 'overlay',
-                    'label' => __('Section Overlay Background', 'yatri'),
+                    'label' => esc_html__('Section Overlay Background', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'additional_css' => '.section-breadcrumb-wrap.yatri-breadcrumb-wrap .breadcrumb-wrap{position:relative;z-index:1;}',
@@ -41,7 +41,7 @@ class Yatri_Section_Breadcrumb_Config
                 array(
                     'name' => 'yatri_breadcrumb_style_design_container_background_color',
                     'type' => 'color',
-                    'label' => __('Container Background Color', 'yatri'),
+                    'label' => esc_html__('Container Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => '.section-breadcrumb-wrap.yatri-breadcrumb-wrap .yat-container',
@@ -50,7 +50,7 @@ class Yatri_Section_Breadcrumb_Config
                 array(
                     'name' => 'yatri_breadcrumb_style_design_text_color',
                     'type' => 'color',
-                    'label' => __('Text Color', 'yatri'),
+                    'label' => esc_html__('Text Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => '.breadcrumb-wrap .breadcrumbs .trail-items li:last-child span',
@@ -59,7 +59,7 @@ class Yatri_Section_Breadcrumb_Config
                 array(
                     'name' => 'yatri_breadcrumb_style_design_link_color',
                     'type' => 'color',
-                    'label' => __('Link Color', 'yatri'),
+                    'label' => esc_html__('Link Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => '.breadcrumb-wrap .breadcrumbs .trail-items li a span',
@@ -68,7 +68,7 @@ class Yatri_Section_Breadcrumb_Config
                 array(
                     'name' => 'yatri_breadcrumb_style_design_link_hover_color',
                     'type' => 'color',
-                    'label' => __('Link Hover Color', 'yatri'),
+                    'label' => esc_html__('Link Hover Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => '.breadcrumb-wrap .breadcrumbs .trail-items li:hover a span',
@@ -77,7 +77,7 @@ class Yatri_Section_Breadcrumb_Config
                 array(
                     'name' => 'yatri_breadcrumb_style_design_separator_color',
                     'type' => 'color',
-                    'label' => __('Separator Color', 'yatri'),
+                    'label' => esc_html__('Separator Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => '.breadcrumb-wrap .breadcrumbs .trail-items a:after',
@@ -88,7 +88,7 @@ class Yatri_Section_Breadcrumb_Config
                 array(
                     'name' => 'yatri_breadcrumb_style_design_alignment',
                     'type' => 'alignment',
-                    'label' => __('Alignment', 'yatri'),
+                    'label' => esc_html__('Alignment', 'yatri'),
                     'description' => '',
                     'default' => 'center',
                     'options' => array(
@@ -97,15 +97,15 @@ class Yatri_Section_Breadcrumb_Config
                             'icon' => '',
                         ),
                         'left' => array(
-                            'title' => __('Left', 'yatri'),
+                            'title' => esc_html__('Left', 'yatri'),
                             'icon' => 'dashicons dashicons-editor-alignleft',
                         ),
                         'center' => array(
-                            'title' => __('Center', 'yatri'),
+                            'title' => esc_html__('Center', 'yatri'),
                             'icon' => 'dashicons dashicons-editor-aligncenter',
                         ),
                         'right' => array(
-                            'title' => __('Right', 'yatri'),
+                            'title' => esc_html__('Right', 'yatri'),
                             'icon' => 'dashicons dashicons-editor-alignright',
                         )
                     ),
@@ -118,7 +118,7 @@ class Yatri_Section_Breadcrumb_Config
                     'type' => 'padding',
                     'device_settings' => true,
                     'devices' => array('desktop', 'tablet', 'mobile'),
-                    'label' => __('Section Padding', 'yatri'),
+                    'label' => esc_html__('Section Padding', 'yatri'),
                     'description' => '',
                     'default' => array(
                         'desktop' => array(
@@ -186,7 +186,7 @@ class Yatri_Section_Breadcrumb_Config
                     'type' => 'padding',
                     'device_settings' => true,
                     'devices' => array('desktop', 'tablet', 'mobile'),
-                    'label' => __('Container Padding', 'yatri'),
+                    'label' => esc_html__('Container Padding', 'yatri'),
                     'description' => '',
                     'default' => array(
                         'desktop' => array(
@@ -254,7 +254,7 @@ class Yatri_Section_Breadcrumb_Config
                 array(
                     'name' => 'yatri_breadcrumb_style_design_border_heading',
                     'type' => 'heading',
-                    'label' => __('Section Border', 'yatri'),
+                    'label' => esc_html__('Section Border', 'yatri'),
                 ),
                 array(
                     'name' => 'yatri_breadcrumb_style_design_border',

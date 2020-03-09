@@ -56,7 +56,7 @@ class Yatri_WooCommerce_Customizer
         $wp_customize->add_section(
             'yatri_woocommerce_breadcrumb',
             array(
-                'title' => __('Breadcrumb', 'yatri'),
+                'title' => esc_html__('Breadcrumb', 'yatri'),
                 'priority' => 5,
                 'panel' => 'woocommerce',
             )

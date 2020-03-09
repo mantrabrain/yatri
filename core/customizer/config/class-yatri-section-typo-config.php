@@ -9,7 +9,7 @@ class Yatri_Section_Typo_Config
                 array(
                     'name' => "{$id}_font_family",
                     'type' => 'font',
-                    'label' => __('Font Family', 'yatri'),
+                    'label' => esc_html__('Font Family', 'yatri'),
                     'default' => array(),
                     'class' => 'yatri-half font-family',
                     'mapping_fields' => array(
@@ -23,7 +23,7 @@ class Yatri_Section_Typo_Config
                 array(
                     'name' => "{$id}_font_weight",
                     'type' => 'font_weight',
-                    'label' => __('Font Weight', 'yatri'),
+                    'label' => esc_html__('Font Weight', 'yatri'),
                     'options' => array(),
                     'class' => 'yatri-half font-weight',
                     'mapping_font_field' => "{$id}",
@@ -33,7 +33,7 @@ class Yatri_Section_Typo_Config
                 array(
                     'name' => "{$id}_font_languages",
                     'type' => 'font_languages',
-                    'label' => __('Font Languages', 'yatri'),
+                    'label' => esc_html__('Font Languages', 'yatri'),
                     'default' => array(),
                     'choices' => array(),
                     'mapping_font_field' => "{$id}",
@@ -42,7 +42,7 @@ class Yatri_Section_Typo_Config
                 array(
                     'name' => "{$id}_font_size",
                     'type' => 'range',
-                    'label' => __('Font Size', 'yatri'),
+                    'label' => esc_html__('Font Size', 'yatri'),
                     'device_settings' => true,
                     'attrs' => array(
                         'max' => 80,
@@ -59,7 +59,7 @@ class Yatri_Section_Typo_Config
                 array(
                     'name' => "{$id}_line_height",
                     'type' => 'range',
-                    'label' => __('Line Height', 'yatri'),
+                    'label' => esc_html__('Line Height', 'yatri'),
                     'device_settings' => true,
                     'attrs' => array(
                         'max' => 100,
@@ -76,7 +76,7 @@ class Yatri_Section_Typo_Config
                 array(
                     'name' => "{$id}_letter_spacing",
                     'type' => 'range',
-                    'label' => __('Letter Spacing', 'yatri'),
+                    'label' => esc_html__('Letter Spacing', 'yatri'),
                     'device_settings' => true,
                     'attrs' => array(
                         'max' => 10,
@@ -93,7 +93,7 @@ class Yatri_Section_Typo_Config
                 array(
                     'name' => "{$id}_font_style",
                     'type' => 'select',
-                    'label' => __('Font Style', 'yatri'),
+                    'label' => esc_html__('Font Style', 'yatri'),
                     'options' => Mantrabrain_Theme_Helper::css_font_style(),
                     'class' => 'yatri-half font-style',
                     'selector' => "{$selector}",
@@ -105,7 +105,7 @@ class Yatri_Section_Typo_Config
                 array(
                     'name' => "{$id}_text_decoration",
                     'type' => 'select',
-                    'label' => __('Text Decoration', 'yatri'),
+                    'label' => esc_html__('Text Decoration', 'yatri'),
                     'options' => Mantrabrain_Theme_Helper::css_text_decoration(),
                     'class' => 'yatri-half text-decoration',
                     'selector' => "{$selector}",
@@ -117,7 +117,7 @@ class Yatri_Section_Typo_Config
                 array(
                     'name' => "{$id}_text_transform",
                     'type' => 'select',
-                    'label' => __('Text Trasform', 'yatri'),
+                    'label' => esc_html__('Text Trasform', 'yatri'),
                     'options' => Mantrabrain_Theme_Helper::css_text_transform(),
                     'class' => 'yatri-half text-transform',
                     'selector' => "{$selector}",

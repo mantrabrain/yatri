@@ -6,15 +6,15 @@ class Yatri_Section_Wrapper_Config
     {
         return array(
             'tabs' => array(
-                $id . '_color' => __('Colors', 'yatri'),
-                $id . '_spacing' => __('Spacing', 'yatri'),
+                $id . '_color' => esc_html__('Colors', 'yatri'),
+                $id . '_spacing' => esc_html__('Spacing', 'yatri'),
             ),
             $id . '_color_fields' => array(
 
                 array(
                     'name' => $id . '_section_background_color',
                     'type' => 'color',
-                    'label' => __('Section Background Color', 'yatri'),
+                    'label' => esc_html__('Section Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} section.wrapper.site-content.yatri-site-content-area",
@@ -23,7 +23,7 @@ class Yatri_Section_Wrapper_Config
                 array(
                     'name' => $id . '_section_background_image',
                     'type' => 'image',
-                    'label' => __('Section Background Image', 'yatri'),
+                    'label' => esc_html__('Section Background Image', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} section.wrapper.site-content.yatri-site-content-area",
@@ -32,7 +32,7 @@ class Yatri_Section_Wrapper_Config
                 array(
                     'name' => $id . '_container_background_color',
                     'type' => 'color',
-                    'label' => __('Container Background Color', 'yatri'),
+                    'label' => esc_html__('Container Background Color', 'yatri'),
                     'description' => '',
                     'default' => '#c1c1c1',
                     'selector' => "{$parent_selector} section.wrapper.site-content.yatri-site-content-area .yat-container",
@@ -46,7 +46,7 @@ class Yatri_Section_Wrapper_Config
                         'type' => 'padding',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('Section Padding', 'yatri'),
+                        'label' => esc_html__('Section Padding', 'yatri'),
                         'description' => '',
                         'default' => array(
 
@@ -81,7 +81,7 @@ class Yatri_Section_Wrapper_Config
 
                         'devices' => array('desktop', 'tablet', 'mobile'),
 
-                        'label' => __('Section Margin', 'yatri'),
+                        'label' => esc_html__('Section Margin', 'yatri'),
 
                         'description' => '',
 
@@ -121,7 +121,7 @@ class Yatri_Section_Wrapper_Config
                         'type' => 'padding',
                         'device_settings' => true,
                         'devices' => array('desktop', 'tablet', 'mobile'),
-                        'label' => __('Container Padding', 'yatri'),
+                        'label' => esc_html__('Container Padding', 'yatri'),
                         'description' => '',
                         'default' => array(
                             'desktop' => array(
@@ -190,7 +190,7 @@ class Yatri_Section_Wrapper_Config
                     array(
                         'name' => $id . '_section_border_heading',
                         'type' => 'heading',
-                        'label' => __('Section Border', 'yatri'),
+                        'label' => esc_html__('Section Border', 'yatri'),
                     ),
                     array(
                         'name' => $id . '_section_border',
