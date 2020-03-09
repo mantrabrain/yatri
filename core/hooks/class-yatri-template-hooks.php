@@ -91,10 +91,10 @@ class Yatri_Template_Hooks
 
         $defaults['logged_in_as'] = '<p class="logged-in-as">' . sprintf(
             /* translators: 1: edit user link, 2: accessibility text, 3: user name, 4: logout URL */
-                esc_html__('<a href="%1$s" aria-label="%2$s">Logged in as %3$s</a> <a href="%4$s">Log out?</a>', 'yatri'),
+                __('<a href="%1$s" aria-label="%2$s">Logged in as %3$s</a> <a href="%4$s">Log out?</a>', 'yatri'),
                 get_edit_user_link(),
                 /* translators: %s: user name */
-                esc_attr(sprintf(esc_html__('Logged in as %s. Edit your profile.', 'yatri'), $user_identity)),
+                esc_attr(sprintf(__('Logged in as %s. Edit your profile.', 'yatri'), $user_identity)),
                 $user_identity,
                 wp_logout_url(apply_filters('the_permalink', get_permalink(get_the_ID())))
             ) . '</p>';
