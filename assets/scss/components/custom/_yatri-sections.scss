@@ -133,9 +133,9 @@ body.admin-bar {
   .yatri-toggle-wrap {
     display: inline-block;
     background: none;
-    border: none;
     margin: 0;
     padding: 3px 10px;
+    border: 1px solid #ddd;
 
     span.fa {
       cursor: pointer;

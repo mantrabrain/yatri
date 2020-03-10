@@ -10579,9 +10579,9 @@ body.admin-bar .yatri-section-menu.yatri-mobile-menu {
 .yatri-section-offcanvas-menu .yatri-toggle-wrap {
   display: inline-block;
   background: none;
-  border: none;
   margin: 0;
-  padding: 3px 10px; }
+  padding: 3px 10px;
+  border: 1px solid #ddd; }
   .yatri-section-offcanvas-menu .yatri-toggle-wrap span.fa {
     cursor: pointer; }
   .yatri-section-offcanvas-menu .yatri-toggle-wrap:hover span.fa {
@@ -10881,8 +10881,9 @@ body.admin-bar .yatri-section-menu.yatri-mobile-menu {
   .top-header .yatri-section-container.menu-container li.menu-item-has-children > a:after {
     right: 11%; }
   .top-header .yatri-responsive-toggle-menu {
-    border-color: #fff;
-    color: #fff; }
+    border-color: #ddd;
+    color: #fff;
+    background: transparent; }
     .top-header .yatri-responsive-toggle-menu span {
       color: inherit; }
   .top-header .yatri-section-search-form .search-main {
