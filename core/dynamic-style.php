@@ -689,8 +689,8 @@ if (!function_exists('yatri_get_color_css')) {
        
         ::selection,
         .single-post-wrap .post-format-outer,
-        .yatri-button,
-        .yatri-mobile-menu.yatri-section-menu{
+        .yatri-button
+        {
                         background:' . $primary_color . ';
                     }
             ';

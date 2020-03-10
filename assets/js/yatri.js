@@ -9,6 +9,51 @@
             this.initOffCanvasMenu();
             this.initSearchForm();
             this.navigationMenu();
+            this.untoggleOnEscapeKeyPress();
+
+        },
+        trapFocus: function (element, open_class) {
+            var focusableEls = element.querySelectorAll('a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])'),
+                firstFocusableEl = focusableEls[0];
+            lastFocusableEl = focusableEls[focusableEls.length - 1];
+            KEYCODE_TAB = 9;
+
+            element.addEventListener('keydown', function (e) {
+                var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
+
+                if (!isTabPressed) {
+                    return;
+                }
+                if (!element.classList.contains(open_class)) {
+                        element.removeEventListener('keydown', this);
+                    return;
+
+                }
+
+                if (e.shiftKey) /* shift + tab */ {
+                    if (document.activeElement === firstFocusableEl) {
+                        lastFocusableEl.focus();
+                        e.preventDefault();
+                    }
+                } else /* tab */ {
+                    if (document.activeElement === lastFocusableEl) {
+                        firstFocusableEl.focus();
+                        e.preventDefault();
+                    }
+                }
+
+            });
+        },
+        untoggleOnEscapeKeyPress: function () {
+            document.addEventListener('keyup', function (event) {
+                if (event.key === 'Escape') {
+                    document.querySelectorAll('*[data-untoggle-on-escape].close').forEach(function (element) {
+                        if (element.classList.contains('close')) {
+                            element.click();
+                        }
+                    });
+                }
+            });
         },
         navigationMenu: function () {
             var $el = $('.yatri-mobile-menu');
@@ -16,7 +61,7 @@
                 var subMenu = $(this).find("ul.sub-menu");
                 //subMenu.append();
 
-                var icon = $('<i class="yatri-submenu-toggle fa fa-angle-down"/>');
+                var icon = $('<button class="yatri-submenu-toggle fa fa-angle-down"/>');
                 subMenu.prev('a').append(icon);
                 /* var header = $(this).closest('.yatri-header-item');
                  if (header.length > 0) {
@@ -46,10 +91,12 @@
                         $(this).removeClass('close');
                         $(this).addClass('open');
                         $('#' + id).removeClass('yatri-navigation-menu-open');
+                        $(this).focus();
                     } else {
                         $(this).removeClass('open');
                         $(this).addClass('close');
                         $('#' + id).addClass('yatri-navigation-menu-open');
+                        $(document).trigger('yatri_focus_inside_element', [id, '.yatri-mobile-navigation-close', 'yatri-navigation-menu-open']);
                     }
                     return;
                 }
@@ -174,6 +221,12 @@
                 var id = $(this).closest('.yatri-section-inner').attr('id');
                 $('body').find('.yatri-responsive-toggle-menu-wrap[data-id="' + id + '"]').find('.yatri-responsive-toggle-menu').trigger('click');
             });
+            $(document).on('yatri_focus_inside_element', function (event, parent_id, focusable_el, trap_class) {
+                $('#' + parent_id).find(focusable_el).focus();
+                var el = document.getElementById(parent_id);
+                $this.trapFocus(el, trap_class);
+
+            });
 
 
         },
@@ -184,14 +237,18 @@
                 var offcanvas_id = $(this).closest('.yatri-section-offcanvas-menu').attr('data-id');
                 if ($(this).closest('.yatri-section-offcanvas-menu').hasClass('show-nav')) {
                     $(this).closest('.yatri-section-offcanvas-menu').removeClass('show-nav');
+                    $(this).removeClass('close');
                     $(this).closest('.yatri-section-offcanvas-menu').find('.toggle-icon').addClass('fa-bars').removeClass('fa-times');
                     $('#' + offcanvas_id).removeClass('yatri-offcanvas-open');
+                    $(this).focus();
 
 
                 } else {
                     $(this).closest('.yatri-section-offcanvas-menu').addClass('show-nav');
+                    $(this).addClass('close');
                     $(this).closest('.yatri-section-offcanvas-menu').find('.toggle-icon').addClass('fa-times').removeClass('fa-bars');
                     $('#' + offcanvas_id).addClass('yatri-offcanvas-open');
+                    $(document).trigger('yatri_focus_inside_element', [offcanvas_id, '.yatri-offcanvas-close-button', 'yatri-offcanvas-open']);
 
 
                 }
@@ -199,7 +256,7 @@
             });
         },
         initLib: function () {
-            
+
 
         },
         initAccessibility: function () {

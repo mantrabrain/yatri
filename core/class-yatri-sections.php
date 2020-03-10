@@ -113,7 +113,8 @@ class Yatri_Sections
         $toggle_icon = isset($options['toggle_icon']) ? $options['toggle_icon'] : 'fas fa-bars';
         ?>
         <div class="yatri-responsive-toggle-menu-wrap">
-            <button class="yatri-responsive-toggle-menu section-<?php echo esc_attr($section_id) ?>">
+            <button class="yatri-responsive-toggle-menu section-<?php echo esc_attr($section_id) ?>"
+                    data-untoggle-on-escape="true">
                 <span class="<?php echo esc_attr($toggle_icon); ?>"></span>
             </button>
         </div>
@@ -393,9 +394,9 @@ class Yatri_Sections
 
         echo '<div class="yatri-offcanvas-menu-content ' . esc_attr($section_id) . '_offcanvas_menu ' . esc_attr($start_from) . ' " id="' . esc_attr($section_id) . '_offcanvas_menu">';
         echo '<div class="yatri-offcanvas-menu-content-inner">';
-        echo '<div class="yatri-canvas-close">';
+        echo '<button class="yatri-canvas-close yatri-offcanvas-close-button">';
         echo '<span class="close-icon fas fa-times"></span>';
-        echo '</div>';
+        echo '</button>';
         switch ($type) {
             case "menu":
                 yatri_get_navigation_menu(
@@ -422,7 +423,7 @@ class Yatri_Sections
         $class = isset($options['class']) ? sanitize_text_field($options['class']) : '';
 
         echo '<div class="yatri-section-menu yatri-mobile-menu ' . esc_attr($section_id) . '_navigation_menu ' . esc_attr($class) . ' yatri-section-inner" id="' . esc_attr($section_id) . '_navigation_menu">';
-        echo '<span class="yatri-mobile-navigation-close fas fa-times"></span>';
+        echo '<button class="yatri-mobile-navigation-close fas fa-times"></button>';
         echo '<nav class="' . esc_attr($class) . '">';
         yatri_get_navigation_menu(array(
             'theme_location' => $location,
@@ -438,7 +439,7 @@ class Yatri_Sections
         $section_part_id = isset($options['section_part_id']) ? $options['section_part_id'] : '';
 
         echo '<div class="yatri-section-offcanvas-menu yatri-section-inner" data-id="' . esc_attr($section_part_id) . '_offcanvas_menu">';
-        echo '<button class="yatri-toggle-wrap">';
+        echo '<button class="yatri-toggle-wrap" data-untoggle-on-escape="true">';
         echo '<span class="toggle-icon fas fa-bars"></span>';
         echo '</button>';
         echo '</div>';
@@ -458,7 +459,8 @@ class Yatri_Sections
         ?>
         <div class="yatri-responsive-toggle-menu-wrap"
              data-id="<?php echo esc_attr($section_part_id); ?>_navigation_menu">
-            <button class="yatri-responsive-toggle-menu">
+            <button class="yatri-responsive-toggle-menu" data-untoggle-on-escape="true"
+                    data-set-focus=".yatri-mobile-navigation">
                 <span class="<?php echo esc_attr($toggle_icon); ?>"></span>
             </button>
         </div>

@@ -10514,6 +10514,7 @@ body .entry-title {
   overflow-x: hidden;
   overflow-y: auto; }
   .yatri-offcanvas-menu-content .yatri-canvas-close {
+    border: none;
     cursor: pointer;
     background: #aaa;
     height: 25px;
@@ -10591,7 +10592,9 @@ body.admin-bar .yatri-section-menu.yatri-mobile-menu {
   position: absolute;
   right: 20px;
   top: 0;
-  padding: 10px; }
+  padding: 10px;
+  background: none;
+  border: none; }
 
 .yatri-mobile-menu.yatri-section-menu {
   position: fixed;
@@ -10634,7 +10637,6 @@ body.admin-bar .yatri-section-menu.yatri-mobile-menu {
       width: 25px;
       background: #fff;
       text-align: center;
-      line-height: 25px;
       color: #2d2d2d;
       display: block;
       position: absolute;
@@ -10646,7 +10648,8 @@ body.admin-bar .yatri-section-menu.yatri-mobile-menu {
          -moz-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
            -o-transform: translateY(-50%);
-              transform: translateY(-50%); }
+              transform: translateY(-50%);
+      border: none; }
     .yatri-mobile-menu.yatri-section-menu li:last-child {
       border-bottom: 0; }
     .yatri-mobile-menu.yatri-section-menu li:after {

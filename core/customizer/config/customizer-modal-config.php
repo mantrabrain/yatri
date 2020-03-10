@@ -290,7 +290,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
                 'label' => esc_html__('Text Color', 'yatri'),
                 'description' => '',
                 'default' => '#c1c1c1',
-                'selector' => 'button:not(.yatri-responsive-toggle-menu):not(.search-button):not(.customize-partial-edit-shortcut-button):not(.search-main):not(.yatri-toggle-wrap),.button, input[type="submit"], .yatri-button, .yatri-button span ,.yatri-button .yatri-button-icon',
+                'selector' => 'button:not(.yatri-offcanvas-close-button):not(.yatri-submenu-toggle):not(.yatri-mobile-navigation-close):not(.yatri-responsive-toggle-menu):not(.search-button):not(.customize-partial-edit-shortcut-button):not(.search-main):not(.yatri-toggle-wrap),.button, input[type="submit"], .yatri-button, .yatri-button span ,.yatri-button .yatri-button-icon',
                 'css_property' => 'color:{{value}};'
             ),
             array(
@@ -299,7 +299,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
                 'label' => esc_html__('Hover Text Color', 'yatri'),
                 'description' => '',
                 'default' => '#c1c1c1',
-                'selector' => 'button:not(.yatri-responsive-toggle-menu):not(.search-button):not(.customize-partial-edit-shortcut-button):not(.search-main):not(.yatri-toggle-wrap):hover,.button:hover, input[type="submit"]:hover, .yatri-button:hover, .yatri-button:hover span, .yatri-button:hover .yatri-button-icon',
+                'selector' => 'button:not(.yatri-offcanvas-close-button):not(.yatri-submenu-toggle):not(.yatri-mobile-navigation-close):not(.yatri-responsive-toggle-menu):not(.search-button):not(.customize-partial-edit-shortcut-button):not(.search-main):not(.yatri-toggle-wrap):hover,.button:hover, input[type="submit"]:hover, .yatri-button:hover, .yatri-button:hover span, .yatri-button:hover .yatri-button-icon',
                 'css_property' => 'color:{{value}};'
             ),
             array(
@@ -308,7 +308,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
                 'label' => esc_html__('Background Color', 'yatri'),
                 'description' => '',
                 'default' => '#c1c1c1',
-                'selector' => 'button:not(.yatri-responsive-toggle-menu):not(.search-button):not(.customize-partial-edit-shortcut-button):not(.search-main):not(.yatri-toggle-wrap),.button, input[type="submit"], .yatri-button',
+                'selector' => 'button:not(.yatri-offcanvas-close-button):not(.yatri-submenu-toggle):not(.yatri-mobile-navigation-close):not(.yatri-responsive-toggle-menu):not(.search-button):not(.customize-partial-edit-shortcut-button):not(.search-main):not(.yatri-toggle-wrap),.button, input[type="submit"], .yatri-button',
                 'css_property' => 'background-color:{{value}};'
             ),
             array(
@@ -317,7 +317,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
                 'label' => esc_html__('Hover Background Color', 'yatri'),
                 'description' => '',
                 'default' => '#c1c1c1',
-                'selector' => 'button:not(.yatri-responsive-toggle-menu):not(.search-button):not(.customize-partial-edit-shortcut-button):not(.search-main):not(.yatri-toggle-wrap):hover,.button:hover, input[type="submit"]:hover, .yatri-button:hover',
+                'selector' => 'button:not(.yatri-offcanvas-close-button):not(.yatri-submenu-toggle):not(.yatri-mobile-navigation-close):not(.yatri-responsive-toggle-menu):not(.search-button):not(.customize-partial-edit-shortcut-button):not(.search-main):not(.yatri-toggle-wrap):hover,.button:hover, input[type="submit"]:hover, .yatri-button:hover',
                 'css_property' => 'background-color:{{value}};'
             ),
         ),
@@ -350,7 +350,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
                         )
 
                     ),
-                    'selector' => 'button:not(.yatri-responsive-toggle-menu):not(.search-button):not(.customize-partial-edit-shortcut-button):not(.search-main):not(.yatri-toggle-wrap),.button, input[type="submit"], .yatri-button,.top-header .yatri-section-button .yatri-button',
+                    'selector' => 'button:not(.yatri-offcanvas-close-button):not(.yatri-submenu-toggle):not(.yatri-mobile-navigation-close):not(.yatri-responsive-toggle-menu):not(.search-button):not(.customize-partial-edit-shortcut-button):not(.search-main):not(.yatri-toggle-wrap),.button, input[type="submit"], .yatri-button,.top-header .yatri-section-button .yatri-button',
 
                 ),
 
@@ -369,7 +369,7 @@ function yatri_customizer_modal_config($field_id = '', $return_all = false)
                         'top' => 0,
                         'bottom' => 0
                     ),
-                    'selector' => 'button:not(.yatri-responsive-toggle-menu):not(.search-button):not(.customize-partial-edit-shortcut-button):not(.search-main):not(.yatri-toggle-wrap),.button, input[type="submit"], .yatri-button, button:not(.yatri-responsive-toggle-menu):not(.search-button):not(.customize-partial-edit-shortcut-button):not(.search-main):not(.yatri-toggle-wrap):hover,.button:hover, input[type="submit"]:hover, .yatri-button:hover,.top-header .yatri-section-button .yatri-button',
+                    'selector' => 'button:not(.yatri-offcanvas-close-button):not(.yatri-submenu-toggle):not(.yatri-mobile-navigation-close):not(.yatri-responsive-toggle-menu):not(.search-button):not(.customize-partial-edit-shortcut-button):not(.search-main):not(.yatri-toggle-wrap),.button, input[type="submit"], .yatri-button, button:not(.yatri-offcanvas-close-button):not(.yatri-submenu-toggle):not(.yatri-mobile-navigation-close):not(.yatri-responsive-toggle-menu):not(.search-button):not(.customize-partial-edit-shortcut-button):not(.search-main):not(.yatri-toggle-wrap):hover,.button:hover, input[type="submit"]:hover, .yatri-button:hover,.top-header .yatri-section-button .yatri-button',
                 )
             ),
 
