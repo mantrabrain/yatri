@@ -1,9 +1,10 @@
-= 1.0.6 | 2020/03/09 =
+= 1.0.6 | 2020/03/10 =
 - Added: TGMPA
 - Improvement: Screenshot changed
 - Improvement: figurecaption tag design issue fixed
 - Improvement: Default Value modify
 - Improvement: escaping issue fixed and commented code removed
+- Improvement: keyboard navagition issue fixed and other minor issue fixed
 = 1.0.5 | 2020/02/19 =
 - Improvement: design issue fixed and theme reviewer feedback fixed
 = 1.0.4 | 2020/02/17 =
