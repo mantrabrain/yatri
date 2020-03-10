@@ -47,6 +47,7 @@ class Yatri_About
 
             add_action('yatri_about_menu_tabs', array(self::$_instance, 'menu_tabs'), 5);
             add_action('yatri_about_main', array(self::$_instance, 'box_links'), 15);
+            add_action('yatri_about_main', array(self::$_instance, 'premium_features'), 16);
 
             add_action('yatri_about_sidebar', array(self::$_instance, 'box_plugins'), 10);
             add_action('yatri_about_sidebar', array(self::$_instance, 'box_community'), 25);
@@ -671,31 +672,34 @@ class Yatri_About
         $modules = array(
 
             array(
-                'name' => esc_html__('WooCommerce Booster', 'yatri'),
-                'desc' => esc_html__('Gives you creative control of style and layout options for your shop.', 'yatri'),
-                'url' => '',
+                'name' => esc_html__('Typography Addon', 'yatri'),
+                'desc' => esc_html__('Gives you creative control on typography for whole website.', 'yatri'),
+                'url' => 'https://wpyatri.com/pricing/?ref=userdashboard-typographyaddon',
             ),
-
             array(
-                'name' => esc_html__('Single Product Layouts', 'yatri'),
-                'desc' => esc_html__('More beautiful layouts for your single product.', 'yatri'),
-                'url' => '',
-                'sub' => true,
+                'name' => esc_html__('Agency Elementor Addon', 'yatri'),
+                'desc' => esc_html__('Gives you more than 10 widgets of elementor plugin.', 'yatri'),
+                'url' => 'https://wpyatri.com/pricing/?ref=userdashboard-agencyelementoraddon',
             ),
-
             array(
-                'name' => esc_html__('Infinity Scroll.', 'yatri'),
-                'desc' => '',
-                'url' => '',
+                'name' => esc_html__('Sticky Addon', 'yatri'),
+                'desc' => esc_html__('Make sticky header, sidebar and footer.', 'yatri'),
+                'url' => 'https://wpyatri.com/pricing/?ref=userdashboard-stickyaddon',
             ),
+            array(
+                'name' => esc_html__('Social Sharing Addon', 'yatri'),
+                'desc' => esc_html__('Add social sharing icons on single posts.', 'yatri'),
+                'url' => 'https://wpyatri.com/pricing/?ref=userdashboard-socialsharingaddon',
+            )
 
         );
 
         ?>
         <div class="mb-about-box pro">
-            <div class="mb-about-box-top"><?php _e('Yatri Pro - Features', 'yatri'); ?>
+            <div class="mb-about-box-top"><span
+                        class="dashicons dashicons-admin-plugins"></span> <?php _e('Yatri Extensions/Addons', 'yatri'); ?>
                 <a class="mb-about-upgrade" target="_blank"
-                   href="#"><?php _e('Upgrade Now &rarr;', 'yatri'); ?></a>
+                   href="https://wpyatri.com/pricing?ref=themepanel-upgradenow"><?php _e('Upgrade Now &rarr;', 'yatri'); ?></a>
             </div>
             <div class="mb-about-box-content mb-about-modules">
                 <?php foreach ($modules as $m) { ?>
