@@ -178,10 +178,6 @@ if (!class_exists('Yatri_Core')) :
             ));
 
 
-            # Set up the WordPress core custom background feature.
-            add_theme_support('custom-background', array(
-                'default-color' => 'ffffff',
-            ));
 
             # Enable support for selective refresh of widgets in Customizer.
             add_theme_support('customize-selective-refresh-widgets');

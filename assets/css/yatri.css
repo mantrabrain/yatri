@@ -8795,8 +8795,7 @@ sidebar.sidebar .widget:last-child {
 
 section.wrapper.site-content, .wrap-detail-page, .yatra-page-wrapper {
   padding-top: 50px;
-  padding-bottom: 50px;
-  background: #fff; }
+  padding-bottom: 50px; }
 
 @media screen and (max-width: 991px) {
   .main-header {
@@ -9748,9 +9747,6 @@ body.fixed-nav-active .main-navigation {
 /*--------------------------------------------------------------
 2.0 Elements
 --------------------------------------------------------------*/
-.site {
-  background-color: #ffffff; }
-
 .logged-in.admin-bar .ab-top-menu a,
 .logged-in.admin-bar .ab-top-menu a > p {
   color: inherit !important; }
@@ -10901,11 +10897,7 @@ body.admin-bar .yatri-section-menu.yatri-mobile-menu {
   -webkit-box-shadow: -1px 4px 9px 0px rgba(0, 0, 0, 0.1);
           box-shadow: -1px 4px 9px 0px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
-  /* .primary-nav-container, .yatri-search-form-container {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-   }*/ }
+  background: #fff; }
   .main-header .yatri-section-container.yatri-grid-3 {
     text-align: right; }
   .main-header .yatri-section-container.yatri-grid-2 {

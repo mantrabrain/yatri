@@ -205,10 +205,6 @@ class Yatri_About
             ?>
             <div class="yatri-notice-wrapper notice is-dismissible">
                 <div class="yatri-notice">
-                    <div class="yatri-notice-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri() . '/core/info/assets/images/yatri-logo.png'); ?>"
-                             alt="<?php esc_attr_e('logo', 'yatri'); ?>">
-                    </div>
                     <div class="yatri-notice-content">
                         <div class="yatri-notice-heading"><?php
                             echo sprintf(esc_html__('Thanks for installing %s. To fully take advantage of the best our theme can offer, click on get started ', 'yatri'), $this->config['name']);

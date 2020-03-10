@@ -54,7 +54,6 @@ class Yatri_Customizer
         add_action('customize_register', array($this, 'move_default_options'));
 
         add_action('customize_preview_init', array($this, 'customize_enqueue'));
-        add_action('customize_controls_enqueue_scripts', array($this, 'control_scripts'));
 
     }
 
@@ -62,14 +61,6 @@ class Yatri_Customizer
     {
 
         yatri_init_customizer_options();
-
-    }
-
-    public function control_scripts()
-    {
-        //$script_uri = YATRI_THEME_URI . 'assets/js/customizer/customize-control.js';
-        //wp_enqueue_script('yatri-customize-controls-check-js', $script_uri, array('jquery', 'customize-controls'), YATRI_THEME_VERSION);
-
 
     }
 
@@ -192,6 +183,10 @@ class Yatri_Customizer
         $wp_customize->get_control('blogdescription')->priority = 300;
         $wp_customize->get_control('display_header_text')->priority = 400;
         $wp_customize->get_control('site_icon')->priority = 500;
+
+
+        $wp_customize->get_setting('background_color')->transport = 'refresh';
+        $wp_customize->get_setting('background_image')->transport = 'refresh';
     }
 
     public function customize_options($wp_customize)
