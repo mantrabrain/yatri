@@ -156,12 +156,11 @@
 
 .mb-about-box .mb-about-box-top {
 
-    font-size: 15px;
+    font-size: 14px;
     padding: 12px 15px;
     font-weight: 600;
-    color: #000;
-    background: #f9f9f9;
-    border-bottom: 1px solid #ddd;
+    color: #fff;
+    background: #4285f4;
 }
 
 .mb-about-box.pro .mb-about-box-top {
@@ -170,6 +169,7 @@
 
 .mb-about-box .mb-about-box-top .mb-about-upgrade {
     float: right;
+    color: #fff;
     text-transform: uppercase;
     font-weight: bold;
 }
