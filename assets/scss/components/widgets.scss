@@ -135,11 +135,6 @@ body .widget li.recentcomments a {
 .widget.widget_calendar table {
   margin: 0;
 }
-
-.widget.widget_calendar table tr {
-  background-color: transparent;
-}
-
 .widget.widget_calendar td, .widget.widget_calendar th {
   line-height: 1.6;
   text-align: center;
@@ -155,7 +150,7 @@ body .widget li.recentcomments a {
 }
 
 .widget.widget_calendar td a:hover {
-  color: $secondary_color;
+  color: #fff;
 }
 
 .widget.widget_calendar tbody a {
