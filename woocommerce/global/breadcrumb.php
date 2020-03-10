@@ -36,7 +36,7 @@ if (!empty($breadcrumb)) {
 
             $rel = $key == 0 ? 'home' : '';
 
-            $crumb[0] = $key == 0 ? yatri_get_option('breadcrumb_home_text') : $crumb[0];
+            $crumb[0] = $key == 0 ? esc_html(yatri_get_option('breadcrumb_home_text')) : $crumb[0];
         }
 
         if (!empty($crumb[1]) && sizeof($breadcrumb) !== $key + 1) {

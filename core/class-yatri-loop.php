@@ -85,7 +85,7 @@ if (!class_exists('Yatri_Loop')) :
                                 if ($show_thumbnail) {
                                     $args = array();
                                     $args['size'] = 'full';
-                                    $size = yatri_get_option('single_post_thumbnail_size');
+                                    $size = sanitize_text_field(yatri_get_option('single_post_thumbnail_size'));
                                     $args['size'] = !empty($size) ? $size : $args['size'];
                                     yatri_get_post_thumbnail($args);
                                 }

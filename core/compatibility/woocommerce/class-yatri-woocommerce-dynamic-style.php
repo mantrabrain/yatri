@@ -11,9 +11,9 @@ class Yatri_WooCommerce_Dynamic_Style
     {
         $woo_css = ' ';
 
-        $primary_color = yatri_get_option('primary_color');
+        $primary_color = esc_attr(yatri_get_option('primary_color'));
 
-        $secondary_color = yatri_get_option('secondary_color');
+        $secondary_color = esc_attr(yatri_get_option('secondary_color'));
 
         if ($primary_color != '#4285f4') {
 

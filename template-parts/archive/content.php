@@ -1,5 +1,4 @@
 <?php
-//yatri_get_option('archive_post_layout') == 'grid' ? $class = 'masonry-grid' : $class = 'masonry-grid wrap-post-list';
 
 $class = 'yatri-article-wrap ';
 
@@ -35,7 +34,7 @@ $class = 'yatri-article-wrap ';
 
                     $size = yatri_get_option('blog_archive_page_thumbnail_size');
 
-                    $args['size'] = !empty($size) ? $size : $args['size'];
+                    $args['size'] = !empty($size) ? sanitize_text_field($size) : $args['size'];
 
                 }
                 foreach ($page_content_orders as $order_key => $order_content) {

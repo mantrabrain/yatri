@@ -46,7 +46,7 @@ class Yatri_Breadcrumb_Hooks
 
     function breadcrumb_trail_labels($labels)
     {
-        $labels['home'] = yatri_get_option('breadcrumb_home_text');
+        $labels['home'] = esc_html(yatri_get_option('breadcrumb_home_text'));
 
         return $labels;
 

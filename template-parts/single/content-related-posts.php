@@ -18,7 +18,7 @@ $related_args = array(
     'update_post_term_cache' => false,
     'ignore_sticky_posts' => 1,
     'post__not_in' => array($yatri_single_post_id),
-    'posts_per_page' => $number_of_related_posts
+    'posts_per_page' => absint($number_of_related_posts)
 );
 
 if ($related_post_type == 'tag') {

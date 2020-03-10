@@ -54,7 +54,7 @@ class Yatri_Template_Hooks
             $class[] = 'content-none-page';
         }
 
-        $class[] = "yatri-global-layout-" . yatri_get_option('main_layout');
+        $class[] = "yatri-global-layout-" . esc_attr(yatri_get_option('main_layout'));
 
         $page_layout = yatri_page_layout();
 
