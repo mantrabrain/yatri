@@ -83,8 +83,8 @@ if (!class_exists('Yatri_Assets')) :
 
                 if (!isset($script['version'])) {
                     $version = null;
-                }else{
-                    $version =  $script['version'];
+                } else {
+                    $version = $script['version'];
                 }
 
                 # Enqueue each vendor's style
@@ -145,6 +145,7 @@ if (!class_exists('Yatri_Assets')) :
                     'handler' => 'yatri-main',
                     'style' => get_theme_file_uri('/assets/css/yatri.css'),
                     'absolute' => true,
+                    'version' => YATRI_THEME_VERSION
                 ),
                 array(
                     'handler' => 'yatri-script',
