@@ -203,7 +203,7 @@
 
         },
         initAccessibility: function () {
-            var main_menu_container = $('.main-navigation #primary-menu');
+            var main_menu_container = $('.main-navigation ul.menu');
             main_menu_container.find('li.menu-item').focusin(function () {
                 if (!$(this).hasClass('focus')) {
                     $(this).addClass('focus');
