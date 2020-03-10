@@ -51,7 +51,6 @@
   text-transform: capitalize;
 }
 
-
 section.wrapper.site-content, .wrap-detail-page, .yatra-page-wrapper {
 
   padding-top: 50px;
@@ -678,12 +677,13 @@ body.fixed-nav-active .main-navigation {
   color: $secondary_color;
 }
 
-.main-navigation nav > ul > li:hover > ul,
-.main-navigation nav > ul > li.focus > ul {
+.main-navigation nav > ul.menu > li:hover > ul.sub-menu,
+.main-navigation nav > ul.menu > li.focus > ul.sub-menu {
   opacity: 1;
   visibility: visible;
   top: 100%;
   margin-top: 20px;
+  left: 0;
 }
 
 .main-navigation nav > ul ul {
@@ -697,13 +697,11 @@ body.fixed-nav-active .main-navigation {
   width: 250px;
   z-index: 99;
   opacity: 0;
-  visibility: hidden;
   text-align: left;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+}
+
+.main-navigation nav ul.menu > li > ul.sub-menu {
+  left: -10000px
 }
 
 .main-navigation nav > ul ul li {
