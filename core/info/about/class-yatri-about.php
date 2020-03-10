@@ -697,7 +697,7 @@ class Yatri_About
         ?>
         <div class="mb-about-box pro">
             <div class="mb-about-box-top"><span
-                        class="dashicons dashicons-admin-plugins"></span> <?php _e('Yatri Extensions/Addons', 'yatri'); ?>
+                        class="dashicons dashicons-admin-plugins"></span> <?php _e('Yatri Premium Extensions/Addons', 'yatri'); ?>
                 <a class="mb-about-upgrade" target="_blank"
                    href="https://wpyatri.com/pricing?ref=themepanel-upgradenow"><?php _e('Upgrade Now &rarr;', 'yatri'); ?></a>
             </div>
