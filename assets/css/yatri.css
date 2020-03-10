@@ -9302,12 +9302,14 @@ body.fixed-nav-active .main-navigation {
   opacity: 1;
   visibility: visible;
   top: 100%;
-  margin-top: 20px;
-  left: 0; }
+  margin-top: 0;
+  left: 0;
+  -webkit-transition: opacity ease-in-out .3s;
+  -o-transition: opacity ease-in-out .3s;
+  -moz-transition: opacity ease-in-out .3s;
+  transition: opacity ease-in-out .3s; }
 
 .main-navigation nav > ul ul {
-  background: #ffffff;
-  border: 1px solid #ddd;
   left: 0;
   margin: 0;
   padding: 0;
@@ -9316,15 +9318,28 @@ body.fixed-nav-active .main-navigation {
   width: 250px;
   z-index: 99;
   opacity: 0;
-  text-align: left; }
+  text-align: left;
+  -webkit-transition: opacity ease-in-out .3s;
+  -o-transition: opacity ease-in-out .3s;
+  -moz-transition: opacity ease-in-out .3s;
+  transition: opacity ease-in-out .3s; }
 
 .main-navigation nav ul.menu > li > ul.sub-menu {
   left: -10000px; }
 
 .main-navigation nav > ul ul li {
-  border-bottom: 1px solid #DDD;
+  border: 1px solid #DDD;
   position: relative;
   display: block; }
+  .main-navigation nav > ul ul li:last-child {
+    border-bottom: 0; }
+
+.main-navigation nav > ul ul.sub-menu > li {
+  border-bottom: 0; }
+  .main-navigation nav > ul ul.sub-menu > li:last-child {
+    border-bottom: 1px solid #ddd; }
+  .main-navigation nav > ul ul.sub-menu > li a {
+    background: #ffffff; }
 
 .main-navigation nav > ul ul li a {
   color: #2d2d2d;

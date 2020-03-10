@@ -578,7 +578,7 @@ class Yatri_Section_Nav_Menu_Config
                 ),
                 array(
                     'name' => $id . '_dropdown_nav_wrapper_margin',
-                    'type' => 'margin',
+                    'type' => 'padding',
                     'label' => esc_html__('Wrapper Margin', 'yatri'),
                     'description' => '',
                     'selector' => "

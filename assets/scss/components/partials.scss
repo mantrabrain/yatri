@@ -50,6 +50,7 @@
   padding: 10px 15px;
   text-transform: capitalize;
 }
+
 section.wrapper.site-content, .wrap-detail-page, .yatra-page-wrapper {
 
   padding-top: 50px;
@@ -681,13 +682,14 @@ body.fixed-nav-active .main-navigation {
   opacity: 1;
   visibility: visible;
   top: 100%;
-  margin-top: 20px;
+  margin-top: 0;
   left: 0;
+  -webkit-transition: opacity ease-in-out .3s;
+  transition: opacity ease-in-out .3s;
 }
 
 .main-navigation nav > ul ul {
-  background: #ffffff;
-  border: 1px solid #ddd;
+
   left: 0;
   margin: 0;
   padding: 0;
@@ -697,6 +699,9 @@ body.fixed-nav-active .main-navigation {
   z-index: 99;
   opacity: 0;
   text-align: left;
+  -webkit-transition: opacity ease-in-out .3s;
+  transition: opacity ease-in-out .3s;
+
 }
 
 .main-navigation nav ul.menu > li > ul.sub-menu {
@@ -704,9 +709,23 @@ body.fixed-nav-active .main-navigation {
 }
 
 .main-navigation nav > ul ul li {
-  border-bottom: 1px solid #DDD;
+  border: 1px solid #DDD;
   position: relative;
   display: block;
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.main-navigation nav > ul  ul.sub-menu > li {
+  border-bottom: 0;
+
+  &:last-child {
+    border-bottom: 1px solid #ddd;
+  }
+  a{
+    background: #ffffff;
+  }
 }
 
 .main-navigation nav > ul ul li a {
