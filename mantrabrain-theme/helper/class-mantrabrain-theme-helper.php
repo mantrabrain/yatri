@@ -1607,6 +1607,33 @@ if (!class_exists('Mantrabrain_Theme_Helper')) {
             return $single_value;
         }
 
+        static function maybe_json_decode($maybe_json_string)
+        {
+            $decoded_value = array();
+
+            try {
+
+                if (is_string($maybe_json_string)) {
+
+                    $decoded = json_decode($maybe_json_string, true);
+
+                    $decoded_value = (json_last_error() == JSON_ERROR_NONE) ? $decoded : $decoded_value;
+
+                } else if (is_array($maybe_json_string)) {
+
+                    $decoded_value = $maybe_json_string;
+
+                } else if (is_object($maybe_json_string)) {
+
+                    $decoded_value = $maybe_json_string;
+                }
+
+            } catch (Exception $e) {
+
+                $decoded_value = array();
+            }
+            return $decoded_value;
+        }
         static function sanitize_builder($input, $setting)
         {
             $all_valid_fields = array();
@@ -1619,7 +1646,7 @@ if (!class_exists('Mantrabrain_Theme_Helper')) {
 
             try {
 
-                $all_field_value = json_decode($input, true);
+                $all_field_value = self::maybe_json_decode($input);
 
             } catch (Exception $e) {
 

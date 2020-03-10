@@ -113,9 +113,9 @@ class Yatri_Sections
         $toggle_icon = isset($options['toggle_icon']) ? $options['toggle_icon'] : 'fas fa-bars';
         ?>
         <div class="yatri-responsive-toggle-menu-wrap">
-            <div class="yatri-responsive-toggle-menu section-<?php echo esc_attr($section_id) ?>">
+            <button class="yatri-responsive-toggle-menu section-<?php echo esc_attr($section_id) ?>">
                 <span class="<?php echo esc_attr($toggle_icon); ?>"></span>
-            </div>
+            </button>
         </div>
         <?php
 
@@ -458,9 +458,9 @@ class Yatri_Sections
         ?>
         <div class="yatri-responsive-toggle-menu-wrap"
              data-id="<?php echo esc_attr($section_part_id); ?>_navigation_menu">
-            <div class="yatri-responsive-toggle-menu">
+            <button class="yatri-responsive-toggle-menu">
                 <span class="<?php echo esc_attr($toggle_icon); ?>"></span>
-            </div>
+            </button>
         </div>
         <?php
 
