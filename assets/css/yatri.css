@@ -6034,7 +6034,8 @@ q:before, q:after {
   font-family: "Font Awesome 5 Free";
   font-size: 12px;
   vertical-align: middle;
-  margin-right: 10px; }
+  margin-right: 10px;
+  font-weight: 600; }
 
 q:after {
   content: "\7b";
