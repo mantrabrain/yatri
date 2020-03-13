@@ -23,7 +23,7 @@ global $yatri_settings;
 <?php
 do_action('wp_body_open');
 ?>
-    <a class="skip-link screen-reader-text" href="#site-content">
+    <a class="skip-link screen-reader-text" href="#main-content">
         <?php echo esc_html__('Skip to content', 'yatri'); ?>
     </a>
 <div id="site-content" class="site">

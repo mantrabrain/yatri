@@ -204,7 +204,7 @@ class Yatri_About
 
         if (is_admin() && ('themes.php' == $pagenow) && isset($_GET['activated'])) {
             ?>
-            <div class="yatri-notice-wrapper notice is-dismissible">
+            <div class="yatri-notice-wrapper notice notice-info is-dismissible">
                 <div class="yatri-notice">
                     <div class="yatri-notice-content">
                         <div class="yatri-notice-heading"><?php

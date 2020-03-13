@@ -230,23 +230,11 @@
 }
 
 .yatri-notice-wrapper .yatri-install-all-plugins.updating-message:before {
-    line-height: 37px;
-    margin-left: -8px;
-    margin-right: -1px;
-}
 
-.yatri-notice-wrapper .yatri-install-all-plugins {
-    text-decoration: none;
-    height: 40px;
-    width: 225px;
-    line-height: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: bold;
-    font-size: 15px;
-    background: #007cba;
-    border-color: #007cba;
+    line-height: 21px;
+    margin-left: 0;
+    margin-right: 0;
+    float: right;
 }
 
 .yatri-notice-wrapper .yatri-install-all-plugins:hover {
@@ -572,13 +560,6 @@
 
 .mb-about-list-item .rcp p {
     margin-bottom: 0px;
-}
-
-/*Admin notice*/
-.yatri-notice-wrapper.notice {
-    background: #fff;
-    border: 1px solid #ccd0d4;
-    border-left: 4px solid #00a0d2;
 }
 
 .yatri-notice-wrapper.notice .notice-dismiss {

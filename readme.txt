@@ -4,8 +4,8 @@ Tags: blog, grid-Layout, two-columns, left-sidebar, right-sidebar, custom-backgr
 Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 5.3.2
-Version: 1.0.6
-Stable tag: 1.0.6
+Version: 1.0.7
+Stable tag: 1.0.7
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -28,43 +28,47 @@ Yatri is distributed under the terms of the GNU General Public License v3
 
 == Credits ==
 
-- Underscores
-Source: Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores, (C) 2012-2015 Automattic, Inc.
+Source: Based on Underscores http://underscores.me/
 License: [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 
-- Normalize
-Source: normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2015 Nicolas Gallagher and Jonathan Neal
+Normalize, (C) 2012-2015 Nicolas Gallagher and Jonathan Neal
+Source: normalize.css http://necolas.github.io/normalize.css/
 License: [MIT](http://opensource.org/licenses/MIT)
 
-- Google Fonts
+Google Fonts, (c) 2019 Fonts Creators & Google
 Source: https://fonts.google.com/
 License: SIL Open Font License, 1.1 - scripts.sil.org/OFL
 
-- Font Awesome:
-Source: http://fontawesome.io/, (C) Dave Gandy
+Font Awesome, (C) Dave Gandy
+Source: http://fontawesome.io/
 License: (CSS)[MIT](http://opensource.org/licenses/MIT), (Fonts)[SIL OFL 1.1](http://scripts.sil.org/OFL)
 
-- Select2:
-Source: https://github.com/select2/select2/, (C)  Kevin Brown, Igor Vaynberg, and Select2 contributors
+Select2,  (C)  Kevin Brown, Igor Vaynberg, and Select2 contributors
+Source: https://github.com/select2/select2/
 License: (JS/CSS)[MIT](http://opensource.org/licenses/MIT)
 
-- wp-color-picker-alpha
+wp-color-picker-alpha, (c) Sergio and contributors
 Source: https://github.com/kallookoo/wp-color-picker-alpha
 License: [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 
-- Breadcrumb Trail
-(C) 2008 - 2015, Justin Tadlock (http://themehybrid.com/plugins/breadcrumb-trail/), [GPLv2](https://www.gnu.org/licenses/gpl-2.0.html)
+Breadcrumb Trail, (C) 2008 - 2015, Justin Tadlock
+Source: http://themehybrid.com/plugins/breadcrumb-trail/
+License:  [GPLv2](https://www.gnu.org/licenses/gpl-2.0.html)
 
-- Bootstrap
-(C) 2011 - 2018, The Bootstrap Authors [MIT] (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+Bootstrap, (C) 2011 - 2018, The Bootstrap Authors [MIT]
+Source: https://github.com/twbs/bootstrap
+License: [MIT](http://opensource.org/licenses/MIT)
 
-- TGM Plugin Activation
- (C) 2011, TGMPA (https://github.com/TGMPA/TGM-Plugin-Activation/), [GPLv2](https://www.gnu.org/licenses/gpl-2.0.html)
+TGM Plugin Activation, TGMPA(C) 2011
+Source: https://github.com/TGMPA/TGM-Plugin-Activation/
+License: https://www.gnu.org/licenses/gpl-2.0.html
 
 == Images ==
+Image for theme screenshot, Copyright Creative Commons CC0
+License: Creative Commons Zero (CC0)
+Source: https://pxhere.com/en/photo/1456587
 
-* Image used in screenshot, License CC0 Public Domain
-- https://pxhere.com/en/photo/1456587
-
-* Other Image
-- Copyright (C) 2020, mantrabrain, GPLv2](https://www.gnu.org/licenses/gpl-2.0.html)
+Other Images, (C) mantrabrain
+Source: No source required, this resources were created by me from scratch -> ( theme author ) @ mantrabrain
+License: [GPLv2](https://www.gnu.org/licenses/gpl-2.0.html
