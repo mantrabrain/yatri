@@ -204,13 +204,13 @@ class Yatri_About
 
         if (is_admin() && ('themes.php' == $pagenow) && isset($_GET['activated'])) {
             ?>
-            <div class="yatri-notice-wrapper notice notice-info is-dismissible">
+            <div class="yatri-notice-wrapper notice notice-info is-dismissible yatri-plugin-install-notice-wrap">
                 <div class="yatri-notice">
                     <div class="yatri-notice-content">
-                        <div class="yatri-notice-heading"><?php
+                        <h3><?php
                             echo sprintf(esc_html__('Thanks for installing %s. To fully take advantage of the best our theme can offer, click on get started ', 'yatri'), $this->config['name']);
                             ?>
-                        </div>
+                        </h3>
                         <?php
                         $yatri_get_recommanded_plugins = yatri_get_recommanded_plugins();
 
@@ -228,9 +228,9 @@ class Yatri_About
                         if (!empty($plugin_name_text)) {
                             ?>
 
-                            <p style="font-size:11px"><?php echo sprintf(esc_html__('Clicking on get started will install & activate %s.', 'yatri'), $plugin_name_text); ?></p>
+                            <p><?php echo sprintf(esc_html__('Clicking on get started will install & activate %s.', 'yatri'), $plugin_name_text); ?></p>
                         <?php } ?>
-                        <a href="#" class="yatri-install-all-plugins button" style="text-decoration: none;">
+                        <a href="#" class="button">
                             <?php echo sprintf(esc_html__('Get started with %s', 'yatri'), $this->config['name']); ?>
                         </a>
                     </div>

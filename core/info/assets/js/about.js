@@ -2,7 +2,7 @@ jQuery(document).ready(function ($) {
 
     var at_document = $(document);
 
-    $('.yatri-install-all-plugins').click(function (e) {
+    $('.yatri-plugin-install-notice-wrap a.button').click(function (e) {
         e.preventDefault();
 
         $(this).addClass('updating-message');

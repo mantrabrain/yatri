@@ -4,8 +4,8 @@ Tags: blog, grid-Layout, two-columns, left-sidebar, right-sidebar, custom-backgr
 Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 5.3.2
-Version: 1.0.7
-Stable tag: 1.0.7
+Version: 1.0.8
+Stable tag: 1.0.8
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -65,7 +65,7 @@ Source: https://github.com/TGMPA/TGM-Plugin-Activation/
 License: https://www.gnu.org/licenses/gpl-2.0.html
 
 == Images ==
-Image for theme screenshot, Copyright Creative Commons CC0
+Image for theme screenshot, Copyright grenny
 License: Creative Commons Zero (CC0)
 Source: https://pxhere.com/en/photo/1456587
 
