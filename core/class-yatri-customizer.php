@@ -48,12 +48,18 @@ class Yatri_Customizer
 
         add_action('wp_loaded', array($this, 'init_customizer_options'));
 
+
         add_action('customize_register', array($this, 'register_panel'));
         add_action('customize_register', array($this, 'register_control'));
         add_action('customize_register', array($this, 'customize_options'));
         add_action('customize_register', array($this, 'move_default_options'));
 
         add_action('customize_preview_init', array($this, 'customize_enqueue'));
+
+
+        add_action('customize_register', array($this, 'sections'));
+        add_action('customize_controls_enqueue_scripts', array($this, 'enqueue_control_scripts'), 0);
+
 
     }
 
@@ -62,6 +68,38 @@ class Yatri_Customizer
 
         yatri_init_customizer_options();
 
+    }
+
+    public function sections($manager)
+    {
+        // Load custom sections.
+
+        require_once YATRI_THEME_DIR . '/core/customizer/sections/customizer-pro/section-pro.php';
+
+        // Register custom section types.
+        $manager->register_section_type('Yatri_Customize_Section_Pro');
+
+        // Register sections.
+        $manager->add_section(
+            new Yatri_Customize_Section_Pro(
+                $manager,
+                'yatri-pro',
+                array(
+                    'pro_text' => esc_html__('Get More Features in Yatri Premium', 'yatri'),
+                    'pro_url' => 'https://wpyatri.com/pricing/?ref=yatricustomizer',
+                    'priority' => 0
+                )
+            )
+        );
+    }
+
+    public function enqueue_control_scripts()
+    {
+
+        $script_uri = YATRI_THEME_URI . 'core/customizer/sections/customizer-pro/';
+
+        wp_enqueue_script('yatri-customizer-pro-control-js', $script_uri . 'pro.js', array('customize-controls'));
+        wp_enqueue_style('yatri-customizer-pro-control-css', $script_uri . 'pro.css');
     }
 
     /**

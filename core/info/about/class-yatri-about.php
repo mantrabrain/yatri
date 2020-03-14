@@ -51,6 +51,7 @@ class Yatri_About
 
             add_action('yatri_about_sidebar', array(self::$_instance, 'box_plugins'), 10);
             add_action('yatri_about_sidebar', array(self::$_instance, 'box_community'), 25);
+            add_action('yatri_about_sidebar', array(self::$_instance, 'box_documentation'), 30);
 
             add_action('admin_notices', array(self::$_instance, 'admin_notice'));
             add_action('admin_init', array(self::$_instance, 'admin_init'));
@@ -263,6 +264,8 @@ class Yatri_About
 
             echo '</li>';
         }
+        echo '<li><a target="_blank" class="mb-about-top-link" href="https://wpyatri.com/?ref=yatripaneltablink" style="font-weight:bold;color:#000;">' . esc_html__('Learn more about Yatri theme &#187;', 'yatri') . '</a>';
+        echo '</li>';
 
         echo '</ul>';
     }
@@ -509,7 +512,25 @@ class Yatri_About
             <div class="mb-about-box-content">
                 <p><?php _e('Join our facebook community group so that you can post question and help each other.', 'yatri'); ?></p>
                 <a target="_blank"
-                   href="https://www.facebook.com/groups/wpyatri/"><?php _e('Join our facebook community group »', 'yatri'); ?></a>
+                   href="https://www.facebook.com/groups/wpyatri/"><?php _e('Join our facebook community group', 'yatri'); ?>
+                    &#187;</a>
+            </div>
+        </div>
+        <?php
+    }
+
+    function box_documentation()
+    {
+        ?>
+        <div class="mb-about-box">
+            <div class="mb-about-box-top">
+                <span class="dashicons dashicons-edit"></span>
+                <?php _e('Yatri Documentation', 'yatri'); ?></div>
+            <div class="mb-about-box-content">
+                <p><?php _e('Yatri theme documentations and tutorial.', 'yatri'); ?></p>
+                <a target="_blank"
+                   href="https://docs.wpyatri.com/?ref=yatrithemepaneldocs"><?php _e('Yatri Documentation', 'yatri'); ?>
+                    &#187;</a>
             </div>
         </div>
         <?php

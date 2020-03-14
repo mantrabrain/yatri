@@ -666,7 +666,7 @@ if (!function_exists('yatri_get_default_theme_options')) :
             'tablet' => true,
             'mobile' => true
         );
-        $defaults['bottom_footer_copyright_content'] = sprintf(esc_html__('Copyright © 2020 %1$s | Powered by %2$s Yatri WordPress Theme %3$s', 'yatri'), get_bloginfo('title'), '<a target="_blank" href="https://mantrabrain.com">', '</a>');
+        $defaults['bottom_footer_copyright_content'] = sprintf(esc_html__('Copyright %1$s 2020 %2$s | Powered by %3$s Yatri WordPress Theme %4$s', 'yatri'), '&copy;', get_bloginfo('title'), '<a target="_blank" href="https://mantrabrain.com">', '</a>');
         $defaults['bottom_footer_copyright_design'] = '{}';
         $defaults['bottom_footer_copyright_visibility'] = array(
             'desktop' => true,
