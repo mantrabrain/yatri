@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: mantrabrain@gmail.com\n"
-"POT-Creation-Date: 2020-03-14 10:59:48+00:00\n"
+"POT-Creation-Date: 2020-03-16 08:08:51+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -150,8 +150,8 @@ msgid "Get More Features in Yatri Premium"
 msgstr ""
 
 #: core/class-yatri-sections.php:271 core/class-yatri-sections.php:282
-#: core/customizer/core.php:226 core/customizer/core.php:333
-#: core/customizer/core.php:441
+#: core/customizer/core.php:228 core/customizer/core.php:335
+#: core/customizer/core.php:443
 msgid "Search"
 msgstr ""
 
@@ -907,52 +907,52 @@ msgstr ""
 msgid "Label Color"
 msgstr ""
 
-#: core/customizer/core.php:155 core/customizer/core.php:262
-#: core/customizer/core.php:370 core/customizer/core.php:631
+#: core/customizer/core.php:157 core/customizer/core.php:264
+#: core/customizer/core.php:372 core/customizer/core.php:633
 msgid "Facebook"
 msgstr ""
 
-#: core/customizer/core.php:161 core/customizer/core.php:268
-#: core/customizer/core.php:376 core/customizer/core.php:637
+#: core/customizer/core.php:163 core/customizer/core.php:270
+#: core/customizer/core.php:378 core/customizer/core.php:639
 msgid "Twitter"
 msgstr ""
 
-#: core/customizer/core.php:167 core/customizer/core.php:274
-#: core/customizer/core.php:382 core/customizer/core.php:643
+#: core/customizer/core.php:169 core/customizer/core.php:276
+#: core/customizer/core.php:384 core/customizer/core.php:645
 msgid "Google"
 msgstr ""
 
-#: core/customizer/core.php:232 core/customizer/core.php:339
-#: core/customizer/core.php:447 core/customizer/core.php:655
+#: core/customizer/core.php:234 core/customizer/core.php:341
+#: core/customizer/core.php:449 core/customizer/core.php:657
 msgid "Contact"
 msgstr ""
 
-#: core/customizer/core.php:235 core/customizer/core.php:342
-#: core/customizer/core.php:450 core/customizer/core.php:603
+#: core/customizer/core.php:237 core/customizer/core.php:344
+#: core/customizer/core.php:452 core/customizer/core.php:605
 msgid "Office address"
 msgstr ""
 
-#: core/customizer/core.php:240 core/customizer/core.php:347
-#: core/customizer/core.php:455 core/customizer/core.php:608
+#: core/customizer/core.php:242 core/customizer/core.php:349
+#: core/customizer/core.php:457 core/customizer/core.php:610
 msgid "info@domain.com"
 msgstr ""
 
-#: core/customizer/core.php:245 core/customizer/core.php:352
-#: core/customizer/core.php:460 core/customizer/core.php:662
+#: core/customizer/core.php:247 core/customizer/core.php:354
+#: core/customizer/core.php:462 core/customizer/core.php:664
 msgid "Your content goes here..."
 msgstr ""
 
-#: core/customizer/core.php:534 template-parts/parts/post-readmore-button.php:3
+#: core/customizer/core.php:536 template-parts/parts/post-readmore-button.php:3
 msgid "Learn More"
 msgstr ""
 
-#: core/customizer/core.php:557
+#: core/customizer/core.php:559
 #: core/customizer/sections/single-post/related-posts.php:4
 #: core/yatri-functions.php:358
 msgid "Related Posts"
 msgstr ""
 
-#: core/customizer/core.php:669
+#: core/customizer/core.php:671
 msgid "Copyright %1$s 2020 %2$s | Powered by %3$s Yatri WordPress Theme %4$s"
 msgstr ""
 
@@ -2209,48 +2209,51 @@ msgstr ""
 msgid "No Sidebar ( 100% Full Width )"
 msgstr ""
 
-#: core/tgmpa/class-tgm-plugin-activation.php:328 core/tgmpa/tgmpa-yatri.php:40
+#: core/tgmpa/class-tgm-plugin-activation.php:328 core/tgmpa/tgmpa-yatri.php:52
 msgid "Install Required Plugins"
 msgstr ""
 
-#: core/tgmpa/class-tgm-plugin-activation.php:329 core/tgmpa/tgmpa-yatri.php:41
+#: core/tgmpa/class-tgm-plugin-activation.php:329 core/tgmpa/tgmpa-yatri.php:53
 msgid "Install Plugins"
 msgstr ""
 
-#: core/tgmpa/class-tgm-plugin-activation.php:331 core/tgmpa/tgmpa-yatri.php:43
+#: core/tgmpa/class-tgm-plugin-activation.php:331 core/tgmpa/tgmpa-yatri.php:55
 #. translators: %s: plugin name.
 msgid "Installing Plugin: %s"
 msgstr ""
 
-#: core/tgmpa/class-tgm-plugin-activation.php:333 core/tgmpa/tgmpa-yatri.php:45
+#: core/tgmpa/class-tgm-plugin-activation.php:333 core/tgmpa/tgmpa-yatri.php:57
 #. translators: %s: plugin name.
 msgid "Updating Plugin: %s"
 msgstr ""
 
-#: core/tgmpa/class-tgm-plugin-activation.php:334 core/tgmpa/tgmpa-yatri.php:46
+#: core/tgmpa/class-tgm-plugin-activation.php:334 core/tgmpa/tgmpa-yatri.php:58
 msgid "Something went wrong with the plugin API."
 msgstr ""
 
-#: core/tgmpa/class-tgm-plugin-activation.php:371 core/tgmpa/tgmpa-yatri.php:83
+#: core/tgmpa/class-tgm-plugin-activation.php:371 core/tgmpa/tgmpa-yatri.php:95
 #. translators: 1: plugin name(s).
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/tgmpa/class-tgm-plugin-activation.php:376 core/tgmpa/tgmpa-yatri.php:88
+#: core/tgmpa/class-tgm-plugin-activation.php:376
+#: core/tgmpa/tgmpa-yatri.php:100
 msgid "Begin updating plugin"
 msgid_plural "Begin updating plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/tgmpa/class-tgm-plugin-activation.php:381 core/tgmpa/tgmpa-yatri.php:93
+#: core/tgmpa/class-tgm-plugin-activation.php:381
+#: core/tgmpa/tgmpa-yatri.php:105
 msgid "Begin activating plugin"
 msgid_plural "Begin activating plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/tgmpa/class-tgm-plugin-activation.php:386 core/tgmpa/tgmpa-yatri.php:98
+#: core/tgmpa/class-tgm-plugin-activation.php:386
+#: core/tgmpa/tgmpa-yatri.php:110
 msgid "Return to Required Plugins Installer"
 msgstr ""
 
@@ -2263,24 +2266,24 @@ msgstr ""
 
 #: core/tgmpa/class-tgm-plugin-activation.php:388
 #: core/tgmpa/class-tgm-plugin-activation.php:3223
-#: core/tgmpa/tgmpa-yatri.php:99
+#: core/tgmpa/tgmpa-yatri.php:111
 msgid "Plugin activated successfully."
 msgstr ""
 
 #: core/tgmpa/class-tgm-plugin-activation.php:389
 #: core/tgmpa/class-tgm-plugin-activation.php:3010
-#: core/tgmpa/tgmpa-yatri.php:100
+#: core/tgmpa/tgmpa-yatri.php:112
 msgid "The following plugin was activated successfully:"
 msgstr ""
 
 #: core/tgmpa/class-tgm-plugin-activation.php:391
-#: core/tgmpa/tgmpa-yatri.php:102
+#: core/tgmpa/tgmpa-yatri.php:114
 #. translators: 1: plugin name.
 msgid "No action taken. Plugin %1$s was already active."
 msgstr ""
 
 #: core/tgmpa/class-tgm-plugin-activation.php:393
-#: core/tgmpa/tgmpa-yatri.php:104
+#: core/tgmpa/tgmpa-yatri.php:116
 #. translators: 1: plugin name.
 msgid ""
 "Plugin not activated. A higher version of %s is needed for this theme. "
@@ -2288,25 +2291,25 @@ msgid ""
 msgstr ""
 
 #: core/tgmpa/class-tgm-plugin-activation.php:395
-#: core/tgmpa/tgmpa-yatri.php:106
+#: core/tgmpa/tgmpa-yatri.php:118
 #. translators: 1: dashboard link.
 msgid "All plugins installed and activated successfully. %1$s"
 msgstr ""
 
 #: core/tgmpa/class-tgm-plugin-activation.php:396
-#: core/tgmpa/tgmpa-yatri.php:107
+#: core/tgmpa/tgmpa-yatri.php:119
 msgid "Dismiss this notice"
 msgstr ""
 
 #: core/tgmpa/class-tgm-plugin-activation.php:397
-#: core/tgmpa/tgmpa-yatri.php:108
+#: core/tgmpa/tgmpa-yatri.php:120
 msgid ""
 "There are one or more required or recommended plugins to install, update or "
 "activate."
 msgstr ""
 
 #: core/tgmpa/class-tgm-plugin-activation.php:398
-#: core/tgmpa/tgmpa-yatri.php:109
+#: core/tgmpa/tgmpa-yatri.php:121
 msgid "Please contact the administrator of this site for help."
 msgstr ""
 
@@ -2567,21 +2570,29 @@ msgstr ""
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: core/tgmpa/tgmpa-yatri.php:48
+#: core/tgmpa/tgmpa-yatri.php:22 core/yatri-functions.php:604
+msgid "Yatri Tools"
+msgstr ""
+
+#: core/tgmpa/tgmpa-yatri.php:27
+msgid "Elementor"
+msgstr ""
+
+#: core/tgmpa/tgmpa-yatri.php:60
 #. translators: 1: plugin name(s).
 msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/tgmpa/tgmpa-yatri.php:54
+#: core/tgmpa/tgmpa-yatri.php:66
 #. translators: 1: plugin name(s).
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/tgmpa/tgmpa-yatri.php:60
+#: core/tgmpa/tgmpa-yatri.php:72
 #. translators: 1: plugin name(s).
 msgid ""
 "The following plugin needs to be updated to its latest version to ensure "
@@ -2592,21 +2603,21 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/tgmpa/tgmpa-yatri.php:66
+#: core/tgmpa/tgmpa-yatri.php:78
 #. translators: 1: plugin name(s).
 msgid "There is an update available for: %1$s."
 msgid_plural "There are updates available for the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/tgmpa/tgmpa-yatri.php:72
+#: core/tgmpa/tgmpa-yatri.php:84
 #. translators: 1: plugin name(s).
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/tgmpa/tgmpa-yatri.php:78
+#: core/tgmpa/tgmpa-yatri.php:90
 #. translators: 1: plugin name(s).
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
@@ -2796,10 +2807,6 @@ msgstr ""
 
 #: core/yatri-functions.php:592
 msgid "Tag"
-msgstr ""
-
-#: core/yatri-functions.php:604
-msgid "Yatri Tools"
 msgstr ""
 
 #: core/yatri-functions.php:865
