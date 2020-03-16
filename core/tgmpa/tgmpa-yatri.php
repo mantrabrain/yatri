@@ -16,7 +16,19 @@ function yatri_register_required_plugins()
     /**
      * Array of plugin arrays. Required keys are name and slug.
      */
-    $plugins = yatri_get_recommanded_plugins();
+    $plugins =
+        array(
+            array(
+                'name' => esc_html__('Yatri Tools', 'yatri'),
+                'slug' => 'yatri-tools',
+                'required' => false,
+            ),
+            array(
+                'name' => esc_html__('Elementor', 'yatri'),
+                'slug' => 'elementor',
+                'required' => false,
+            )
+        );
 
     $config = array(
         'id' => 'yatri',

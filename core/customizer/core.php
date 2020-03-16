@@ -137,6 +137,8 @@ if (!function_exists('yatri_get_header_theme_options')) :
     function yatri_get_header_theme_options()
     {
         $defaults = array();
+
+        $defaults['logo_on_header'] = 'bottom';
 // Top Header Options
         $defaults['show_top_header'] = false;
         $defaults['top_header_visibility'] = array(
@@ -486,7 +488,7 @@ if (!function_exists('yatri_get_default_theme_options')) :
 
         // Header templates
         $defaults['header_templates'] = '';
-        $defaults['logo_on_header'] = 'bottom';
+
 
 
         // Body & Typography
