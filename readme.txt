@@ -1,11 +1,11 @@
 === Yatri ===
 Contributors: mantrabrain
-Tags: blog, grid-Layout, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-images, full-width-template, post-formats, threaded-comments, translation-ready
+Tags: blog, grid-Layout, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-images, full-width-template, post-formats, threaded-comments, translation-ready,  flexible-header, footer-widgets, portfolio,sticky post, theme-options, e-commerce
 Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 5.3.2
-Version: 1.0.9
-Stable tag: 1.0.9
+Version: 1.0.10
+Stable tag: 1.0.10
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -63,11 +63,6 @@ License: [MIT](http://opensource.org/licenses/MIT)
 TGM Plugin Activation, TGMPA(C) 2011
 Source: https://github.com/TGMPA/TGM-Plugin-Activation/
 License: https://www.gnu.org/licenses/gpl-2.0.html
-
-== Images ==
-Image for theme screenshot, Copyright grenny
-License: Creative Commons Zero (CC0)
-Source: https://pxhere.com/en/photo/1456587
 
 Other Images, (C) mantrabrain
 Source: No source required, this resources were created by me from scratch -> ( theme author ) @ mantrabrain
