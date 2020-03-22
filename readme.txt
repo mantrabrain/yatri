@@ -1,6 +1,6 @@
 === Yatri ===
 Contributors: mantrabrain
-Tags: blog, grid-Layout, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-images, full-width-template, post-formats, threaded-comments, translation-ready,  flexible-header, footer-widgets, portfolio,sticky post, theme-options, e-commerce
+Tags: blog, grid-Layout, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-images, full-width-template, post-formats, threaded-comments, translation-ready,  flexible-header, footer-widgets, portfolio, sticky-post, theme-options, e-commerce
 Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 5.3.2
