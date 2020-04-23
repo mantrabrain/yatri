@@ -54,7 +54,7 @@ if (!class_exists('Yatri_Yatra')) :
             ?>
             <section class="wrapper block-grid site-content yatri_list_layout" id="main-content">
             <?php
-            $main_wrap_class = 'yat-col-12 yat-col-md-8';
+            $main_wrap_class = 'yat-col-12 yat-col-md-12';
         if (!is_single()) {
             $class = 'yatra-page-wrapper ' . get_option('yatra_archive_template', 'template-default');
             $main_wrap_class = 'yat-col-12 yat-col-md-12';
@@ -82,7 +82,7 @@ if (!class_exists('Yatri_Yatra')) :
             echo '</div></div>';
 
             if (is_single()) {
-                get_sidebar();
+               // get_sidebar();
             }
 
             echo '</div></div>';

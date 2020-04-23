@@ -83,7 +83,7 @@ if (!function_exists('yatri_get_visibility_css')) {
 
     }
 }
-if (!function_exists('yatri_dynamic_css')) :
+if (!function_exists('yatri_get_modal_dynamic_css')) :
 
     function yatri_get_modal_dynamic_css()
     {
@@ -981,9 +981,9 @@ if (!function_exists('yatri_get_color_css')) {
 
     }
 }
-if (!function_exists('yatri_dynamc_css_array_parser')) {
+if (!function_exists('yatri_dynamic_css_array_parser')) {
 
-    function yatri_dynamc_css_array_parser($array = array())
+    function yatri_dynamic_css_array_parser($array = array())
     {
         $css = '';
 
