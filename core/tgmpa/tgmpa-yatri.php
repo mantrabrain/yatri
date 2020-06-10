@@ -22,6 +22,11 @@ function yatri_register_required_plugins()
                 'name' => esc_html__('Yatri Tools', 'yatri'),
                 'slug' => 'yatri-tools',
                 'required' => false,
+            ),
+			array(
+                'name' => esc_html__('WP Forms', 'yatri'),
+                'slug' => 'wpforms-lite',
+                'required' => false,
             )
         );
 

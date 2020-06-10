@@ -106,7 +106,7 @@ if (!class_exists('Yatri_Core')) :
 
             // Post metabox
             require_once YATRI_THEME_DIR . 'core/metabox/class-yatri-post-metabox.php';
-            
+
 
             // Elementor Compatibility requires PHP 5.4 for namespaces.
             if (version_compare(PHP_VERSION, '5.4', '>=')) {
@@ -116,6 +116,8 @@ if (!class_exists('Yatri_Core')) :
             require_once YATRI_THEME_DIR . 'core/compatibility/class-yatri-woocommerce.php';
             //Yatra
             require_once YATRI_THEME_DIR . 'core/compatibility/class-yatri-yatra.php';
+			// WP Forms
+            require_once YATRI_THEME_DIR . 'core/compatibility/class-yatri-wpforms.php';
 
             /**
              * Load TGMPA Configs.
