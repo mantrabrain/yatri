@@ -24,7 +24,7 @@ function yatri_register_required_plugins()
                 'required' => false,
             ),
 			array(
-                'name' => esc_html__('WP Forms', 'yatri'),
+                'name' => esc_html__('WPForms Lite', 'yatri'),
                 'slug' => 'wpforms-lite',
                 'required' => false,
             )

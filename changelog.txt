@@ -1,3 +1,5 @@
+= 1.0.12 | 2020/06/10 =
+- Update - Version test and WPForms plugin compatibility
 = 1.0.11 | 2020/04/23 =
 - Update - Version test and yatra plugin compatibility test
 = 1.0.10 | 2020/03/22 =
