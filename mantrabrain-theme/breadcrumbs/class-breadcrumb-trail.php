@@ -198,10 +198,13 @@ class Breadcrumb_Trail
                     }
                 }
 
-                // Wrap the item with its itemprop.
-                $item = !empty($matches)
-                    ? preg_replace('/(<a.*?)([\'"])>/i', '$1$2 itemprop=$2item$2>', $item)
-                    : sprintf($span_item, $item);
+				// not add itemprop in last trail (fixed Last Trail generates error for Google Structured Data test)
+				if ( $item_count != $item_position ){
+					// Wrap the item with its itemprop.
+					$item = ! empty( $matches )
+						? preg_replace( '/(<a.*?)([\'"])>/i', '$1$2 itemprop=$2item$2>', $item )
+						: sprintf( '<span itemprop="item">%s</span>', $item );
+				}
 
                 // Build the list item.
                 $breadcrumb .= sprintf('<%1$s %2$s>%3$s%4$s</%1$s>', tag_escape($this->args['item_tag']), $attributes, $item, $meta);
