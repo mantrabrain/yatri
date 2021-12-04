@@ -10927,7 +10927,7 @@ input[type="reset"]:focus,
 input[type="submit"]:hover,
 input[type="submit"]:active,
 button,
-button.wp-block-search__button
+button.wp-block-search__button,
 input[type="submit"]:focus, .button, .button:hover, .button:active, .button:focus, .default-button, .default-button:hover, .default-button:active, .default-button:focus, .button-primary, .button-light, .button-outline, .button-outline:hover, .button-outline:focus, .button-outline:active, .comments-area .comment-list .reply a {
   border: none;
   cursor: pointer;

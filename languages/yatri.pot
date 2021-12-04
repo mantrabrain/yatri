@@ -1,14 +1,14 @@
-# Copyright (C) 2020
+# Copyright (C) 2021
 # This file is distributed under the same license as the  package.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: mantrabrain@gmail.com\n"
-"POT-Creation-Date: 2020-04-23 16:57:11+00:00\n"
+"POT-Creation-Date: 2021-12-04 09:18:49+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2021-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Mantrabrain <mantrabrain@gmail.com>\n"
 "Language-Team: Mantrabrain <mantrabrain@gmail.com>\n"
 "X-Generator: grunt-wp-i18n 1.0.3\n"
@@ -29,11 +29,11 @@ msgstr ""
 msgid "4"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1129
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1633
 msgid "100"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1130
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1634
 msgid "200"
 msgstr ""
 
@@ -53,95 +53,95 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: core/class-yatri-core.php:161
+#: core/class-yatri-core.php:163
 msgid "Primary Menu"
 msgstr ""
 
-#: core/class-yatri-core.php:162
+#: core/class-yatri-core.php:164
 msgid "Top Header Menu"
 msgstr ""
 
-#: core/class-yatri-core.php:163
+#: core/class-yatri-core.php:165
 msgid "Footer Menu"
 msgstr ""
 
-#: core/class-yatri-core.php:164 core/hooks/class-yatri-section-hooks.php:37
+#: core/class-yatri-core.php:166 core/hooks/class-yatri-section-hooks.php:37
 msgid "Offcanvas Menu"
 msgstr ""
 
-#: core/class-yatri-core.php:221
+#: core/class-yatri-core.php:223
 msgid "Tan"
 msgstr ""
 
-#: core/class-yatri-core.php:226
+#: core/class-yatri-core.php:228
 msgid "Yellow"
 msgstr ""
 
-#: core/class-yatri-core.php:231
+#: core/class-yatri-core.php:233
 msgid "Orange"
 msgstr ""
 
-#: core/class-yatri-core.php:236
+#: core/class-yatri-core.php:238
 msgid "Red"
 msgstr ""
 
-#: core/class-yatri-core.php:241
+#: core/class-yatri-core.php:243
 msgid "Pink"
 msgstr ""
 
-#: core/class-yatri-core.php:246
+#: core/class-yatri-core.php:248
 msgid "Purple"
 msgstr ""
 
-#: core/class-yatri-core.php:251
+#: core/class-yatri-core.php:253
 msgid "Blue"
 msgstr ""
 
-#: core/class-yatri-core.php:256
+#: core/class-yatri-core.php:258
 msgid "Green"
 msgstr ""
 
-#: core/class-yatri-core.php:261
+#: core/class-yatri-core.php:263
 msgid "Brown"
 msgstr ""
 
-#: core/class-yatri-core.php:266
+#: core/class-yatri-core.php:268
 msgid "Grey"
 msgstr ""
 
-#: core/class-yatri-core.php:271
+#: core/class-yatri-core.php:273
 msgid "Black"
 msgstr ""
 
-#: core/class-yatri-core.php:280
+#: core/class-yatri-core.php:282
 msgid "small"
 msgstr ""
 
-#: core/class-yatri-core.php:281
+#: core/class-yatri-core.php:283
 msgid "S"
 msgstr ""
 
-#: core/class-yatri-core.php:286
+#: core/class-yatri-core.php:288
 msgid "regular"
 msgstr ""
 
-#: core/class-yatri-core.php:287
+#: core/class-yatri-core.php:289
 msgid "M"
 msgstr ""
 
-#: core/class-yatri-core.php:292
+#: core/class-yatri-core.php:294
 msgid "larger"
 msgstr ""
 
-#: core/class-yatri-core.php:293
+#: core/class-yatri-core.php:295
 msgid "L"
 msgstr ""
 
-#: core/class-yatri-core.php:298
+#: core/class-yatri-core.php:300
 msgid "huge"
 msgstr ""
 
-#: core/class-yatri-core.php:299
+#: core/class-yatri-core.php:301
 msgid "XL"
 msgstr ""
 
@@ -354,7 +354,7 @@ msgstr ""
 #: core/customizer/config/class-yatri-section-search-form-config.php:30
 #: core/customizer/config/class-yatri-section-sidebar-config.php:158
 #: core/customizer/config/class-yatri-section-social-icons-config.php:89
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1267
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1771
 msgid "Center"
 msgstr ""
 
@@ -1753,14 +1753,14 @@ msgstr ""
 #: core/customizer/sections/header/mid/search-form.php:83
 #: core/customizer/sections/header/top/search-form.php:83
 #: core/yatri-functions.php:551
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1256
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1266
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1280
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1290
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1299
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1314
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1326
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1338
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1760
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1770
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1784
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1794
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1803
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1818
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1830
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1842
 msgid "Default"
 msgstr ""
 
@@ -2209,50 +2209,51 @@ msgstr ""
 msgid "No Sidebar ( 100% Full Width )"
 msgstr ""
 
-#: core/tgmpa/class-tgm-plugin-activation.php:328 core/tgmpa/tgmpa-yatri.php:47
+#: core/tgmpa/class-tgm-plugin-activation.php:328 core/tgmpa/tgmpa-yatri.php:52
 msgid "Install Required Plugins"
 msgstr ""
 
-#: core/tgmpa/class-tgm-plugin-activation.php:329 core/tgmpa/tgmpa-yatri.php:48
+#: core/tgmpa/class-tgm-plugin-activation.php:329 core/tgmpa/tgmpa-yatri.php:53
 msgid "Install Plugins"
 msgstr ""
 
-#: core/tgmpa/class-tgm-plugin-activation.php:331 core/tgmpa/tgmpa-yatri.php:50
+#: core/tgmpa/class-tgm-plugin-activation.php:331 core/tgmpa/tgmpa-yatri.php:55
 #. translators: %s: plugin name.
 msgid "Installing Plugin: %s"
 msgstr ""
 
-#: core/tgmpa/class-tgm-plugin-activation.php:333 core/tgmpa/tgmpa-yatri.php:52
+#: core/tgmpa/class-tgm-plugin-activation.php:333 core/tgmpa/tgmpa-yatri.php:57
 #. translators: %s: plugin name.
 msgid "Updating Plugin: %s"
 msgstr ""
 
-#: core/tgmpa/class-tgm-plugin-activation.php:334 core/tgmpa/tgmpa-yatri.php:53
+#: core/tgmpa/class-tgm-plugin-activation.php:334 core/tgmpa/tgmpa-yatri.php:58
 msgid "Something went wrong with the plugin API."
 msgstr ""
 
-#: core/tgmpa/class-tgm-plugin-activation.php:371 core/tgmpa/tgmpa-yatri.php:90
+#: core/tgmpa/class-tgm-plugin-activation.php:371 core/tgmpa/tgmpa-yatri.php:95
 #. translators: 1: plugin name(s).
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/tgmpa/class-tgm-plugin-activation.php:376 core/tgmpa/tgmpa-yatri.php:95
+#: core/tgmpa/class-tgm-plugin-activation.php:376
+#: core/tgmpa/tgmpa-yatri.php:100
 msgid "Begin updating plugin"
 msgid_plural "Begin updating plugins"
 msgstr[0] ""
 msgstr[1] ""
 
 #: core/tgmpa/class-tgm-plugin-activation.php:381
-#: core/tgmpa/tgmpa-yatri.php:100
+#: core/tgmpa/tgmpa-yatri.php:105
 msgid "Begin activating plugin"
 msgid_plural "Begin activating plugins"
 msgstr[0] ""
 msgstr[1] ""
 
 #: core/tgmpa/class-tgm-plugin-activation.php:386
-#: core/tgmpa/tgmpa-yatri.php:105
+#: core/tgmpa/tgmpa-yatri.php:110
 msgid "Return to Required Plugins Installer"
 msgstr ""
 
@@ -2265,24 +2266,24 @@ msgstr ""
 
 #: core/tgmpa/class-tgm-plugin-activation.php:388
 #: core/tgmpa/class-tgm-plugin-activation.php:3223
-#: core/tgmpa/tgmpa-yatri.php:106
+#: core/tgmpa/tgmpa-yatri.php:111
 msgid "Plugin activated successfully."
 msgstr ""
 
 #: core/tgmpa/class-tgm-plugin-activation.php:389
 #: core/tgmpa/class-tgm-plugin-activation.php:3010
-#: core/tgmpa/tgmpa-yatri.php:107
+#: core/tgmpa/tgmpa-yatri.php:112
 msgid "The following plugin was activated successfully:"
 msgstr ""
 
 #: core/tgmpa/class-tgm-plugin-activation.php:391
-#: core/tgmpa/tgmpa-yatri.php:109
+#: core/tgmpa/tgmpa-yatri.php:114
 #. translators: 1: plugin name.
 msgid "No action taken. Plugin %1$s was already active."
 msgstr ""
 
 #: core/tgmpa/class-tgm-plugin-activation.php:393
-#: core/tgmpa/tgmpa-yatri.php:111
+#: core/tgmpa/tgmpa-yatri.php:116
 #. translators: 1: plugin name.
 msgid ""
 "Plugin not activated. A higher version of %s is needed for this theme. "
@@ -2290,25 +2291,25 @@ msgid ""
 msgstr ""
 
 #: core/tgmpa/class-tgm-plugin-activation.php:395
-#: core/tgmpa/tgmpa-yatri.php:113
+#: core/tgmpa/tgmpa-yatri.php:118
 #. translators: 1: dashboard link.
 msgid "All plugins installed and activated successfully. %1$s"
 msgstr ""
 
 #: core/tgmpa/class-tgm-plugin-activation.php:396
-#: core/tgmpa/tgmpa-yatri.php:114
+#: core/tgmpa/tgmpa-yatri.php:119
 msgid "Dismiss this notice"
 msgstr ""
 
 #: core/tgmpa/class-tgm-plugin-activation.php:397
-#: core/tgmpa/tgmpa-yatri.php:115
+#: core/tgmpa/tgmpa-yatri.php:120
 msgid ""
 "There are one or more required or recommended plugins to install, update or "
 "activate."
 msgstr ""
 
 #: core/tgmpa/class-tgm-plugin-activation.php:398
-#: core/tgmpa/tgmpa-yatri.php:116
+#: core/tgmpa/tgmpa-yatri.php:121
 msgid "Please contact the administrator of this site for help."
 msgstr ""
 
@@ -2573,21 +2574,25 @@ msgstr ""
 msgid "Yatri Tools"
 msgstr ""
 
-#: core/tgmpa/tgmpa-yatri.php:55
+#: core/tgmpa/tgmpa-yatri.php:27
+msgid "WPForms Lite"
+msgstr ""
+
+#: core/tgmpa/tgmpa-yatri.php:60
 #. translators: 1: plugin name(s).
 msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/tgmpa/tgmpa-yatri.php:61
+#: core/tgmpa/tgmpa-yatri.php:66
 #. translators: 1: plugin name(s).
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/tgmpa/tgmpa-yatri.php:67
+#: core/tgmpa/tgmpa-yatri.php:72
 #. translators: 1: plugin name(s).
 msgid ""
 "The following plugin needs to be updated to its latest version to ensure "
@@ -2598,21 +2603,21 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/tgmpa/tgmpa-yatri.php:73
+#: core/tgmpa/tgmpa-yatri.php:78
 #. translators: 1: plugin name(s).
 msgid "There is an update available for: %1$s."
 msgid_plural "There are updates available for the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/tgmpa/tgmpa-yatri.php:79
+#: core/tgmpa/tgmpa-yatri.php:84
 #. translators: 1: plugin name(s).
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/tgmpa/tgmpa-yatri.php:85
+#: core/tgmpa/tgmpa-yatri.php:90
 #. translators: 1: plugin name(s).
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
@@ -2758,9 +2763,9 @@ msgid "Inside Content"
 msgstr ""
 
 #: core/yatri-functions.php:513
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1300
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1330
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1342
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1804
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1834
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1846
 msgid "None"
 msgstr ""
 
@@ -3050,180 +3055,180 @@ msgstr ""
 msgid "Attachment"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1127
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1315
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1631
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1819
 msgid "Normal"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1128
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1632
 msgid "Bold"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1131
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1635
 msgid "Light 300"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1132
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1636
 msgid "Normal 400"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1133
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1637
 msgid "Medium 500"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1134
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1638
 msgid "Semi-Bold 600"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1135
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1639
 msgid "Bold 700"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1136
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1640
 msgid "Extra-Bold 800"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1137
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1641
 msgid "Ultra-Bold 900"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1168
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1672
 msgid "Default Web Fonts"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1172
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1676
 msgid "Google Web Fonts"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1246
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1750
 msgid "px"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1247
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1751
 msgid "rem"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1248
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1752
 msgid "em"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1249
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1753
 msgid "%"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1257
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1761
 msgid "Auto"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1258
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1762
 msgid "Cover"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1259
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1763
 msgid "Contain"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1268
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1772
 msgid "Top Left"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1269
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1773
 msgid "Top Right"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1270
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1774
 msgid "Top Center"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1271
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1775
 msgid "Bottom Left"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1272
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1776
 msgid "Bottom Center"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1273
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1777
 msgid "Bottom Right"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1281
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1785
 msgid "No repeat"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1282
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1786
 msgid "Repeat horizontal"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1283
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1787
 msgid "Repeat vertical"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1291
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1795
 msgid "Scroll"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1292
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1796
 msgid "Fixed"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1301
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1805
 msgid "Solid"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1302
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1806
 msgid "Dotted"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1303
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1807
 msgid "Dashed"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1304
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1808
 msgid "Double"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1305
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1809
 msgid "Ridge"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1306
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1810
 msgid "Inset"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1307
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1811
 msgid "Outset"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1316
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1820
 msgid "Italic"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1317
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1821
 msgid "Oblique"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1327
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1831
 msgid "Underline"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1328
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1832
 msgid "Overline"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1329
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1833
 msgid "Line through"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1339
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1843
 msgid "Uppercase"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1340
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1844
 msgid "Lowercase"
 msgstr ""
 
-#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1341
+#: mantrabrain-theme/helper/class-mantrabrain-theme-helper.php:1845
 msgid "Capitalize"
 msgstr ""
 
@@ -3314,44 +3319,44 @@ msgctxt "breadcrumbs aria label"
 msgid "Breadcrumbs"
 msgstr ""
 
-#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:703
+#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:706
 msgctxt "minute and hour archives time format"
 msgid "g:i a"
 msgstr ""
 
-#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:721
+#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:724
 msgctxt "minute archives time format"
 msgid "i"
 msgstr ""
 
-#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:739
+#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:742
 msgctxt "hour archives time format"
 msgid "g a"
 msgstr ""
 
-#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:756
-#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:785
-#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:824
-#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:851
-#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:1207
+#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:759
+#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:788
+#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:827
+#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:854
+#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:1210
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr ""
 
-#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:757
-#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:825
-#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:1209
+#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:760
+#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:828
+#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:1212
 msgctxt "monthly archives date format"
 msgid "F"
 msgstr ""
 
-#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:758
-#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:1211
+#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:761
+#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:1214
 msgctxt "daily archives date format"
 msgid "j"
 msgstr ""
 
-#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:786
+#: mantrabrain-theme/breadcrumbs/class-breadcrumb-trail.php:789
 msgctxt "weekly archives date format"
 msgid "W"
 msgstr ""
