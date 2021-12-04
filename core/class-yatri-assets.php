@@ -60,7 +60,7 @@ if (!class_exists('Yatri_Assets')) :
 
         function register_scripts($hook)
         {
-            wp_register_script('yatri-color-alpha', YATRI_THEME_URI . '/assets/js/wp-alpha-colorpicker.js', array('wp-color-picker'), YATRI_THEME_VERSION, true);
+            wp_register_script('yatri-color-alpha', YATRI_THEME_URI . 'assets/js/wp-alpha-colorpicker.js', array('wp-color-picker'), YATRI_THEME_VERSION, true);
 
         }
 
