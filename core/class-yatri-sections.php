@@ -256,7 +256,7 @@ class Yatri_Sections
                     <i class="yatri-button-icon <?php echo esc_attr($icon); ?>"></i>
                 <?php }
                 if (!empty($label)) { ?>
-                    <span><?php echo esc_attr($label); ?></span>
+                    <span><?php echo esc_html($label); ?></span>
                 <?php } ?>
             </a>
         </div>

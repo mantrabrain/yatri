@@ -17,7 +17,7 @@
                     ?>
                     <option <?php echo $select_value == $font_key ? 'selected="selected"' : ''; ?>
 
-                            value="<?php echo esc_attr($font_key); ?>"><?php echo esc_attr($font_key); ?></option>
+                            value="<?php echo esc_attr($font_key); ?>"><?php echo esc_html($font_key); ?></option>
                 <?php } ?>
             </optgroup>
         <?php } ?>

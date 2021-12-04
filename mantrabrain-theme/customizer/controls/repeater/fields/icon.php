@@ -28,7 +28,7 @@
             </div>
             <div class="yatri-icon-search">
                 <input type="text" id="yatri-icon-search-input"
-                       placeholder="<?php echo esc_html__('Type icon name here', 'yatri'); ?>">
+                       placeholder="<?php echo esc_attr('Type icon name here', 'yatri'); ?>">
             </div>
             <div id="yatri-icon-browser">
 

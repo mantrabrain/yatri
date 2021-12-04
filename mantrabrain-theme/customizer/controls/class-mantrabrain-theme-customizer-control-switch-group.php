@@ -65,7 +65,7 @@ class Mantrabrain_Theme_Customizer_Control_Switch_Group extends Mantrabrain_Them
                     ?>
                     <div class="switch-group-label">
                         <label for="<?php echo esc_attr($this->id) ?>[<?php echo esc_attr($device_key) ?>]"
-                               class="customizer-control-title"><?php echo esc_attr($device_label); ?></label>
+                               class="customizer-control-title"><?php echo esc_html($device_label); ?></label>
 
                         <label class="mb-switch-group-control"
                                for="<?php echo esc_attr($this->id) ?>[<?php echo esc_attr($device_key) ?>]">
