@@ -620,7 +620,7 @@ if (!function_exists('yatri_get_other_dynamic_css')) {
                     -moz-box-flex: 0;
                     flex: 0 0 ' . $yatri_sidebar_width . '%;
                     max-width: ' . $yatri_sidebar_width . '%;
-                    
+
                     }
                 }';
 
@@ -632,7 +632,7 @@ if (!function_exists('yatri_get_other_dynamic_css')) {
                     -moz-box-flex: 0;
                     flex: 0 0 ' . $yatri_content_wrapper_width . '%;
                     max-width: ' . $yatri_content_wrapper_width . '%;
-                    
+
                     }
                 }';
             }
@@ -679,6 +679,8 @@ if (!function_exists('yatri_get_color_css')) {
          input[type="button"],
         input[type="reset"],
         input[type="submit"],
+        button,
+        .wp-block-search .wp-block-search__button,
         .default-button,
         .button-primary,
         .page-numbers.current,
@@ -686,7 +688,7 @@ if (!function_exists('yatri_get_color_css')) {
             {
                 background-color:' . $primary_color . ';
             }
-       
+
         ::selection,
         .single-post-wrap .post-format-outer,
         .yatri-button
@@ -706,8 +708,8 @@ if (!function_exists('yatri_get_color_css')) {
  .button-primary,
  .button-outline,
  .page-numbers.current,
- .page-numbers:hover.current, .page-numbers:focus.current, .page-numbers:active.current 
- 
+ .page-numbers:hover.current, .page-numbers:focus.current, .page-numbers:active.current
+
             {
                 border-color:' . $primary_color . ';
             }
@@ -721,12 +723,12 @@ if (!function_exists('yatri_get_color_css')) {
                 border-top-color:' . $primary_color . ';
 
             }
-             
+
              .yatri-section-search-form.form-type-default .search-form-main:before{
                 border-bottom-color:' . $primary_color . ';
 
             }
-            
+
             ';
             $css .= '
              blockquote:before,
@@ -772,7 +774,7 @@ if (!function_exists('yatri_get_color_css')) {
             {
                 color:' . $primary_color . ';
             }
-            
+
             a:focus,
             button:focus,
             input[type="text"]:focus,
@@ -786,7 +788,7 @@ if (!function_exists('yatri_get_color_css')) {
             input[type="submit"]:focus,
             .slick-slider .slick-slide:focus,
             .search-box .product-search-wrapper form select:focus  {
-            
+
             outline-color: ' . $primary_color . '!important;
               -webkit-focus-ring-color: ' . $primary_color . '!important;
                          }
@@ -934,7 +936,7 @@ if (!function_exists('yatri_get_color_css')) {
         .button-primary:hover, .button-primary:focus, .button-primary:active,
         .button-light:hover, .button-light:focus, .button-light:active,
         .page-numbers:hover, .page-numbers:focus, .page-numbers:active
-        
+
          {
                 background-color:' . $secondary_color . ';
          }
@@ -961,16 +963,16 @@ if (!function_exists('yatri_get_color_css')) {
          }
          .mouse-holder #mouse:hover, .mouse-holder #mouse:focus, .mouse-holder #mouse:active
           {
-          
+
           stroke: ' . $secondary_color . ';
           }
-           
+
            .widget .widget-title:after,
             .widget .widgettitle:after,
             .yatri-button
-            
+
           {
-          
+
           background: ' . $secondary_color . ';
           }
             ';
