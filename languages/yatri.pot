@@ -1,14 +1,14 @@
-# Copyright (C) 2021
+# Copyright (C) 2022
 # This file is distributed under the same license as the  package.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: mantrabrain@gmail.com\n"
-"POT-Creation-Date: 2021-12-04 09:18:49+00:00\n"
+"POT-Creation-Date: 2022-01-01 08:19:15+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2021-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2022-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Mantrabrain <mantrabrain@gmail.com>\n"
 "Language-Team: Mantrabrain <mantrabrain@gmail.com>\n"
 "X-Generator: grunt-wp-i18n 1.0.3\n"
@@ -2936,11 +2936,6 @@ msgstr ""
 #: mantrabrain-theme/customizer/controls/class-mantrabrain-theme-customizer-control-icon-picker.php:88
 #: mantrabrain-theme/customizer/controls/repeater/fields/icon.php:25
 msgid "All Icon Types"
-msgstr ""
-
-#: mantrabrain-theme/customizer/controls/class-mantrabrain-theme-customizer-control-icon-picker.php:94
-#: mantrabrain-theme/customizer/controls/repeater/fields/icon.php:31
-msgid "Type icon name here"
 msgstr ""
 
 #: mantrabrain-theme/customizer/controls/class-mantrabrain-theme-customizer-control-repeater.php:51
