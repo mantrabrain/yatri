@@ -69,10 +69,9 @@ input[type="submit"]:before {
 	color: #ffffff;
 }
 
-.button-primary {
+.button-primary, .button {
 	padding: 15px 25px;
 	background-color: $primary_color;
-	border: 1px solid $primary_color;
 	color: #ffffff;
 	position: relative;
 	-webkit-transition: 0.5s all;
@@ -82,9 +81,9 @@ input[type="submit"]:before {
 	transition: 0.5s all;
 }
 
-.button-primary:hover, .button-primary:focus, .button-primary:active {
+.button-primary:hover, .button-primary:focus, .button-primary:active, .button:active {
 	background-color: $secondary_color;
-	border: 1px solid $secondary_color;
+
 	color: #ffffff;
 }
 
